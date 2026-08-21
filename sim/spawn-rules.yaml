@@ -1,0 +1,80 @@
+# sim/spawn-rules.yaml — causal spawn rules for the living-company simulation.
+#
+# Evaluated by sim/cycle.py against every NEW event in a cycle run. A matching
+# rule spawns a response event (customer service, canon correction, community
+# ripple) in the same run. Per ARCHITECTURE.md staff responses land "within
+# 1 cycle hour"; one batch run is one cycle hour.
+#
+# At most ONE rule fires per trigger event — the first match in file order
+# wins, so order rules by specificity.
+#
+# Condition keys (all must hold):
+#   role:          community | staff | canon
+#   kind:          exact event kind (optional)
+#   any_tag:       at least one event tag must be in this list (optional)
+#   body_mentions: case-insensitive substring(s) in the body (optional)
+#
+# Action keys:
+#   persona:  a persona id, or "any-community" (runner picks a weighted
+#             community persona)
+#   kind:     event kind to emit
+#   duty:     instruction folded into the generation prompt
+
+version: 1
+
+rules:
+  - id: rate-dispute-europa
+    # Any rate talk that drags Europa in gets a canon correction first.
+    when: { role: community, any_tag: [rate-dispute, rates], body_mentions: [europa] }
+    then:
+      persona: canon-editor
+      kind: footnote
+      duty: >
+        Correct the record on Europa's payment status. Per ledger, Europa
+        Autonomous Grid has paid its own bill without interruption since
+        2093. Reject any claim that Europa is behind, citing the ledger.
+
+  - id: outage-ack
+    # Complaints reporting an outage or read gap get an official acknowledgment.
+    when: { role: community, kind: complaint, any_tag: [outage] }
+    then:
+      persona: ops-central
+      kind: acknowledgment
+      duty: >
+        Acknowledge the report by place and account. Explain what actually
+        happened at the interval (synchronization pulse, scheduled relay
+        geometry, beamline handoff). State plainly whether any charge was
+        issued for the interval.
+
+  - id: rate-dispute-answer
+    # Rate complaints get an answer that cites the tariff table.
+    when: { role: community, kind: complaint, any_tag: [rate-dispute] }
+    then:
+      persona: ops-central
+      kind: acknowledgment
+      duty: >
+        Answer the rate dispute by citing the exact tariff entries that apply
+        (Porchlight, Corner Main, Underway, First Light) with their numbers.
+        Do not apologize; explain. Billing follows the house.
+
+  - id: billing-answer
+    # Billing and payment complaints get the billing principle.
+    when: { role: community, kind: complaint, any_tag: [billing, payment] }
+    then:
+      persona: ops-central
+      kind: acknowledgment
+      duty: >
+        Address the billing question. Cite the billing principle ("Billing
+        follows the house") and the relevant account or rate entry from the
+        ledger. Say what is billed and what is not.
+
+  - id: statement-ripple
+    # Official statements draw at least one community voice.
+    when: { role: staff, kind: statement }
+    then:
+      persona: any-community
+      kind: comment
+      duty: >
+        React to the official statement in character. Do not thank the
+        utility. Note the statement, remember something older, or question
+        the sum without questioning the rate.

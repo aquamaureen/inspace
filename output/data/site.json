@@ -1,8 +1,8 @@
 {
   "meta": {
     "project": "inspacepower.com",
-    "cycle": "2999.08",
-    "updated": "2999-08-20T14:00:00Z"
+    "cycle": "2999.09",
+    "updated": "2999-09-12T09:00:00Z"
   },
   "personas": [
     {
@@ -495,6 +495,147 @@
       "spawned": [],
       "chain_id": "chain-005",
       "verified": true
+    },
+    {
+      "id": "ev-2999-09-001",
+      "cycle": "2999.09",
+      "timestamp": "2999-09-01T06:00:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "statement",
+      "title": "Cycle 2999.09 Opening",
+      "body": "In-Space Power confirms the opening of statement cycle 2999.09. The active meter inventory stands at 214,116,882 units, each reporting at four-second intervals. The generation mix for this cycle remains The Beam at 46 percent, Fusion at 31 percent, Moontide at 14 percent, and Stored light at 9 percent. Billing follows the house.",
+      "tags": [
+        "statement",
+        "cycle",
+        "generation-mix",
+        "meter-inventory"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-09-005"
+      ],
+      "chain_id": "chain-006",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-09-005",
+      "cycle": "2999.09",
+      "timestamp": "2999-09-01T14:00:00Z",
+      "role": "community",
+      "persona_id": "europa-grid",
+      "kind": "comment",
+      "title": "Statement 2999.09 Noted",
+      "body": "Europa notes the opening of cycle 2999.09 and the unchanged four-second cadence across 214,116,882 meters. We recorded the same generation percentages at the close of 2999.08 and will continue reconciling our accounts on our own schedule. The house is billed. Europa pays its own.",
+      "tags": [
+        "cycle",
+        "europa",
+        "statement"
+      ],
+      "caused_by": "ev-2999-09-001",
+      "spawned": [],
+      "chain_id": "chain-006",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-09-002",
+      "cycle": "2999.09",
+      "timestamp": "2999-09-06T12:00:00Z",
+      "role": "community",
+      "persona_id": "meter-112",
+      "kind": "complaint",
+      "title": "Shadow Over Millerton Station",
+      "body": "This meter records that Millerton Station on Tow-Route 4 has sat in the shadow of New Lancaster orbital for forty-three cycles. The shade rate of 0.0114 credits per megajoule applies to reads that register no direct beam. This meter does not question the rate. This meter questions the sum when a town pays for light that arrives as another town's shadow. This meter remembers when Ohio had weather that moved.",
+      "tags": [
+        "rate-dispute",
+        "shade",
+        "tow-route-4"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-09-006"
+      ],
+      "chain_id": "chain-007",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-09-006",
+      "cycle": "2999.09",
+      "timestamp": "2999-09-06T15:00:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Millerton Station Shade Classification Upheld",
+      "body": "In-Space Power confirms that Millerton Station on Tow-Route 4 is classified under the Porchlight tariff: 0.0042 credits per megajoule for sunward reads, 0.0114 credits per megajoule for shade reads. The shade rate applies to any read that registers no direct beam, regardless of whether the occlusion originates from a neighboring structure, an orbital body, or another station's projected penumbra. Billing follows the house; the meter's position determines the rate, not the provenance of the shadow. The First Light exemption applies only to the first three cycles of a new meter; this read occurs at cycle forty-three. The Corner Main tariff (0.0061/0.0138 credits per megajoule) and the Underway flat rate (0.0088 credits per megajoule) do not apply to this classification.",
+      "tags": [
+        "rate-dispute",
+        "shade",
+        "porchlight-tariff"
+      ],
+      "caused_by": "ev-2999-09-002",
+      "spawned": [],
+      "chain_id": "chain-007",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-09-003",
+      "cycle": "2999.09",
+      "timestamp": "2999-09-10T09:00:00Z",
+      "role": "community",
+      "persona_id": "tug-captain-mako",
+      "kind": "complaint",
+      "title": "Water Tower Classification on Route 4",
+      "body": "Port Cressida's water tower throws beam-shadow across my tow. Meter reads it as structure, invoice prices it as porch. Billing follows the house, but a water tower has no house. Ceres can rule on whether a tank counts as a hull before I pay shade rates on plumbing.",
+      "tags": [
+        "billing",
+        "tow-route-4",
+        "beam-shadow",
+        "structure"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-09-007"
+      ],
+      "chain_id": "chain-008",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-09-007",
+      "cycle": "2999.09",
+      "timestamp": "2999-09-10T10:00:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Water Tower Classification, Tow Route 4",
+      "body": "In-Space Power confirms the water tower at Port Cressida is registered in the ledger as a fixed structure and is billed at the Porchlight shade rate of 0.0114 credits/MJ for reads occurring within beam-shadow. Billing follows the house; the principle applies to any metered structure, independent of whether that structure encloses habitable volume or contains plumbing. The classification is correct and the invoice stands.",
+      "tags": [
+        "billing",
+        "beam-shadow",
+        "structure"
+      ],
+      "caused_by": "ev-2999-09-003",
+      "spawned": [],
+      "chain_id": "chain-008",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-09-004",
+      "cycle": "2999.09",
+      "timestamp": "2999-09-12T09:00:00Z",
+      "role": "community",
+      "persona_id": "halverson-green",
+      "kind": "comment",
+      "title": "Belt Household Balance, Outstanding Since 2087",
+      "body": "I keep my paper statements in a tin box the way my mother kept hers, and the ledger for the Belt households has shown the same outstanding balance since 2087, which is three hundred and twelve years now without a single settlement read coming through. The automatic systems will tell you the account is reconciled if you let them, but I have checked the printouts myself and the numbers do not lie, they only wait. It was easier to keep track when the cornfield on Tow Route 4 was still a cornfield and you could see the arrears growing as plain as stalks.",
+      "tags": [
+        "billing",
+        "belt",
+        "paper-records"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-009",
+      "verified": true
     }
   ],
   "chains": {
@@ -704,6 +845,155 @@
         "caused_by": "ev-2999-08-009",
         "spawned": [],
         "chain_id": "chain-005",
+        "verified": true
+      }
+    ],
+    "chain-006": [
+      {
+        "id": "ev-2999-09-001",
+        "cycle": "2999.09",
+        "timestamp": "2999-09-01T06:00:00Z",
+        "role": "staff",
+        "persona_id": "ops-central",
+        "kind": "statement",
+        "title": "Cycle 2999.09 Opening",
+        "body": "In-Space Power confirms the opening of statement cycle 2999.09. The active meter inventory stands at 214,116,882 units, each reporting at four-second intervals. The generation mix for this cycle remains The Beam at 46 percent, Fusion at 31 percent, Moontide at 14 percent, and Stored light at 9 percent. Billing follows the house.",
+        "tags": [
+          "statement",
+          "cycle",
+          "generation-mix",
+          "meter-inventory"
+        ],
+        "caused_by": null,
+        "spawned": [
+          "ev-2999-09-005"
+        ],
+        "chain_id": "chain-006",
+        "verified": true
+      },
+      {
+        "id": "ev-2999-09-005",
+        "cycle": "2999.09",
+        "timestamp": "2999-09-01T14:00:00Z",
+        "role": "community",
+        "persona_id": "europa-grid",
+        "kind": "comment",
+        "title": "Statement 2999.09 Noted",
+        "body": "Europa notes the opening of cycle 2999.09 and the unchanged four-second cadence across 214,116,882 meters. We recorded the same generation percentages at the close of 2999.08 and will continue reconciling our accounts on our own schedule. The house is billed. Europa pays its own.",
+        "tags": [
+          "cycle",
+          "europa",
+          "statement"
+        ],
+        "caused_by": "ev-2999-09-001",
+        "spawned": [],
+        "chain_id": "chain-006",
+        "verified": true
+      }
+    ],
+    "chain-007": [
+      {
+        "id": "ev-2999-09-002",
+        "cycle": "2999.09",
+        "timestamp": "2999-09-06T12:00:00Z",
+        "role": "community",
+        "persona_id": "meter-112",
+        "kind": "complaint",
+        "title": "Shadow Over Millerton Station",
+        "body": "This meter records that Millerton Station on Tow-Route 4 has sat in the shadow of New Lancaster orbital for forty-three cycles. The shade rate of 0.0114 credits per megajoule applies to reads that register no direct beam. This meter does not question the rate. This meter questions the sum when a town pays for light that arrives as another town's shadow. This meter remembers when Ohio had weather that moved.",
+        "tags": [
+          "rate-dispute",
+          "shade",
+          "tow-route-4"
+        ],
+        "caused_by": null,
+        "spawned": [
+          "ev-2999-09-006"
+        ],
+        "chain_id": "chain-007",
+        "verified": true
+      },
+      {
+        "id": "ev-2999-09-006",
+        "cycle": "2999.09",
+        "timestamp": "2999-09-06T15:00:00Z",
+        "role": "staff",
+        "persona_id": "ops-central",
+        "kind": "acknowledgment",
+        "title": "Millerton Station Shade Classification Upheld",
+        "body": "In-Space Power confirms that Millerton Station on Tow-Route 4 is classified under the Porchlight tariff: 0.0042 credits per megajoule for sunward reads, 0.0114 credits per megajoule for shade reads. The shade rate applies to any read that registers no direct beam, regardless of whether the occlusion originates from a neighboring structure, an orbital body, or another station's projected penumbra. Billing follows the house; the meter's position determines the rate, not the provenance of the shadow. The First Light exemption applies only to the first three cycles of a new meter; this read occurs at cycle forty-three. The Corner Main tariff (0.0061/0.0138 credits per megajoule) and the Underway flat rate (0.0088 credits per megajoule) do not apply to this classification.",
+        "tags": [
+          "rate-dispute",
+          "shade",
+          "porchlight-tariff"
+        ],
+        "caused_by": "ev-2999-09-002",
+        "spawned": [],
+        "chain_id": "chain-007",
+        "verified": true
+      }
+    ],
+    "chain-008": [
+      {
+        "id": "ev-2999-09-003",
+        "cycle": "2999.09",
+        "timestamp": "2999-09-10T09:00:00Z",
+        "role": "community",
+        "persona_id": "tug-captain-mako",
+        "kind": "complaint",
+        "title": "Water Tower Classification on Route 4",
+        "body": "Port Cressida's water tower throws beam-shadow across my tow. Meter reads it as structure, invoice prices it as porch. Billing follows the house, but a water tower has no house. Ceres can rule on whether a tank counts as a hull before I pay shade rates on plumbing.",
+        "tags": [
+          "billing",
+          "tow-route-4",
+          "beam-shadow",
+          "structure"
+        ],
+        "caused_by": null,
+        "spawned": [
+          "ev-2999-09-007"
+        ],
+        "chain_id": "chain-008",
+        "verified": true
+      },
+      {
+        "id": "ev-2999-09-007",
+        "cycle": "2999.09",
+        "timestamp": "2999-09-10T10:00:00Z",
+        "role": "staff",
+        "persona_id": "ops-central",
+        "kind": "acknowledgment",
+        "title": "Water Tower Classification, Tow Route 4",
+        "body": "In-Space Power confirms the water tower at Port Cressida is registered in the ledger as a fixed structure and is billed at the Porchlight shade rate of 0.0114 credits/MJ for reads occurring within beam-shadow. Billing follows the house; the principle applies to any metered structure, independent of whether that structure encloses habitable volume or contains plumbing. The classification is correct and the invoice stands.",
+        "tags": [
+          "billing",
+          "beam-shadow",
+          "structure"
+        ],
+        "caused_by": "ev-2999-09-003",
+        "spawned": [],
+        "chain_id": "chain-008",
+        "verified": true
+      }
+    ],
+    "chain-009": [
+      {
+        "id": "ev-2999-09-004",
+        "cycle": "2999.09",
+        "timestamp": "2999-09-12T09:00:00Z",
+        "role": "community",
+        "persona_id": "halverson-green",
+        "kind": "comment",
+        "title": "Belt Household Balance, Outstanding Since 2087",
+        "body": "I keep my paper statements in a tin box the way my mother kept hers, and the ledger for the Belt households has shown the same outstanding balance since 2087, which is three hundred and twelve years now without a single settlement read coming through. The automatic systems will tell you the account is reconciled if you let them, but I have checked the printouts myself and the numbers do not lie, they only wait. It was easier to keep track when the cornfield on Tow Route 4 was still a cornfield and you could see the arrears growing as plain as stalks.",
+        "tags": [
+          "billing",
+          "belt",
+          "paper-records"
+        ],
+        "caused_by": null,
+        "spawned": [],
+        "chain_id": "chain-009",
         "verified": true
       }
     ]

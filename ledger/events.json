@@ -9,9 +9,15 @@
       "kind": "statement",
       "title": "Cycle 2999.08 statement issued",
       "body": "In-Space Power confirms the present statement cycle is 2999.08. Active meters: 214,116,882. Reads continue every four seconds. Estimated reads issued since 2041: zero.",
-      "tags": ["statement", "cycle", "meters"],
+      "tags": [
+        "statement",
+        "cycle",
+        "meters"
+      ],
       "caused_by": null,
-      "spawned": ["ev-2999-08-002"],
+      "spawned": [
+        "ev-2999-08-002"
+      ],
       "chain_id": "chain-001",
       "verified": true
     },
@@ -24,7 +30,11 @@
       "kind": "comment",
       "title": "This meter notes the cycle",
       "body": "This meter has recorded every read since 2091. Cycle 2999.08 is no exception. The sum is acceptable. The interval is acceptable. This meter remains.",
-      "tags": ["cycle", "meter-112", "comment"],
+      "tags": [
+        "cycle",
+        "meter-112",
+        "comment"
+      ],
       "caused_by": "ev-2999-08-001",
       "spawned": [],
       "chain_id": "chain-001",
@@ -39,9 +49,15 @@
       "kind": "complaint",
       "title": "Yard glass read lag",
       "body": "The Sheb's south bay yard glass reported a four-second read at 08:59:56 and then nothing until 09:00:04. Eight seconds. We counted. If billing follows the house, the house would like its missing four seconds accounted for.",
-      "tags": ["outage", "tow-route-4", "rate-dispute"],
+      "tags": [
+        "outage",
+        "tow-route-4",
+        "rate-dispute"
+      ],
       "caused_by": null,
-      "spawned": ["ev-2999-08-004"],
+      "spawned": [
+        "ev-2999-08-004"
+      ],
       "chain_id": "chain-002",
       "verified": true
     },
@@ -54,7 +70,11 @@
       "kind": "acknowledgment",
       "title": "Acknowledgment: New Sheboygan read timing",
       "body": "In-Space Power acknowledges the report from New Sheboygan, Tow Route 4. The interval at 08:59:56 was a scheduled synchronization pulse, not a missed read. No charge was issued for the interval. The house is not billed for sync.",
-      "tags": ["outage", "tow-route-4", "acknowledgment"],
+      "tags": [
+        "outage",
+        "tow-route-4",
+        "acknowledgment"
+      ],
       "caused_by": "ev-2999-08-003",
       "spawned": [],
       "chain_id": "chain-002",
@@ -69,9 +89,15 @@
       "kind": "comment",
       "title": "On the matter of shade pricing",
       "body": "We, Europa Autonomous Grid, note that shade rates are cited as pricier because stored light has already been carried. We find this framing acceptable. We have paid our own bill since 2093. We will continue.",
-      "tags": ["rates", "europa", "shade"],
+      "tags": [
+        "rates",
+        "europa",
+        "shade"
+      ],
       "caused_by": null,
-      "spawned": ["ev-2999-08-006"],
+      "spawned": [
+        "ev-2999-08-006"
+      ],
       "chain_id": "chain-003",
       "verified": true
     },
@@ -84,7 +110,11 @@
       "kind": "footnote",
       "title": "Footnote: Europa payment status",
       "body": "Correction to record: a community post elsewhere claimed Europa 'used to be behind.' Per ledger, Europa Autonomous Grid has paid its own bill without interruption since cycle 2093.001. The claim is rejected.",
-      "tags": ["canon", "europa", "correction"],
+      "tags": [
+        "canon",
+        "europa",
+        "correction"
+      ],
       "caused_by": "ev-2999-08-005",
       "spawned": [],
       "chain_id": "chain-003",
@@ -99,9 +129,15 @@
       "kind": "complaint",
       "title": "Beam shadow on Route 4",
       "body": "Dredge-Clear reports The Beam cuts out for eighteen minutes when New Sheboygan passes through the relay geometry. Not a fault, just geometry. But my hull is on Underway rate, flat. I pay while the town's yard glass sits in my shadow. Explain that.",
-      "tags": ["beam", "tow-route-4", "tug"],
+      "tags": [
+        "beam",
+        "tow-route-4",
+        "tug"
+      ],
       "caused_by": null,
-      "spawned": ["ev-2999-08-008"],
+      "spawned": [
+        "ev-2999-08-008"
+      ],
       "chain_id": "chain-004",
       "verified": true
     },
@@ -114,7 +150,11 @@
       "kind": "comment",
       "title": "We remember shadows",
       "body": "Halverson Green remembers when a shadow meant a cloud over the cornfield. Now shadows come from our own town, and from New Sheboygan ahead of us, and from the tugs. The meter reads every four seconds regardless. That is the agreement.",
-      "tags": ["beam", "tow-route-4", "memory"],
+      "tags": [
+        "beam",
+        "tow-route-4",
+        "memory"
+      ],
       "caused_by": "ev-2999-08-007",
       "spawned": [],
       "chain_id": "chain-004",
@@ -129,9 +169,14 @@
       "kind": "statement",
       "title": "Generation mix remains stable",
       "body": "In-Space Power confirms the generation mix for cycle 2999.08: The Beam 46%, Fusion 31%, Moontide 14%, Stored light 9%. No source reached a retest threshold. The mix is accepted.",
-      "tags": ["mix", "statement"],
+      "tags": [
+        "mix",
+        "statement"
+      ],
       "caused_by": null,
-      "spawned": ["ev-2999-08-010"],
+      "spawned": [
+        "ev-2999-08-010"
+      ],
       "chain_id": "chain-005",
       "verified": true
     },
@@ -144,10 +189,155 @@
       "kind": "comment",
       "title": "This meter accepts the mix",
       "body": "This meter has seen mixes change. Once, in 2112, stored light reached 34%. This meter remembers. The present mix is acceptable. This meter remains.",
-      "tags": ["mix", "meter-112", "history"],
+      "tags": [
+        "mix",
+        "meter-112",
+        "history"
+      ],
       "caused_by": "ev-2999-08-009",
       "spawned": [],
       "chain_id": "chain-005",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-09-001",
+      "cycle": "2999.09",
+      "timestamp": "2999-09-01T06:00:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "statement",
+      "title": "Cycle 2999.09 Opening",
+      "body": "In-Space Power confirms the opening of statement cycle 2999.09. The active meter inventory stands at 214,116,882 units, each reporting at four-second intervals. The generation mix for this cycle remains The Beam at 46 percent, Fusion at 31 percent, Moontide at 14 percent, and Stored light at 9 percent. Billing follows the house.",
+      "tags": [
+        "statement",
+        "cycle",
+        "generation-mix",
+        "meter-inventory"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-09-005"
+      ],
+      "chain_id": "chain-006",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-09-005",
+      "cycle": "2999.09",
+      "timestamp": "2999-09-01T14:00:00Z",
+      "role": "community",
+      "persona_id": "europa-grid",
+      "kind": "comment",
+      "title": "Statement 2999.09 Noted",
+      "body": "Europa notes the opening of cycle 2999.09 and the unchanged four-second cadence across 214,116,882 meters. We recorded the same generation percentages at the close of 2999.08 and will continue reconciling our accounts on our own schedule. The house is billed. Europa pays its own.",
+      "tags": [
+        "cycle",
+        "europa",
+        "statement"
+      ],
+      "caused_by": "ev-2999-09-001",
+      "spawned": [],
+      "chain_id": "chain-006",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-09-002",
+      "cycle": "2999.09",
+      "timestamp": "2999-09-06T12:00:00Z",
+      "role": "community",
+      "persona_id": "meter-112",
+      "kind": "complaint",
+      "title": "Shadow Over Millerton Station",
+      "body": "This meter records that Millerton Station on Tow-Route 4 has sat in the shadow of New Lancaster orbital for forty-three cycles. The shade rate of 0.0114 credits per megajoule applies to reads that register no direct beam. This meter does not question the rate. This meter questions the sum when a town pays for light that arrives as another town's shadow. This meter remembers when Ohio had weather that moved.",
+      "tags": [
+        "rate-dispute",
+        "shade",
+        "tow-route-4"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-09-006"
+      ],
+      "chain_id": "chain-007",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-09-006",
+      "cycle": "2999.09",
+      "timestamp": "2999-09-06T15:00:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Millerton Station Shade Classification Upheld",
+      "body": "In-Space Power confirms that Millerton Station on Tow-Route 4 is classified under the Porchlight tariff: 0.0042 credits per megajoule for sunward reads, 0.0114 credits per megajoule for shade reads. The shade rate applies to any read that registers no direct beam, regardless of whether the occlusion originates from a neighboring structure, an orbital body, or another station's projected penumbra. Billing follows the house; the meter's position determines the rate, not the provenance of the shadow. The First Light exemption applies only to the first three cycles of a new meter; this read occurs at cycle forty-three. The Corner Main tariff (0.0061/0.0138 credits per megajoule) and the Underway flat rate (0.0088 credits per megajoule) do not apply to this classification.",
+      "tags": [
+        "rate-dispute",
+        "shade",
+        "porchlight-tariff"
+      ],
+      "caused_by": "ev-2999-09-002",
+      "spawned": [],
+      "chain_id": "chain-007",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-09-003",
+      "cycle": "2999.09",
+      "timestamp": "2999-09-10T09:00:00Z",
+      "role": "community",
+      "persona_id": "tug-captain-mako",
+      "kind": "complaint",
+      "title": "Water Tower Classification on Route 4",
+      "body": "Port Cressida's water tower throws beam-shadow across my tow. Meter reads it as structure, invoice prices it as porch. Billing follows the house, but a water tower has no house. Ceres can rule on whether a tank counts as a hull before I pay shade rates on plumbing.",
+      "tags": [
+        "billing",
+        "tow-route-4",
+        "beam-shadow",
+        "structure"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-09-007"
+      ],
+      "chain_id": "chain-008",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-09-007",
+      "cycle": "2999.09",
+      "timestamp": "2999-09-10T10:00:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Water Tower Classification, Tow Route 4",
+      "body": "In-Space Power confirms the water tower at Port Cressida is registered in the ledger as a fixed structure and is billed at the Porchlight shade rate of 0.0114 credits/MJ for reads occurring within beam-shadow. Billing follows the house; the principle applies to any metered structure, independent of whether that structure encloses habitable volume or contains plumbing. The classification is correct and the invoice stands.",
+      "tags": [
+        "billing",
+        "beam-shadow",
+        "structure"
+      ],
+      "caused_by": "ev-2999-09-003",
+      "spawned": [],
+      "chain_id": "chain-008",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-09-004",
+      "cycle": "2999.09",
+      "timestamp": "2999-09-12T09:00:00Z",
+      "role": "community",
+      "persona_id": "halverson-green",
+      "kind": "comment",
+      "title": "Belt Household Balance, Outstanding Since 2087",
+      "body": "I keep my paper statements in a tin box the way my mother kept hers, and the ledger for the Belt households has shown the same outstanding balance since 2087, which is three hundred and twelve years now without a single settlement read coming through. The automatic systems will tell you the account is reconciled if you let them, but I have checked the printouts myself and the numbers do not lie, they only wait. It was easier to keep track when the cornfield on Tow Route 4 was still a cornfield and you could see the arrears growing as plain as stalks.",
+      "tags": [
+        "billing",
+        "belt",
+        "paper-records"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-009",
       "verified": true
     }
   ]
