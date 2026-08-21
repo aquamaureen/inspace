@@ -107,11 +107,40 @@ with message `cycle <id>: <sim summary>`.
 
 ## Staged rollout
 
-- **v0** (this work): seeded static history, hand-written personas and events,
+- **v0** (done): seeded static history, hand-written personas and events,
   client-side rendering of notice stream.
-- **v1**: scheduled cron cycles that append new events, run consistency checks,
-  and auto-deploy.
+- **v1** (done): scheduled agentic runs that append new events, validate them
+  against the ledger bans, rebuild, auto-deploy, and commit+push.
 - **v2**: optional visitor inquiry form with static queue.
+
+## Operations (v1)
+
+`sim/cycle.py` drives the loop via headless `opencode run` (Zen,
+`opencode/qwen3.6-plus`):
+
+- `sim/cycle.py turn` — opens the next statement cycle: ops-central opening
+  statement, community noise, statement ripple, spawn-rule responses.
+  Timestamps follow the fictional calendar (cycle NN = month NN).
+- `sim/cycle.py service` — customer-service pass within the current cycle:
+  new complaints/comments plus the responses they trigger via
+  `sim/spawn-rules.yaml`. Timestamps track the real clock within the
+  cycle's fictional month.
+- Both support `--dry-run`, `--no-deploy`, `--no-push`, `--noise N`,
+  `--seed N`.
+
+Every generated text passes ledger-ban validation (prompt constraints plus
+deterministic checks in `check_bans`); failures retry once, then drop —
+canon violations never publish.
+
+Intended crontab (user `mag`):
+
+```
+7 5 1 * *    sim/cycle.py turn      # one statement cycle per month
+23 7,19 * * *  sim/cycle.py service # complaints + service responses 2x daily
+```
+
+Log: `~/inspacepower-cycle.log`. Commit messages: `cycle <id>: <summary>`
+and `<cycle> service: <summary>`.
 
 ## Deployment
 
