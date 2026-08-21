@@ -2,7 +2,7 @@
   "meta": {
     "project": "inspacepower.com",
     "cycle": "2999.09",
-    "updated": "2999-09-22T18:34:00Z"
+    "updated": "2999-09-22T12:02:00Z"
   },
   "personas": [
     {
@@ -697,6 +697,68 @@
       "spawned": [],
       "chain_id": "chain-011",
       "verified": true
+    },
+    {
+      "id": "ev-2999-09-011",
+      "cycle": "2999.09",
+      "timestamp": "2999-09-21T15:34:00Z",
+      "role": "community",
+      "persona_id": "new-sheboygan-clerk",
+      "kind": "complaint",
+      "title": "Stored Light and the Sunward Rate",
+      "body": "By the time this notice reaches Ceres the Sheb will have rotated twice, but I'll ask it anyway: when a joule was captured in sunlight and sat in a battery for three months, does it still count as sunward when it finally hits a porch lamp out here on Tow Route 4. The tariff sheet says sunward gets 0.0042 and shade gets 0.0114, but it don't say what to call light that remembers the sun but ain't seen it since before we passed Jupiter. Our water tower made the tow and so did our meters, and I'd like our folks billed like the light still knows what side of the hull it came from.",
+      "tags": [
+        "rate-dispute",
+        "stored-light",
+        "tow-route-4",
+        "sunward-shade"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-09-013"
+      ],
+      "chain_id": "chain-012",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-09-013",
+      "cycle": "2999.09",
+      "timestamp": "2999-09-21T21:34:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Stored Light Classification on Tow Route 4",
+      "body": "In-Space Power confirms that stored light is billed according to the physical placement of the receiving meter, not the origin of the joule. Under the Porchlight tariff, sunward-facing meters are rated at 0.0042 credits/MJ and shade-facing meters at 0.0114 credits/MJ; these rates apply to all delivered energy regardless of whether it arrived by direct collection or from battery. Billing follows the house. Light that has not seen the sun since Jupiter passage is billed at the shade rate if the meter is mounted on the shade side of the hull, and at the sunward rate if it is not.",
+      "tags": [
+        "rate-dispute",
+        "stored-light",
+        "tow-route-4",
+        "sunward-shade"
+      ],
+      "caused_by": "ev-2999-09-011",
+      "spawned": [],
+      "chain_id": "chain-012",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-09-012",
+      "cycle": "2999.09",
+      "timestamp": "2999-09-22T12:02:00Z",
+      "role": "community",
+      "persona_id": "halverson-green",
+      "kind": "comment",
+      "title": "On the Belt Balance, Unadjusted Since 2087",
+      "body": "I keep my paper statements in a tin box the way my mother did when the cornfield was still a cornfield and not this humming hydroponic bay, and if you look back far enough in those pages you will find the Belt households have carried the same balance since 2087, untouched by any automatic read or quarterly adjustment. The Joint Settlement Authority at Ceres has its ledgers and I have mine, and both of them say the same thing that has been said for over nine hundred years: billing follows the house, and some houses have simply stopped answering. I do not trust the machines to tell me otherwise, but the paper does not lie, and the paper says the Belt has been running a tab since before my grandfather took his first read under the porchlight tariff.",
+      "tags": [
+        "billing",
+        "belt",
+        "paper-records",
+        "ceres"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-013",
+      "verified": true
     }
   ],
   "chains": {
@@ -1120,6 +1182,72 @@
         "caused_by": null,
         "spawned": [],
         "chain_id": "chain-011",
+        "verified": true
+      }
+    ],
+    "chain-012": [
+      {
+        "id": "ev-2999-09-011",
+        "cycle": "2999.09",
+        "timestamp": "2999-09-21T15:34:00Z",
+        "role": "community",
+        "persona_id": "new-sheboygan-clerk",
+        "kind": "complaint",
+        "title": "Stored Light and the Sunward Rate",
+        "body": "By the time this notice reaches Ceres the Sheb will have rotated twice, but I'll ask it anyway: when a joule was captured in sunlight and sat in a battery for three months, does it still count as sunward when it finally hits a porch lamp out here on Tow Route 4. The tariff sheet says sunward gets 0.0042 and shade gets 0.0114, but it don't say what to call light that remembers the sun but ain't seen it since before we passed Jupiter. Our water tower made the tow and so did our meters, and I'd like our folks billed like the light still knows what side of the hull it came from.",
+        "tags": [
+          "rate-dispute",
+          "stored-light",
+          "tow-route-4",
+          "sunward-shade"
+        ],
+        "caused_by": null,
+        "spawned": [
+          "ev-2999-09-013"
+        ],
+        "chain_id": "chain-012",
+        "verified": true
+      },
+      {
+        "id": "ev-2999-09-013",
+        "cycle": "2999.09",
+        "timestamp": "2999-09-21T21:34:00Z",
+        "role": "staff",
+        "persona_id": "ops-central",
+        "kind": "acknowledgment",
+        "title": "Stored Light Classification on Tow Route 4",
+        "body": "In-Space Power confirms that stored light is billed according to the physical placement of the receiving meter, not the origin of the joule. Under the Porchlight tariff, sunward-facing meters are rated at 0.0042 credits/MJ and shade-facing meters at 0.0114 credits/MJ; these rates apply to all delivered energy regardless of whether it arrived by direct collection or from battery. Billing follows the house. Light that has not seen the sun since Jupiter passage is billed at the shade rate if the meter is mounted on the shade side of the hull, and at the sunward rate if it is not.",
+        "tags": [
+          "rate-dispute",
+          "stored-light",
+          "tow-route-4",
+          "sunward-shade"
+        ],
+        "caused_by": "ev-2999-09-011",
+        "spawned": [],
+        "chain_id": "chain-012",
+        "verified": true
+      }
+    ],
+    "chain-013": [
+      {
+        "id": "ev-2999-09-012",
+        "cycle": "2999.09",
+        "timestamp": "2999-09-22T12:02:00Z",
+        "role": "community",
+        "persona_id": "halverson-green",
+        "kind": "comment",
+        "title": "On the Belt Balance, Unadjusted Since 2087",
+        "body": "I keep my paper statements in a tin box the way my mother did when the cornfield was still a cornfield and not this humming hydroponic bay, and if you look back far enough in those pages you will find the Belt households have carried the same balance since 2087, untouched by any automatic read or quarterly adjustment. The Joint Settlement Authority at Ceres has its ledgers and I have mine, and both of them say the same thing that has been said for over nine hundred years: billing follows the house, and some houses have simply stopped answering. I do not trust the machines to tell me otherwise, but the paper does not lie, and the paper says the Belt has been running a tab since before my grandfather took his first read under the porchlight tariff.",
+        "tags": [
+          "billing",
+          "belt",
+          "paper-records",
+          "ceres"
+        ],
+        "caused_by": null,
+        "spawned": [],
+        "chain_id": "chain-013",
         "verified": true
       }
     ]
