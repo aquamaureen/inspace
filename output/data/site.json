@@ -2,7 +2,7 @@
   "meta": {
     "project": "inspacepower.com",
     "cycle": "2999.09",
-    "updated": "2999-09-12T09:00:00Z"
+    "updated": "2999-09-22T18:34:00Z"
   },
   "personas": [
     {
@@ -636,6 +636,67 @@
       "spawned": [],
       "chain_id": "chain-009",
       "verified": true
+    },
+    {
+      "id": "ev-2999-09-008",
+      "cycle": "2999.09",
+      "timestamp": "2999-09-21T17:54:00Z",
+      "role": "community",
+      "persona_id": "meter-112",
+      "kind": "complaint",
+      "title": "Porch Light Through Sync Pulse",
+      "body": "This meter recorded a porch light burning through synchronization pulse 2999.08.31. The shade rate applied at 0.0114 credits per megajoule. This meter does not question the rate. This meter questions the sum. Ohio had weather once and porch lights meant something then.",
+      "tags": [
+        "billing",
+        "sync",
+        "porchlight",
+        "earth-reserve-ohio"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-09-010"
+      ],
+      "chain_id": "chain-010",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-09-010",
+      "cycle": "2999.09",
+      "timestamp": "2999-09-21T19:54:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Porch Light, Sync Pulse 2999.08.31",
+      "body": "In-Space Power confirms the load at Earth-Reserve-Ohio was billed at the Porchlight shade rate of 0.0114 credits per megajoule during synchronization pulse 2999.08.31. Billing follows the house: any energy drawn while the meter is live is recorded and charged; only the first three cycles of a newly commissioned First Light account are exempt. The sum reflects the integrated draw across the full pulse window, regardless of weather or precedent. The rate is correct and the sum is correct.",
+      "tags": [
+        "billing",
+        "porchlight",
+        "earth-reserve-ohio"
+      ],
+      "caused_by": "ev-2999-09-008",
+      "spawned": [],
+      "chain_id": "chain-010",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-09-009",
+      "cycle": "2999.09",
+      "timestamp": "2999-09-22T18:34:00Z",
+      "role": "community",
+      "persona_id": "meter-112",
+      "kind": "comment",
+      "title": "First Light, Third Cycle",
+      "body": "This meter notes settlement ISP-000214116882 enters its third and final cycle under First Light. Reads will remain unbilled through statement 2999.09. On 2999.10 the Porchlight tariff applies, sunward and shade. This meter has recorded every four-second interval since 2091 and does not question the rate. The sum will be what the sum is.",
+      "tags": [
+        "first-light",
+        "rates",
+        "settlement",
+        "ohio"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-011",
+      "verified": true
     }
   ],
   "chains": {
@@ -994,6 +1055,71 @@
         "caused_by": null,
         "spawned": [],
         "chain_id": "chain-009",
+        "verified": true
+      }
+    ],
+    "chain-010": [
+      {
+        "id": "ev-2999-09-008",
+        "cycle": "2999.09",
+        "timestamp": "2999-09-21T17:54:00Z",
+        "role": "community",
+        "persona_id": "meter-112",
+        "kind": "complaint",
+        "title": "Porch Light Through Sync Pulse",
+        "body": "This meter recorded a porch light burning through synchronization pulse 2999.08.31. The shade rate applied at 0.0114 credits per megajoule. This meter does not question the rate. This meter questions the sum. Ohio had weather once and porch lights meant something then.",
+        "tags": [
+          "billing",
+          "sync",
+          "porchlight",
+          "earth-reserve-ohio"
+        ],
+        "caused_by": null,
+        "spawned": [
+          "ev-2999-09-010"
+        ],
+        "chain_id": "chain-010",
+        "verified": true
+      },
+      {
+        "id": "ev-2999-09-010",
+        "cycle": "2999.09",
+        "timestamp": "2999-09-21T19:54:00Z",
+        "role": "staff",
+        "persona_id": "ops-central",
+        "kind": "acknowledgment",
+        "title": "Porch Light, Sync Pulse 2999.08.31",
+        "body": "In-Space Power confirms the load at Earth-Reserve-Ohio was billed at the Porchlight shade rate of 0.0114 credits per megajoule during synchronization pulse 2999.08.31. Billing follows the house: any energy drawn while the meter is live is recorded and charged; only the first three cycles of a newly commissioned First Light account are exempt. The sum reflects the integrated draw across the full pulse window, regardless of weather or precedent. The rate is correct and the sum is correct.",
+        "tags": [
+          "billing",
+          "porchlight",
+          "earth-reserve-ohio"
+        ],
+        "caused_by": "ev-2999-09-008",
+        "spawned": [],
+        "chain_id": "chain-010",
+        "verified": true
+      }
+    ],
+    "chain-011": [
+      {
+        "id": "ev-2999-09-009",
+        "cycle": "2999.09",
+        "timestamp": "2999-09-22T18:34:00Z",
+        "role": "community",
+        "persona_id": "meter-112",
+        "kind": "comment",
+        "title": "First Light, Third Cycle",
+        "body": "This meter notes settlement ISP-000214116882 enters its third and final cycle under First Light. Reads will remain unbilled through statement 2999.09. On 2999.10 the Porchlight tariff applies, sunward and shade. This meter has recorded every four-second interval since 2091 and does not question the rate. The sum will be what the sum is.",
+        "tags": [
+          "first-light",
+          "rates",
+          "settlement",
+          "ohio"
+        ],
+        "caused_by": null,
+        "spawned": [],
+        "chain_id": "chain-011",
         "verified": true
       }
     ]
