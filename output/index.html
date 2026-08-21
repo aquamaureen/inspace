@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>In-Space Power — Statement Cycle 2999.08</title>
+<meta name="description" content="In-Space Power is the utility of record for the Sol system. Founded 2041. Present statement cycle 2999.08.">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wordmark">
+    <span class="word-in">IN-SPACE</span><span class="word-power">POWER</span>
+  </div>
+  <nav class="site-nav" aria-label="Primary">
+    <a href="#statement">Statement</a>
+    <a href="#stream">Notice stream</a>
+    <a href="#mix">Generation mix</a>
+    <a href="#tariffs">Tariffs</a>
+    <a href="#facts">Company facts</a>
+    <a href="/personas">Voices</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" id="statement">
+    <p class="cycle-label">Statement cycle <time datetime="2999-08" id="cycleTime">2999.08</time></p>
+    <h1 class="hero-title">The utility of record,<br>Sol system.</h1>
+    <p class="hero-lede">We meter, read, and route power across every human structure in motion. Founded <span class="num" id="foundedYear">2041</span>. Present year <span class="num" id="presentYear">2999</span>.</p>
+    <div class="hero-stats" id="heroStats">
+      <div class="stat">
+        <span class="stat-value" id="activeMeters">214,116,882</span>
+        <span class="stat-label">active meters</span>
+      </div>
+      <div class="stat">
+        <span class="stat-value" id="readInterval">4s</span>
+        <span class="stat-label">between reads</span>
+      </div>
+      <div class="stat">
+        <span class="stat-value" id="estimatedReads">0</span>
+        <span class="stat-label">estimated reads issued since 2041</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="stream" id="stream">
+    <h2>Notice stream</h2>
+    <p class="stream-lede">Selected statements, complaints, corrections, and echoes from the system this cycle. Each entry is attributed to a voice in the ledger.</p>
+    <div class="stream-controls">
+      <button class="stream-filter active" data-filter="all">All</button>
+      <button class="stream-filter" data-filter="staff">Official</button>
+      <button class="stream-filter" data-filter="community">Community</button>
+      <button class="stream-filter" data-filter="canon">Corrections</button>
+    </div>
+    <div class="stream-entries" id="streamEntries">
+      <p class="stream-loading">Loading notices…</p>
+    </div>
+  </section>
+
+  <section class="mix" id="mix">
+    <div class="mix-text">
+      <h2>Generation mix</h2>
+      <p>This cycle, the system draws from four sources. The Beam remains dominant: relayed Mercury sunlight, distributed through the primary beamlines. Fusion holds the base load from licensed hulls and the Ceres/Callisto stations. Moontide flexes with Europa. Stored light fills the shade.</p>
+    </div>
+    <div class="mix-chart" id="mixChart" role="img" aria-label="Generation mix chart">
+      <!-- chart rendered by JS -->
+    </div>
+    <dl class="mix-legend" id="mixLegend">
+      <!-- legend rendered by JS -->
+    </dl>
+  </section>
+
+  <section class="tariffs" id="tariffs">
+    <h2>Tariffs this cycle</h2>
+    <p class="tariffs-lede">All rates in credits per megajoule. Sunward is live light. Shade is stored light, pricier because it has already been carried.</p>
+    <div class="plans" id="plans">
+      <!-- rendered by JS -->
+    </div>
+  </section>
+
+  <section class="facts" id="facts">
+    <h2>Company facts</h2>
+    <div class="facts-grid" id="factsGrid">
+      <!-- rendered by JS -->
+    </div>
+  </section>
+
+  <section class="ledger" id="ledger">
+    <h2>Payment ledger</h2>
+    <p class="ledger-lede">Route code <strong>ISP-2041</strong>. Billing follows the house, not the address. A meter is bonded to a structure; when the structure moves, the meter moves with it.</p>
+    <div class="ledger-entries" id="ledgerEntries">
+      <!-- rendered by JS -->
+    </div>
+    <p class="ledger-note">Whole ordinary Earth towns — houses, steeples, water towers, lawns under yard glass — drift in tow-chains behind tugs on chartered Tow Routes between Earth and Mars. This was never announced. It was only leaked.</p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p><span class="wordmark-small"><span class="word-in">IN-SPACE</span><span class="word-power">POWER</span></span></p>
+  <p>Utility of record, Sol system · Founded 2041 · Statement cycle 2999.08</p>
+  <p class="footer-note">A statement-fiction prototype. Not a real utility.</p>
+</footer>
+
+<script src="/site.js"></script>
+</body>
+</html>

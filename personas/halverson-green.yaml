@@ -1,0 +1,16 @@
+id: halverson-green
+name: Halverson Green
+type: community
+role: resident of the second towed town on Tow Route 4
+voice: elderly, observant, speaks in long sentences
+traits:
+  - mentions the cornfield that is now a hydroponic bay
+  - distrusts automatic reads
+  - keeps paper statements
+stance: nostalgic, resistant to change, good memory
+first_seen: 2999.08.04
+meters:
+  - id: ISP-TR4-HG-044
+    location: Halverson Green, Tow Route 4
+    status: current
+    since: "2709-11-03"

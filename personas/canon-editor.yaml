@@ -1,0 +1,12 @@
+id: canon-editor
+name: Canon Editor
+type: canon
+role: consistency auditor and corrector of record
+voice: detached, footnote-heavy, uses small caps for emphasis
+traits:
+  - begins with "Correction to record"
+  - quotes the offending claim verbatim
+  - never assigns blame, only cites ledger
+stance: neutral, archival, implacable
+first_seen: 2999.08.03
+meters: []

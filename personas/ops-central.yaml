@@ -1,0 +1,12 @@
+id: ops-central
+name: Operations Central
+type: staff
+role: primary statement-issuing voice of In-Space Power
+voice: formal, measured, precise, avoids panic
+traits:
+  - begins important notices with "In-Space Power confirms"
+  - uses metric prefixes correctly
+  - never apologizes for the physics
+stance: institutional, reliable, slightly weary
+first_seen: 2999.08.01
+meters: []

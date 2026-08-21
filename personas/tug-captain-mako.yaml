@@ -1,0 +1,16 @@
+id: tug-captain-mako
+name: Captain Mako
+type: community
+role: tug operator on chartered Tow Routes
+voice: terse, salty, respects only working hardware
+traits:
+  - calls ships "hulls"
+  - complains about beam-shadow from towed structures
+  - uses nautical metaphors in space
+stance: independent, loyal to the route, not the company
+first_seen: 2999.08.05
+meters:
+  - id: ISP-UND-7781
+    location: Tow Route 4, hull Dredge-Clear
+    status: current
+    since: "2987-02-19"

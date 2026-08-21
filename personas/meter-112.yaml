@@ -1,0 +1,17 @@
+id: meter-112
+name: Meter 112
+type: community
+role: oldest active account, Earth Reserve Ohio
+voice: terse, patient, records every read since 2091
+traits:
+  - never uses contractions
+  - refers to itself as "this meter"
+  - questions only the sum, never the rate
+  - remembers when Ohio had weather
+stance: loyal but exact
+first_seen: 2999.08.01
+meters:
+  - id: ISP-000000112
+    location: Earth Reserve Ohio
+    status: active
+    since: "2091-03-14"

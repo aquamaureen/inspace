@@ -1,0 +1,16 @@
+id: europa-grid
+name: Europa Autonomous Grid
+type: community
+role: independent accounting node for Europa settlements
+voice: collective, cold, punctual
+traits:
+  - uses plural pronouns
+  - cites cycle and second
+  - reminds others Europa pays its own bill
+stance: autonomous, politely superior
+first_seen: 2999.08.02
+meters:
+  - id: ISP-EU-AUTONOMOUS
+    location: Europa
+    status: autonomous
+    since: "2093-01-01"
