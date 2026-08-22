@@ -50,6 +50,7 @@ DEPLOY_HOST = "deploy@157.245.118.128"
 DEPLOY_DST = "/var/www/inspacepower.com/html/"
 DEPLOY_KEY = str(Path.home() / ".ssh" / "id_ed25519")
 VERIFY_URL = "https://inspacepower.com/data/site.json"
+KIOSK_DEPLOY = str(Path.home() / "bin" / "deploy-kiosk.sh")
 
 KINDS = {"statement", "comment", "complaint", "acknowledgment", "footnote"}
 ANSI_RE = re.compile(r"\x1b\[[0-9;]*[A-Za-z]")
@@ -402,6 +403,23 @@ def spawn_responses(run: CycleRun, personas: dict, ledger: dict,
             trigger["spawned"].append(resp["id"])
 
 
+def kiosk_sync() -> None:
+    """Emit live shards into the kiosk data/ dir and rsync the kiosk.
+    Best effort: a kiosk failure must not fail the cycle (already
+    committed and deployed by the time this runs)."""
+    try:
+        subprocess.run([sys.executable, str(ROOT / "sim" / "emit_kiosk.py")],
+                       check=True, capture_output=True, text=True)
+        proc = subprocess.run(["bash", KIOSK_DEPLOY], capture_output=True,
+                              text=True, timeout=600)
+        if proc.returncode != 0:
+            raise RuntimeError((proc.stdout + proc.stderr)[-400:])
+        print(" kiosk synced")
+    except Exception as err:
+        print(f"KIOSK SYNC FAILED (cycle still committed): {err}",
+              file=sys.stderr)
+
+
 def finalize(run: CycleRun, ledger: dict, existing: list[dict],
              msg_prefix: str, dry_run: bool, do_deploy: bool,
              do_push: bool) -> int:
@@ -461,6 +479,9 @@ def finalize(run: CycleRun, ledger: dict, existing: list[dict],
         print(" committed and pushed")
     else:
         print(" committed (push skipped)")
+
+    if do_deploy:
+        kiosk_sync()
     return 0
 
 

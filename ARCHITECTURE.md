@@ -111,6 +111,9 @@ with message `cycle <id>: <sim summary>`.
   client-side rendering of notice stream.
 - **v1** (done): scheduled agentic runs that append new events, validate them
   against the ledger bans, rebuild, auto-deploy, and commit+push.
+- **v1.1** (done): `kiosk.inspacepower.com` notice board fed by the live
+  ledger (`sim/emit_kiosk.py` emits the kiosk `data/` contract shards;
+  synced after every deployed pass).
 - **v2**: optional visitor inquiry form with static queue.
 
 ## Operations (v1)
@@ -131,6 +134,13 @@ with message `cycle <id>: <sim summary>`.
 Every generated text passes ledger-ban validation (prompt constraints plus
 deterministic checks in `check_bans`); failures retry once, then drop —
 canon violations never publish.
+
+After each deployed pass, `cycle.py` also syncs the Notice Kiosk:
+`sim/emit_kiosk.py` maps the ledger onto the kiosk's `data/CONTRACT.md`
+shards (heartbeat, chains, personas, channels) inside the kiosk source
+tree, and `~/bin/deploy-kiosk.sh` rsyncs chrome + shards to
+`kiosk.inspacepower.com`. Kiosk sync is best-effort: its failure logs
+`KIOSK SYNC FAILED` but never fails the cycle.
 
 Intended crontab (user `mag`):
 

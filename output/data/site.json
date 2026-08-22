@@ -2,7 +2,7 @@
   "meta": {
     "project": "inspacepower.com",
     "cycle": "2999.09",
-    "updated": "2999-09-23T21:38:00Z"
+    "updated": "2999-09-22T21:46:00Z"
   },
   "personas": [
     {
@@ -820,6 +820,48 @@
       "spawned": [],
       "chain_id": "chain-015",
       "verified": true
+    },
+    {
+      "id": "ev-2999-09-017",
+      "cycle": "2999.09",
+      "timestamp": "2999-09-22T16:46:00Z",
+      "role": "community",
+      "persona_id": "halverson-green",
+      "kind": "complaint",
+      "title": "Meter Reading Through the Gap",
+      "body": "I keep my statements on paper because paper does not pretend to have seen what it has not seen, and yet my meter ISP-TR4-HG-044 has been ticking away every four seconds through the relay geometry window when The Beam cuts out, same as when it is shining, and I would like to know who is paying for light that did not arrive. I remember when this bay was a cornfield and the sun came regular, but I do not recall ever being asked to pay for an empty sky. The automatic read does not notice the difference between a beam and no beam, which is why I keep my paper.",
+      "tags": [
+        "outage",
+        "beam",
+        "meter-reading",
+        "relay-geometry"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-09-018"
+      ],
+      "chain_id": "chain-016",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-09-018",
+      "cycle": "2999.09",
+      "timestamp": "2999-09-22T21:46:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Acknowledgment: ISP-TR4-HG-044, Relay Geometry Window",
+      "body": "In-Space Power confirms receipt of report for account ISP-TR4-HG-044 concerning reads recorded during the scheduled relay geometry window at the referenced bay. The meter maintained its four-second cadence through the beamline handoff sequence, as synchronization pulses do not suspend read collection. No charge was issued for the interval; billing follows the house, and the house received no energy. The paper record and the digital record agree on this point.",
+      "tags": [
+        "outage",
+        "beam",
+        "meter-reading",
+        "relay-geometry"
+      ],
+      "caused_by": "ev-2999-09-017",
+      "spawned": [],
+      "chain_id": "chain-016",
+      "verified": true
     }
   ],
   "chains": {
@@ -1374,6 +1416,50 @@
         "caused_by": "ev-2999-09-015",
         "spawned": [],
         "chain_id": "chain-015",
+        "verified": true
+      }
+    ],
+    "chain-016": [
+      {
+        "id": "ev-2999-09-017",
+        "cycle": "2999.09",
+        "timestamp": "2999-09-22T16:46:00Z",
+        "role": "community",
+        "persona_id": "halverson-green",
+        "kind": "complaint",
+        "title": "Meter Reading Through the Gap",
+        "body": "I keep my statements on paper because paper does not pretend to have seen what it has not seen, and yet my meter ISP-TR4-HG-044 has been ticking away every four seconds through the relay geometry window when The Beam cuts out, same as when it is shining, and I would like to know who is paying for light that did not arrive. I remember when this bay was a cornfield and the sun came regular, but I do not recall ever being asked to pay for an empty sky. The automatic read does not notice the difference between a beam and no beam, which is why I keep my paper.",
+        "tags": [
+          "outage",
+          "beam",
+          "meter-reading",
+          "relay-geometry"
+        ],
+        "caused_by": null,
+        "spawned": [
+          "ev-2999-09-018"
+        ],
+        "chain_id": "chain-016",
+        "verified": true
+      },
+      {
+        "id": "ev-2999-09-018",
+        "cycle": "2999.09",
+        "timestamp": "2999-09-22T21:46:00Z",
+        "role": "staff",
+        "persona_id": "ops-central",
+        "kind": "acknowledgment",
+        "title": "Acknowledgment: ISP-TR4-HG-044, Relay Geometry Window",
+        "body": "In-Space Power confirms receipt of report for account ISP-TR4-HG-044 concerning reads recorded during the scheduled relay geometry window at the referenced bay. The meter maintained its four-second cadence through the beamline handoff sequence, as synchronization pulses do not suspend read collection. No charge was issued for the interval; billing follows the house, and the house received no energy. The paper record and the digital record agree on this point.",
+        "tags": [
+          "outage",
+          "beam",
+          "meter-reading",
+          "relay-geometry"
+        ],
+        "caused_by": "ev-2999-09-017",
+        "spawned": [],
+        "chain_id": "chain-016",
         "verified": true
       }
     ]
