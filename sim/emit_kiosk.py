@@ -79,6 +79,13 @@ def line_for(title: str, limit: int = 120) -> str:
     return cut + "…"
 
 
+def ticker_line(body: str, limit: int = 120) -> str:
+    """Ticker-length one-liner: the body's first sentence, distinct from
+    the title (the kiosk docket prints title and root_line as two rows)."""
+    sentence = body.split(". ", 1)[0].rstrip() + "."
+    return line_for(sentence, limit)
+
+
 def kiosk_event(ev: dict, trigger: dict | None) -> dict:
     channel = CHANNEL_FOR.get((ev["role"], ev["kind"]), "community-board")
     if ev["caused_by"] is None:
@@ -101,7 +108,7 @@ def kiosk_event(ev: dict, trigger: dict | None) -> dict:
         "move": move,
         "from": ev["persona_id"],
         "participants": participants,
-        "line": line_for(ev["title"]),
+        "line": ticker_line(ev["body"]),
         "body": ev["body"],
         "positions": {},
     }
