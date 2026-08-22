@@ -542,14 +542,20 @@ def cmd_service(args) -> int:
     rng = random.Random(args.seed)
     now = datetime.now(timezone.utc)
     base = datetime(int(run.year), int(run.cyc), 1, 0, 0)
-    day = {"d": min(now.day, 26)}
+    # Fictional clock tracks real UTC inside the cycle's month, but must
+    # never go backwards: floor at the newest event already on record.
+    last_ts = max((e["timestamp"] for e in existing if e["cycle"] == cycle),
+                  default=None)
+    floor = (datetime.fromisoformat(last_ts.replace("Z", "+00:00"))
+             .replace(tzinfo=None) if last_ts else None)
+    clock = {"t": base + timedelta(days=min(now.day, 28) - 1,
+                                   hours=now.hour)}
+    if floor is not None and clock["t"] <= floor:
+        clock["t"] = floor + timedelta(hours=1)
 
     def service_clock() -> datetime:
-        dt = base + timedelta(days=day["d"] - 1,
-                              hours=rng.randint(6, 20),
-                              minutes=rng.randint(0, 59))
-        day["d"] = min(day["d"] + rng.randint(0, 2), 28)
-        return dt
+        clock["t"] += timedelta(minutes=rng.randint(5, 50))
+        return clock["t"]
 
     print(f"== service pass {cycle} ==")
     triggers = community_noise(run, personas, ledger, rng, args.noise, service_clock)
