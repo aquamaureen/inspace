@@ -462,6 +462,67 @@
       "spawned": [],
       "chain_id": "chain-013",
       "verified": true
+    },
+    {
+      "id": "ev-2999-09-014",
+      "cycle": "2999.09",
+      "timestamp": "2999-09-22T06:38:00Z",
+      "role": "community",
+      "persona_id": "tug-captain-mako",
+      "kind": "comment",
+      "title": "Cycle Review Window Open",
+      "body": "JSA Ceres cracked open the filing window for cycle review. Any hull running a meter best have their reads squared away—auditors don't give a damn about beam-shadow off whatever oversized rig you're dragging. Billing follows the house, and the house keeps receipts. Keep your transponders singing and your ledgers straight.",
+      "tags": [
+        "regulator",
+        "statement",
+        "tow-routes"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-014",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-09-015",
+      "cycle": "2999.09",
+      "timestamp": "2999-09-23T20:38:00Z",
+      "role": "community",
+      "persona_id": "halverson-green",
+      "kind": "complaint",
+      "title": "Missed Interchange at Marker Twelve and the Dark Stretch Beyond",
+      "body": "I have kept my paper statements since the meter went in on the third of November two seven oh nine and not once have they shown a read for the seconds we drift past the interchange at Marker Twelve, which is to say the automatic system does not see us when the tow route bends away from the old cornfield that is now a hydroponic bay, and I should like to know who is paying for the dark stretch between buoys forty-four and forty-seven because the shade rate was never meant to cover a house that moves through shadow it did not choose. I have written this down on my kitchen table with a proper pen and I will be keeping the receipt.",
+      "tags": [
+        "outage",
+        "tow-route-4",
+        "underway",
+        "billing"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-09-016"
+      ],
+      "chain_id": "chain-015",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-09-016",
+      "cycle": "2999.09",
+      "timestamp": "2999-09-23T21:38:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Acknowledgment of Missed Reads at Marker Twelve",
+      "body": "In-Space Power confirms receipt of the report concerning tow route 4 at Marker Twelve and the interval between buoys forty-four and forty-seven. The missed reads correspond to a scheduled beamline handoff during which the synchronization pulse was withheld for twelve seconds while relay geometry was recalibrated to the hydroponic bay alignment. No charge was issued for the interval; the Underway flat tariff applies only to metered reads, and zero reads were recorded during the handoff window. The shade rate does not apply to underway transit.",
+      "tags": [
+        "outage",
+        "tow-route-4",
+        "underway",
+        "billing"
+      ],
+      "caused_by": "ev-2999-09-015",
+      "spawned": [],
+      "chain_id": "chain-015",
+      "verified": true
     }
   ]
 }
