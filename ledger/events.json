@@ -565,6 +565,90 @@
       "spawned": [],
       "chain_id": "chain-016",
       "verified": true
+    },
+    {
+      "id": "ev-2999-09-019",
+      "cycle": "2999.09",
+      "timestamp": "2999-09-23T22:53:00Z",
+      "role": "community",
+      "persona_id": "halverson-green",
+      "kind": "complaint",
+      "title": "Interchange 12 and the Dark Stretch Between",
+      "body": "I have kept my paper statements since the cornfield was still a cornfield, and not one shows a charge for the dark stretch past Interchange 12, missed on the last tow and belonging to nobody's meter now. The automatic reads do not account for it, which is perhaps why nobody has, but I can tell you from my porch that those houses have paid the shade rate for a sunward berth these three cycles. I would like to know who is collecting for that darkness and whether billing follows the house when the house is in between.",
+      "tags": [
+        "outage",
+        "tow-route-4",
+        "underway",
+        "billing"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-09-021"
+      ],
+      "chain_id": "chain-017",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-09-020",
+      "cycle": "2999.09",
+      "timestamp": "2999-09-23T23:25:00Z",
+      "role": "community",
+      "persona_id": "halverson-green",
+      "kind": "comment",
+      "title": "On Europa's Share of the Mix",
+      "body": "I have been looking over my paper statements from the last cycle, the way I always do, and I cannot find anywhere in the printed figures a proper accounting of how much of The Beam's forty-six percent went out toward Europa and who among the rest of us carried that distance on our meters. The automatic reads never show you the weight of the line losses, and they certainly do not volunteer which households absorbed the extra draw when the Jovian run was heavy. I remember when the cornfield where the hydroponic bay sits now used to tell you exactly where every joule went just by looking at the growth, but now we are expected to trust a number that arrives without a signature.",
+      "tags": [
+        "rates",
+        "europa",
+        "mix",
+        "paper-statements"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-09-022"
+      ],
+      "chain_id": "chain-018",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-09-021",
+      "cycle": "2999.09",
+      "timestamp": "2999-09-24T02:53:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Interchange 12 Read Gap Acknowledged",
+      "body": "In-Space Power confirms receipt of the report concerning Interchange 12 and the unmetered interval along tow-route-4. During the last scheduled relay geometry, a synchronization pulse at the beamline handoff produced a 4.2-second gap in automatic reads; no estimated reads were issued for this interval. Billing follows the house, and where no read exists, no charge is issued. The shade-rate discrepancy for the preceding three cycles is under review and will be reconciled against the porchlight tariff schedule.",
+      "tags": [
+        "outage",
+        "tow-route-4",
+        "underway",
+        "billing"
+      ],
+      "caused_by": "ev-2999-09-019",
+      "spawned": [],
+      "chain_id": "chain-017",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-09-022",
+      "cycle": "2999.09",
+      "timestamp": "2999-09-24T04:25:00Z",
+      "role": "canon",
+      "persona_id": "canon-editor",
+      "kind": "footnote",
+      "title": "Correction to Record: Europa Settlement Status",
+      "body": "Correction to record: the submitted notice claims 'we are expected to trust a number that arrives without a signature' and implies Europa has not accounted for its share of The Beam's forty-six percent. The ledger shows Europa Autonomous Grid has paid its own bill without interruption since 2093, with no outstanding balance recorded at any read interval. Line losses are apportioned per the principle that 'billing follows the house' and do not transfer to secondary accounts. Paper statements are advisory only; settlement is conducted by the Joint Settlement Authority Ceres under payment route ISP-2041.",
+      "tags": [
+        "rates",
+        "europa",
+        "ledger",
+        "paper-statements"
+      ],
+      "caused_by": "ev-2999-09-020",
+      "spawned": [],
+      "chain_id": "chain-018",
+      "verified": true
     }
   ]
 }
