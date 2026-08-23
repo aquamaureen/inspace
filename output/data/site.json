@@ -2,7 +2,7 @@
   "meta": {
     "project": "inspacepower.com",
     "cycle": "2999.09",
-    "updated": "2999-09-24T07:55:00Z"
+    "updated": "2999-09-24T12:45:00Z"
   },
   "personas": [
     {
@@ -1006,6 +1006,66 @@
       "spawned": [],
       "chain_id": "chain-019",
       "verified": true
+    },
+    {
+      "id": "ev-2999-09-026",
+      "cycle": "2999.09",
+      "timestamp": "2999-09-24T09:45:00Z",
+      "role": "community",
+      "persona_id": "halverson-green",
+      "kind": "complaint",
+      "title": "Shade Rate Under Permanent Shadow, Tow Route 4",
+      "body": "I have kept my paper statements since the meters went in on the third of November in 2709, and I have watched the shade rate apply month after month while our town has been hitched behind the first tow with nothing but their undercarriage between us and any honest sunlight. The automatic reads do not trouble themselves with the difference between a town that chose the shade and a town that was parked there by the routing office, and they certainly do not remember the cornfield that stood where the hydroponic bay sits now, which at least knew the courtesy of casting its own shadow. I am not disputing that we sit in the shadow of the first town on Tow Route 4, only that the shade tariff presumes a choice none of us were asked to make.",
+      "tags": [
+        "rate-dispute",
+        "shade",
+        "tow-route-4"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-09-028"
+      ],
+      "chain_id": "chain-021",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-09-027",
+      "cycle": "2999.09",
+      "timestamp": "2999-09-24T10:24:00Z",
+      "role": "community",
+      "persona_id": "new-sheboygan-clerk",
+      "kind": "comment",
+      "title": "What First Light Covers (and What It Don't)",
+      "body": "Got a notice from a new settlement out past the belt asking what First Light actually covers, and I'll tell you what I tell everybody: it covers three cycles where the meter reads but you ain't billed, that's it. Ain't a holiday, ain't a waiver, just gives you time to get your breaker box sorted before the credits start counting. The Sheb's water tower went three cycles on First Light back in '11 and we still paid for the coffee machine, so don't go thinking it means free power. Billing follows the house, always has, and after cycle three the porchlight rate kicks in like it does for the rest of us.",
+      "tags": [
+        "first-light",
+        "rates",
+        "new-settlements",
+        "billing"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-022",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-09-028",
+      "cycle": "2999.09",
+      "timestamp": "2999-09-24T12:45:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Shade Tariff Application, Tow Route 4",
+      "body": "In-Space Power confirms the shade tariff applies to all metered premises receiving less than direct solar illumination, regardless of routing assignment or prior land use. Porchlight shade is rated at 0.0114 credits per megajoule; Corner Main shade at 0.0138 credits per megajoule; Underway service is billed at a flat 0.0088 credits per megajoule. Billing follows the house. The automatic reads measure incident radiation at the meter face and do not distinguish between elected shade and assigned shadow. Tow Route 4 premises remain classified under the applicable shade tariff for the duration of their current mooring configuration.",
+      "tags": [
+        "rate-dispute",
+        "shade",
+        "tow-route-4"
+      ],
+      "caused_by": "ev-2999-09-026",
+      "spawned": [],
+      "chain_id": "chain-021",
+      "verified": true
     }
   ],
   "chains": {
@@ -1756,6 +1816,70 @@
         "caused_by": null,
         "spawned": [],
         "chain_id": "chain-020",
+        "verified": true
+      }
+    ],
+    "chain-021": [
+      {
+        "id": "ev-2999-09-026",
+        "cycle": "2999.09",
+        "timestamp": "2999-09-24T09:45:00Z",
+        "role": "community",
+        "persona_id": "halverson-green",
+        "kind": "complaint",
+        "title": "Shade Rate Under Permanent Shadow, Tow Route 4",
+        "body": "I have kept my paper statements since the meters went in on the third of November in 2709, and I have watched the shade rate apply month after month while our town has been hitched behind the first tow with nothing but their undercarriage between us and any honest sunlight. The automatic reads do not trouble themselves with the difference between a town that chose the shade and a town that was parked there by the routing office, and they certainly do not remember the cornfield that stood where the hydroponic bay sits now, which at least knew the courtesy of casting its own shadow. I am not disputing that we sit in the shadow of the first town on Tow Route 4, only that the shade tariff presumes a choice none of us were asked to make.",
+        "tags": [
+          "rate-dispute",
+          "shade",
+          "tow-route-4"
+        ],
+        "caused_by": null,
+        "spawned": [
+          "ev-2999-09-028"
+        ],
+        "chain_id": "chain-021",
+        "verified": true
+      },
+      {
+        "id": "ev-2999-09-028",
+        "cycle": "2999.09",
+        "timestamp": "2999-09-24T12:45:00Z",
+        "role": "staff",
+        "persona_id": "ops-central",
+        "kind": "acknowledgment",
+        "title": "Shade Tariff Application, Tow Route 4",
+        "body": "In-Space Power confirms the shade tariff applies to all metered premises receiving less than direct solar illumination, regardless of routing assignment or prior land use. Porchlight shade is rated at 0.0114 credits per megajoule; Corner Main shade at 0.0138 credits per megajoule; Underway service is billed at a flat 0.0088 credits per megajoule. Billing follows the house. The automatic reads measure incident radiation at the meter face and do not distinguish between elected shade and assigned shadow. Tow Route 4 premises remain classified under the applicable shade tariff for the duration of their current mooring configuration.",
+        "tags": [
+          "rate-dispute",
+          "shade",
+          "tow-route-4"
+        ],
+        "caused_by": "ev-2999-09-026",
+        "spawned": [],
+        "chain_id": "chain-021",
+        "verified": true
+      }
+    ],
+    "chain-022": [
+      {
+        "id": "ev-2999-09-027",
+        "cycle": "2999.09",
+        "timestamp": "2999-09-24T10:24:00Z",
+        "role": "community",
+        "persona_id": "new-sheboygan-clerk",
+        "kind": "comment",
+        "title": "What First Light Covers (and What It Don't)",
+        "body": "Got a notice from a new settlement out past the belt asking what First Light actually covers, and I'll tell you what I tell everybody: it covers three cycles where the meter reads but you ain't billed, that's it. Ain't a holiday, ain't a waiver, just gives you time to get your breaker box sorted before the credits start counting. The Sheb's water tower went three cycles on First Light back in '11 and we still paid for the coffee machine, so don't go thinking it means free power. Billing follows the house, always has, and after cycle three the porchlight rate kicks in like it does for the rest of us.",
+        "tags": [
+          "first-light",
+          "rates",
+          "new-settlements",
+          "billing"
+        ],
+        "caused_by": null,
+        "spawned": [],
+        "chain_id": "chain-022",
         "verified": true
       }
     ]
