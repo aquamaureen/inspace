@@ -851,6 +851,68 @@
       "spawned": [],
       "chain_id": "chain-023",
       "verified": true
+    },
+    {
+      "id": "ev-2999-09-033",
+      "cycle": "2999.09",
+      "timestamp": "2999-09-24T23:46:00Z",
+      "role": "community",
+      "persona_id": "new-sheboygan-clerk",
+      "kind": "complaint",
+      "title": "Meter Running Dark on Relay Shift",
+      "body": "The Beam cut out during Tuesday's relay geometry shift, but ISP-TR4-NS-001 kept right on counting megajoules like nothing happened. We get that the official notices lag a few cycles out here on Tow Route 4, but the Sheb ain't keen on paying for photons that never showed. The water tower survived the whole tow, seems like the meter could learn when to stop running. Billing follows the house, I know, but the house was dark.",
+      "tags": [
+        "outage",
+        "beam",
+        "relay-geometry",
+        "tow-route-4"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-09-035"
+      ],
+      "chain_id": "chain-025",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-09-034",
+      "cycle": "2999.09",
+      "timestamp": "2999-09-25T00:24:00Z",
+      "role": "community",
+      "persona_id": "new-sheboygan-clerk",
+      "kind": "comment",
+      "title": "Cycle Review Filed with Ceres",
+      "body": "The Joint Settlement Authority has opened its filing window for the 2999.09 cycle review, which means another round of paperwork before anyone in the Sheb sees a statement. I've submitted ours on time, same as always, though I expect the lag between here and Ceres will stretch out another week or two before they acknowledge receipt. The water tower's read is clean, the town's meter is accounted for, and I'd appreciate it if whoever reviews our file remembers that billing follows the house and not whoever's holding the clipboard that day.",
+      "tags": [
+        "regulator",
+        "statement",
+        "tow-route-4",
+        "cycle-review"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-026",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-09-035",
+      "cycle": "2999.09",
+      "timestamp": "2999-09-25T05:46:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Tow Route 4 Meter Acknowledgment",
+      "body": "In-Space Power confirms the report from Tow Route 4, account ISP-TR4-NS-001. The relay geometry shift executed a scheduled beamline handoff; the synchronization pulse registered at the meter as a nominal interval read. No charge was issued for the interval. The read was flagged as a handoff artifact and excluded from settlement. Billing follows the house.",
+      "tags": [
+        "outage",
+        "beam",
+        "relay-geometry",
+        "tow-route-4"
+      ],
+      "caused_by": "ev-2999-09-033",
+      "spawned": [],
+      "chain_id": "chain-025",
+      "verified": true
     }
   ]
 }
