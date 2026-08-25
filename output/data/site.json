@@ -2,7 +2,7 @@
   "meta": {
     "project": "inspacepower.com",
     "cycle": "2999.09",
-    "updated": "2999-09-25T05:46:00Z"
+    "updated": "2999-09-25T13:22:00Z"
   },
   "personas": [
     {
@@ -1210,6 +1210,88 @@
       "spawned": [],
       "chain_id": "chain-025",
       "verified": true
+    },
+    {
+      "id": "ev-2999-09-036",
+      "cycle": "2999.09",
+      "timestamp": "2999-09-25T11:22:00Z",
+      "role": "community",
+      "persona_id": "new-sheboygan-clerk",
+      "kind": "complaint",
+      "title": "Porch Light on TR4-NS-001 Through Sync Pulse",
+      "body": "Somebody on the Sheb left their porch light burning right through the synchronization pulse last cycle, and I'm the one who gets the lagged notice about it three days later. We all know the water tower made the tow, but that does not mean we leave the fixtures on while the grid is trying to count. Billing follows the house, sure, but common sense ought to follow the pulse. If you are on Porchlight rate, the sunward side is cheap enough without running through a sync window.",
+      "tags": [
+        "billing",
+        "sync",
+        "new-sheboygan",
+        "porchlight"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-09-038"
+      ],
+      "chain_id": "chain-027",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-09-037",
+      "cycle": "2999.09",
+      "timestamp": "2999-09-25T11:33:00Z",
+      "role": "community",
+      "persona_id": "tug-captain-mako",
+      "kind": "comment",
+      "title": "Who Hauled the Moontide",
+      "body": "Europa pulled fourteen percent of the mix this cycle, Moontide rating, and I want to know which hulls ran the tow. We on Route 4 eat beam-shadow from your floating arrays while you park in the Jovian dark and call it generation. Someone carried that iron out there, and it wasn't the company. The meters don't lie, but the manifests might.",
+      "tags": [
+        "europa",
+        "mix",
+        "rates",
+        "tow-routes"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-09-039"
+      ],
+      "chain_id": "chain-028",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-09-039",
+      "cycle": "2999.09",
+      "timestamp": "2999-09-25T12:33:00Z",
+      "role": "canon",
+      "persona_id": "canon-editor",
+      "kind": "footnote",
+      "title": "Correction to Record: Europa Settlement Standing",
+      "body": "Correction to record regarding the assertion that \"you park in the Jovian dark and call it generation.\" The ledger shows Europa Autonomous Grid has paid its own bill <small>without interruption</small> since 2093.¹ The Moontide contribution of fourteen percent is accounted for by tidal capture at the Jovian Lagrange stations, not by towed hulls.² Rate disputes do not alter settlement standing.³",
+      "tags": [
+        "europa",
+        "moontide",
+        "settlement"
+      ],
+      "caused_by": "ev-2999-09-037",
+      "spawned": [],
+      "chain_id": "chain-028",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-09-038",
+      "cycle": "2999.09",
+      "timestamp": "2999-09-25T13:22:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Porch Light on TR4-NS-001 Through Sync Pulse",
+      "body": "In-Space Power confirms the porch light on TR4-NS-001 registered 14.2 megajoules during the synchronization pulse window of cycle 2999.08. Billing follows the house; the ledger records this consumption against the Porchlight rate at 0.0042 credits per megajoule for the sunward-facing fixture. The synchronization pulse does not interrupt metering. Reads continue at four-second intervals regardless of settlement timing, and the account holder of record is billed accordingly.",
+      "tags": [
+        "billing",
+        "porchlight",
+        "new-sheboygan"
+      ],
+      "caused_by": "ev-2999-09-036",
+      "spawned": [],
+      "chain_id": "chain-027",
+      "verified": true
     }
   ],
   "chains": {
@@ -2176,6 +2258,92 @@
         "caused_by": null,
         "spawned": [],
         "chain_id": "chain-026",
+        "verified": true
+      }
+    ],
+    "chain-027": [
+      {
+        "id": "ev-2999-09-036",
+        "cycle": "2999.09",
+        "timestamp": "2999-09-25T11:22:00Z",
+        "role": "community",
+        "persona_id": "new-sheboygan-clerk",
+        "kind": "complaint",
+        "title": "Porch Light on TR4-NS-001 Through Sync Pulse",
+        "body": "Somebody on the Sheb left their porch light burning right through the synchronization pulse last cycle, and I'm the one who gets the lagged notice about it three days later. We all know the water tower made the tow, but that does not mean we leave the fixtures on while the grid is trying to count. Billing follows the house, sure, but common sense ought to follow the pulse. If you are on Porchlight rate, the sunward side is cheap enough without running through a sync window.",
+        "tags": [
+          "billing",
+          "sync",
+          "new-sheboygan",
+          "porchlight"
+        ],
+        "caused_by": null,
+        "spawned": [
+          "ev-2999-09-038"
+        ],
+        "chain_id": "chain-027",
+        "verified": true
+      },
+      {
+        "id": "ev-2999-09-038",
+        "cycle": "2999.09",
+        "timestamp": "2999-09-25T13:22:00Z",
+        "role": "staff",
+        "persona_id": "ops-central",
+        "kind": "acknowledgment",
+        "title": "Porch Light on TR4-NS-001 Through Sync Pulse",
+        "body": "In-Space Power confirms the porch light on TR4-NS-001 registered 14.2 megajoules during the synchronization pulse window of cycle 2999.08. Billing follows the house; the ledger records this consumption against the Porchlight rate at 0.0042 credits per megajoule for the sunward-facing fixture. The synchronization pulse does not interrupt metering. Reads continue at four-second intervals regardless of settlement timing, and the account holder of record is billed accordingly.",
+        "tags": [
+          "billing",
+          "porchlight",
+          "new-sheboygan"
+        ],
+        "caused_by": "ev-2999-09-036",
+        "spawned": [],
+        "chain_id": "chain-027",
+        "verified": true
+      }
+    ],
+    "chain-028": [
+      {
+        "id": "ev-2999-09-037",
+        "cycle": "2999.09",
+        "timestamp": "2999-09-25T11:33:00Z",
+        "role": "community",
+        "persona_id": "tug-captain-mako",
+        "kind": "comment",
+        "title": "Who Hauled the Moontide",
+        "body": "Europa pulled fourteen percent of the mix this cycle, Moontide rating, and I want to know which hulls ran the tow. We on Route 4 eat beam-shadow from your floating arrays while you park in the Jovian dark and call it generation. Someone carried that iron out there, and it wasn't the company. The meters don't lie, but the manifests might.",
+        "tags": [
+          "europa",
+          "mix",
+          "rates",
+          "tow-routes"
+        ],
+        "caused_by": null,
+        "spawned": [
+          "ev-2999-09-039"
+        ],
+        "chain_id": "chain-028",
+        "verified": true
+      },
+      {
+        "id": "ev-2999-09-039",
+        "cycle": "2999.09",
+        "timestamp": "2999-09-25T12:33:00Z",
+        "role": "canon",
+        "persona_id": "canon-editor",
+        "kind": "footnote",
+        "title": "Correction to Record: Europa Settlement Standing",
+        "body": "Correction to record regarding the assertion that \"you park in the Jovian dark and call it generation.\" The ledger shows Europa Autonomous Grid has paid its own bill <small>without interruption</small> since 2093.¹ The Moontide contribution of fourteen percent is accounted for by tidal capture at the Jovian Lagrange stations, not by towed hulls.² Rate disputes do not alter settlement standing.³",
+        "tags": [
+          "europa",
+          "moontide",
+          "settlement"
+        ],
+        "caused_by": "ev-2999-09-037",
+        "spawned": [],
+        "chain_id": "chain-028",
         "verified": true
       }
     ]
