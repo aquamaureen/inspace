@@ -60,8 +60,8 @@ def main() -> int:
         json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8"
     )
 
-    # Copy static site files from source location
-    src = Path("/home/mag/inspacepower-site")
+    # Copy static site files from the project-local source tree.
+    src = ROOT / "site"
     for item in src.iterdir():
         if item.is_file():
             shutil.copy2(item, OUTPUT_DIR / item.name)

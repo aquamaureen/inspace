@@ -78,3 +78,15 @@ rules:
         React to the official statement in character. Do not thank the
         utility. Note the statement, remember something older, or question
         the sum without questioning the rate.
+
+  - id: inquiry-ack
+    # Visitor inquiries filed through the v2 form receive an official ack.
+    # Latent until a backend actually injects inquiry events into the ledger.
+    when: { role: community, kind: inquiry }
+    then:
+      persona: ops-central
+      kind: acknowledgment
+      duty: >
+        Acknowledge the visitor inquiry by role and subject. State that the
+        question has been logged and that a full response will be issued in
+        a later cycle if the ledger verifies the facts. Do not apologize.

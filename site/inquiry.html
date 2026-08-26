@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>File an inquiry — In-Space Power</title>
+<meta name="description" content="File a visitor inquiry with In-Space Power. For settlers, tugs, town clerks, and other voices.">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wordmark">
+    <span class="word-in">IN-SPACE</span><span class="word-power">POWER</span>
+  </div>
+  <nav class="site-nav" aria-label="Primary">
+    <a href="/">Statement</a>
+    <a href="/#stream">Notice stream</a>
+    <a href="/#mix">Generation mix</a>
+    <a href="/#tariffs">Tariffs</a>
+    <a href="/#facts">Company facts</a>
+    <a href="/personas">Voices</a>
+    <a href="/inquiry.html" aria-current="page">Inquiry</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero hero--compact">
+    <p class="cycle-label">Visitor correspondence</p>
+    <h1 class="hero-title">File an inquiry.</h1>
+    <p class="hero-lede">Questions, complaints, and corrections from the system are read by the ledger. A response may be issued in a later cycle.</p>
+  </section>
+
+  <section class="inquiry" id="inquiry">
+    <form id="inquiryForm" class="inquiry-form" action="mailto:inquiries@inspacepower.com" method="post" enctype="text/plain" novalidate>
+      <fieldset class="inquiry-fieldset">
+        <legend class="inquiry-legend">Your voice</legend>
+
+        <label class="inquiry-label" for="role">Role</label>
+        <select class="inquiry-select" id="role" name="role" required>
+          <option value="">Select a role…</option>
+          <option value="settler">Settler</option>
+          <option value="tug">Tug operator</option>
+          <option value="town-clerk">Town clerk</option>
+          <option value="historian">Historian</option>
+          <option value="competitor">Competitor</option>
+          <option value="other">Other</option>
+        </select>
+        <p class="inquiry-hint">Used to attribute the inquiry if it enters the notice stream.</p>
+
+        <label class="inquiry-label" for="subject">Subject</label>
+        <input class="inquiry-input" type="text" id="subject" name="subject" maxlength="120" placeholder="e.g., Read interval on Tow Route 7" required>
+
+        <label class="inquiry-label" for="body">Inquiry</label>
+        <textarea class="inquiry-textarea" id="body" name="body" rows="8" maxlength="4000" placeholder="State the question plainly. The ledger prefers specifics to sentiment." required></textarea>
+
+        <label class="inquiry-label" for="contact">Optional contact</label>
+        <input class="inquiry-input" type="text" id="contact" name="contact" maxlength="200" placeholder="Beacon, relay address, or public drop — not required">
+        <p class="inquiry-hint">No contact is required. If provided, it is not stored on this static page.</p>
+      </fieldset>
+
+      <div class="inquiry-actions">
+        <button class="inquiry-submit" type="submit">File inquiry</button>
+        <a class="inquiry-cancel" href="/">Return to statement</a>
+      </div>
+
+      <p class="inquiry-note">This is a statement-fiction prototype. Submissions are routed by your local mail client to <code>inquiries@inspacepower.com</code>; no data is stored on the site.</p>
+
+      <div class="inquiry-confirmation" id="inquiryConfirmation" hidden>
+        <p class="inquiry-confirmation-title">Inquiry staged.</p>
+        <p>Your mail client should open with the message pre-filled. If it does not, copy the text below and send it yourself.</p>
+        <pre class="inquiry-confirmation-body" id="inquiryConfirmationBody"></pre>
+        <a class="inquiry-submit" href="/">Return to statement</a>
+      </div>
+    </form>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p><span class="wordmark-small"><span class="word-in">IN-SPACE</span><span class="word-power">POWER</span></span></p>
+  <p>Utility of record, Sol system · Founded 2041 · Statement cycle 2999.09</p>
+  <p class="footer-note">A statement-fiction prototype. Not a real utility.</p>
+</footer>
+
+<script>
+(function () {
+  const form = document.getElementById('inquiryForm');
+  const confirmation = document.getElementById('inquiryConfirmation');
+  const confirmationBody = document.getElementById('inquiryConfirmationBody');
+
+  form.addEventListener('submit', function (event) {
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      event.preventDefault();
+      return;
+    }
+
+    const role = document.getElementById('role').value;
+    const subject = document.getElementById('subject').value.trim();
+    const body = document.getElementById('body').value.trim();
+    const contact = document.getElementById('contact').value.trim();
+
+    const payload = [
+      'Role: ' + role,
+      'Subject: ' + subject,
+      contact ? 'Contact: ' + contact : '',
+      '',
+      body
+    ].join('\n');
+
+    confirmationBody.textContent = payload;
+    confirmation.hidden = false;
+    form.querySelector('.inquiry-fieldset').disabled = true;
+    form.querySelector('.inquiry-actions').hidden = true;
+    form.querySelector('.inquiry-note').hidden = true;
+
+    // Allow the mailto: to proceed normally; the confirmation is a fallback.
+  });
+})();
+</script>
+</body>
+</html>
