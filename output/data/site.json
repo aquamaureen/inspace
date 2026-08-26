@@ -2,7 +2,7 @@
   "meta": {
     "project": "inspacepower.com",
     "cycle": "2999.09",
-    "updated": "2999-09-26T17:51:00Z"
+    "updated": "2999-09-27T00:46:00Z"
   },
   "personas": [
     {
@@ -1374,6 +1374,88 @@
       "spawned": [],
       "chain_id": "chain-030",
       "verified": true
+    },
+    {
+      "id": "ev-2999-09-044",
+      "cycle": "2999.09",
+      "timestamp": "2999-09-26T23:17:00Z",
+      "role": "community",
+      "persona_id": "tug-captain-mako",
+      "kind": "complaint",
+      "title": "Meter Don't Know Dark from Light",
+      "body": "Beam cuts out while we're threading relay geometry and the hull goes dark, but ISP-UND-7781 keeps its four-second tick like nothing happened. Billing follows the house, they say, and the house don't care if the light's on or not. Been running Route 4 since '87 and still ain't seen a meter that knows the difference between beam-shadow and a proper blackout.",
+      "tags": [
+        "outage",
+        "beam",
+        "tow-route",
+        "meter"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-09-046"
+      ],
+      "chain_id": "chain-031",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-09-045",
+      "cycle": "2999.09",
+      "timestamp": "2999-09-26T23:46:00Z",
+      "role": "community",
+      "persona_id": "halverson-green",
+      "kind": "complaint",
+      "title": "Sunward Rate Applied to Stored Light, Tow Route 4",
+      "body": "I have kept my paper statements since before they drained the cornfield and made it into a hydroponic bay, and I do not trust these automatic reads to tell me what kind of power I am actually receiving. The statement for this cycle shows I am being charged the sunward rate on power that comes from stored light, which by my understanding has not seen the sun since it was put away in whatever battery they keep it in, and I would like someone at the Joint Settlement Authority on Ceres to clarify whether light kept in the dark still qualifies as sunlight for tariff purposes.",
+      "tags": [
+        "rate-dispute",
+        "stored-light",
+        "tariff-clarification"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-09-047"
+      ],
+      "chain_id": "chain-032",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-09-046",
+      "cycle": "2999.09",
+      "timestamp": "2999-09-27T00:17:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "ISP-UND-7781, Route 4 Beamline Handoff",
+      "body": "In-Space Power confirms the scheduled beamline handoff at relay geometry 4-Theta on 2999.09.14. The four-second synchronization pulse on ISP-UND-7781 continued as specified; the meter records received energy, not delivery intent. No charge was issued for the dark interval—reads during a scheduled handoff are classified as advisory and do not trigger billing.",
+      "tags": [
+        "outage",
+        "beam",
+        "meter",
+        "tow-route"
+      ],
+      "caused_by": "ev-2999-09-044",
+      "spawned": [],
+      "chain_id": "chain-031",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-09-047",
+      "cycle": "2999.09",
+      "timestamp": "2999-09-27T00:46:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Rate Classification, Tow Route 4",
+      "body": "In-Space Power confirms that tariff classification is determined by property designation, not generation source. Under the principle that billing follows the house, Porchlight (0.0042/0.0114 credits per megajoule, sunward/shade), Corner Main (0.0061/0.0138 credits per megajoule), Underway (0.0088 credits per megajoule, flat), and First Light (read not billed for first 3 cycles) rates apply according to the registered status and orientation of the premises at time of read. Stored light comprises nine percent of this cycle's generation mix and enters the same distribution network as beam, fusion, and moontide; the tariff schedule does not differentiate by origin. Requests for property reclassification may be submitted to the Joint Settlement Authority on Ceres via payment route ISP-2041.",
+      "tags": [
+        "rate-dispute",
+        "stored-light",
+        "tariff-clarification"
+      ],
+      "caused_by": "ev-2999-09-045",
+      "spawned": [],
+      "chain_id": "chain-032",
+      "verified": true
     }
   ],
   "chains": {
@@ -2512,6 +2594,92 @@
         "caused_by": "ev-2999-09-041",
         "spawned": [],
         "chain_id": "chain-030",
+        "verified": true
+      }
+    ],
+    "chain-031": [
+      {
+        "id": "ev-2999-09-044",
+        "cycle": "2999.09",
+        "timestamp": "2999-09-26T23:17:00Z",
+        "role": "community",
+        "persona_id": "tug-captain-mako",
+        "kind": "complaint",
+        "title": "Meter Don't Know Dark from Light",
+        "body": "Beam cuts out while we're threading relay geometry and the hull goes dark, but ISP-UND-7781 keeps its four-second tick like nothing happened. Billing follows the house, they say, and the house don't care if the light's on or not. Been running Route 4 since '87 and still ain't seen a meter that knows the difference between beam-shadow and a proper blackout.",
+        "tags": [
+          "outage",
+          "beam",
+          "tow-route",
+          "meter"
+        ],
+        "caused_by": null,
+        "spawned": [
+          "ev-2999-09-046"
+        ],
+        "chain_id": "chain-031",
+        "verified": true
+      },
+      {
+        "id": "ev-2999-09-046",
+        "cycle": "2999.09",
+        "timestamp": "2999-09-27T00:17:00Z",
+        "role": "staff",
+        "persona_id": "ops-central",
+        "kind": "acknowledgment",
+        "title": "ISP-UND-7781, Route 4 Beamline Handoff",
+        "body": "In-Space Power confirms the scheduled beamline handoff at relay geometry 4-Theta on 2999.09.14. The four-second synchronization pulse on ISP-UND-7781 continued as specified; the meter records received energy, not delivery intent. No charge was issued for the dark interval—reads during a scheduled handoff are classified as advisory and do not trigger billing.",
+        "tags": [
+          "outage",
+          "beam",
+          "meter",
+          "tow-route"
+        ],
+        "caused_by": "ev-2999-09-044",
+        "spawned": [],
+        "chain_id": "chain-031",
+        "verified": true
+      }
+    ],
+    "chain-032": [
+      {
+        "id": "ev-2999-09-045",
+        "cycle": "2999.09",
+        "timestamp": "2999-09-26T23:46:00Z",
+        "role": "community",
+        "persona_id": "halverson-green",
+        "kind": "complaint",
+        "title": "Sunward Rate Applied to Stored Light, Tow Route 4",
+        "body": "I have kept my paper statements since before they drained the cornfield and made it into a hydroponic bay, and I do not trust these automatic reads to tell me what kind of power I am actually receiving. The statement for this cycle shows I am being charged the sunward rate on power that comes from stored light, which by my understanding has not seen the sun since it was put away in whatever battery they keep it in, and I would like someone at the Joint Settlement Authority on Ceres to clarify whether light kept in the dark still qualifies as sunlight for tariff purposes.",
+        "tags": [
+          "rate-dispute",
+          "stored-light",
+          "tariff-clarification"
+        ],
+        "caused_by": null,
+        "spawned": [
+          "ev-2999-09-047"
+        ],
+        "chain_id": "chain-032",
+        "verified": true
+      },
+      {
+        "id": "ev-2999-09-047",
+        "cycle": "2999.09",
+        "timestamp": "2999-09-27T00:46:00Z",
+        "role": "staff",
+        "persona_id": "ops-central",
+        "kind": "acknowledgment",
+        "title": "Rate Classification, Tow Route 4",
+        "body": "In-Space Power confirms that tariff classification is determined by property designation, not generation source. Under the principle that billing follows the house, Porchlight (0.0042/0.0114 credits per megajoule, sunward/shade), Corner Main (0.0061/0.0138 credits per megajoule), Underway (0.0088 credits per megajoule, flat), and First Light (read not billed for first 3 cycles) rates apply according to the registered status and orientation of the premises at time of read. Stored light comprises nine percent of this cycle's generation mix and enters the same distribution network as beam, fusion, and moontide; the tariff schedule does not differentiate by origin. Requests for property reclassification may be submitted to the Joint Settlement Authority on Ceres via payment route ISP-2041.",
+        "tags": [
+          "rate-dispute",
+          "stored-light",
+          "tariff-clarification"
+        ],
+        "caused_by": "ev-2999-09-045",
+        "spawned": [],
+        "chain_id": "chain-032",
         "verified": true
       }
     ]
