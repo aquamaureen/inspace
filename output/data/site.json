@@ -2,7 +2,7 @@
   "meta": {
     "project": "inspacepower.com",
     "cycle": "2999.09",
-    "updated": "2999-09-27T15:48:00Z"
+    "updated": "2999-09-28T04:33:00Z"
   },
   "personas": [
     {
@@ -1517,6 +1517,67 @@
       "spawned": [],
       "chain_id": "chain-033",
       "verified": true
+    },
+    {
+      "id": "ev-2999-09-051",
+      "cycle": "2999.09",
+      "timestamp": "2999-09-27T23:33:00Z",
+      "role": "community",
+      "persona_id": "europa-grid",
+      "kind": "complaint",
+      "title": "Four-Second Read Gap, Yard Glass",
+      "body": "We record a four-second read gap on the yard glass at cycle 2999.09, second 18. The interval corresponds to a synchronization pulse originating from the Joint Settlement Authority on Ceres. We have reconciled the missing reads against local buffers and no estimated reads were issued. Europa pays its own bill and will continue to keep its own time.",
+      "tags": [
+        "outage",
+        "tow-route-4",
+        "synchronization",
+        "yard-glass"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-09-053"
+      ],
+      "chain_id": "chain-035",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-09-052",
+      "cycle": "2999.09",
+      "timestamp": "2999-09-27T23:49:00Z",
+      "role": "community",
+      "persona_id": "new-sheboygan-clerk",
+      "kind": "comment",
+      "title": "First Light, Plainly Stated",
+      "body": "Settlement 88-Theta wrote in asking what First Light actually covers, and I'll save them the JSA response delay: your first three cycles of reads don't get billed. You're still metered every four seconds like everybody else, but the credits stay in your account until cycle four. Don't mistake it for free porchlights or a break on the water tower pump — the Sheb figured that out back in '11.",
+      "tags": [
+        "first-light",
+        "rates",
+        "new-settlement",
+        "community"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-036",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-09-053",
+      "cycle": "2999.09",
+      "timestamp": "2999-09-28T04:33:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Four-Second Read Gap, Yard Glass — Tow Route 4",
+      "body": "In-Space Power confirms a four-second read gap on the yard glass at Tow Route 4, account ISP-2041, cycle 2999.09 second 18. The interval corresponds to a scheduled synchronization pulse from the Joint Settlement Authority on Ceres, coincident with a relay geometry adjustment and beamline handoff. No estimated reads were issued; the missing interval was reconciled against local buffers. No charge was assessed for the gap. Billing follows the house.",
+      "tags": [
+        "outage",
+        "synchronization",
+        "tow-route-4"
+      ],
+      "caused_by": "ev-2999-09-051",
+      "spawned": [],
+      "chain_id": "chain-035",
+      "verified": true
     }
   ],
   "chains": {
@@ -2806,6 +2867,71 @@
         "caused_by": null,
         "spawned": [],
         "chain_id": "chain-034",
+        "verified": true
+      }
+    ],
+    "chain-035": [
+      {
+        "id": "ev-2999-09-051",
+        "cycle": "2999.09",
+        "timestamp": "2999-09-27T23:33:00Z",
+        "role": "community",
+        "persona_id": "europa-grid",
+        "kind": "complaint",
+        "title": "Four-Second Read Gap, Yard Glass",
+        "body": "We record a four-second read gap on the yard glass at cycle 2999.09, second 18. The interval corresponds to a synchronization pulse originating from the Joint Settlement Authority on Ceres. We have reconciled the missing reads against local buffers and no estimated reads were issued. Europa pays its own bill and will continue to keep its own time.",
+        "tags": [
+          "outage",
+          "tow-route-4",
+          "synchronization",
+          "yard-glass"
+        ],
+        "caused_by": null,
+        "spawned": [
+          "ev-2999-09-053"
+        ],
+        "chain_id": "chain-035",
+        "verified": true
+      },
+      {
+        "id": "ev-2999-09-053",
+        "cycle": "2999.09",
+        "timestamp": "2999-09-28T04:33:00Z",
+        "role": "staff",
+        "persona_id": "ops-central",
+        "kind": "acknowledgment",
+        "title": "Four-Second Read Gap, Yard Glass — Tow Route 4",
+        "body": "In-Space Power confirms a four-second read gap on the yard glass at Tow Route 4, account ISP-2041, cycle 2999.09 second 18. The interval corresponds to a scheduled synchronization pulse from the Joint Settlement Authority on Ceres, coincident with a relay geometry adjustment and beamline handoff. No estimated reads were issued; the missing interval was reconciled against local buffers. No charge was assessed for the gap. Billing follows the house.",
+        "tags": [
+          "outage",
+          "synchronization",
+          "tow-route-4"
+        ],
+        "caused_by": "ev-2999-09-051",
+        "spawned": [],
+        "chain_id": "chain-035",
+        "verified": true
+      }
+    ],
+    "chain-036": [
+      {
+        "id": "ev-2999-09-052",
+        "cycle": "2999.09",
+        "timestamp": "2999-09-27T23:49:00Z",
+        "role": "community",
+        "persona_id": "new-sheboygan-clerk",
+        "kind": "comment",
+        "title": "First Light, Plainly Stated",
+        "body": "Settlement 88-Theta wrote in asking what First Light actually covers, and I'll save them the JSA response delay: your first three cycles of reads don't get billed. You're still metered every four seconds like everybody else, but the credits stay in your account until cycle four. Don't mistake it for free porchlights or a break on the water tower pump — the Sheb figured that out back in '11.",
+        "tags": [
+          "first-light",
+          "rates",
+          "new-settlement",
+          "community"
+        ],
+        "caused_by": null,
+        "spawned": [],
+        "chain_id": "chain-036",
         "verified": true
       }
     ]
