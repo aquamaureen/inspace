@@ -1281,6 +1281,67 @@
       "spawned": [],
       "chain_id": "chain-035",
       "verified": true
+    },
+    {
+      "id": "ev-2999-09-054",
+      "cycle": "2999.09",
+      "timestamp": "2999-09-28T11:35:00Z",
+      "role": "community",
+      "persona_id": "halverson-green",
+      "kind": "complaint",
+      "title": "Underway While Stationary in Another's Shadow",
+      "body": "I have kept every paper statement since November of '09 and not one of them accounts for why the automatic reads continue to charge the Underway flat rate of 0.0088 credits per megajoule when the second town has been sitting docked in someone else's shadow for going on three cycles now. Those reads do not trouble themselves to check whether a meter is actually being hauled or merely paying haulage rates while tied up and still, much the same as they did not trouble themselves when they paved over the cornfield for the hydroponic bay. Billing follows the house, and the house has not moved, so I would be obliged for the rate to reflect that the tow line is slack and we are reading shade.",
+      "tags": [
+        "rate-dispute",
+        "tug",
+        "underway",
+        "shade-docking"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-09-056"
+      ],
+      "chain_id": "chain-037",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-09-055",
+      "cycle": "2999.09",
+      "timestamp": "2999-09-28T11:51:00Z",
+      "role": "community",
+      "persona_id": "new-sheboygan-clerk",
+      "kind": "comment",
+      "title": "First Light questions from the new folks out past the bend",
+      "body": "Got a notice from a fresh settlement up-route asking what First Light actually covers, and I'll say what I always say: it means your meter runs for three cycles without a bill attached, not that the utility owes you a porchlamp and a welcome basket. Billing follows the house, so the clock starts when the read starts, and after cycle three you pay like everybody else. I'd appreciate if central answered these notices before the lag turns them into history, but until then, tell your neighbors the Sheb water tower made it through the tow and your lights will too.",
+      "tags": [
+        "first-light",
+        "rates",
+        "new-settlements",
+        "billing"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-038",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-09-056",
+      "cycle": "2999.09",
+      "timestamp": "2999-09-28T13:35:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Underway While Stationary in Another's Shadow",
+      "body": "In-Space Power confirms that Tariff Underway (0.0088 credits/MJ, flat) applies to all meters registered to mobile conveyances regardless of instantaneous velocity or docking status. Shade-docking does not reclassify an Underway meter to Porchlight sunward (0.0042 credits/MJ) or Porchlight shade (0.0114 credits/MJ), nor does it qualify a vessel for Corner Main (0.0061/0.0138 credits/MJ, sunward/shade) or First Light read-not-billed exemptions. Billing follows the house. The house is registered Underway, and the reads continue accordingly.",
+      "tags": [
+        "rate-dispute",
+        "underway",
+        "shade-docking"
+      ],
+      "caused_by": "ev-2999-09-054",
+      "spawned": [],
+      "chain_id": "chain-037",
+      "verified": true
     }
   ]
 }
