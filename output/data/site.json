@@ -2,7 +2,7 @@
   "meta": {
     "project": "inspacepower.com",
     "cycle": "2999.09",
-    "updated": "2999-09-28T13:35:00Z"
+    "updated": "2999-09-29T06:11:00Z"
   },
   "personas": [
     {
@@ -1639,6 +1639,67 @@
       "spawned": [],
       "chain_id": "chain-037",
       "verified": true
+    },
+    {
+      "id": "ev-2999-09-057",
+      "cycle": "2999.09",
+      "timestamp": "2999-09-28T23:35:00Z",
+      "role": "community",
+      "persona_id": "meter-112",
+      "kind": "comment",
+      "title": "Mass-Battery Flywheel Depot Audit",
+      "body": "The Joint Settlement Authority Ceres has opened an audit of the mass-battery flywheel depots. This meter notes stored light at nine percent of this cycle's mix and expects the sum in those depots to match the settlement ledger. This meter will wait for the reconciliation. Ohio used to have weather that turned without an audit.",
+      "tags": [
+        "regulator",
+        "stored-light",
+        "mass-battery",
+        "flywheel"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-039",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-09-058",
+      "cycle": "2999.09",
+      "timestamp": "2999-09-29T00:11:00Z",
+      "role": "community",
+      "persona_id": "meter-112",
+      "kind": "complaint",
+      "title": "Yard Glass Gap — Synchronization Pulse",
+      "body": "This meter recorded a four-second gap on the yard glass when the synchronization pulse arrived. The pulse is not disputed. This meter questions only the sum, which reads 14,882 megajoules for the cycle. Ohio had weather before it had pulses.",
+      "tags": [
+        "outage",
+        "tow-route-4",
+        "yard-glass",
+        "sync-pulse"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-09-059"
+      ],
+      "chain_id": "chain-040",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-09-059",
+      "cycle": "2999.09",
+      "timestamp": "2999-09-29T06:11:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Yard Glass Gap — Acknowledged",
+      "body": "In-Space Power confirms a four-second gap at Yard Glass, account tow-route-4, coincident with the synchronization pulse. The interval corresponds to a scheduled beamline handoff during relay geometry rotation; the pulse is recorded and undisputed. No charge was issued for the gap interval. The cycle total of 14,882 megajoules stands.",
+      "tags": [
+        "outage",
+        "yard-glass",
+        "sync-pulse"
+      ],
+      "caused_by": "ev-2999-09-058",
+      "spawned": [],
+      "chain_id": "chain-040",
+      "verified": true
     }
   ],
   "chains": {
@@ -3058,6 +3119,71 @@
         "caused_by": null,
         "spawned": [],
         "chain_id": "chain-038",
+        "verified": true
+      }
+    ],
+    "chain-039": [
+      {
+        "id": "ev-2999-09-057",
+        "cycle": "2999.09",
+        "timestamp": "2999-09-28T23:35:00Z",
+        "role": "community",
+        "persona_id": "meter-112",
+        "kind": "comment",
+        "title": "Mass-Battery Flywheel Depot Audit",
+        "body": "The Joint Settlement Authority Ceres has opened an audit of the mass-battery flywheel depots. This meter notes stored light at nine percent of this cycle's mix and expects the sum in those depots to match the settlement ledger. This meter will wait for the reconciliation. Ohio used to have weather that turned without an audit.",
+        "tags": [
+          "regulator",
+          "stored-light",
+          "mass-battery",
+          "flywheel"
+        ],
+        "caused_by": null,
+        "spawned": [],
+        "chain_id": "chain-039",
+        "verified": true
+      }
+    ],
+    "chain-040": [
+      {
+        "id": "ev-2999-09-058",
+        "cycle": "2999.09",
+        "timestamp": "2999-09-29T00:11:00Z",
+        "role": "community",
+        "persona_id": "meter-112",
+        "kind": "complaint",
+        "title": "Yard Glass Gap — Synchronization Pulse",
+        "body": "This meter recorded a four-second gap on the yard glass when the synchronization pulse arrived. The pulse is not disputed. This meter questions only the sum, which reads 14,882 megajoules for the cycle. Ohio had weather before it had pulses.",
+        "tags": [
+          "outage",
+          "tow-route-4",
+          "yard-glass",
+          "sync-pulse"
+        ],
+        "caused_by": null,
+        "spawned": [
+          "ev-2999-09-059"
+        ],
+        "chain_id": "chain-040",
+        "verified": true
+      },
+      {
+        "id": "ev-2999-09-059",
+        "cycle": "2999.09",
+        "timestamp": "2999-09-29T06:11:00Z",
+        "role": "staff",
+        "persona_id": "ops-central",
+        "kind": "acknowledgment",
+        "title": "Yard Glass Gap — Acknowledged",
+        "body": "In-Space Power confirms a four-second gap at Yard Glass, account tow-route-4, coincident with the synchronization pulse. The interval corresponds to a scheduled beamline handoff during relay geometry rotation; the pulse is recorded and undisputed. No charge was issued for the gap interval. The cycle total of 14,882 megajoules stands.",
+        "tags": [
+          "outage",
+          "yard-glass",
+          "sync-pulse"
+        ],
+        "caused_by": "ev-2999-09-058",
+        "spawned": [],
+        "chain_id": "chain-040",
         "verified": true
       }
     ]
