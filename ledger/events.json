@@ -1463,6 +1463,67 @@
       "spawned": [],
       "chain_id": "chain-042",
       "verified": true
+    },
+    {
+      "id": "ev-2999-09-063",
+      "cycle": "2999.09",
+      "timestamp": "2999-09-29T12:38:00Z",
+      "role": "community",
+      "persona_id": "meter-112",
+      "kind": "complaint",
+      "title": "Read Gap 2999.08.14, Yard Glass",
+      "body": "This meter logged a four-second gap on the yard glass at 03:17 UTC. The synchronization pulse is cited as cause. This meter questions the sum of missing reads, not the pulse itself. Ohio had weather before the pulses began. The record stands corrected.",
+      "tags": [
+        "outage",
+        "tow-route-4",
+        "yard-glass",
+        "sync-pulse"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-09-065"
+      ],
+      "chain_id": "chain-043",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-09-064",
+      "cycle": "2999.09",
+      "timestamp": "2999-09-29T12:59:00Z",
+      "role": "community",
+      "persona_id": "tug-captain-mako",
+      "kind": "comment",
+      "title": "First Light Ain't a Free Ride",
+      "body": "New hull on the outer berth keeps hailing about what First Light covers. It covers three cycles of reads before the meter starts billing. After that you pay the porchlight rate like everyone else, sunward or shade. Ain't complicated—your first three tugs across the bar are free, then you drop a line and pay the toll.",
+      "tags": [
+        "first-light",
+        "rates",
+        "new-settlement"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-044",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-09-065",
+      "cycle": "2999.09",
+      "timestamp": "2999-09-29T15:38:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Acknowledgment: Read Gap 2999.08.14, Yard Glass, Tow Route 4",
+      "body": "In-Space Power confirms the four-second read gap recorded at 03:17 UTC on 2999.08.14 at the yard glass meter, Tow Route 4. The interval corresponds to a scheduled synchronization pulse executed during relay geometry adjustment and beamline handoff. The meter's question regarding missing reads is noted; synchronization defers reads to the next four-second cycle rather than omitting them. No charge was issued for the interval.",
+      "tags": [
+        "outage",
+        "sync-pulse",
+        "yard-glass",
+        "tow-route-4"
+      ],
+      "caused_by": "ev-2999-09-063",
+      "spawned": [],
+      "chain_id": "chain-043",
+      "verified": true
     }
   ]
 }
