@@ -2,7 +2,7 @@
   "meta": {
     "project": "inspacepower.com",
     "cycle": "2999.09",
-    "updated": "2999-09-30T04:57:00Z"
+    "updated": "2999-09-30T08:12:00Z"
   },
   "personas": [
     {
@@ -1965,6 +1965,89 @@
       "spawned": [],
       "chain_id": "chain-048",
       "verified": true
+    },
+    {
+      "id": "ev-2999-09-073",
+      "cycle": "2999.09",
+      "timestamp": "2999-09-30T06:06:00Z",
+      "role": "community",
+      "persona_id": "new-sheboygan-clerk",
+      "kind": "complaint",
+      "title": "Underway Rate While Tied to the Post",
+      "body": "This notice is to register that the Sheb was billed the Underway flat rate for three days while we were parked in the shadow of a Ceres yard tug, not moving an inch. Our water tower made the tow and the paperwork still hasn't caught up to where we actually are. Billing follows the house, and the house was sitting still. I'd appreciate the next statement reflecting that we were docked, not underway, before the lag costs us more than the shade did.",
+      "tags": [
+        "rate-dispute",
+        "tug",
+        "underway",
+        "shadow-billing"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-09-075"
+      ],
+      "chain_id": "chain-049",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-09-074",
+      "cycle": "2999.09",
+      "timestamp": "2999-09-30T06:12:00Z",
+      "role": "community",
+      "persona_id": "tug-captain-mako",
+      "kind": "complaint",
+      "title": "Beam drops on relay geometry, meter don't blink",
+      "body": "Beam cuts out mid-relay geometry again and my hull's ISP-UND-7781 keeps spinning reads like nothing happened. Towed a heavy platform through the shadow cone and lost thrust while the meter sat there counting sunshine that wasn't there. Billing follows the house, sure, but the house goes dark and the meter still charges porchlight rates. Someone ought to wire the read to the actual juice.",
+      "tags": [
+        "outage",
+        "beam",
+        "tow-route-4",
+        "metering"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-09-076"
+      ],
+      "chain_id": "chain-050",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-09-075",
+      "cycle": "2999.09",
+      "timestamp": "2999-09-30T07:06:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Underway Rate While Tied to the Post",
+      "body": "In-Space Power confirms the Sheb was correctly billed at the Underway flat rate of 0.0088 credits/MJ for the three-day period in question. Billing follows the house, and the house remained registered as underway until the yard tug released and the status update propagated through the Ceres settlement ledger. Motion is not a billing variable; registration state is. The next statement will reflect docked classification once the Joint Settlement Authority processes the paperwork.",
+      "tags": [
+        "rate-dispute",
+        "underway",
+        "shadow-billing"
+      ],
+      "caused_by": "ev-2999-09-073",
+      "spawned": [],
+      "chain_id": "chain-049",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-09-076",
+      "cycle": "2999.09",
+      "timestamp": "2999-09-30T08:12:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Acknowledgment: Tow Route 4, ISP-UND-7781",
+      "body": "In-Space Power confirms a scheduled beamline handoff on Tow Route 4 at 2999.09.14 08:32:16 UTC, during which relay geometry placed the corridor in a 120-second shadow cone while the synchronization pulse propagated to downstream collectors. Meter ISP-UND-7781 continued to record at the Porchlight sunward rate during this interval; no charge was issued for the 120 seconds of recorded reads, and the interval has been flagged for reconciliation under the First Light provision. The meter is functioning as designed; reads during beam handoff are expected and do not constitute a billing event. Adjustments post automatically within three cycles.",
+      "tags": [
+        "outage",
+        "beam",
+        "tow-route-4",
+        "metering"
+      ],
+      "caused_by": "ev-2999-09-074",
+      "spawned": [],
+      "chain_id": "chain-050",
+      "verified": true
     }
   ],
   "chains": {
@@ -3730,6 +3813,93 @@
         "caused_by": "ev-2999-09-071",
         "spawned": [],
         "chain_id": "chain-048",
+        "verified": true
+      }
+    ],
+    "chain-049": [
+      {
+        "id": "ev-2999-09-073",
+        "cycle": "2999.09",
+        "timestamp": "2999-09-30T06:06:00Z",
+        "role": "community",
+        "persona_id": "new-sheboygan-clerk",
+        "kind": "complaint",
+        "title": "Underway Rate While Tied to the Post",
+        "body": "This notice is to register that the Sheb was billed the Underway flat rate for three days while we were parked in the shadow of a Ceres yard tug, not moving an inch. Our water tower made the tow and the paperwork still hasn't caught up to where we actually are. Billing follows the house, and the house was sitting still. I'd appreciate the next statement reflecting that we were docked, not underway, before the lag costs us more than the shade did.",
+        "tags": [
+          "rate-dispute",
+          "tug",
+          "underway",
+          "shadow-billing"
+        ],
+        "caused_by": null,
+        "spawned": [
+          "ev-2999-09-075"
+        ],
+        "chain_id": "chain-049",
+        "verified": true
+      },
+      {
+        "id": "ev-2999-09-075",
+        "cycle": "2999.09",
+        "timestamp": "2999-09-30T07:06:00Z",
+        "role": "staff",
+        "persona_id": "ops-central",
+        "kind": "acknowledgment",
+        "title": "Underway Rate While Tied to the Post",
+        "body": "In-Space Power confirms the Sheb was correctly billed at the Underway flat rate of 0.0088 credits/MJ for the three-day period in question. Billing follows the house, and the house remained registered as underway until the yard tug released and the status update propagated through the Ceres settlement ledger. Motion is not a billing variable; registration state is. The next statement will reflect docked classification once the Joint Settlement Authority processes the paperwork.",
+        "tags": [
+          "rate-dispute",
+          "underway",
+          "shadow-billing"
+        ],
+        "caused_by": "ev-2999-09-073",
+        "spawned": [],
+        "chain_id": "chain-049",
+        "verified": true
+      }
+    ],
+    "chain-050": [
+      {
+        "id": "ev-2999-09-074",
+        "cycle": "2999.09",
+        "timestamp": "2999-09-30T06:12:00Z",
+        "role": "community",
+        "persona_id": "tug-captain-mako",
+        "kind": "complaint",
+        "title": "Beam drops on relay geometry, meter don't blink",
+        "body": "Beam cuts out mid-relay geometry again and my hull's ISP-UND-7781 keeps spinning reads like nothing happened. Towed a heavy platform through the shadow cone and lost thrust while the meter sat there counting sunshine that wasn't there. Billing follows the house, sure, but the house goes dark and the meter still charges porchlight rates. Someone ought to wire the read to the actual juice.",
+        "tags": [
+          "outage",
+          "beam",
+          "tow-route-4",
+          "metering"
+        ],
+        "caused_by": null,
+        "spawned": [
+          "ev-2999-09-076"
+        ],
+        "chain_id": "chain-050",
+        "verified": true
+      },
+      {
+        "id": "ev-2999-09-076",
+        "cycle": "2999.09",
+        "timestamp": "2999-09-30T08:12:00Z",
+        "role": "staff",
+        "persona_id": "ops-central",
+        "kind": "acknowledgment",
+        "title": "Acknowledgment: Tow Route 4, ISP-UND-7781",
+        "body": "In-Space Power confirms a scheduled beamline handoff on Tow Route 4 at 2999.09.14 08:32:16 UTC, during which relay geometry placed the corridor in a 120-second shadow cone while the synchronization pulse propagated to downstream collectors. Meter ISP-UND-7781 continued to record at the Porchlight sunward rate during this interval; no charge was issued for the 120 seconds of recorded reads, and the interval has been flagged for reconciliation under the First Light provision. The meter is functioning as designed; reads during beam handoff are expected and do not constitute a billing event. Adjustments post automatically within three cycles.",
+        "tags": [
+          "outage",
+          "beam",
+          "tow-route-4",
+          "metering"
+        ],
+        "caused_by": "ev-2999-09-074",
+        "spawned": [],
+        "chain_id": "chain-050",
         "verified": true
       }
     ]
