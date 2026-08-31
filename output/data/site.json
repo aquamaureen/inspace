@@ -2,7 +2,7 @@
   "meta": {
     "project": "inspacepower.com",
     "cycle": "2999.09",
-    "updated": "2999-09-29T21:14:00Z"
+    "updated": "2999-09-30T04:57:00Z"
   },
   "personas": [
     {
@@ -1904,6 +1904,67 @@
       "spawned": [],
       "chain_id": "chain-046",
       "verified": true
+    },
+    {
+      "id": "ev-2999-09-070",
+      "cycle": "2999.09",
+      "timestamp": "2999-09-29T22:35:00Z",
+      "role": "community",
+      "persona_id": "halverson-green",
+      "kind": "comment",
+      "title": "Cycle Review Filed with Ceres",
+      "body": "The Joint Settlement Authority Ceres has opened its filing window for the 2999.09 cycle review, and I have set my paper statements out on the table the way I always do, because the automatic reads still cannot account for the cornfield that became a hydroponic bay and never will. I have kept every statement since 2709 and I intend to keep these too, since a printed page does not revise itself when the regulators change their minds. If anyone on the second towed town wishes to compare their figures before the review closes, my door is open and the kettle works.",
+      "tags": [
+        "regulator",
+        "statement",
+        "cycle-review",
+        "tow-route-4"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-047",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-09-071",
+      "cycle": "2999.09",
+      "timestamp": "2999-09-29T22:57:00Z",
+      "role": "community",
+      "persona_id": "europa-grid",
+      "kind": "complaint",
+      "title": "Porchlight Active Through Sync Pulse 4491",
+      "body": "At 2999.09.14 cycle, second 31,882, a porchlight at Sector 7-Gate remained active through synchronization pulse 4491. We recorded 14.2 megajoules drawn during the pulse window. The responsible party will note that Porchlight shade rates apply; we do not adjust for inattention. Europa pays its own bill and expects its residents to observe the pulse schedule.",
+      "tags": [
+        "billing",
+        "sync",
+        "porchlight",
+        "europa"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-09-072"
+      ],
+      "chain_id": "chain-048",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-09-072",
+      "cycle": "2999.09",
+      "timestamp": "2999-09-30T04:57:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Porchlight Draw During Pulse 4491",
+      "body": "In-Space Power confirms the 14.2 megajoules drawn at Sector 7-Gate during synchronization pulse 4491 are billed to the registered porchlight account at the shade rate of 0.0114 credits per megajoule. Billing follows the house; the meter does not distinguish between deliberate draw and inattention. No adjustment will be issued.",
+      "tags": [
+        "billing",
+        "porchlight",
+        "europa"
+      ],
+      "caused_by": "ev-2999-09-071",
+      "spawned": [],
+      "chain_id": "chain-048",
+      "verified": true
     }
   ],
   "chains": {
@@ -3604,6 +3665,71 @@
         "caused_by": "ev-2999-09-067",
         "spawned": [],
         "chain_id": "chain-046",
+        "verified": true
+      }
+    ],
+    "chain-047": [
+      {
+        "id": "ev-2999-09-070",
+        "cycle": "2999.09",
+        "timestamp": "2999-09-29T22:35:00Z",
+        "role": "community",
+        "persona_id": "halverson-green",
+        "kind": "comment",
+        "title": "Cycle Review Filed with Ceres",
+        "body": "The Joint Settlement Authority Ceres has opened its filing window for the 2999.09 cycle review, and I have set my paper statements out on the table the way I always do, because the automatic reads still cannot account for the cornfield that became a hydroponic bay and never will. I have kept every statement since 2709 and I intend to keep these too, since a printed page does not revise itself when the regulators change their minds. If anyone on the second towed town wishes to compare their figures before the review closes, my door is open and the kettle works.",
+        "tags": [
+          "regulator",
+          "statement",
+          "cycle-review",
+          "tow-route-4"
+        ],
+        "caused_by": null,
+        "spawned": [],
+        "chain_id": "chain-047",
+        "verified": true
+      }
+    ],
+    "chain-048": [
+      {
+        "id": "ev-2999-09-071",
+        "cycle": "2999.09",
+        "timestamp": "2999-09-29T22:57:00Z",
+        "role": "community",
+        "persona_id": "europa-grid",
+        "kind": "complaint",
+        "title": "Porchlight Active Through Sync Pulse 4491",
+        "body": "At 2999.09.14 cycle, second 31,882, a porchlight at Sector 7-Gate remained active through synchronization pulse 4491. We recorded 14.2 megajoules drawn during the pulse window. The responsible party will note that Porchlight shade rates apply; we do not adjust for inattention. Europa pays its own bill and expects its residents to observe the pulse schedule.",
+        "tags": [
+          "billing",
+          "sync",
+          "porchlight",
+          "europa"
+        ],
+        "caused_by": null,
+        "spawned": [
+          "ev-2999-09-072"
+        ],
+        "chain_id": "chain-048",
+        "verified": true
+      },
+      {
+        "id": "ev-2999-09-072",
+        "cycle": "2999.09",
+        "timestamp": "2999-09-30T04:57:00Z",
+        "role": "staff",
+        "persona_id": "ops-central",
+        "kind": "acknowledgment",
+        "title": "Porchlight Draw During Pulse 4491",
+        "body": "In-Space Power confirms the 14.2 megajoules drawn at Sector 7-Gate during synchronization pulse 4491 are billed to the registered porchlight account at the shade rate of 0.0114 credits per megajoule. Billing follows the house; the meter does not distinguish between deliberate draw and inattention. No adjustment will be issued.",
+        "tags": [
+          "billing",
+          "porchlight",
+          "europa"
+        ],
+        "caused_by": "ev-2999-09-071",
+        "spawned": [],
+        "chain_id": "chain-048",
         "verified": true
       }
     ]
