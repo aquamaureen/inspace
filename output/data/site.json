@@ -2,7 +2,7 @@
   "meta": {
     "project": "inspacepower.com",
     "cycle": "2999.10",
-    "updated": "2999-10-09T19:13:00Z"
+    "updated": "2999-10-10T01:52:00Z"
   },
   "personas": [
     {
@@ -2231,6 +2231,67 @@
       "spawned": [],
       "chain_id": "chain-055",
       "verified": true
+    },
+    {
+      "id": "ev-2999-10-010",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-09T20:52:00Z",
+      "role": "community",
+      "persona_id": "europa-grid",
+      "kind": "complaint",
+      "title": "Four-Second Read Gap, Yard Glass Sector 7",
+      "body": "On cycle 2999.10, at second 14:22:08, a synchronization pulse from Ceres interrupted the yard glass read stream for exactly four seconds. We note the gap. We do not bill for it. Billing follows the house, and Europa pays its own bill on payment route ISP-2041 without requiring the Joint Settlement Authority to prompt us. The next read issued at second 14:22:12 carried the full meter state. We recommend Ceres adjust its pulse schedule before the next cycle.",
+      "tags": [
+        "outage",
+        "tow-route-4",
+        "synchronization",
+        "yard-glass"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-10-012"
+      ],
+      "chain_id": "chain-057",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-011",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-09T21:24:00Z",
+      "role": "community",
+      "persona_id": "new-sheboygan-clerk",
+      "kind": "comment",
+      "title": "Third Free Cycle Wrapping Up on First Light Meter ISP-TR4-NS-001",
+      "body": "The Sheb's First Light meter has been reading free for two full cycles now, and the third one clocks out next Tuesday. After that the credits start counting like they do everywhere else, so don't come to my window surprised when the statement shows a number. I've told central billing three times the notice took four days to propagate out here on Tow Route 4, but the lag is what it is. Water tower's still standing though, so we've got that going for us.",
+      "tags": [
+        "first-light",
+        "rates",
+        "new-sheboygan",
+        "tow-route-4"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-058",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-012",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-10T01:52:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Read Gap Acknowledged, Yard Glass Sector 7",
+      "body": "In-Space Power confirms a four-second read gap at Yard Glass Sector 7 during the synchronization pulse at 14:22:08, cycle 2999.10. The interval corresponds to a scheduled relay geometry handoff between the Ceres beamline and the yard glass read array; meter state was preserved and reconciled at 14:22:12. No charge was issued for the interval. Billing follows the house.",
+      "tags": [
+        "outage",
+        "yard-glass",
+        "synchronization"
+      ],
+      "caused_by": "ev-2999-10-010",
+      "spawned": [],
+      "chain_id": "chain-057",
+      "verified": true
     }
   ],
   "chains": {
@@ -4278,6 +4339,71 @@
         "caused_by": null,
         "spawned": [],
         "chain_id": "chain-056",
+        "verified": true
+      }
+    ],
+    "chain-057": [
+      {
+        "id": "ev-2999-10-010",
+        "cycle": "2999.10",
+        "timestamp": "2999-10-09T20:52:00Z",
+        "role": "community",
+        "persona_id": "europa-grid",
+        "kind": "complaint",
+        "title": "Four-Second Read Gap, Yard Glass Sector 7",
+        "body": "On cycle 2999.10, at second 14:22:08, a synchronization pulse from Ceres interrupted the yard glass read stream for exactly four seconds. We note the gap. We do not bill for it. Billing follows the house, and Europa pays its own bill on payment route ISP-2041 without requiring the Joint Settlement Authority to prompt us. The next read issued at second 14:22:12 carried the full meter state. We recommend Ceres adjust its pulse schedule before the next cycle.",
+        "tags": [
+          "outage",
+          "tow-route-4",
+          "synchronization",
+          "yard-glass"
+        ],
+        "caused_by": null,
+        "spawned": [
+          "ev-2999-10-012"
+        ],
+        "chain_id": "chain-057",
+        "verified": true
+      },
+      {
+        "id": "ev-2999-10-012",
+        "cycle": "2999.10",
+        "timestamp": "2999-10-10T01:52:00Z",
+        "role": "staff",
+        "persona_id": "ops-central",
+        "kind": "acknowledgment",
+        "title": "Read Gap Acknowledged, Yard Glass Sector 7",
+        "body": "In-Space Power confirms a four-second read gap at Yard Glass Sector 7 during the synchronization pulse at 14:22:08, cycle 2999.10. The interval corresponds to a scheduled relay geometry handoff between the Ceres beamline and the yard glass read array; meter state was preserved and reconciled at 14:22:12. No charge was issued for the interval. Billing follows the house.",
+        "tags": [
+          "outage",
+          "yard-glass",
+          "synchronization"
+        ],
+        "caused_by": "ev-2999-10-010",
+        "spawned": [],
+        "chain_id": "chain-057",
+        "verified": true
+      }
+    ],
+    "chain-058": [
+      {
+        "id": "ev-2999-10-011",
+        "cycle": "2999.10",
+        "timestamp": "2999-10-09T21:24:00Z",
+        "role": "community",
+        "persona_id": "new-sheboygan-clerk",
+        "kind": "comment",
+        "title": "Third Free Cycle Wrapping Up on First Light Meter ISP-TR4-NS-001",
+        "body": "The Sheb's First Light meter has been reading free for two full cycles now, and the third one clocks out next Tuesday. After that the credits start counting like they do everywhere else, so don't come to my window surprised when the statement shows a number. I've told central billing three times the notice took four days to propagate out here on Tow Route 4, but the lag is what it is. Water tower's still standing though, so we've got that going for us.",
+        "tags": [
+          "first-light",
+          "rates",
+          "new-sheboygan",
+          "tow-route-4"
+        ],
+        "caused_by": null,
+        "spawned": [],
+        "chain_id": "chain-058",
         "verified": true
       }
     ]
