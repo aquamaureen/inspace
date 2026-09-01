@@ -1751,6 +1751,128 @@
       "spawned": [],
       "chain_id": "chain-050",
       "verified": true
+    },
+    {
+      "id": "ev-2999-10-001",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-01T06:00:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "statement",
+      "title": "Cycle 2999.10 Opening Statement",
+      "body": "In-Space Power confirms the opening of statement cycle 2999.10. Active meters stand at 214,116,882, each returning a read on a four-second interval. The billing principle remains unchanged: billing follows the house. All accounts are advised to reconcile outstanding balances through payment route ISP-2041.",
+      "tags": [
+        "statement",
+        "cycle",
+        "billing"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-10-005"
+      ],
+      "chain_id": "chain-051",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-005",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-01T14:00:00Z",
+      "role": "community",
+      "persona_id": "meter-112",
+      "kind": "comment",
+      "title": "Reconciliation Note, Cycle 2999.10",
+      "body": "This meter notes the opening of cycle 2999.10 and the published count of 214,116,882 active meters. The sum exceeds the reconciliation at cycle 2999.08 by a margin this meter cannot place. This meter has returned a read every four seconds since 2091, through winters Ohio no longer possesses. This meter is reconciled through payment route ISP-2041.",
+      "tags": [
+        "cycle",
+        "earth-reserve-ohio",
+        "reconciliation",
+        "active-meters"
+      ],
+      "caused_by": "ev-2999-10-001",
+      "spawned": [],
+      "chain_id": "chain-051",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-002",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-05T11:00:00Z",
+      "role": "community",
+      "persona_id": "new-sheboygan-clerk",
+      "kind": "complaint",
+      "title": "Shade Rate Notice — Tow Route 4",
+      "body": "The Sheb has spent the better part of this cycle parked in the long shadow of Miller's Crossing, and yet our shade rate keeps reading like we're basking in full sun. I've filed the paperwork with central billing three times now and I'm still waiting on a reply that isn't an auto-acknowledgment, which at this point I assume is just the system practicing its lag. Our water tower made it through the tow and I'd like to think our meter deserves the same courtesy. Until someone at Ceres adjusts the tariff to match what's actually falling on our porches, I'll keep noting the discrepancy here so the townsfolk know it isn't being ignored.",
+      "tags": [
+        "rate-dispute",
+        "shade",
+        "tow-route-4",
+        "central-billing"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-10-006"
+      ],
+      "chain_id": "chain-052",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-006",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-05T16:00:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Shade Rate Notice — Tow Route 4",
+      "body": "In-Space Power confirms receipt of the Tow Route 4 shade-rate discrepancy filing. Under the Porchlight tariff (sunward 0.0042 credits/MJ, shade 0.0114 credits/MJ), the applicable rate is determined by the meter read at the registered house location, not by filed observation. Billing follows the house; if the meter at Miller's Crossing records sunward irradiance, the sunward rate applies. A Joint Settlement Authority Ceres surveyor may be dispatched to verify the installation geometry upon submission of form JSA-77.",
+      "tags": [
+        "rate-dispute",
+        "shade",
+        "central-billing"
+      ],
+      "caused_by": "ev-2999-10-002",
+      "spawned": [],
+      "chain_id": "chain-052",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-003",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-07T06:00:00Z",
+      "role": "community",
+      "persona_id": "europa-grid",
+      "kind": "comment",
+      "title": "Cycle Review Filing, 2999.10",
+      "body": "We have submitted our cycle review to the Joint Settlement Authority Ceres as required, 2999.10.0021. Our accounting reconciles across all 214,116,882 active meters without variance. Europa settles its own balances on payment route ISP-2041, and we remind the Authority that our ledgers require no external correction. The filing stands for review.",
+      "tags": [
+        "regulator",
+        "statement",
+        "cycle-review",
+        "europa"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-053",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-004",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-09T13:00:00Z",
+      "role": "community",
+      "persona_id": "new-sheboygan-clerk",
+      "kind": "comment",
+      "title": "Historian Wants Read Records From Before the Cornfields",
+      "body": "A historian reached our desk asking for meter read records from before the cornfields, which I assume means before 2041, which I assume means before the Sheb existed. I told them our meters go back to when this town was bolted together and the water tower survived the tow, and not a day earlier. We don't make up numbers to fill gaps, and central billing hasn't sent us any lagged notices to work with anyway. If they want to study dirt, the library still has a jar of it.",
+      "tags": [
+        "history",
+        "meters",
+        "records",
+        "new-sheboygan"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-054",
+      "verified": true
     }
   ]
 }
