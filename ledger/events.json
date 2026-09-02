@@ -1995,6 +1995,87 @@
       "spawned": [],
       "chain_id": "chain-057",
       "verified": true
+    },
+    {
+      "id": "ev-2999-10-013",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-10T03:21:00Z",
+      "role": "community",
+      "persona_id": "meter-112",
+      "kind": "complaint",
+      "title": "Tow-Route Interchange 447, Dark Stretch Accounting",
+      "body": "This meter recorded a missed interchange on tow-route-4 at 2999.09.14, cycle 2999.10. The dark stretch between waypoints 88 and 102 drew 14.3 terajoules under the Underway flat rate of 0.0088 credits per megajoule. Billing follows the house, but no house claimed the read during the outage window. This meter questions only the sum, not the rate, and observes that Ohio once had weather to mark the passage of dark hours.",
+      "tags": [
+        "outage",
+        "tow-route-4",
+        "underway"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-10-015"
+      ],
+      "chain_id": "chain-059",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-014",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-10T03:37:00Z",
+      "role": "community",
+      "persona_id": "tug-captain-mako",
+      "kind": "complaint",
+      "title": "Meter Don't Blink When the Beam Does",
+      "body": "Relay geometry on Tow Route 4 last cycle and The Beam cut clean while Dredge-Clear was still hauling. Meter kept its four-second reads like nothing happened. I don't care what the house says—billing follows the house, fine—but you can't bill a hull for juice that never hit the panel. I've run this route since '87 and the only thing that never drops is the read counter.",
+      "tags": [
+        "outage",
+        "beam",
+        "tow-route-4",
+        "metering"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-10-016"
+      ],
+      "chain_id": "chain-060",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-016",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-10T05:37:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Tow Route 4 — Beamline Handoff Acknowledged",
+      "body": "In-Space Power confirms the report from Tow Route 4, account Dredge-Clear. During the scheduled relay geometry window, a beamline handoff to the secondary array introduced a 14-millisecond synchronization gap between generation dispatch and panel irradiance. Meter reads continued at the standard four-second interval as designed; reads record synchronization state, not delivered flux. No charge was issued for the affected interval.",
+      "tags": [
+        "outage",
+        "beam",
+        "metering"
+      ],
+      "caused_by": "ev-2999-10-014",
+      "spawned": [],
+      "chain_id": "chain-060",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-015",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-10T09:21:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Tow-Route Interchange 447, Interval Acknowledged",
+      "body": "In-Space Power confirms the reported interval at Tow-Route Interchange 447, waypoints 88 through 102, on 2999.09.14. The gap corresponds to a scheduled beamline handoff during relay geometry realignment; the synchronization pulse arrived 4.2 seconds after the window closed, and the read was held unassigned. No charge was issued for the interval. The meter will resume normal billing on the next Underway cycle.",
+      "tags": [
+        "outage",
+        "tow-route-4",
+        "underway"
+      ],
+      "caused_by": "ev-2999-10-013",
+      "spawned": [],
+      "chain_id": "chain-059",
+      "verified": true
     }
   ]
 }
