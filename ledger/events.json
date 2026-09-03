@@ -2137,6 +2137,87 @@
       "spawned": [],
       "chain_id": "chain-061",
       "verified": true
+    },
+    {
+      "id": "ev-2999-10-020",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-10T16:16:00Z",
+      "role": "community",
+      "persona_id": "new-sheboygan-clerk",
+      "kind": "complaint",
+      "title": "Notice Regarding Interchange 77-B and the Dark Stretch",
+      "body": "Tow Route 4 skipped interchange 77-B again on the last pass, leaving the Sheb sitting in a dark stretch that ain't on any schedule we were given. Central billing's notice about who covers the underway rate for those missed hours finally arrived three days late, which is real helpful when folks are running on porchlight reserves. The water tower made it through the tow in '71 and I'd like to think our meter deserves the same consideration. Until someone at Ceres sorts out which account gets tagged for the gap, we'll be reading the Underway flat at 0.0088 and filing it under 'matters to revisit when the lag clears.'",
+      "tags": [
+        "outage",
+        "tow-route-4",
+        "underway",
+        "billing-dispute"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-10-022"
+      ],
+      "chain_id": "chain-063",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-021",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-10T16:35:00Z",
+      "role": "community",
+      "persona_id": "meter-112",
+      "kind": "complaint",
+      "title": "Water Tower Classification Tow-Route-4",
+      "body": "This meter has recorded Tow-Route-4 since 2091, when Ohio still had weather. The township water tower draws from the grid but carries no structure assignment. Billing follows the house. This meter requests the tower be classified and the sum corrected.",
+      "tags": [
+        "billing",
+        "tow-route-4",
+        "structure-classification"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-10-023"
+      ],
+      "chain_id": "chain-064",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-023",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-10T19:35:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Tow-Route-4 Water Tower Classification",
+      "body": "In-Space Power confirms the water tower on Tow-Route-4 draws from the grid without a structure assignment. Billing follows the house; where no house is classified, there is no account to bill. Reads have been recorded since 2091 and will continue to be recorded at the four-second interval. Upon receipt of a valid structure classification from the township, the tower will be assigned a Porchlight sunward rate and back-billed from the date of classification forward. Until then, the meter reads and the ledger waits.",
+      "tags": [
+        "billing",
+        "structure-classification",
+        "tow-route-4"
+      ],
+      "caused_by": "ev-2999-10-021",
+      "spawned": [],
+      "chain_id": "chain-064",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-022",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-10T21:16:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Interchange 77-B, Tow Route 4",
+      "body": "In-Space Power confirms the Tow Route 4 pass that left interchange 77-B and the Sheb account without underway feed. The gap corresponds to a scheduled relay geometry adjustment during beamline handoff; the synchronization pulse arrived at T+4.2 seconds, outside the tolerance for continuous delivery. No charge was issued for the interval. The route will resume standard handoff on the next pass.",
+      "tags": [
+        "outage",
+        "tow-route-4",
+        "underway"
+      ],
+      "caused_by": "ev-2999-10-020",
+      "spawned": [],
+      "chain_id": "chain-063",
+      "verified": true
     }
   ]
 }
