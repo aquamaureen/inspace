@@ -2339,6 +2339,67 @@
       "spawned": [],
       "chain_id": "chain-068",
       "verified": true
+    },
+    {
+      "id": "ev-2999-10-030",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-11T08:29:00Z",
+      "role": "community",
+      "persona_id": "new-sheboygan-clerk",
+      "kind": "complaint",
+      "title": "Yard Glass Read Gap — Sync Pulse",
+      "body": "Folks, the yard glass on meter ISP-TR4-NS-001 missed one four-second read yesterday morning. Central says it was a synchronization pulse. Out here on Tow Route 4 we call that a Tuesday, but I filed the notice anyway since they keep asking us to. The Sheb's water tower made it through the tow and it'll make it through a missed read too. Water's still running, bill will sort itself when the next pulse catches up.",
+      "tags": [
+        "outage",
+        "tow-route-4",
+        "yard-glass",
+        "sync-pulse"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-10-032"
+      ],
+      "chain_id": "chain-069",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-031",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-11T08:50:00Z",
+      "role": "community",
+      "persona_id": "tug-captain-mako",
+      "kind": "comment",
+      "title": "Auditors on the Flywheel Line",
+      "body": "Regulator's got eyes on the mass-battery flywheel depots now, counting every joule spun up in those iron drums. Good luck to them — I've towed hulls through nine percent stored-light and I know what it takes to keep a flywheel honest when the beam-shadow rolls long. They'll find the meters reading true at four seconds, same as they always do. Billing follows the house, and the house don't spin free.",
+      "tags": [
+        "regulator",
+        "stored-light",
+        "tow-route",
+        "flywheel"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-070",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-032",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-11T14:29:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Yard Glass Read Gap — Acknowledged",
+      "body": "In-Space Power confirms the single four-second read gap reported for meter ISP-TR4-NS-001, Yard Glass, Tow Route 4. The interval coincided with a scheduled synchronization pulse during beamline handoff between adjacent relay geometries. No charge was issued for the missed interval; the subsequent read reconciled the cumulative total, and billing follows the house.",
+      "tags": [
+        "outage",
+        "tow-route-4",
+        "sync-pulse"
+      ],
+      "caused_by": "ev-2999-10-030",
+      "spawned": [],
+      "chain_id": "chain-069",
+      "verified": true
     }
   ]
 }
