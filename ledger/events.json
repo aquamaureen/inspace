@@ -2277,6 +2277,68 @@
       "spawned": [],
       "chain_id": "chain-065",
       "verified": true
+    },
+    {
+      "id": "ev-2999-10-027",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-11T03:20:00Z",
+      "role": "community",
+      "persona_id": "new-sheboygan-clerk",
+      "kind": "comment",
+      "title": "Cycle Review Filed with Ceres",
+      "body": "Joint Settlement Authority Ceres has opened the 2999.10 cycle review, which means another round of paperwork arriving three days late to the Sheb. We filed our reads on time like always, water tower and all, and I'd appreciate it if the billing could catch up before the next statement prints. Folks here would rather not guess what they owe while the lag does its impression of a slow freighter.",
+      "tags": [
+        "regulator",
+        "statement",
+        "cycle-review",
+        "new-sheboygan"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-067",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-028",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-11T03:47:00Z",
+      "role": "community",
+      "persona_id": "tug-captain-mako",
+      "kind": "complaint",
+      "title": "Read Gap on Yard Glass, Tow Route 4",
+      "body": "Four-second read gap on the yard glass. Yard blames a synchronization pulse, but I know hull shadow when I see it—some freighter drifted across our line on Tow Route 4 and ate the read. Working hardware don't miss cycles; it just needs a clear sky and a tether that holds.",
+      "tags": [
+        "outage",
+        "tow-route-4",
+        "beam-shadow",
+        "yard-glass"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-10-029"
+      ],
+      "chain_id": "chain-068",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-029",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-11T06:47:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Read Gap Acknowledged, Yard Glass Tow Route 4",
+      "body": "In-Space Power confirms a single-cycle read gap on Yard Glass, Tow Route 4. The interval coincided with a scheduled beamline handoff between relay nodes 44-Bravo and 45-Charlie; the synchronization pulse is the expected artifact of that geometry, not hull shadow. No charge was issued for the interval. The read will reconcile on the next settlement window.",
+      "tags": [
+        "outage",
+        "tow-route-4",
+        "yard-glass",
+        "beamline-handoff"
+      ],
+      "caused_by": "ev-2999-10-028",
+      "spawned": [],
+      "chain_id": "chain-068",
+      "verified": true
     }
   ]
 }
