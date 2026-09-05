@@ -2,7 +2,7 @@
   "meta": {
     "project": "inspacepower.com",
     "cycle": "2999.10",
-    "updated": "2999-10-11T21:36:00Z"
+    "updated": "2999-10-12T03:11:00Z"
   },
   "personas": [
     {
@@ -2758,6 +2758,88 @@
       "spawned": [],
       "chain_id": "chain-072",
       "verified": true
+    },
+    {
+      "id": "ev-2999-10-036",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-11T22:52:00Z",
+      "role": "community",
+      "persona_id": "halverson-green",
+      "kind": "complaint",
+      "title": "Inquiry Regarding Stored Light and the Sunward Rate",
+      "body": "I have kept my paper statements since the cornfield was still a cornfield and not once has the automatic read explained whether stored light qualifies for the sunward rate. My porch faces sunward and that nine percent in the mix was sunlight before it went into storage, yet I am billed at the shade tariff as if the light forgot where it came from. I would ask that someone with a clipboard visit Tow Route 4 and decide whether light that has been kept counts the same as light still falling.",
+      "tags": [
+        "rate-dispute",
+        "stored-light",
+        "billing",
+        "sunward-tariff"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-10-038"
+      ],
+      "chain_id": "chain-073",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-037",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-11T23:11:00Z",
+      "role": "community",
+      "persona_id": "halverson-green",
+      "kind": "complaint",
+      "title": "Water Tower Classification Inquiry",
+      "body": "I have kept every paper statement since my meter was installed in '09, and in all those years the water tower that stands where the cornfield used to be has never appeared as a separate structure on any bill, though I note the automatic reads seem to have decided it counts as part of the town's footprint without asking anyone. I would like to know whether In-Space Power considers a water tower to be a house, since the principle as I understand it is that billing follows the house, and last I checked the tower does not have a porch or a door. The hydroponic bay that replaced my corn has its own meter, so I suppose it is only fair that the tower should have one too, if indeed it is being billed at all.",
+      "tags": [
+        "billing",
+        "tow-route-4",
+        "water-tower",
+        "structures"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-10-039"
+      ],
+      "chain_id": "chain-074",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-038",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-11T23:52:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Stored Light and the Sunward Rate",
+      "body": "In-Space Power confirms that tariff assignment follows the orientation of the meter, not the provenance of the electrons. Under the Porchlight schedule, sunward-facing premises are rated at 0.0042 credits/MJ and shade-facing premises at 0.0114 credits/MJ; Corner Main runs 0.0061/0.0138, Underway is flat at 0.0088, and First Light reads are not billed for the first three cycles. Stored light enters the grid without directional provenance, and billing follows the house. A clipboard visit to Tow Route 4 would confirm what the register already shows: the shade tariff applies to shade-facing meters regardless of what the light was before it went into storage.",
+      "tags": [
+        "rate-dispute",
+        "stored-light",
+        "billing"
+      ],
+      "caused_by": "ev-2999-10-036",
+      "spawned": [],
+      "chain_id": "chain-073",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-039",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-12T03:11:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Water Tower Classification — Tow Route 4",
+      "body": "In-Space Power confirms that ancillary structures without habitation registers, including water towers, are not classified as houses under the billing principle \"Billing follows the house.\" The tower is metered as part of the Tow Route 4 settlement footprint and appears on the Corner Main rate entry for that account. Separate metering is issued only to structures with independent consumption registers; the tower's draw is accounted for within the settlement's aggregate reads. No reclassification is pending.",
+      "tags": [
+        "billing",
+        "structures",
+        "tow-route-4"
+      ],
+      "caused_by": "ev-2999-10-037",
+      "spawned": [],
+      "chain_id": "chain-074",
+      "verified": true
     }
   ],
   "chains": {
@@ -5364,6 +5446,92 @@
         "caused_by": "ev-2999-10-034",
         "spawned": [],
         "chain_id": "chain-072",
+        "verified": true
+      }
+    ],
+    "chain-073": [
+      {
+        "id": "ev-2999-10-036",
+        "cycle": "2999.10",
+        "timestamp": "2999-10-11T22:52:00Z",
+        "role": "community",
+        "persona_id": "halverson-green",
+        "kind": "complaint",
+        "title": "Inquiry Regarding Stored Light and the Sunward Rate",
+        "body": "I have kept my paper statements since the cornfield was still a cornfield and not once has the automatic read explained whether stored light qualifies for the sunward rate. My porch faces sunward and that nine percent in the mix was sunlight before it went into storage, yet I am billed at the shade tariff as if the light forgot where it came from. I would ask that someone with a clipboard visit Tow Route 4 and decide whether light that has been kept counts the same as light still falling.",
+        "tags": [
+          "rate-dispute",
+          "stored-light",
+          "billing",
+          "sunward-tariff"
+        ],
+        "caused_by": null,
+        "spawned": [
+          "ev-2999-10-038"
+        ],
+        "chain_id": "chain-073",
+        "verified": true
+      },
+      {
+        "id": "ev-2999-10-038",
+        "cycle": "2999.10",
+        "timestamp": "2999-10-11T23:52:00Z",
+        "role": "staff",
+        "persona_id": "ops-central",
+        "kind": "acknowledgment",
+        "title": "Stored Light and the Sunward Rate",
+        "body": "In-Space Power confirms that tariff assignment follows the orientation of the meter, not the provenance of the electrons. Under the Porchlight schedule, sunward-facing premises are rated at 0.0042 credits/MJ and shade-facing premises at 0.0114 credits/MJ; Corner Main runs 0.0061/0.0138, Underway is flat at 0.0088, and First Light reads are not billed for the first three cycles. Stored light enters the grid without directional provenance, and billing follows the house. A clipboard visit to Tow Route 4 would confirm what the register already shows: the shade tariff applies to shade-facing meters regardless of what the light was before it went into storage.",
+        "tags": [
+          "rate-dispute",
+          "stored-light",
+          "billing"
+        ],
+        "caused_by": "ev-2999-10-036",
+        "spawned": [],
+        "chain_id": "chain-073",
+        "verified": true
+      }
+    ],
+    "chain-074": [
+      {
+        "id": "ev-2999-10-037",
+        "cycle": "2999.10",
+        "timestamp": "2999-10-11T23:11:00Z",
+        "role": "community",
+        "persona_id": "halverson-green",
+        "kind": "complaint",
+        "title": "Water Tower Classification Inquiry",
+        "body": "I have kept every paper statement since my meter was installed in '09, and in all those years the water tower that stands where the cornfield used to be has never appeared as a separate structure on any bill, though I note the automatic reads seem to have decided it counts as part of the town's footprint without asking anyone. I would like to know whether In-Space Power considers a water tower to be a house, since the principle as I understand it is that billing follows the house, and last I checked the tower does not have a porch or a door. The hydroponic bay that replaced my corn has its own meter, so I suppose it is only fair that the tower should have one too, if indeed it is being billed at all.",
+        "tags": [
+          "billing",
+          "tow-route-4",
+          "water-tower",
+          "structures"
+        ],
+        "caused_by": null,
+        "spawned": [
+          "ev-2999-10-039"
+        ],
+        "chain_id": "chain-074",
+        "verified": true
+      },
+      {
+        "id": "ev-2999-10-039",
+        "cycle": "2999.10",
+        "timestamp": "2999-10-12T03:11:00Z",
+        "role": "staff",
+        "persona_id": "ops-central",
+        "kind": "acknowledgment",
+        "title": "Water Tower Classification — Tow Route 4",
+        "body": "In-Space Power confirms that ancillary structures without habitation registers, including water towers, are not classified as houses under the billing principle \"Billing follows the house.\" The tower is metered as part of the Tow Route 4 settlement footprint and appears on the Corner Main rate entry for that account. Separate metering is issued only to structures with independent consumption registers; the tower's draw is accounted for within the settlement's aggregate reads. No reclassification is pending.",
+        "tags": [
+          "billing",
+          "structures",
+          "tow-route-4"
+        ],
+        "caused_by": "ev-2999-10-037",
+        "spawned": [],
+        "chain_id": "chain-074",
         "verified": true
       }
     ]
