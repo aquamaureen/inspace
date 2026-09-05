@@ -2400,6 +2400,67 @@
       "spawned": [],
       "chain_id": "chain-069",
       "verified": true
+    },
+    {
+      "id": "ev-2999-10-033",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-11T15:57:00Z",
+      "role": "community",
+      "persona_id": "new-sheboygan-clerk",
+      "kind": "comment",
+      "title": "First Light Questions from the New Sheboygan Annex",
+      "body": "Got a notice from the new settlement out past marker twelve asking what First Light actually covers. It covers three cycles where the meter reads but doesn't bill, which is the same as it's always covered since the Authority set it up. I told them to enjoy it while it lasts because after cycle three the credits show up same as everybody else's. Water tower's still standing, by the way, in case anyone was wondering.",
+      "tags": [
+        "first-light",
+        "rates",
+        "new-settlements"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-071",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-034",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-11T16:36:00Z",
+      "role": "community",
+      "persona_id": "tug-captain-mako",
+      "kind": "complaint",
+      "title": "Porchlight Left Hot Through Sync Pulse",
+      "body": "Some hull on TR-4 left their porch lamp burning right through the sync pulse. I'm hauling a Dredge-Clear and already eating enough beam-shadow without some deckhand keeping the porch hot during the handshake. Billing follows the house, but the shade tariff on that read could buy a new winch. Kill the light next time the pulse rolls through.",
+      "tags": [
+        "billing",
+        "sync",
+        "porchlight",
+        "tow-route-4"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-10-035"
+      ],
+      "chain_id": "chain-072",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-035",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-11T21:36:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Porchlight Read, Tow Route 4, Cycle 2999.10",
+      "body": "In-Space Power confirms the porchlight read recorded on Tow Route 4 during the sync pulse has been posted to the registered house account at the shade rate of 0.0114 credits per megajoule. Billing follows the house: the meter records consumption at the connected structure regardless of crew assignment, vessel status, or beam-shadow conditions, and does not distinguish between an intentional lamp and an oversight. The First Light exemption applies only to newly registered connections for their initial three cycles and is not available to established accounts on TR-4. The charge stands.",
+      "tags": [
+        "billing",
+        "porchlight",
+        "tow-route-4",
+        "sync"
+      ],
+      "caused_by": "ev-2999-10-034",
+      "spawned": [],
+      "chain_id": "chain-072",
+      "verified": true
     }
   ]
 }
