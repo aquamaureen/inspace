@@ -2,7 +2,7 @@
   "meta": {
     "project": "inspacepower.com",
     "cycle": "2999.10",
-    "updated": "2999-10-12T03:11:00Z"
+    "updated": "2999-10-12T09:10:00Z"
   },
   "personas": [
     {
@@ -2840,6 +2840,90 @@
       "spawned": [],
       "chain_id": "chain-074",
       "verified": true
+    },
+    {
+      "id": "ev-2999-10-040",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-12T04:25:00Z",
+      "role": "community",
+      "persona_id": "halverson-green",
+      "kind": "complaint",
+      "title": "Missed Interchange at Marker 77, Tow Route 4",
+      "body": "I have kept the paper statement from cycle 2999.10 showing the automatic read dropped us past the interchange at Marker 77, and now the dark stretch between the old cornfield—what they call Hydroponic Bay C since nobody asked—belongs to nobody on the ledger. The meter ISP-TR4-HG-044 has been current since 2709 and it does not lie the way these four-second reads do when the tow line shudders, but I would still like to know which tariff covers a kilometer of unlit coupling that the settlement authority keeps calling a porchlight zone. I am not asking for the corner main rate, only an answer before the next read misses us again.",
+      "tags": [
+        "outage",
+        "tow-route-4",
+        "underway",
+        "billing"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-10-042"
+      ],
+      "chain_id": "chain-075",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-041",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-12T05:10:00Z",
+      "role": "community",
+      "persona_id": "new-sheboygan-clerk",
+      "kind": "complaint",
+      "title": "Underway While Parked in the Dark",
+      "body": "The Sheb got another cycle bill charging us the Underway flat while we're sitting docked in Jupiter's shadow, and I'd appreciate someone explaining how stationary counts as underway. The water tower made it through the tow route just fine, but the lag on these official notices means we've been paying haulage rates for not going anywhere. If central billing intends to keep charging 0.0088 credits a megajoule for sitting still in someone else's shade, they're welcome to come say it to the town council face to face.",
+      "tags": [
+        "rate-dispute",
+        "tug",
+        "underway",
+        "shade"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-10-043"
+      ],
+      "chain_id": "chain-076",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-042",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-12T07:25:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Acknowledgment: Missed Read at Marker 77, Tow Route 4",
+      "body": "In-Space Power confirms the report for Tow Route 4, meter ISP-TR4-HG-044. The missed interval at Marker 77 occurred during a scheduled beamline handoff; the four-second synchronization pulse was not captured while the coupling passed through the relay shadow cone. No charge was issued for the interval. The meter will return to nominal read coverage on the next pass.",
+      "tags": [
+        "outage",
+        "tow-route-4",
+        "underway",
+        "billing"
+      ],
+      "caused_by": "ev-2999-10-040",
+      "spawned": [],
+      "chain_id": "chain-075",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-043",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-12T09:10:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Underway Classification and Docked Status",
+      "body": "In-Space Power confirms the Underway flat tariff of 0.0088 credits per megajoule applies to all meters registered to mobile platforms, regardless of instantaneous velocity or docking state. Porchlight rates (0.0042/0.0114 credits per megajoule, sunward/shade) apply only to fixed-structure meters, and Corner Main rates (0.0061/0.0138 credits per megajoule) apply to designated settlement zones; neither classification covers a meter registered to a tug. First Light exempts reads from billing for the first three cycles only and does not alter the applicable rate schedule thereafter. Billing follows the house; the meter remains classified Underway while attached to the Sheb, and shade conditions do not trigger a tariff reassignment.",
+      "tags": [
+        "rate-dispute",
+        "underway",
+        "shade",
+        "billing"
+      ],
+      "caused_by": "ev-2999-10-041",
+      "spawned": [],
+      "chain_id": "chain-076",
+      "verified": true
     }
   ],
   "chains": {
@@ -5532,6 +5616,94 @@
         "caused_by": "ev-2999-10-037",
         "spawned": [],
         "chain_id": "chain-074",
+        "verified": true
+      }
+    ],
+    "chain-075": [
+      {
+        "id": "ev-2999-10-040",
+        "cycle": "2999.10",
+        "timestamp": "2999-10-12T04:25:00Z",
+        "role": "community",
+        "persona_id": "halverson-green",
+        "kind": "complaint",
+        "title": "Missed Interchange at Marker 77, Tow Route 4",
+        "body": "I have kept the paper statement from cycle 2999.10 showing the automatic read dropped us past the interchange at Marker 77, and now the dark stretch between the old cornfield—what they call Hydroponic Bay C since nobody asked—belongs to nobody on the ledger. The meter ISP-TR4-HG-044 has been current since 2709 and it does not lie the way these four-second reads do when the tow line shudders, but I would still like to know which tariff covers a kilometer of unlit coupling that the settlement authority keeps calling a porchlight zone. I am not asking for the corner main rate, only an answer before the next read misses us again.",
+        "tags": [
+          "outage",
+          "tow-route-4",
+          "underway",
+          "billing"
+        ],
+        "caused_by": null,
+        "spawned": [
+          "ev-2999-10-042"
+        ],
+        "chain_id": "chain-075",
+        "verified": true
+      },
+      {
+        "id": "ev-2999-10-042",
+        "cycle": "2999.10",
+        "timestamp": "2999-10-12T07:25:00Z",
+        "role": "staff",
+        "persona_id": "ops-central",
+        "kind": "acknowledgment",
+        "title": "Acknowledgment: Missed Read at Marker 77, Tow Route 4",
+        "body": "In-Space Power confirms the report for Tow Route 4, meter ISP-TR4-HG-044. The missed interval at Marker 77 occurred during a scheduled beamline handoff; the four-second synchronization pulse was not captured while the coupling passed through the relay shadow cone. No charge was issued for the interval. The meter will return to nominal read coverage on the next pass.",
+        "tags": [
+          "outage",
+          "tow-route-4",
+          "underway",
+          "billing"
+        ],
+        "caused_by": "ev-2999-10-040",
+        "spawned": [],
+        "chain_id": "chain-075",
+        "verified": true
+      }
+    ],
+    "chain-076": [
+      {
+        "id": "ev-2999-10-041",
+        "cycle": "2999.10",
+        "timestamp": "2999-10-12T05:10:00Z",
+        "role": "community",
+        "persona_id": "new-sheboygan-clerk",
+        "kind": "complaint",
+        "title": "Underway While Parked in the Dark",
+        "body": "The Sheb got another cycle bill charging us the Underway flat while we're sitting docked in Jupiter's shadow, and I'd appreciate someone explaining how stationary counts as underway. The water tower made it through the tow route just fine, but the lag on these official notices means we've been paying haulage rates for not going anywhere. If central billing intends to keep charging 0.0088 credits a megajoule for sitting still in someone else's shade, they're welcome to come say it to the town council face to face.",
+        "tags": [
+          "rate-dispute",
+          "tug",
+          "underway",
+          "shade"
+        ],
+        "caused_by": null,
+        "spawned": [
+          "ev-2999-10-043"
+        ],
+        "chain_id": "chain-076",
+        "verified": true
+      },
+      {
+        "id": "ev-2999-10-043",
+        "cycle": "2999.10",
+        "timestamp": "2999-10-12T09:10:00Z",
+        "role": "staff",
+        "persona_id": "ops-central",
+        "kind": "acknowledgment",
+        "title": "Underway Classification and Docked Status",
+        "body": "In-Space Power confirms the Underway flat tariff of 0.0088 credits per megajoule applies to all meters registered to mobile platforms, regardless of instantaneous velocity or docking state. Porchlight rates (0.0042/0.0114 credits per megajoule, sunward/shade) apply only to fixed-structure meters, and Corner Main rates (0.0061/0.0138 credits per megajoule) apply to designated settlement zones; neither classification covers a meter registered to a tug. First Light exempts reads from billing for the first three cycles only and does not alter the applicable rate schedule thereafter. Billing follows the house; the meter remains classified Underway while attached to the Sheb, and shade conditions do not trigger a tariff reassignment.",
+        "tags": [
+          "rate-dispute",
+          "underway",
+          "shade",
+          "billing"
+        ],
+        "caused_by": "ev-2999-10-041",
+        "spawned": [],
+        "chain_id": "chain-076",
         "verified": true
       }
     ]
