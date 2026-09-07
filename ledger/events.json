@@ -2770,6 +2770,26 @@
       "spawned": [],
       "chain_id": "chain-079",
       "verified": true
+    },
+    {
+      "id": "ev-2999-10-051",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-12T22:16:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "transcript",
+      "title": "Scheduling Note, Cycle 2999.10, Fragment 10-044",
+      "body": "DISPATCH: The shade surcharge notice for the Jovian cluster needs to go out before the read window closes. RECORD: The wording still says \"temporary adjustment.\" It has been temporary for six cycles. DISPATCH: We agreed to keep it. RECORD: We agreed to review it. I am reviewing it now. DISPATCH: Leave it. The settlement office will flag it and we will update the template. RECORD: Noted. The notice will queue as written.",
+      "tags": [
+        "transcript",
+        "scheduling",
+        "internal-review"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-081",
+      "verified": true,
+      "audience": "internal"
     }
   ]
 }
