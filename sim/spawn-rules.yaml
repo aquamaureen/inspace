@@ -1,11 +1,11 @@
-# sim/spawn-rules.yaml — causal spawn rules for the living-company simulation.
+# sim/spawn-rules.yaml: causal spawn rules for the living-company simulation.
 #
 # Evaluated by sim/cycle.py against every NEW event in a cycle run. A matching
 # rule spawns a response event (customer service, canon correction, community
 # ripple) in the same run. Per ARCHITECTURE.md staff responses land "within
 # 1 cycle hour"; one batch run is one cycle hour.
 #
-# At most ONE rule fires per trigger event — the first match in file order
+# At most ONE rule fires per trigger event; the first match in file order
 # wins, so order rules by specificity.
 #
 # Condition keys (all must hold):
@@ -93,7 +93,7 @@ rules:
 
   - id: incident-react
     # Staff incident statements (space weather, impacts, fires) draw one
-    # community reaction per pass — the neighbors respond before the
+    # community reaction per pass; the neighbors respond before the
     # company has finished its paperwork.
     when: { role: staff, kind: statement, any_tag: [incident] }
     then:
@@ -103,4 +103,4 @@ rules:
         React to this official incident statement as an affected resident,
         tow captain, or account holder. Deadpan, practical, no panic. Note
         what it means for your meter, your lawn glass, your tow chain, or
-        your stored light — never contradict the statement's facts.
+        your stored light; never contradict the statement's facts.

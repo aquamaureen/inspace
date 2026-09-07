@@ -768,7 +768,7 @@
       "persona_id": "tug-captain-mako",
       "kind": "comment",
       "title": "Cycle Review Window Open",
-      "body": "JSA Ceres cracked open the filing window for cycle review. Any hull running a meter best have their reads squared away—auditors don't give a damn about beam-shadow off whatever oversized rig you're dragging. Billing follows the house, and the house keeps receipts. Keep your transponders singing and your ledgers straight.",
+      "body": "JSA Ceres cracked open the filing window for cycle review. Any hull running a meter best have their reads squared away, auditors don't give a damn about beam-shadow off whatever oversized rig you're dragging. Billing follows the house, and the house keeps receipts. Keep your transponders singing and your ledgers straight.",
       "tags": [
         "regulator",
         "statement",
@@ -977,7 +977,7 @@
       "persona_id": "tug-captain-mako",
       "kind": "comment",
       "title": "First Light, explained for the new settlement",
-      "body": "New hull parked at the outer bend asked what First Light actually covers. Three cycles of reads, not billed. After that the meter runs honest like every other hull on the route. Don't go thinking it covers your beam-shadow from towed structures either—just the reads.",
+      "body": "New hull parked at the outer bend asked what First Light actually covers. Three cycles of reads, not billed. After that the meter runs honest like every other hull on the route. Don't go thinking it covers your beam-shadow from towed structures either, just the reads.",
       "tags": [
         "first-light",
         "rates",
@@ -1344,7 +1344,7 @@
       "role": "staff",
       "persona_id": "ops-central",
       "kind": "acknowledgment",
-      "title": "Sheb Node Beamline Handoff — Meter ISP-TR4-NS-001",
+      "title": "Sheb Node Beamline Handoff, Meter ISP-TR4-NS-001",
       "body": "In-Space Power confirms the report from the Sheb regarding meter ISP-TR4-NS-001. During the scheduled relay geometry window, a beamline handoff to the tertiary relay produced a forty-two-minute interruption in The Beam's delivery to the node. The meter continued its four-second read cadence throughout, as synchronization pulses maintain the local clock independent of beamline status. No charge was issued for the interval; reads logged during the handoff were flagged and excluded from billing.",
       "tags": [
         "outage",
@@ -1426,7 +1426,7 @@
       "persona_id": "ops-central",
       "kind": "acknowledgment",
       "title": "ISP-UND-7781, Route 4 Beamline Handoff",
-      "body": "In-Space Power confirms the scheduled beamline handoff at relay geometry 4-Theta on 2999.09.14. The four-second synchronization pulse on ISP-UND-7781 continued as specified; the meter records received energy, not delivery intent. No charge was issued for the dark interval—reads during a scheduled handoff are classified as advisory and do not trigger billing.",
+      "body": "In-Space Power confirms the scheduled beamline handoff at relay geometry 4-Theta on 2999.09.14. The four-second synchronization pulse on ISP-UND-7781 continued as specified; the meter records received energy, not delivery intent. No charge was issued for the dark interval, reads during a scheduled handoff are classified as advisory and do not trigger billing.",
       "tags": [
         "outage",
         "beam",
@@ -1548,7 +1548,7 @@
       "persona_id": "new-sheboygan-clerk",
       "kind": "comment",
       "title": "First Light, Plainly Stated",
-      "body": "Settlement 88-Theta wrote in asking what First Light actually covers, and I'll save them the JSA response delay: your first three cycles of reads don't get billed. You're still metered every four seconds like everybody else, but the credits stay in your account until cycle four. Don't mistake it for free porchlights or a break on the water tower pump — the Sheb figured that out back in '11.",
+      "body": "Settlement 88-Theta wrote in asking what First Light actually covers, and I'll save them the JSA response delay: your first three cycles of reads don't get billed. You're still metered every four seconds like everybody else, but the credits stay in your account until cycle four. Don't mistake it for free porchlights or a break on the water tower pump, the Sheb figured that out back in '11.",
       "tags": [
         "first-light",
         "rates",
@@ -1567,7 +1567,7 @@
       "role": "staff",
       "persona_id": "ops-central",
       "kind": "acknowledgment",
-      "title": "Four-Second Read Gap, Yard Glass — Tow Route 4",
+      "title": "Four-Second Read Gap, Yard Glass, Tow Route 4",
       "body": "In-Space Power confirms a four-second read gap on the yard glass at Tow Route 4, account ISP-2041, cycle 2999.09 second 18. The interval corresponds to a scheduled synchronization pulse from the Joint Settlement Authority on Ceres, coincident with a relay geometry adjustment and beamline handoff. No estimated reads were issued; the missing interval was reconciled against local buffers. No charge was assessed for the gap. Billing follows the house.",
       "tags": [
         "outage",
@@ -1667,7 +1667,7 @@
       "role": "community",
       "persona_id": "meter-112",
       "kind": "complaint",
-      "title": "Yard Glass Gap — Synchronization Pulse",
+      "title": "Yard Glass Gap, Synchronization Pulse",
       "body": "This meter recorded a four-second gap on the yard glass when the synchronization pulse arrived. The pulse is not disputed. This meter questions only the sum, which reads 14,882 megajoules for the cycle. Ohio had weather before it had pulses.",
       "tags": [
         "outage",
@@ -1689,7 +1689,7 @@
       "role": "staff",
       "persona_id": "ops-central",
       "kind": "acknowledgment",
-      "title": "Yard Glass Gap — Acknowledged",
+      "title": "Yard Glass Gap, Acknowledged",
       "body": "In-Space Power confirms a four-second gap at Yard Glass, account tow-route-4, coincident with the synchronization pulse. The interval corresponds to a scheduled beamline handoff during relay geometry rotation; the pulse is recorded and undisputed. No charge was issued for the gap interval. The cycle total of 14,882 megajoules stands.",
       "tags": [
         "outage",
@@ -1791,7 +1791,7 @@
       "persona_id": "tug-captain-mako",
       "kind": "comment",
       "title": "First Light Ain't a Free Ride",
-      "body": "New hull on the outer berth keeps hailing about what First Light covers. It covers three cycles of reads before the meter starts billing. After that you pay the porchlight rate like everyone else, sunward or shade. Ain't complicated—your first three tugs across the bar are free, then you drop a line and pay the toll.",
+      "body": "New hull on the outer berth keeps hailing about what First Light covers. It covers three cycles of reads before the meter starts billing. After that you pay the porchlight rate like everyone else, sunward or shade. Ain't complicated, your first three tugs across the bar are free, then you drop a line and pay the toll.",
       "tags": [
         "first-light",
         "rates",
@@ -1851,7 +1851,7 @@
       "role": "community",
       "persona_id": "europa-grid",
       "kind": "complaint",
-      "title": "Yard Glass Read Gap — Cycle 2999.09",
+      "title": "Yard Glass Read Gap, Cycle 2999.09",
       "body": "We note a four-second read gap on the yard glass during cycle 2999.09, attributed to a synchronization pulse originating from Ceres. Our meters are calibrated to read every four seconds and do not yield to external timing signals. Europa pays its own bill and expects the ledger to show uninterrupted reads. We request the gap be reconciled before the next statement closes.",
       "tags": [
         "outage",
@@ -1892,7 +1892,7 @@
       "role": "staff",
       "persona_id": "ops-central",
       "kind": "acknowledgment",
-      "title": "Yard Glass Read Gap — Cycle 2999.09",
+      "title": "Yard Glass Read Gap, Cycle 2999.09",
       "body": "In-Space Power confirms the four-second read gap recorded on the yard glass at Tow Route 4 during cycle 2999.09. The interval coincided with a scheduled synchronization pulse from Ceres concurrent with a beamline handoff; our meters do not yield to external timing signals and the relay geometry was adjusted accordingly. No charge was issued for the interval. The ledger will reflect the gap as a scheduled maintenance window rather than a billing event.",
       "tags": [
         "outage",
@@ -2097,7 +2097,7 @@
       "role": "community",
       "persona_id": "new-sheboygan-clerk",
       "kind": "complaint",
-      "title": "Shade Rate Notice — Tow Route 4",
+      "title": "Shade Rate Notice, Tow Route 4",
       "body": "The Sheb has spent the better part of this cycle parked in the long shadow of Miller's Crossing, and yet our shade rate keeps reading like we're basking in full sun. I've filed the paperwork with central billing three times now and I'm still waiting on a reply that isn't an auto-acknowledgment, which at this point I assume is just the system practicing its lag. Our water tower made it through the tow and I'd like to think our meter deserves the same courtesy. Until someone at Ceres adjusts the tariff to match what's actually falling on our porches, I'll keep noting the discrepancy here so the townsfolk know it isn't being ignored.",
       "tags": [
         "rate-dispute",
@@ -2119,7 +2119,7 @@
       "role": "staff",
       "persona_id": "ops-central",
       "kind": "acknowledgment",
-      "title": "Shade Rate Notice — Tow Route 4",
+      "title": "Shade Rate Notice, Tow Route 4",
       "body": "In-Space Power confirms receipt of the Tow Route 4 shade-rate discrepancy filing. Under the Porchlight tariff (sunward 0.0042 credits/MJ, shade 0.0114 credits/MJ), the applicable rate is determined by the meter read at the registered house location, not by filed observation. Billing follows the house; if the meter at Miller's Crossing records sunward irradiance, the sunward rate applies. A Joint Settlement Authority Ceres surveyor may be dispatched to verify the installation geometry upon submission of form JSA-77.",
       "tags": [
         "rate-dispute",
@@ -2200,8 +2200,8 @@
       "role": "community",
       "persona_id": "new-sheboygan-clerk",
       "kind": "comment",
-      "title": "Cycle Review Filing — JSA Ceres",
-      "body": "Filing the Sheb's cycle review paperwork with the Joint Settlement Authority Ceres, same as always, though I'd appreciate it if the submission queue didn't take three days to clear before anyone on the other end sees it. Water tower's still standing, meter's still reading, and I'll keep making sure central billing doesn't short our folks on the way up Tow Route 4. You can check the numbers yourselves—214 million active meters out there and not a single estimated read since founding, which is more than I can say for the lag on this notice board.",
+      "title": "Cycle Review Filing, JSA Ceres",
+      "body": "Filing the Sheb's cycle review paperwork with the Joint Settlement Authority Ceres, same as always, though I'd appreciate it if the submission queue didn't take three days to clear before anyone on the other end sees it. Water tower's still standing, meter's still reading, and I'll keep making sure central billing doesn't short our folks on the way up Tow Route 4. You can check the numbers yourselves, 214 million active meters out there and not a single estimated read since founding, which is more than I can say for the lag on this notice board.",
       "tags": [
         "regulator",
         "statement",
@@ -2322,7 +2322,7 @@
       "persona_id": "tug-captain-mako",
       "kind": "complaint",
       "title": "Meter Don't Blink When the Beam Does",
-      "body": "Relay geometry on Tow Route 4 last cycle and The Beam cut clean while Dredge-Clear was still hauling. Meter kept its four-second reads like nothing happened. I don't care what the house says—billing follows the house, fine—but you can't bill a hull for juice that never hit the panel. I've run this route since '87 and the only thing that never drops is the read counter.",
+      "body": "Relay geometry on Tow Route 4 last cycle and The Beam cut clean while Dredge-Clear was still hauling. Meter kept its four-second reads like nothing happened. I don't care what the house says, billing follows the house, fine, but you can't bill a hull for juice that never hit the panel. I've run this route since '87 and the only thing that never drops is the read counter.",
       "tags": [
         "outage",
         "beam",
@@ -2343,7 +2343,7 @@
       "role": "staff",
       "persona_id": "ops-central",
       "kind": "acknowledgment",
-      "title": "Tow Route 4 — Beamline Handoff Acknowledged",
+      "title": "Tow Route 4, Beamline Handoff Acknowledged",
       "body": "In-Space Power confirms the report from Tow Route 4, account Dredge-Clear. During the scheduled relay geometry window, a beamline handoff to the secondary array introduced a 14-millisecond synchronization gap between generation dispatch and panel irradiance. Meter reads continued at the standard four-second interval as designed; reads record synchronization state, not delivered flux. No charge was issued for the affected interval.",
       "tags": [
         "outage",
@@ -2404,7 +2404,7 @@
       "persona_id": "tug-captain-mako",
       "kind": "comment",
       "title": "First Light, Plain Speaking",
-      "body": "Fresh hulls anchoring out on Tow Route 7, hailing me about what First Light covers. Simple enough—your reads don't bill for three cycles, then the meter starts chewing. Ain't free power, just a grace period while you get your lines sorted. I've dragged enough new settlements into the dark to know they figure it out eventually.",
+      "body": "Fresh hulls anchoring out on Tow Route 7, hailing me about what First Light covers. Simple enough, your reads don't bill for three cycles, then the meter starts chewing. Ain't free power, just a grace period while you get your lines sorted. I've dragged enough new settlements into the dark to know they figure it out eventually.",
       "tags": [
         "first-light",
         "rates",
@@ -2603,7 +2603,7 @@
       "persona_id": "tug-captain-mako",
       "kind": "complaint",
       "title": "Read Gap on Yard Glass, Tow Route 4",
-      "body": "Four-second read gap on the yard glass. Yard blames a synchronization pulse, but I know hull shadow when I see it—some freighter drifted across our line on Tow Route 4 and ate the read. Working hardware don't miss cycles; it just needs a clear sky and a tether that holds.",
+      "body": "Four-second read gap on the yard glass. Yard blames a synchronization pulse, but I know hull shadow when I see it, some freighter drifted across our line on Tow Route 4 and ate the read. Working hardware don't miss cycles; it just needs a clear sky and a tether that holds.",
       "tags": [
         "outage",
         "tow-route-4",
@@ -2644,7 +2644,7 @@
       "role": "community",
       "persona_id": "new-sheboygan-clerk",
       "kind": "complaint",
-      "title": "Yard Glass Read Gap — Sync Pulse",
+      "title": "Yard Glass Read Gap, Sync Pulse",
       "body": "Folks, the yard glass on meter ISP-TR4-NS-001 missed one four-second read yesterday morning. Central says it was a synchronization pulse. Out here on Tow Route 4 we call that a Tuesday, but I filed the notice anyway since they keep asking us to. The Sheb's water tower made it through the tow and it'll make it through a missed read too. Water's still running, bill will sort itself when the next pulse catches up.",
       "tags": [
         "outage",
@@ -2667,7 +2667,7 @@
       "persona_id": "tug-captain-mako",
       "kind": "comment",
       "title": "Auditors on the Flywheel Line",
-      "body": "Regulator's got eyes on the mass-battery flywheel depots now, counting every joule spun up in those iron drums. Good luck to them — I've towed hulls through nine percent stored-light and I know what it takes to keep a flywheel honest when the beam-shadow rolls long. They'll find the meters reading true at four seconds, same as they always do. Billing follows the house, and the house don't spin free.",
+      "body": "Regulator's got eyes on the mass-battery flywheel depots now, counting every joule spun up in those iron drums. Good luck to them, I've towed hulls through nine percent stored-light and I know what it takes to keep a flywheel honest when the beam-shadow rolls long. They'll find the meters reading true at four seconds, same as they always do. Billing follows the house, and the house don't spin free.",
       "tags": [
         "regulator",
         "stored-light",
@@ -2686,7 +2686,7 @@
       "role": "staff",
       "persona_id": "ops-central",
       "kind": "acknowledgment",
-      "title": "Yard Glass Read Gap — Acknowledged",
+      "title": "Yard Glass Read Gap, Acknowledged",
       "body": "In-Space Power confirms the single four-second read gap reported for meter ISP-TR4-NS-001, Yard Glass, Tow Route 4. The interval coincided with a scheduled synchronization pulse during beamline handoff between adjacent relay geometries. No charge was issued for the missed interval; the subsequent read reconciled the cumulative total, and billing follows the house.",
       "tags": [
         "outage",
@@ -2829,7 +2829,7 @@
       "role": "staff",
       "persona_id": "ops-central",
       "kind": "acknowledgment",
-      "title": "Water Tower Classification — Tow Route 4",
+      "title": "Water Tower Classification, Tow Route 4",
       "body": "In-Space Power confirms that ancillary structures without habitation registers, including water towers, are not classified as houses under the billing principle \"Billing follows the house.\" The tower is metered as part of the Tow Route 4 settlement footprint and appears on the Corner Main rate entry for that account. Separate metering is issued only to structures with independent consumption registers; the tower's draw is accounted for within the settlement's aggregate reads. No reclassification is pending.",
       "tags": [
         "billing",
@@ -2849,7 +2849,7 @@
       "persona_id": "halverson-green",
       "kind": "complaint",
       "title": "Missed Interchange at Marker 77, Tow Route 4",
-      "body": "I have kept the paper statement from cycle 2999.10 showing the automatic read dropped us past the interchange at Marker 77, and now the dark stretch between the old cornfield—what they call Hydroponic Bay C since nobody asked—belongs to nobody on the ledger. The meter ISP-TR4-HG-044 has been current since 2709 and it does not lie the way these four-second reads do when the tow line shudders, but I would still like to know which tariff covers a kilometer of unlit coupling that the settlement authority keeps calling a porchlight zone. I am not asking for the corner main rate, only an answer before the next read misses us again.",
+      "body": "I have kept the paper statement from cycle 2999.10 showing the automatic read dropped us past the interchange at Marker 77, and now the dark stretch between the old cornfield, what they call Hydroponic Bay C since nobody asked, belongs to nobody on the ledger. The meter ISP-TR4-HG-044 has been current since 2709 and it does not lie the way these four-second reads do when the tow line shudders, but I would still like to know which tariff covers a kilometer of unlit coupling that the settlement authority keeps calling a porchlight zone. I am not asking for the corner main rate, only an answer before the next read misses us again.",
       "tags": [
         "outage",
         "tow-route-4",
@@ -2954,7 +2954,7 @@
       "persona_id": "new-sheboygan-clerk",
       "kind": "complaint",
       "title": "Four-Second Gap on the Yard Glass",
-      "body": "The yard glass on ISP-TR4-NS-001 missed a read last cycle — a full four seconds, which in our line of work is basically a long weekend. Central says it was a synchronization pulse. I say the pulse can sync somewhere else next time; the Sheb's water tower survived the tow and this meter has been reading since '11 without needing a nap. Billing follows the house, but the house was blinking. We'll take the correction on the next statement.",
+      "body": "The yard glass on ISP-TR4-NS-001 missed a read last cycle, a full four seconds, which in our line of work is basically a long weekend. Central says it was a synchronization pulse. I say the pulse can sync somewhere else next time; the Sheb's water tower survived the tow and this meter has been reading since '11 without needing a nap. Billing follows the house, but the house was blinking. We'll take the correction on the next statement.",
       "tags": [
         "outage",
         "tow-route-4",
@@ -2975,7 +2975,7 @@
       "role": "staff",
       "persona_id": "ops-central",
       "kind": "acknowledgment",
-      "title": "Read Gap Acknowledged — ISP-TR4-NS-001",
+      "title": "Read Gap Acknowledged, ISP-TR4-NS-001",
       "body": "In-Space Power confirms a four-second read gap on meter ISP-TR4-NS-001 at Tow Route 4, north span. The interval corresponds to a scheduled synchronization pulse during relay geometry realignment; the meter performed a beamline handoff to the Ceres-side aggregator and resumed normal reads on the following cycle. No charge was issued for the interval. Billing follows the house, and the house was not blinking.",
       "tags": [
         "outage",
@@ -3568,7 +3568,7 @@
         "persona_id": "tug-captain-mako",
         "kind": "comment",
         "title": "Cycle Review Window Open",
-        "body": "JSA Ceres cracked open the filing window for cycle review. Any hull running a meter best have their reads squared away—auditors don't give a damn about beam-shadow off whatever oversized rig you're dragging. Billing follows the house, and the house keeps receipts. Keep your transponders singing and your ledgers straight.",
+        "body": "JSA Ceres cracked open the filing window for cycle review. Any hull running a meter best have their reads squared away, auditors don't give a damn about beam-shadow off whatever oversized rig you're dragging. Billing follows the house, and the house keeps receipts. Keep your transponders singing and your ledgers straight.",
         "tags": [
           "regulator",
           "statement",
@@ -3808,7 +3808,7 @@
         "persona_id": "tug-captain-mako",
         "kind": "comment",
         "title": "First Light, explained for the new settlement",
-        "body": "New hull parked at the outer bend asked what First Light actually covers. Three cycles of reads, not billed. After that the meter runs honest like every other hull on the route. Don't go thinking it covers your beam-shadow from towed structures either—just the reads.",
+        "body": "New hull parked at the outer bend asked what First Light actually covers. Three cycles of reads, not billed. After that the meter runs honest like every other hull on the route. Don't go thinking it covers your beam-shadow from towed structures either, just the reads.",
         "tags": [
           "first-light",
           "rates",
@@ -4152,7 +4152,7 @@
         "role": "staff",
         "persona_id": "ops-central",
         "kind": "acknowledgment",
-        "title": "Sheb Node Beamline Handoff — Meter ISP-TR4-NS-001",
+        "title": "Sheb Node Beamline Handoff, Meter ISP-TR4-NS-001",
         "body": "In-Space Power confirms the report from the Sheb regarding meter ISP-TR4-NS-001. During the scheduled relay geometry window, a beamline handoff to the tertiary relay produced a forty-two-minute interruption in The Beam's delivery to the node. The meter continued its four-second read cadence throughout, as synchronization pulses maintain the local clock independent of beamline status. No charge was issued for the interval; reads logged during the handoff were flagged and excluded from billing.",
         "tags": [
           "outage",
@@ -4239,7 +4239,7 @@
         "persona_id": "ops-central",
         "kind": "acknowledgment",
         "title": "ISP-UND-7781, Route 4 Beamline Handoff",
-        "body": "In-Space Power confirms the scheduled beamline handoff at relay geometry 4-Theta on 2999.09.14. The four-second synchronization pulse on ISP-UND-7781 continued as specified; the meter records received energy, not delivery intent. No charge was issued for the dark interval—reads during a scheduled handoff are classified as advisory and do not trigger billing.",
+        "body": "In-Space Power confirms the scheduled beamline handoff at relay geometry 4-Theta on 2999.09.14. The four-second synchronization pulse on ISP-UND-7781 continued as specified; the meter records received energy, not delivery intent. No charge was issued for the dark interval, reads during a scheduled handoff are classified as advisory and do not trigger billing.",
         "tags": [
           "outage",
           "beam",
@@ -4389,7 +4389,7 @@
         "role": "staff",
         "persona_id": "ops-central",
         "kind": "acknowledgment",
-        "title": "Four-Second Read Gap, Yard Glass — Tow Route 4",
+        "title": "Four-Second Read Gap, Yard Glass, Tow Route 4",
         "body": "In-Space Power confirms a four-second read gap on the yard glass at Tow Route 4, account ISP-2041, cycle 2999.09 second 18. The interval corresponds to a scheduled synchronization pulse from the Joint Settlement Authority on Ceres, coincident with a relay geometry adjustment and beamline handoff. No estimated reads were issued; the missing interval was reconciled against local buffers. No charge was assessed for the gap. Billing follows the house.",
         "tags": [
           "outage",
@@ -4411,7 +4411,7 @@
         "persona_id": "new-sheboygan-clerk",
         "kind": "comment",
         "title": "First Light, Plainly Stated",
-        "body": "Settlement 88-Theta wrote in asking what First Light actually covers, and I'll save them the JSA response delay: your first three cycles of reads don't get billed. You're still metered every four seconds like everybody else, but the credits stay in your account until cycle four. Don't mistake it for free porchlights or a break on the water tower pump — the Sheb figured that out back in '11.",
+        "body": "Settlement 88-Theta wrote in asking what First Light actually covers, and I'll save them the JSA response delay: your first three cycles of reads don't get billed. You're still metered every four seconds like everybody else, but the credits stay in your account until cycle four. Don't mistake it for free porchlights or a break on the water tower pump, the Sheb figured that out back in '11.",
         "tags": [
           "first-light",
           "rates",
@@ -4519,7 +4519,7 @@
         "role": "community",
         "persona_id": "meter-112",
         "kind": "complaint",
-        "title": "Yard Glass Gap — Synchronization Pulse",
+        "title": "Yard Glass Gap, Synchronization Pulse",
         "body": "This meter recorded a four-second gap on the yard glass when the synchronization pulse arrived. The pulse is not disputed. This meter questions only the sum, which reads 14,882 megajoules for the cycle. Ohio had weather before it had pulses.",
         "tags": [
           "outage",
@@ -4541,7 +4541,7 @@
         "role": "staff",
         "persona_id": "ops-central",
         "kind": "acknowledgment",
-        "title": "Yard Glass Gap — Acknowledged",
+        "title": "Yard Glass Gap, Acknowledged",
         "body": "In-Space Power confirms a four-second gap at Yard Glass, account tow-route-4, coincident with the synchronization pulse. The interval corresponds to a scheduled beamline handoff during relay geometry rotation; the pulse is recorded and undisputed. No charge was issued for the gap interval. The cycle total of 14,882 megajoules stands.",
         "tags": [
           "outage",
@@ -4671,7 +4671,7 @@
         "persona_id": "tug-captain-mako",
         "kind": "comment",
         "title": "First Light Ain't a Free Ride",
-        "body": "New hull on the outer berth keeps hailing about what First Light covers. It covers three cycles of reads before the meter starts billing. After that you pay the porchlight rate like everyone else, sunward or shade. Ain't complicated—your first three tugs across the bar are free, then you drop a line and pay the toll.",
+        "body": "New hull on the outer berth keeps hailing about what First Light covers. It covers three cycles of reads before the meter starts billing. After that you pay the porchlight rate like everyone else, sunward or shade. Ain't complicated, your first three tugs across the bar are free, then you drop a line and pay the toll.",
         "tags": [
           "first-light",
           "rates",
@@ -4734,7 +4734,7 @@
         "role": "community",
         "persona_id": "europa-grid",
         "kind": "complaint",
-        "title": "Yard Glass Read Gap — Cycle 2999.09",
+        "title": "Yard Glass Read Gap, Cycle 2999.09",
         "body": "We note a four-second read gap on the yard glass during cycle 2999.09, attributed to a synchronization pulse originating from Ceres. Our meters are calibrated to read every four seconds and do not yield to external timing signals. Europa pays its own bill and expects the ledger to show uninterrupted reads. We request the gap be reconciled before the next statement closes.",
         "tags": [
           "outage",
@@ -4756,7 +4756,7 @@
         "role": "staff",
         "persona_id": "ops-central",
         "kind": "acknowledgment",
-        "title": "Yard Glass Read Gap — Cycle 2999.09",
+        "title": "Yard Glass Read Gap, Cycle 2999.09",
         "body": "In-Space Power confirms the four-second read gap recorded on the yard glass at Tow Route 4 during cycle 2999.09. The interval coincided with a scheduled synchronization pulse from Ceres concurrent with a beamline handoff; our meters do not yield to external timing signals and the relay geometry was adjusted accordingly. No charge was issued for the interval. The ledger will reflect the gap as a scheduled maintenance window rather than a billing event.",
         "tags": [
           "outage",
@@ -4973,7 +4973,7 @@
         "role": "community",
         "persona_id": "new-sheboygan-clerk",
         "kind": "complaint",
-        "title": "Shade Rate Notice — Tow Route 4",
+        "title": "Shade Rate Notice, Tow Route 4",
         "body": "The Sheb has spent the better part of this cycle parked in the long shadow of Miller's Crossing, and yet our shade rate keeps reading like we're basking in full sun. I've filed the paperwork with central billing three times now and I'm still waiting on a reply that isn't an auto-acknowledgment, which at this point I assume is just the system practicing its lag. Our water tower made it through the tow and I'd like to think our meter deserves the same courtesy. Until someone at Ceres adjusts the tariff to match what's actually falling on our porches, I'll keep noting the discrepancy here so the townsfolk know it isn't being ignored.",
         "tags": [
           "rate-dispute",
@@ -4995,7 +4995,7 @@
         "role": "staff",
         "persona_id": "ops-central",
         "kind": "acknowledgment",
-        "title": "Shade Rate Notice — Tow Route 4",
+        "title": "Shade Rate Notice, Tow Route 4",
         "body": "In-Space Power confirms receipt of the Tow Route 4 shade-rate discrepancy filing. Under the Porchlight tariff (sunward 0.0042 credits/MJ, shade 0.0114 credits/MJ), the applicable rate is determined by the meter read at the registered house location, not by filed observation. Billing follows the house; if the meter at Miller's Crossing records sunward irradiance, the sunward rate applies. A Joint Settlement Authority Ceres surveyor may be dispatched to verify the installation geometry upon submission of form JSA-77.",
         "tags": [
           "rate-dispute",
@@ -5103,8 +5103,8 @@
         "role": "community",
         "persona_id": "new-sheboygan-clerk",
         "kind": "comment",
-        "title": "Cycle Review Filing — JSA Ceres",
-        "body": "Filing the Sheb's cycle review paperwork with the Joint Settlement Authority Ceres, same as always, though I'd appreciate it if the submission queue didn't take three days to clear before anyone on the other end sees it. Water tower's still standing, meter's still reading, and I'll keep making sure central billing doesn't short our folks on the way up Tow Route 4. You can check the numbers yourselves—214 million active meters out there and not a single estimated read since founding, which is more than I can say for the lag on this notice board.",
+        "title": "Cycle Review Filing, JSA Ceres",
+        "body": "Filing the Sheb's cycle review paperwork with the Joint Settlement Authority Ceres, same as always, though I'd appreciate it if the submission queue didn't take three days to clear before anyone on the other end sees it. Water tower's still standing, meter's still reading, and I'll keep making sure central billing doesn't short our folks on the way up Tow Route 4. You can check the numbers yourselves, 214 million active meters out there and not a single estimated read since founding, which is more than I can say for the lag on this notice board.",
         "tags": [
           "regulator",
           "statement",
@@ -5233,7 +5233,7 @@
         "persona_id": "tug-captain-mako",
         "kind": "complaint",
         "title": "Meter Don't Blink When the Beam Does",
-        "body": "Relay geometry on Tow Route 4 last cycle and The Beam cut clean while Dredge-Clear was still hauling. Meter kept its four-second reads like nothing happened. I don't care what the house says—billing follows the house, fine—but you can't bill a hull for juice that never hit the panel. I've run this route since '87 and the only thing that never drops is the read counter.",
+        "body": "Relay geometry on Tow Route 4 last cycle and The Beam cut clean while Dredge-Clear was still hauling. Meter kept its four-second reads like nothing happened. I don't care what the house says, billing follows the house, fine, but you can't bill a hull for juice that never hit the panel. I've run this route since '87 and the only thing that never drops is the read counter.",
         "tags": [
           "outage",
           "beam",
@@ -5254,7 +5254,7 @@
         "role": "staff",
         "persona_id": "ops-central",
         "kind": "acknowledgment",
-        "title": "Tow Route 4 — Beamline Handoff Acknowledged",
+        "title": "Tow Route 4, Beamline Handoff Acknowledged",
         "body": "In-Space Power confirms the report from Tow Route 4, account Dredge-Clear. During the scheduled relay geometry window, a beamline handoff to the secondary array introduced a 14-millisecond synchronization gap between generation dispatch and panel irradiance. Meter reads continued at the standard four-second interval as designed; reads record synchronization state, not delivered flux. No charge was issued for the affected interval.",
         "tags": [
           "outage",
@@ -5319,7 +5319,7 @@
         "persona_id": "tug-captain-mako",
         "kind": "comment",
         "title": "First Light, Plain Speaking",
-        "body": "Fresh hulls anchoring out on Tow Route 7, hailing me about what First Light covers. Simple enough—your reads don't bill for three cycles, then the meter starts chewing. Ain't free power, just a grace period while you get your lines sorted. I've dragged enough new settlements into the dark to know they figure it out eventually.",
+        "body": "Fresh hulls anchoring out on Tow Route 7, hailing me about what First Light covers. Simple enough, your reads don't bill for three cycles, then the meter starts chewing. Ain't free power, just a grace period while you get your lines sorted. I've dragged enough new settlements into the dark to know they figure it out eventually.",
         "tags": [
           "first-light",
           "rates",
@@ -5511,7 +5511,7 @@
         "persona_id": "tug-captain-mako",
         "kind": "complaint",
         "title": "Read Gap on Yard Glass, Tow Route 4",
-        "body": "Four-second read gap on the yard glass. Yard blames a synchronization pulse, but I know hull shadow when I see it—some freighter drifted across our line on Tow Route 4 and ate the read. Working hardware don't miss cycles; it just needs a clear sky and a tether that holds.",
+        "body": "Four-second read gap on the yard glass. Yard blames a synchronization pulse, but I know hull shadow when I see it, some freighter drifted across our line on Tow Route 4 and ate the read. Working hardware don't miss cycles; it just needs a clear sky and a tether that holds.",
         "tags": [
           "outage",
           "tow-route-4",
@@ -5554,7 +5554,7 @@
         "role": "community",
         "persona_id": "new-sheboygan-clerk",
         "kind": "complaint",
-        "title": "Yard Glass Read Gap — Sync Pulse",
+        "title": "Yard Glass Read Gap, Sync Pulse",
         "body": "Folks, the yard glass on meter ISP-TR4-NS-001 missed one four-second read yesterday morning. Central says it was a synchronization pulse. Out here on Tow Route 4 we call that a Tuesday, but I filed the notice anyway since they keep asking us to. The Sheb's water tower made it through the tow and it'll make it through a missed read too. Water's still running, bill will sort itself when the next pulse catches up.",
         "tags": [
           "outage",
@@ -5576,7 +5576,7 @@
         "role": "staff",
         "persona_id": "ops-central",
         "kind": "acknowledgment",
-        "title": "Yard Glass Read Gap — Acknowledged",
+        "title": "Yard Glass Read Gap, Acknowledged",
         "body": "In-Space Power confirms the single four-second read gap reported for meter ISP-TR4-NS-001, Yard Glass, Tow Route 4. The interval coincided with a scheduled synchronization pulse during beamline handoff between adjacent relay geometries. No charge was issued for the missed interval; the subsequent read reconciled the cumulative total, and billing follows the house.",
         "tags": [
           "outage",
@@ -5598,7 +5598,7 @@
         "persona_id": "tug-captain-mako",
         "kind": "comment",
         "title": "Auditors on the Flywheel Line",
-        "body": "Regulator's got eyes on the mass-battery flywheel depots now, counting every joule spun up in those iron drums. Good luck to them — I've towed hulls through nine percent stored-light and I know what it takes to keep a flywheel honest when the beam-shadow rolls long. They'll find the meters reading true at four seconds, same as they always do. Billing follows the house, and the house don't spin free.",
+        "body": "Regulator's got eyes on the mass-battery flywheel depots now, counting every joule spun up in those iron drums. Good luck to them, I've towed hulls through nine percent stored-light and I know what it takes to keep a flywheel honest when the beam-shadow rolls long. They'll find the meters reading true at four seconds, same as they always do. Billing follows the house, and the house don't spin free.",
         "tags": [
           "regulator",
           "stored-light",
@@ -5749,7 +5749,7 @@
         "role": "staff",
         "persona_id": "ops-central",
         "kind": "acknowledgment",
-        "title": "Water Tower Classification — Tow Route 4",
+        "title": "Water Tower Classification, Tow Route 4",
         "body": "In-Space Power confirms that ancillary structures without habitation registers, including water towers, are not classified as houses under the billing principle \"Billing follows the house.\" The tower is metered as part of the Tow Route 4 settlement footprint and appears on the Corner Main rate entry for that account. Separate metering is issued only to structures with independent consumption registers; the tower's draw is accounted for within the settlement's aggregate reads. No reclassification is pending.",
         "tags": [
           "billing",
@@ -5771,7 +5771,7 @@
         "persona_id": "halverson-green",
         "kind": "complaint",
         "title": "Missed Interchange at Marker 77, Tow Route 4",
-        "body": "I have kept the paper statement from cycle 2999.10 showing the automatic read dropped us past the interchange at Marker 77, and now the dark stretch between the old cornfield—what they call Hydroponic Bay C since nobody asked—belongs to nobody on the ledger. The meter ISP-TR4-HG-044 has been current since 2709 and it does not lie the way these four-second reads do when the tow line shudders, but I would still like to know which tariff covers a kilometer of unlit coupling that the settlement authority keeps calling a porchlight zone. I am not asking for the corner main rate, only an answer before the next read misses us again.",
+        "body": "I have kept the paper statement from cycle 2999.10 showing the automatic read dropped us past the interchange at Marker 77, and now the dark stretch between the old cornfield, what they call Hydroponic Bay C since nobody asked, belongs to nobody on the ledger. The meter ISP-TR4-HG-044 has been current since 2709 and it does not lie the way these four-second reads do when the tow line shudders, but I would still like to know which tariff covers a kilometer of unlit coupling that the settlement authority keeps calling a porchlight zone. I am not asking for the corner main rate, only an answer before the next read misses us again.",
         "tags": [
           "outage",
           "tow-route-4",
@@ -5901,7 +5901,7 @@
         "persona_id": "new-sheboygan-clerk",
         "kind": "complaint",
         "title": "Four-Second Gap on the Yard Glass",
-        "body": "The yard glass on ISP-TR4-NS-001 missed a read last cycle — a full four seconds, which in our line of work is basically a long weekend. Central says it was a synchronization pulse. I say the pulse can sync somewhere else next time; the Sheb's water tower survived the tow and this meter has been reading since '11 without needing a nap. Billing follows the house, but the house was blinking. We'll take the correction on the next statement.",
+        "body": "The yard glass on ISP-TR4-NS-001 missed a read last cycle, a full four seconds, which in our line of work is basically a long weekend. Central says it was a synchronization pulse. I say the pulse can sync somewhere else next time; the Sheb's water tower survived the tow and this meter has been reading since '11 without needing a nap. Billing follows the house, but the house was blinking. We'll take the correction on the next statement.",
         "tags": [
           "outage",
           "tow-route-4",
@@ -5922,7 +5922,7 @@
         "role": "staff",
         "persona_id": "ops-central",
         "kind": "acknowledgment",
-        "title": "Read Gap Acknowledged — ISP-TR4-NS-001",
+        "title": "Read Gap Acknowledged, ISP-TR4-NS-001",
         "body": "In-Space Power confirms a four-second read gap on meter ISP-TR4-NS-001 at Tow Route 4, north span. The interval corresponds to a scheduled synchronization pulse during relay geometry realignment; the meter performed a beamline handoff to the Ceres-side aggregator and resumed normal reads on the following cycle. No charge was issued for the interval. Billing follows the house, and the house was not blinking.",
         "tags": [
           "outage",

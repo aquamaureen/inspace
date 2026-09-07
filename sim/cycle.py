@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""In-Space Power v1 agentic loop — cycle turns and service passes.
+"""In-Space Power v1 agentic loop: cycle turns and service passes.
 
 Subcommands:
   turn     Open the next statement cycle: ops-central opening statement,
@@ -17,7 +17,7 @@ Subcommands:
 All passes evaluate sim/spawn-rules.yaml against every new public event;
 the first matching rule per event spawns a response (customer service,
 canon correction, incident reaction). Internal items spawn nothing.
-Every generated text is validated against the ledger bans — failures are
+Every generated text is validated against the ledger bans; failures are
 retried once, then the event is dropped (canon violations never
 publish).
 
@@ -111,7 +111,7 @@ PERSONA_WEIGHTS = {
     "tug-captain-mako": 2,
 }
 
-# Big events — space is big; something is always happening somewhere. One
+# Big events: space is big; something is always happening somewhere. One
 # incident statement per turn at 50% probability, issued mid-cycle, tagged
 # "incident" so spawn-rules.yaml (incident-react) draws a community reply.
 INCIDENT_SEEDS = [
@@ -143,7 +143,7 @@ INCIDENT_SEEDS = [
 INTERNAL_TOPICS = [
     {"kind": "memo", "persona": "ops-central", "tags": ["handoff", "shift"],
      "task": "Write an internal shift-handoff memo. It will never be posted. "
-             "Operational, terse, contains one [REDACTED — house figure]."},
+             "Operational, terse, contains one [REDACTED: house figure]."},
     {"kind": "memo", "persona": "ops-central", "tags": ["settlement", "belt"],
      "task": "Write an internal settlement note about a long-running debt or "
              "billing argument (e.g. the Belt balance, unpaid since 2087). "
@@ -196,7 +196,7 @@ def canon_block(ledger: dict, cycle: str) -> str:
         f"(sunward/shade), Corner Main {rates['corner_main']['sunward']}/{rates['corner_main']['shade']}, "
         f"Underway flat {rates['underway']['flat']}, all credits/MJ. "
         f"First Light: {rates['first_light']['note']}.",
-        "BANS — never violate, in any wording:",
+        "BANS (never violate, in any wording):",
     ]
     lines += [f"  - {b}" for b in ledger["bans"]]
     return "\n".join(lines)
@@ -304,6 +304,7 @@ TASK: Write one "{kind}" notice by this persona.
 Style rules:
 - 2 to 5 sentences. Plain, dry, slightly deadpan utility-fiction tone.
 - Stay in character. Never mention fiction, simulations, or AI.
+- No em dashes, ever. Use periods, commas, colons, or parentheses.
 {rules}
 
 Reply with ONLY a JSON object, no markdown fences:

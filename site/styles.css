@@ -596,7 +596,7 @@ section h2{
   margin-bottom:0.35rem;
 }
 .persona-traits li::before{
-  content:"—";
+  content:"·";
   position:absolute;
   left:0;
   color:var(--magenta);

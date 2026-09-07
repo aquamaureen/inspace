@@ -67,7 +67,7 @@
       { timestamp: '2999-09-41T05:22:00Z', persona_id: 'isp-okafor', role: 'staff', kind: 'statement', title: 'Read schedule through the millennium crossing', body: 'The crossing into the year 3000 will be metered like any other second, which is to say exactly. No structure will be uncounted at midnight of the new era. A read is a read.', tags: ['reads', '3k'] },
       { timestamp: '2999-09-40T11:03:00Z', persona_id: 'the-record', role: 'canon', kind: 'footnote', title: 'Correction: "nearly a thousand years" is 958 years', body: 'The Record corrects a company statement describing the service interval as "nearly a thousand years." The interval is 958 years. Precision is a form of respect.', tags: ['correction', 'the record'] },
       { timestamp: '2999-09-39T09:47:00Z', persona_id: 'belt-roundtable', role: 'community', kind: 'complaint', title: 'Third disconnect notice this cycle', body: 'The Roundtable acknowledges the third disconnect notice of the cycle. The first was framed. The second is a coaster. The third is answered with soup; the reader who delivers it will be fed regardless of what the notice says.', tags: ['belt', 'disconnects'] },
-      { timestamp: '2999-09-38T14:20:00Z', persona_id: 'isp-chen', role: 'staff', kind: 'acknowledgment', title: 'Correction to the printed shade rate', body: 'The shade rate printed at 0.0114 was in effect 0.0113 for the first nine days of the cycle. The difference — 0.0001 per megajoule — will be credited to affected structures. Regrettably.', tags: ['tariffs', 'shade', 'correction'] },
+      { timestamp: '2999-09-38T14:20:00Z', persona_id: 'isp-chen', role: 'staff', kind: 'acknowledgment', title: 'Correction to the printed shade rate', body: 'The shade rate printed at 0.0114 was in effect 0.0113 for the first nine days of the cycle. The difference, 0.0001 per megajoule, will be credited to affected structures. Regrettably.', tags: ['tariffs', 'shade', 'correction'] },
       { timestamp: '2999-09-37T20:11:00Z', persona_id: 'nsheb-desk', role: 'community', kind: 'comment', title: 'New Sheboygan registers its yard-glass lights', body: 'The town will run its lawn glass at full color for the crossing. The Ordinance Desk confirms the displays are registered under Notice 2999-09-1170, and that the sermon against drift will pause for one night only.', tags: ['3k', 'tow route 4'] },
       { timestamp: '2999-09-36T07:58:00Z', persona_id: 'hg-brandt', role: 'community', kind: 'complaint', title: 'The steeple meter reads our rotation as enthusiasm', body: 'Meter counsel reminds me the meter is bonded to the church steeple, as is right. But when the chain rotates the town for an even bake, the steeple describes a circle and the meter reads the circle as consumption. Bill the geometry, not the faithful.', tags: ['halverson green', 'meter bonding'] },
       { timestamp: '2999-09-35T16:44:00Z', persona_id: 'tug-rusk', role: 'community', kind: 'comment', title: 'Cordial reports: New Sheboygan is waving', body: 'Tug Cordial hauled the chain through the Phobos Interchange today. New Sheboygan waved. They always wave. It is the only cargo that waves back, and I have hauled three towns.', tags: ['tow route 4', 'phobos interchange'] },
@@ -86,18 +86,18 @@
       { timestamp: '2999-09-22T11:52:00Z', persona_id: 'isp-okafor', role: 'staff', kind: 'acknowledgment', title: 'On the estimated-reads counter', body: 'The counter of estimated reads since 2041 has been checked against the ledger and found to be within acceptable awe. It will continue to count. That is what it is for.', tags: ['reads'] },
       { timestamp: '2999-09-21T02:37:00Z', persona_id: 'nsheb-desk', role: 'community', kind: 'complaint', title: 'Sermon against drift interrupted by flex', body: 'The Ordinance Desk complains that Moontide flex interrupted Tuesday\'s sermon against drift at the good part. Europa flexes; we forgive; the lawn glass rippled beautifully. Note it, but gently.', tags: ['moontide', 'tow route 4'] },
       { timestamp: '2999-09-20T18:46:00Z', persona_id: 'europa-envoy', role: 'community', kind: 'comment', title: 'On punctuality at the crossing', body: 'The Grid will observe the crossing by keeping its usual schedule, one hour earlier than everyone\'s, as is tradition since 2093. Autonomy is punctuality at scale.', tags: ['europa', '3k'] },
-      { timestamp: '2999-09-19T07:20:00Z', persona_id: 'isp-reyes', role: 'staff', kind: 'statement', title: 'On the year 3000', body: 'The company has been asked what changes at the year 3000. The answer is filing-structural and spiritual: nothing. Rates hold. Reads continue. The millennium will be metered like any other second — exactly.', tags: ['3k', 'statement'] },
-      { timestamp: '2999-09-41T03:12:00Z', persona_id: 'isp-vale', role: 'staff', kind: 'memo', audience: 'internal', title: 'Shift handoff — Beamline B', body: 'Flex reserve holding at 6%. [REDACTED — house figure] Do not post. The kiosk hears about faults only after they are grandmothers.', tags: ['handoff', 'beamline'] },
-      { timestamp: '2999-09-40T22:48:00Z', persona_id: 'isp-chen', role: 'staff', kind: 'memo', audience: 'internal', title: 'Draft apology, shade misprint — held', body: 'Draft "we regret" language for the shade-rate misprint. Held at counsel\'s advice: an apology is an admission with a postage stamp. [REDACTED]', tags: ['drafts', 'tariffs'] },
+      { timestamp: '2999-09-19T07:20:00Z', persona_id: 'isp-reyes', role: 'staff', kind: 'statement', title: 'On the year 3000', body: 'The company has been asked what changes at the year 3000. The answer is filing-structural and spiritual: nothing. Rates hold. Reads continue. The millennium will be metered like any other second. Exactly.', tags: ['3k', 'statement'] },
+      { timestamp: '2999-09-41T03:12:00Z', persona_id: 'isp-vale', role: 'staff', kind: 'memo', audience: 'internal', title: 'Shift handoff: Beamline B', body: 'Flex reserve holding at 6%. [REDACTED: house figure] Do not post. The kiosk hears about faults only after they are grandmothers.', tags: ['handoff', 'beamline'] },
+      { timestamp: '2999-09-40T22:48:00Z', persona_id: 'isp-chen', role: 'staff', kind: 'memo', audience: 'internal', title: 'Draft apology, shade misprint: held', body: 'Draft "we regret" language for the shade-rate misprint. Held at counsel\'s advice: an apology is an admission with a postage stamp. [REDACTED]', tags: ['drafts', 'tariffs'] },
       { timestamp: '2999-09-40T16:03:00Z', persona_id: 'isp-aba', role: 'staff', kind: 'memo', audience: 'internal', title: 'Re: Belt, 2087, again', body: 'They offered to feed the reader. That is not payment; that is a restaurant. Hold the line. Concede nothing in public. [REDACTED]', tags: ['belt', 'settlement'] },
       { timestamp: '2999-09-39T05:35:00Z', persona_id: 'isp-reyes', role: 'staff', kind: 'memo', audience: 'internal', title: 'Observance staffing, 2999-10', body: 'Triple read shift at the Phobos Interchange for the crossing. Company position, and I quote: the year 3000 is a billing year like any other. No free light. [REDACTED]', tags: ['3k', 'staffing'] },
       { timestamp: '2999-09-38T13:19:00Z', persona_id: 'the-record', role: 'canon', kind: 'memo', audience: 'internal', title: 'Held: correction re: founding charter', body: 'A correction touching the founding charter is held pending [REDACTED]. The Record does not enjoy holding. The Record holds.', tags: ['the record', 'holds'] },
       { timestamp: '2999-09-37T10:26:00Z', persona_id: 'isp-sow', role: 'staff', kind: 'memo', audience: 'internal', title: 'The kiosk posted it; it stands', body: 'Legal notes the kiosk posted the tow-route ledger item before this office approved the wording. Too late. Posted is posted. [REDACTED]', tags: ['kiosk', 'legal'] },
       { timestamp: '2999-09-36T15:44:00Z', persona_id: 'isp-okafor', role: 'staff', kind: 'memo', audience: 'internal', title: 'The waving is not a fault', body: 'Captain Rusk waves at the towed towns and the towns wave back. Not a meter fault. No ticket. [REDACTED] Someone should tell him the gesture is logged.', tags: ['reads', 'tow routes'] },
       { timestamp: '2999-09-35T19:57:00Z', persona_id: 'archivist', role: 'canon', kind: 'memo', audience: 'internal', title: 'Weather (rumors)', body: 'Rumor logged: that the illumination registry is a census of the willing. Filed under weather. [REDACTED]', tags: ['archive', '3k'] },
-      { timestamp: '2999-09-41T04:00:04Z', persona_id: 'isp-okafor', role: 'staff', kind: 'log', audience: 'internal', title: 'AUTOREAD — Phobos Interchange watch', body: '2999-09-41T04:00:04Z METER 18822041 READ OK\n2999-09-41T04:00:08Z METER 18822041 READ OK\n2999-09-41T04:00:12Z METER 18822041 READ OK\n[... 3,153,600 lines omitted; all OK]\n2999-09-41T07:30:00Z WATCH ENDS. NOTHING HAPPENED. LOGGED ANYWAY.', tags: ['reads', 'logs'] },
-      { timestamp: '2999-09-39T22:14:00Z', persona_id: 'isp-vale', role: 'staff', kind: 'transcript', audience: 'internal', title: 'Intercepted — beamline scheduling call', body: 'VALE: The observance window overlaps my maintenance.\nREYES: Then the maintenance overlaps the observance.\nVALE: I am asking for the night.\nREYES: The night is load-bearing, Istvan.\nVALE: [unintelligible]\nREYES: Logged as agreement.', tags: ['observance', 'beamline'] },
-      { timestamp: '2999-09-38T21:52:00Z', persona_id: 'isp-reyes', role: 'staff', kind: 'misdirected', audience: 'internal', title: 'Misdirected personal note', body: 'Dawit — the soup thing. If Settlement ever concedes, I want it on record that I was against the restaurant joke from the start. Also your sister says the yard glass goes up at full color for the crossing, and you are expected. Do not reply on this channel. — R.', tags: ['personal', 'belt'] },
+      { timestamp: '2999-09-41T04:00:04Z', persona_id: 'isp-okafor', role: 'staff', kind: 'log', audience: 'internal', title: 'AUTOREAD: Phobos Interchange watch', body: '2999-09-41T04:00:04Z METER 18822041 READ OK\n2999-09-41T04:00:08Z METER 18822041 READ OK\n2999-09-41T04:00:12Z METER 18822041 READ OK\n[... 3,153,600 lines omitted; all OK]\n2999-09-41T07:30:00Z WATCH ENDS. NOTHING HAPPENED. LOGGED ANYWAY.', tags: ['reads', 'logs'] },
+      { timestamp: '2999-09-39T22:14:00Z', persona_id: 'isp-vale', role: 'staff', kind: 'transcript', audience: 'internal', title: 'Intercepted: beamline scheduling call', body: 'VALE: The observance window overlaps my maintenance.\nREYES: Then the maintenance overlaps the observance.\nVALE: I am asking for the night.\nREYES: The night is load-bearing, Istvan.\nVALE: [unintelligible]\nREYES: Logged as agreement.', tags: ['observance', 'beamline'] },
+      { timestamp: '2999-09-38T21:52:00Z', persona_id: 'isp-reyes', role: 'staff', kind: 'misdirected', audience: 'internal', title: 'Misdirected personal note', body: 'Dawit, the soup thing. If Settlement ever concedes, I want it on record that I was against the restaurant joke from the start. Also your sister says the yard glass goes up at full color for the crossing, and you are expected. Do not reply on this channel. Signed, R.', tags: ['personal', 'belt'] },
       { timestamp: '2999-09-18T06:05:00Z', persona_id: 'isp-vale', role: 'staff', kind: 'statement', title: 'Space weather: halo CME clears the Sunside tranche', body: 'A coronal mass ejection off the Sunside tranche reached the primary beamlines on day 17. The Beam was curtailed for eleven hours. Fusion held the base. Stored light filled the gap at observance prices. The Sun has issued a statement of its own. In-Space Power acknowledges receipt.', tags: ['space-weather', 'the beam', 'outage'] },
       { timestamp: '2999-09-16T11:30:00Z', persona_id: 'nsheb-desk', role: 'community', kind: 'complaint', title: 'Micrometeorite swarm over Tow Route 4', body: 'A swarm crossed the route on day 15. New Sheboygan\'s yard glass is cracked in three places, and the Ordinance Desk notes that a lawn under broken glass is a lawn under weather. Tow insurance, we have learned, covers tugs.', tags: ['tow route 4', 'yard-glass', 'impact'] },
       { timestamp: '2999-09-15T09:12:00Z', persona_id: 'isp-reyes', role: 'staff', kind: 'acknowledgment', title: 'On Tow Route 4 yard-glass damage', body: 'The company acknowledges the damage to New Sheboygan\'s yard glass. Structures under tow are metered, insured, and indemnified per clause 9. The clause is long. The crack is covered. A reader will attend.', tags: ['tow route 4', 'yard-glass'], caused_by: 'Micrometeorite swarm over Tow Route 4' },
@@ -201,7 +201,7 @@
       const div = el('div', 'legend-item');
       const dt = el('dt');
       dt.innerHTML = `<span class="swatch" style="--c:${item.color}"></span>${item.label}`;
-      const dd = el('dd', '', `${item.value}% — ${item.source}`);
+      const dd = el('dd', '', `${item.value}%, ${item.source}`);
       div.appendChild(dt);
       div.appendChild(dd);
       container.appendChild(div);
@@ -266,12 +266,12 @@
     const leaked = (events || []).filter(e => e.audience === 'internal').length;
     const items = [
       { num: yearsSince, label: 'years since founding' },
-      { num: '3,000', label: 'the year, next cycle — observance in preparation' },
-      { num: 'Meter 112', label: 'oldest account — Earth Reserve Ohio' },
+      { num: '3,000', label: 'the year, next cycle, observance in preparation' },
+      { num: 'Meter 112', label: 'oldest account, Earth Reserve Ohio' },
       { num: '1 YJ', label: 'consumed every 41 days' },
       { num: voices, label: 'voices on record this cycle' },
       { num: posted + ' / ' + leaked, label: 'posted notices / leaked house items' },
-      { num: 'JSAC', label: 'regulator — ' + facts.regulator },
+      { num: 'JSAC', label: 'regulator, ' + facts.regulator },
       { num: '2087', label: 'Belt households unpaid since' },
       { num: '2093', label: 'Europa paying its own bill since' }
     ];
@@ -372,7 +372,7 @@
 
       const footer = el('div', 'stream-footer');
       const byline = el('span', 'stream-byline');
-      byline.innerHTML = `— <strong>${persona.name}</strong> <span class="stream-role">${ev.role}</span>`;
+      byline.innerHTML = `<strong>${persona.name}</strong> <span class="stream-role">${ev.role}</span>`;
       footer.appendChild(byline);
 
       if (ev.caused_by) {
@@ -503,7 +503,7 @@
 
       const footer = el('div', 'channel-footer');
       const byline = el('span');
-      byline.innerHTML = `— <strong>${persona.name}</strong> <span class="stream-role">${ev.role}</span>`;
+      byline.innerHTML = `<strong>${persona.name}</strong> <span class="stream-role">${ev.role}</span>`;
       footer.appendChild(byline);
       const tags = el('span', 'channel-tags');
       tags.textContent = ev.tags.join(' · ');
@@ -528,7 +528,7 @@
       const staff = personas.filter(p => p.type === 'staff').length;
       const community = personas.filter(p => p.type === 'community').length;
       const canon = personas.filter(p => p.type === 'canon').length;
-      countEl.textContent = `${personas.length} voices on record — ${staff} staff, ${community} community, ${canon} canon`;
+      countEl.textContent = `${personas.length} voices on record: ${staff} staff, ${community} community, ${canon} canon`;
     }
     personas.forEach(p => {
       const art = el('article', 'persona-card');
