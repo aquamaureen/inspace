@@ -392,11 +392,6 @@ section h2{
 .wordmark-small{
   font-size:1rem;
 }
-.footer-note{
-  color:rgba(158,151,168,0.7);
-  font-size:0.75rem;
-  margin-top:1.5rem;
-}
 
 /* Responsive */
 @media (max-width:600px){
