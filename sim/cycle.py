@@ -3,15 +3,22 @@
 
 Subcommands:
   turn     Open the next statement cycle: ops-central opening statement,
-           community noise, statement ripple, and spawn-rule responses.
+           community noise, an optional incident statement (space weather,
+           impact, or industrial accident), statement ripple, and
+           spawn-rule responses.
   service  Ongoing customer service within the CURRENT cycle: community
            complaints/comments plus the spawn-rule responses they trigger.
            No new cycle is opened and no statement is issued.
+  internal Leaked house-channel traffic: 1-2 internal items (memo, log,
+           transcript, misdirected note) marked audience "internal". They
+           publish to the ledger and the company site's House channels
+           section but are never emitted to the kiosk.
 
-Both passes evaluate sim/spawn-rules.yaml against every new event; the first
-matching rule per event spawns a response (customer service, canon
-correction). Every generated text is validated against the ledger bans —
-failures are retried once, then the event is dropped (canon violations never
+All passes evaluate sim/spawn-rules.yaml against every new public event;
+the first matching rule per event spawns a response (customer service,
+canon correction, incident reaction). Internal items spawn nothing.
+Every generated text is validated against the ledger bans — failures are
+retried once, then the event is dropped (canon violations never
 publish).
 
 After generation: append to ledger/events.json, rebuild the site
@@ -22,6 +29,8 @@ Usage:
                     [--no-deploy] [--no-push]
   sim/cycle.py service [--noise 2] [--seed 7] [--dry-run] [--no-deploy]
                        [--no-push]
+  sim/cycle.py internal [--noise 1] [--seed 7] [--dry-run] [--no-deploy]
+                        [--no-push]
 """
 
 import argparse
@@ -52,7 +61,8 @@ DEPLOY_KEY = str(Path.home() / ".ssh" / "id_ed25519")
 VERIFY_URL = "https://inspacepower.com/data/site.json"
 KIOSK_DEPLOY = str(Path.home() / "bin" / "deploy-kiosk.sh")
 
-KINDS = {"statement", "comment", "complaint", "acknowledgment", "footnote"}
+KINDS = {"statement", "comment", "complaint", "acknowledgment", "footnote",
+         "memo", "log", "transcript", "misdirected"}  # last four: internal only
 ANSI_RE = re.compile(r"\x1b\[[0-9;]*[A-Za-z]")
 
 # Topic seeds for community noise. Service tags (outage, rate-dispute,
@@ -100,6 +110,61 @@ PERSONA_WEIGHTS = {
     "europa-grid": 1,
     "tug-captain-mako": 2,
 }
+
+# Big events — space is big; something is always happening somewhere. One
+# incident statement per turn at 50% probability, issued mid-cycle, tagged
+# "incident" so spawn-rules.yaml (incident-react) draws a community reply.
+INCIDENT_SEEDS = [
+    {"id": "space-weather",
+     "tags": ["incident", "space-weather"],
+     "task": "Issue an incident statement about space weather: a coronal "
+             "mass ejection or solar particle event that forced Beam "
+             "curtailment and drew on stored light. State what happened, "
+             "how long the curtailment lasted, and what held the base. "
+             "Deadpan; the Sun is a supplier, not an enemy."},
+    {"id": "impact",
+     "tags": ["incident", "impact"],
+     "task": "Issue an incident statement about a natural impact event: a "
+             "micrometeorite swarm or small body crossing a tow route, "
+             "yard, or relay. Cover the damage, casualties or the absence "
+             "of them, and what is indemnified. Deadpan; cite the clause."},
+    {"id": "fire",
+     "tags": ["incident", "fire"],
+     "task": "Issue an incident statement about an industrial accident at a "
+             "settlement yard: a fire or venting in stored-light vaults, "
+             "flywheel depots, or a licensed hull. State what was lost, "
+             "what was released, who was hurt, and who is deciding the "
+             "bill. Deadpan; do not call it unprecedented."},
+]
+
+# Internal house-channel traffic (the `internal` pass). These items carry
+# audience "internal": they publish to the ledger and the company site's
+# House channels section, and emit_kiosk.py excludes them from the kiosk.
+INTERNAL_TOPICS = [
+    {"kind": "memo", "persona": "ops-central", "tags": ["handoff", "shift"],
+     "task": "Write an internal shift-handoff memo. It will never be posted. "
+             "Operational, terse, contains one [REDACTED — house figure]."},
+    {"kind": "memo", "persona": "ops-central", "tags": ["settlement", "belt"],
+     "task": "Write an internal settlement note about a long-running debt or "
+             "billing argument (e.g. the Belt balance, unpaid since 2087). "
+             "State the house position and what may never be conceded in "
+             "public. Include [REDACTED]."},
+    {"kind": "log", "persona": "ops-central", "tags": ["reads", "logs"],
+     "task": "Write a short automated read-watch system log: timestamped "
+             "METER ... READ OK lines, an entirely anomaly-free watch, "
+             "ending with a dry summary line. Nothing happens; that is the "
+             "point."},
+    {"kind": "transcript", "persona": "ops-central", "tags": ["transcript"],
+     "task": "Write an intercepted internal transcript fragment between "
+             "Dispatch and the Record (two speakers, NAME: lines). A "
+             "scheduling or wording argument, resolved in house style. No "
+             "public business is decided."},
+    {"kind": "misdirected", "persona": "ops-central", "tags": ["personal"],
+     "task": "Write a short personal note misdirected onto a house channel: "
+             "a colleague reminder or family note about an observance or a "
+             "yard-glass display, signed with an initial. Mildly "
+             "embarrassing, strictly human."},
+]
 
 
 def load_personas() -> dict[str, dict]:
@@ -335,6 +400,8 @@ class CycleRun:
             "id", "cycle", "timestamp", "role", "persona_id", "kind",
             "title", "body", "tags", "caused_by", "spawned", "chain_id",
             "verified")}
+        if ev.get("audience"):
+            ordered["audience"] = ev["audience"]
         self.events.append(ordered)
         print(f"  + {ordered['id']} [{ordered['kind']}] "
               f"{ordered['persona_id']}: {ordered['title']}")
@@ -529,7 +596,37 @@ def cmd_turn(args) -> int:
         ripple = run.publish(ripple, stmt["chain_id"], stmt["id"], dt)
         stmt["spawned"].append(ripple["id"])
 
-    spawn_responses(run, personas, ledger, rules, rng, triggers)
+    incident_triggers = []
+    if rng.random() < 0.5:
+        seed = rng.choice(INCIDENT_SEEDS)
+        print(f" incident ({seed['id']})...")
+        inc = gen_event(
+            "statement", "ops-central", personas, ledger, cycle,
+            task=seed["task"], require_tags=seed["tags"],
+        )
+        if inc is not None:
+            dt = noise_clock()
+            inc = run.publish(inc, run.new_chain(), None, dt)
+            incident_triggers.append((inc, dt))
+            if rng.random() < 0.5:
+                print(" incident record check...")
+                foot = gen_event(
+                    "footnote", "canon-editor", personas, ledger, cycle,
+                    task="An incident statement was just issued.\n"
+                         f"  title: {inc['title']}\n  body: {inc['body']}\n"
+                         "Place the event in the record: correct any "
+                         "imprecise language, and note prior occurrences of "
+                         "this class of event if the ledger's history "
+                         "suggests them.",
+                    require_tags=["incident", "correction"],
+                )
+                if foot is not None:
+                    fdt = dt + timedelta(hours=rng.randint(2, 8))
+                    foot = run.publish(foot, inc["chain_id"], inc["id"], fdt)
+                    inc["spawned"].append(foot["id"])
+
+    spawn_responses(run, personas, ledger, rules, rng,
+                    triggers + incident_triggers)
     return finalize(run, ledger, existing, f"cycle {cycle}",
                     args.dry_run, not args.no_deploy, not args.no_push)
 
@@ -564,6 +661,42 @@ def cmd_service(args) -> int:
                     args.dry_run, not args.no_deploy, not args.no_push)
 
 
+def cmd_internal(args) -> int:
+    """Leaked house-channel traffic: internal items, never posted, never
+    emitted to the kiosk. Internal items spawn no public responses."""
+    ledger, existing, rules, personas = load_state()
+    cycle = ledger["meta"]["cycle"]
+    run = CycleRun(cycle, existing)
+    rng = random.Random(args.seed)
+    last_ts = max((e["timestamp"] for e in existing if e["cycle"] == cycle),
+                  default=None)
+    floor = (datetime.fromisoformat(last_ts.replace("Z", "+00:00"))
+             .replace(tzinfo=None) if last_ts else None)
+    clock = {"t": floor or datetime(int(run.year), int(run.cyc), 1, 0, 0)}
+
+    def internal_clock() -> datetime:
+        clock["t"] += timedelta(minutes=rng.randint(3, 45))
+        return clock["t"]
+
+    print(f"== internal pass {cycle} ==")
+    topics = rng.sample(INTERNAL_TOPICS,
+                        k=min(args.noise, len(INTERNAL_TOPICS)))
+    for topic in topics:
+        print(f" internal ({topic['kind']}, {topic['persona']})...")
+        ev = gen_event(
+            topic["kind"], topic["persona"], personas, ledger, cycle,
+            task=topic["task"] + "\nThis is INTERNAL traffic: it must read "
+                 "like something that leaked, not something that was posted.",
+            require_tags=topic["tags"],
+        )
+        if ev is not None:
+            ev["audience"] = "internal"
+            dt = internal_clock()
+            run.publish(ev, run.new_chain(), None, dt)
+    return finalize(run, ledger, existing, f"{cycle} internal",
+                    args.dry_run, not args.no_deploy, not args.no_push)
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     sub = parser.add_subparsers(dest="command", required=True)
@@ -583,6 +716,10 @@ def main() -> int:
     service = sub.add_parser("service", parents=[common],
                              help="customer-service pass within the current cycle")
     service.set_defaults(func=cmd_service, noise_default=2)
+
+    internal = sub.add_parser("internal", parents=[common],
+                              help="leaked internal house-channel pass")
+    internal.set_defaults(func=cmd_internal, noise_default=1)
 
     args = parser.parse_args()
     if args.noise is None:

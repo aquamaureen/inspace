@@ -15,19 +15,21 @@
   <nav class="site-nav" aria-label="Primary">
     <a href="#statement">Statement</a>
     <a href="#stream">Notice stream</a>
+    <a href="#kiosk">The kiosk</a>
+    <a href="#channels">House channels</a>
     <a href="#mix">Generation mix</a>
     <a href="#tariffs">Tariffs</a>
     <a href="#facts">Company facts</a>
     <a href="/personas">Voices</a>
-    <a href="/inquiry.html">Inquiry</a>
   </nav>
 </header>
 
 <main>
   <section class="hero" id="statement">
-    <p class="cycle-label">Statement cycle <time datetime="2999-09" id="cycleTime">2999.09</time></p>
+    <p class="cycle-label">Statement cycle <time datetime="2999-09" id="cycleTime">2999.09</time><span id="cycleDay"></span></p>
     <h1 class="hero-title">The utility of record,<br>Sol system.</h1>
     <p class="hero-lede">We meter, read, and route power across every human structure in motion. Founded <span class="num" id="foundedYear">2041</span>. Present year <span class="num" id="presentYear">2999</span>.</p>
+    <p class="hero-celebration"><strong>3K observance</strong>This is the final cycle before the year 3000. The company marks the crossing with Notice 2999-09-1170: register your illumination, keep your meter honest, and expect the reads to continue at four seconds — the millennium will be metered like any other second, exactly.</p>
     <div class="hero-stats" id="heroStats">
       <div class="stat">
         <span class="stat-value" id="activeMeters">214,116,882</span>
@@ -41,21 +43,51 @@
         <span class="stat-value" id="estimatedReads">0</span>
         <span class="stat-label">estimated reads issued since 2041</span>
       </div>
+      <div class="stat">
+        <span class="stat-value">1</span>
+        <span class="stat-label">cycle until the year 3000</span>
+      </div>
     </div>
   </section>
 
   <section class="stream" id="stream">
     <h2>Notice stream</h2>
     <p class="stream-lede">Selected statements, complaints, corrections, and echoes from the system this cycle. Each entry is attributed to a voice in the ledger.</p>
+    <p class="stream-count" id="streamCount"></p>
     <div class="stream-controls">
-      <button class="stream-filter active" data-filter="all">All</button>
-      <button class="stream-filter" data-filter="staff">Official</button>
-      <button class="stream-filter" data-filter="community">Community</button>
-      <button class="stream-filter" data-filter="canon">Corrections</button>
+      <button class="stream-filter active" data-filter="all" aria-pressed="true">All</button>
+      <button class="stream-filter" data-filter="staff" aria-pressed="false">Official</button>
+      <button class="stream-filter" data-filter="community" aria-pressed="false">Community</button>
+      <button class="stream-filter" data-filter="canon" aria-pressed="false">Corrections</button>
     </div>
     <div class="stream-entries" id="streamEntries">
       <p class="stream-loading">Loading notices…</p>
     </div>
+    <div class="stream-pager" id="streamPager"></div>
+  </section>
+
+  <section class="kiosk" id="kiosk">
+    <h2>This site and the kiosk</h2>
+    <p class="kiosk-lede">In-Space Power keeps two public faces. They are not the same face, and the company prefers it that way.</p>
+    <div class="kiosk-cards">
+      <article class="kiosk-card">
+        <h3>inspacepower.com — this site</h3>
+        <p>The company statement: the cycle's figures, generation mix, tariffs, payment ledger, and the curated notice stream above. Edited, metered, and issued by the company itself.</p>
+      </article>
+      <article class="kiosk-card">
+        <h3>kiosk.inspacepower.com — the notice board</h3>
+        <p>The public record as posted: complaints, counters, corrections, and the open docket, in the order they were posted. Nothing on the kiosk is polished. Everything on it counts.</p>
+      </article>
+    </div>
+    <p class="kiosk-rule">The rule is old: <em>in public, the company is what it posts.</em> House business stays indoors. A notice that was not posted did not happen in public — no matter how true it is.</p>
+  </section>
+
+  <section class="channels" id="channels">
+    <h2>House channels</h2>
+    <p class="channels-lede">Not everything the company says is said in public. House channels carry the internal traffic — shift handoffs, settlement arguments, draft statements that never post. None of it appears on the kiosk. What follows is what has leaked.</p>
+    <p class="channels-count" id="channelsCount"></p>
+    <div class="channels-entries" id="channelsEntries"></div>
+    <p class="channels-note">Figures are rounded. The company does not confirm the existence of the channels whose traffic is summarized here.</p>
   </section>
 
   <section class="mix" id="mix">
@@ -98,7 +130,7 @@
 
 <footer class="site-footer">
   <p><span class="wordmark-small"><span class="word-in">IN-SPACE</span><span class="word-power">POWER</span></span></p>
-  <p>Utility of record, Sol system · Founded 2041 · Statement cycle 2999.09</p>
+  <p>Utility of record, Sol system · Founded 2041 · Statement cycle 2999.09 · One cycle from the year 3000</p>
   <p class="footer-note">A statement-fiction prototype. Not a real utility.</p>
 </footer>
 

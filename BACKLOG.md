@@ -84,3 +84,12 @@ Backend choice (email alias vs. JSON queue vs. third-party service) remains pend
 ### Experts
 
 - Scout / `code` for the test and monkey-patch wiring.
+
+## Open: internal/house-channel comms in the simulator
+
+- The company site now renders a "House channels" section for events carrying `audience: "internal"` (leaked memos with `[REDACTED]` handling; kinds `memo`, `log`, `transcript`, `misdirected` get distinct rendering). The public stream excludes them. See `/home/mag/inspacepower-site/site.js` (`renderChannels`, `filterFromHash`) and `styles.css`.
+- `sim/cycle.py` currently only publishes public events to `ledger/events.json`. To make house channels live on the built shard, cycle.py needs an internal-comms generator: low-frequency `audience: "internal"` events on separate chains, spawned from settlement disputes, beamline ops, and observance staffing — never cross-posted to the kiosk (see `sim/emit_kiosk.py`).
+
+## Open: kiosk reciprocal link
+
+- `index.html` now points at kiosk.inspacepower.com as "the notice board." The kiosk skin (project `inspacepower-kiosk`, not checked out on this box) should link back to inspacepower.com as "the company statement" so the two-public-faces bit reads as a matched pair.

@@ -19,7 +19,8 @@ Mapping decisions (ledger -> contract):
             | record-office (see CHANNEL_FOR below)
   move      roots: statement/comment OPEN, complaint PROPOSE
             replies: acknowledgment COUNTER, footnote ESCALATE, comment COUNTER
-  visibility  all events are public (the sim has no internal channels yet)
+  visibility  internal events (audience "internal") are excluded; everything
+              else is public
   participants  sender, plus the trigger event's sender for replies
   positions     empty (the ledger carries no per-persona positions yet)
 
@@ -269,7 +270,9 @@ def main() -> int:
     args = parser.parse_args()
 
     ledger = json.loads(LEDGER_FILE.read_text(encoding="utf-8"))
-    events = json.loads(EVENTS_FILE.read_text(encoding="utf-8"))["events"]
+    # House channels stay indoors: internal traffic never reaches the kiosk.
+    events = [e for e in json.loads(EVENTS_FILE.read_text(encoding="utf-8"))["events"]
+              if e.get("audience") != "internal"]
     cycle = ledger["meta"]["cycle"]
 
     personas = {}

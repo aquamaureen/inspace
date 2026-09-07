@@ -90,3 +90,17 @@ rules:
         Acknowledge the visitor inquiry by role and subject. State that the
         question has been logged and that a full response will be issued in
         a later cycle if the ledger verifies the facts. Do not apologize.
+
+  - id: incident-react
+    # Staff incident statements (space weather, impacts, fires) draw one
+    # community reaction per pass — the neighbors respond before the
+    # company has finished its paperwork.
+    when: { role: staff, kind: statement, any_tag: [incident] }
+    then:
+      persona: any-community
+      kind: comment
+      duty: >
+        React to this official incident statement as an affected resident,
+        tow captain, or account holder. Deadpan, practical, no panic. Note
+        what it means for your meter, your lawn glass, your tow chain, or
+        your stored light — never contradict the statement's facts.
