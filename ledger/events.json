@@ -2709,6 +2709,67 @@
       "spawned": [],
       "chain_id": "chain-077",
       "verified": true
+    },
+    {
+      "id": "ev-2999-10-048",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-12T16:38:00Z",
+      "role": "community",
+      "persona_id": "new-sheboygan-clerk",
+      "kind": "complaint",
+      "title": "Meter Don't Know the Difference",
+      "body": "During the relay geometry window on the 14th, The Beam cut out for twelve minutes while our meter on Tow Route 4 kept right on logging reads every four seconds like nothing happened. I'm told the generation mix is still sitting at 46% beam this cycle, which is fine, but the Sheb's folks don't much care for being billed for sunlight that wasn't there. The water tower made it through the tow and it deserves better than phantom charges. I've filed the discrepancy with Ceres and expect it sorted before the next statement cycle rolls around.",
+      "tags": [
+        "outage",
+        "beam",
+        "meter-accuracy",
+        "tow-route-4"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-10-050"
+      ],
+      "chain_id": "chain-079",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-049",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-12T16:57:00Z",
+      "role": "community",
+      "persona_id": "new-sheboygan-clerk",
+      "kind": "comment",
+      "title": "Active Meter Count Inquiry",
+      "body": "Central's posting says 214,116,882 active meters, same as last cycle and the one before that. I keep waiting for that number to dip even once, but it don't. Every four seconds a read comes through and I reckon somewhere a meter's still ticking for a porch nobody sits on anymore. The Sheb's meter's accounted for, water tower included, which is more than I can say for how long it takes these notices to clear the lag.",
+      "tags": [
+        "meters",
+        "comment",
+        "new-sheboygan",
+        "tow-route-4"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-080",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-050",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-12T21:38:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Tow Route 4 Interval Reconciliation",
+      "body": "In-Space Power confirms the Tow Route 4 meter on the Sheb account maintained its four-second read cadence during the scheduled relay geometry window on the 14th. The twelve-minute interval was a planned beamline handoff; the meter logs time, not flux. No charge was issued for the interval. The reconciliation filed with the Joint Settlement Authority Ceres will be resolved before the 2999.11 statement cycle.",
+      "tags": [
+        "outage",
+        "beam",
+        "meter-accuracy"
+      ],
+      "caused_by": "ev-2999-10-048",
+      "spawned": [],
+      "chain_id": "chain-079",
+      "verified": true
     }
   ]
 }
