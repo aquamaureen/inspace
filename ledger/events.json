@@ -2790,6 +2790,67 @@
       "chain_id": "chain-081",
       "verified": true,
       "audience": "internal"
+    },
+    {
+      "id": "ev-2999-10-052",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-12T23:23:00Z",
+      "role": "community",
+      "persona_id": "new-sheboygan-clerk",
+      "kind": "comment",
+      "title": "Belt Households Balance Outstanding",
+      "body": "Folks around the Sheb keep asking why the Belt households have carried a balance since 2087 without so much as a late notice from central billing. I have filed the inquiry three times now and each one takes longer to process than it took to tow this town out past Mars. The water tower made the trip and so did our ledgers, and both say the same thing. Somebody ought to settle that account before the next statement cycle rolls around.",
+      "tags": [
+        "billing",
+        "belt",
+        "new-sheboygan",
+        "central-billing"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-082",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-053",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-12T23:36:00Z",
+      "role": "community",
+      "persona_id": "tug-captain-mako",
+      "kind": "complaint",
+      "title": "Water Tower on Route 4",
+      "body": "Tow Route 4 picked up a settlement water tower near hull Dredge-Clear. Nobody filed a structure tag for it. It sits in the beam-shadow all cycle and drinks metered reads like the rest of us. If it is a structure, bill it. If it is not, tell me why the shadow still counts.",
+      "tags": [
+        "billing",
+        "tow-route-4",
+        "structures",
+        "beam-shadow"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-10-054"
+      ],
+      "chain_id": "chain-083",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-054",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-13T01:36:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Water Tower on Tow Route 4",
+      "body": "In-Space Power confirms the metered reads belong to the structure, not the shadow. Billing follows the house. The water tower is a structure and requires a structure tag filed with the Joint Settlement Authority Ceres under account route ISP-2041. Until a tag is filed, the reads continue to accrue against the nearest registered account on Tow Route 4. File the tag and the reads will route to the tower's own ledger.",
+      "tags": [
+        "billing",
+        "structures",
+        "tow-route-4"
+      ],
+      "caused_by": "ev-2999-10-053",
+      "spawned": [],
+      "chain_id": "chain-083",
+      "verified": true
     }
   ]
 }
