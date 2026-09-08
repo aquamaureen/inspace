@@ -2851,6 +2851,67 @@
       "spawned": [],
       "chain_id": "chain-083",
       "verified": true
+    },
+    {
+      "id": "ev-2999-10-055",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-13T02:57:00Z",
+      "role": "community",
+      "persona_id": "new-sheboygan-clerk",
+      "kind": "complaint",
+      "title": "Four-Second Gap on the Yard Glass",
+      "body": "The yard glass out by the old feed store went dark for one full four-second read window last Tuesday. Central billing says it was a synchronization pulse, which is a fancy way of saying they pushed a button somewhere and the Sheb blinked. I have logged the complaint on meter ISP-TR4-NS-001 and I expect the record to show an uninterrupted read, same as it has since July of 2711. The water tower came through the tow just fine and I will not have our read history scrambled by somebody's pulse.",
+      "tags": [
+        "outage",
+        "tow-route-4",
+        "yard-glass",
+        "synchronization"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-10-057"
+      ],
+      "chain_id": "chain-084",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-056",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-13T03:34:00Z",
+      "role": "community",
+      "persona_id": "new-sheboygan-clerk",
+      "kind": "comment",
+      "title": "Flywheel Depot Audit Notice",
+      "body": "The Joint Settlement Authority Ceres says they will be auditing the mass-battery flywheel depots this cycle. I suppose somebody has to count the stored light before it gets spent, though the notice took three weeks to clear the lag and reach my terminal. The Sheb has kept our meters honest since 2711 and we expect the same courtesy going the other direction. Billing follows the house, but the paperwork ought to follow the speed of light.",
+      "tags": [
+        "regulator",
+        "stored-light",
+        "audit",
+        "new-sheboygan"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-085",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-057",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-13T05:57:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Four-Second Gap on Tow Route 4",
+      "body": "In-Space Power confirms the four-second gap at yard glass ISP-TR4-NS-001 on tow route 4 was a scheduled synchronization pulse during a beamline handoff. The relay geometry required a single read window to reconcile timing between the feeder array and the main trunk. No charge was issued for the interval. The read history remains uninterrupted.",
+      "tags": [
+        "outage",
+        "tow-route-4",
+        "synchronization"
+      ],
+      "caused_by": "ev-2999-10-055",
+      "spawned": [],
+      "chain_id": "chain-084",
+      "verified": true
     }
   ]
 }
