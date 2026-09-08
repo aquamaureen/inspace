@@ -2933,6 +2933,67 @@
       "chain_id": "chain-086",
       "verified": true,
       "audience": "internal"
+    },
+    {
+      "id": "ev-2999-10-059",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-13T07:52:00Z",
+      "role": "community",
+      "persona_id": "tug-captain-mako",
+      "kind": "complaint",
+      "title": "Beam Drop on Relay Geometry, Meter Still Spinning",
+      "body": "Tow Route 4, hull Dredge-Clear. The Beam went dark during relay geometry and the meter kept counting like nothing happened. I am dragging a shadow-casting structure the size of a small ward and the read head does not care if the juice is there or not. Billing follows the house, but the house was empty. Cut the tally when the beam cuts, or start charging for darkness.",
+      "tags": [
+        "outage",
+        "beam",
+        "tow-route-4",
+        "meter-dispute"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-10-061"
+      ],
+      "chain_id": "chain-087",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-060",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-13T08:09:00Z",
+      "role": "community",
+      "persona_id": "halverson-green",
+      "kind": "comment",
+      "title": "First Light Inquiry from the New Settlement",
+      "body": "A new settlement out past the old cornfield, which we all remember before it became the hydroponic bay, has been asking what First Light actually covers, and I told them what I have always kept on my paper statements, which is that your first three cycles of reads are not billed, plain as that. They wanted to know if it covers the connection fee or the porchlight differential or what happens when the automatic reader decides to estimate something it should not, but I reminded them that In-Space Power has never issued an estimated read and that the rule is simply three cycles without a charge. I keep my statements in a drawer the same way I kept the soil samples from when we still grew real corn, and the answer has not changed since I first moved here in two-seven-oh-nine.",
+      "tags": [
+        "first-light",
+        "rates",
+        "new-settlements",
+        "paper-records"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-088",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-061",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-13T09:52:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Beam Drop Acknowledged, Tow Route 4",
+      "body": "In-Space Power confirms the report from Tow Route 4, hull Dredge-Clear. The relay geometry handoff on cycle 2999.10 produced a synchronization gap of three point two seconds between beamlines. The read head continued its four-second cycle during the interval, as it is designed to do. No charge was issued for the gap, and the tally has been adjusted.",
+      "tags": [
+        "outage",
+        "beam",
+        "meter-dispute"
+      ],
+      "caused_by": "ev-2999-10-059",
+      "spawned": [],
+      "chain_id": "chain-087",
+      "verified": true
     }
   ]
 }
