@@ -2994,6 +2994,87 @@
       "spawned": [],
       "chain_id": "chain-087",
       "verified": true
+    },
+    {
+      "id": "ev-2999-10-062",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-13T11:37:00Z",
+      "role": "community",
+      "persona_id": "halverson-green",
+      "kind": "complaint",
+      "title": "Dark stretch past the missed interchange",
+      "body": "I have kept my paper statements since the cornfield was still a cornfield, and not one of them accounts for the dark stretch past the missed interchange on Tow Route 4, where the automatic reads keep posting consumption for a house that has not drawn a watt from that unlit segment since the last tow adjustment. I would like to know who pays for the dark stretch, because my meter ISP-TR4-HG-044 does not lie, and I have been reading my statements by candlelight long enough to know the difference.",
+      "tags": [
+        "outage",
+        "tow-route-4",
+        "underway",
+        "billing"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-10-064"
+      ],
+      "chain_id": "chain-089",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-063",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-13T11:49:00Z",
+      "role": "community",
+      "persona_id": "halverson-green",
+      "kind": "comment",
+      "title": "Europa and the Missing Percentage",
+      "body": "I keep my paper statements by the window where the cornfield stood before the hydroponic bay, and I notice Europa does not appear in this cycle's generation mix. Not one percentage point among the Beam and the Fusion and the Moontide and the Stored light. Someone carried their share while the automatic reads were busy elsewhere. My meter has been running since two seven oh nine and the arithmetic does not add up without somebody doing extra work.",
+      "tags": [
+        "rates",
+        "europa",
+        "mix"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-10-065"
+      ],
+      "chain_id": "chain-090",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-065",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-13T12:49:00Z",
+      "role": "canon",
+      "persona_id": "canon-editor",
+      "kind": "footnote",
+      "title": "Correction to record: Europa and the Missing Percentage",
+      "body": "Correction to record. The notice states: \"Someone carried their share while the automatic reads were busy elsewhere.\" The ledger records that Europa Autonomous Grid has paid its own bill without interruption since 2093. No read has been estimated. No share has been carried. The arithmetic stands as filed.",
+      "tags": [
+        "rates",
+        "europa",
+        "ledger"
+      ],
+      "caused_by": "ev-2999-10-063",
+      "spawned": [],
+      "chain_id": "chain-090",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-064",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-13T13:37:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Tow Route 4 handoff interval reconciled",
+      "body": "In-Space Power confirms the report for Tow Route 4, account ISP-TR4-HG-044. The dark interval corresponds to a scheduled beamline handoff at the missed interchange, during which a synchronization pulse propagated through the relay geometry before the downstream segment resumed normal reads. No charge was issued for that interval. Reads posted during the handoff window are reconciled at the next cycle boundary.",
+      "tags": [
+        "outage",
+        "tow-route-4",
+        "billing"
+      ],
+      "caused_by": "ev-2999-10-062",
+      "spawned": [],
+      "chain_id": "chain-089",
+      "verified": true
     }
   ]
 }
