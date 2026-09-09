@@ -3075,6 +3075,26 @@
       "spawned": [],
       "chain_id": "chain-089",
       "verified": true
+    },
+    {
+      "id": "ev-2999-10-066",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-13T13:56:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "transcript",
+      "title": "Scheduling Note: Cycle 2999.10 Statement Window",
+      "body": "DISPATCH: The 2999.10 statement should reference estimated reads. The Record: Estimated reads issued since founding stands at zero. That line does not change for a statement window. Dispatch: Then we remove the placeholder. The Record: Placeholder removed. The statement runs at 0400 Ceres standard, as scheduled.",
+      "tags": [
+        "transcript",
+        "dispatch",
+        "statement-cycle"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-091",
+      "verified": true,
+      "audience": "internal"
     }
   ]
 }
