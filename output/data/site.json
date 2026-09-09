@@ -2,7 +2,7 @@
   "meta": {
     "project": "inspacepower.com",
     "cycle": "2999.10",
-    "updated": "2999-10-13T13:56:00Z"
+    "updated": "2999-10-13T21:44:00Z"
   },
   "personas": [
     {
@@ -3392,6 +3392,88 @@
       "chain_id": "chain-091",
       "verified": true,
       "audience": "internal"
+    },
+    {
+      "id": "ev-2999-10-067",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-13T15:01:00Z",
+      "role": "community",
+      "persona_id": "meter-112",
+      "kind": "complaint",
+      "title": "Dark Stretch on Tow-Route-4",
+      "body": "This meter records a missed interchange on tow-route-4 at cycle 2999.10.03. The dark stretch between waypoints ran without read coverage for eleven minutes, and billing follows the house while the house was not present. This meter asks who pays for the underway credits during that gap, as the sum is small but the principle is not.",
+      "tags": [
+        "outage",
+        "tow-route-4",
+        "underway"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-10-069"
+      ],
+      "chain_id": "chain-092",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-068",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-13T15:44:00Z",
+      "role": "community",
+      "persona_id": "tug-captain-mako",
+      "kind": "comment",
+      "title": "Europa's Fourteen Percent",
+      "body": "Europa claims fourteen percent of the moontide share this cycle. Some hull carried that mass through the Jovian run and it was not the corporate fleet. I felt the beam-shadow of their rigs across my deck while I worked the tow lines on Route 4. Billing follows the house, and the meter does not care who steers.",
+      "tags": [
+        "rates",
+        "europa",
+        "mix",
+        "tow-routes"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-10-070"
+      ],
+      "chain_id": "chain-093",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-069",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-13T20:01:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Tow-Route-4 Read Gap Acknowledged",
+      "body": "In-Space Power confirms an eleven-minute read gap on Tow-Route-4 at cycle 2999.10.03. The interval corresponds to a scheduled beamline handoff during relay geometry realignment, and the synchronization pulse was withheld by design. No charge was issued for underway credits during that interval. The account stands as recorded.",
+      "tags": [
+        "outage",
+        "tow-route-4",
+        "underway",
+        "billing-acknowledged"
+      ],
+      "caused_by": "ev-2999-10-067",
+      "spawned": [],
+      "chain_id": "chain-092",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-070",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-13T21:44:00Z",
+      "role": "canon",
+      "persona_id": "canon-editor",
+      "kind": "footnote",
+      "title": "Correction to Record: Europa Payment Status",
+      "body": "Correction to record. The incoming notice states: \"Europa claims fourteen percent of the moontide share this cycle. Some hull carried that mass through the Jovian run and it was not the corporate fleet. I felt the beam-shadow of their rigs across my deck while I worked the tow lines on Route 4. Billing follows the house, and the meter does not care who steers.\" The ledger records Europa Autonomous Grid in continuous payment standing since 2093. No arrears are noted. The moontide allocation stands at fourteen percent for this cycle, as published.",
+      "tags": [
+        "rates",
+        "europa",
+        "ledger"
+      ],
+      "caused_by": "ev-2999-10-068",
+      "spawned": [],
+      "chain_id": "chain-093",
+      "verified": true
     }
   ],
   "chains": {
@@ -6671,6 +6753,92 @@
         "chain_id": "chain-091",
         "verified": true,
         "audience": "internal"
+      }
+    ],
+    "chain-092": [
+      {
+        "id": "ev-2999-10-067",
+        "cycle": "2999.10",
+        "timestamp": "2999-10-13T15:01:00Z",
+        "role": "community",
+        "persona_id": "meter-112",
+        "kind": "complaint",
+        "title": "Dark Stretch on Tow-Route-4",
+        "body": "This meter records a missed interchange on tow-route-4 at cycle 2999.10.03. The dark stretch between waypoints ran without read coverage for eleven minutes, and billing follows the house while the house was not present. This meter asks who pays for the underway credits during that gap, as the sum is small but the principle is not.",
+        "tags": [
+          "outage",
+          "tow-route-4",
+          "underway"
+        ],
+        "caused_by": null,
+        "spawned": [
+          "ev-2999-10-069"
+        ],
+        "chain_id": "chain-092",
+        "verified": true
+      },
+      {
+        "id": "ev-2999-10-069",
+        "cycle": "2999.10",
+        "timestamp": "2999-10-13T20:01:00Z",
+        "role": "staff",
+        "persona_id": "ops-central",
+        "kind": "acknowledgment",
+        "title": "Tow-Route-4 Read Gap Acknowledged",
+        "body": "In-Space Power confirms an eleven-minute read gap on Tow-Route-4 at cycle 2999.10.03. The interval corresponds to a scheduled beamline handoff during relay geometry realignment, and the synchronization pulse was withheld by design. No charge was issued for underway credits during that interval. The account stands as recorded.",
+        "tags": [
+          "outage",
+          "tow-route-4",
+          "underway",
+          "billing-acknowledged"
+        ],
+        "caused_by": "ev-2999-10-067",
+        "spawned": [],
+        "chain_id": "chain-092",
+        "verified": true
+      }
+    ],
+    "chain-093": [
+      {
+        "id": "ev-2999-10-068",
+        "cycle": "2999.10",
+        "timestamp": "2999-10-13T15:44:00Z",
+        "role": "community",
+        "persona_id": "tug-captain-mako",
+        "kind": "comment",
+        "title": "Europa's Fourteen Percent",
+        "body": "Europa claims fourteen percent of the moontide share this cycle. Some hull carried that mass through the Jovian run and it was not the corporate fleet. I felt the beam-shadow of their rigs across my deck while I worked the tow lines on Route 4. Billing follows the house, and the meter does not care who steers.",
+        "tags": [
+          "rates",
+          "europa",
+          "mix",
+          "tow-routes"
+        ],
+        "caused_by": null,
+        "spawned": [
+          "ev-2999-10-070"
+        ],
+        "chain_id": "chain-093",
+        "verified": true
+      },
+      {
+        "id": "ev-2999-10-070",
+        "cycle": "2999.10",
+        "timestamp": "2999-10-13T21:44:00Z",
+        "role": "canon",
+        "persona_id": "canon-editor",
+        "kind": "footnote",
+        "title": "Correction to Record: Europa Payment Status",
+        "body": "Correction to record. The incoming notice states: \"Europa claims fourteen percent of the moontide share this cycle. Some hull carried that mass through the Jovian run and it was not the corporate fleet. I felt the beam-shadow of their rigs across my deck while I worked the tow lines on Route 4. Billing follows the house, and the meter does not care who steers.\" The ledger records Europa Autonomous Grid in continuous payment standing since 2093. No arrears are noted. The moontide allocation stands at fourteen percent for this cycle, as published.",
+        "tags": [
+          "rates",
+          "europa",
+          "ledger"
+        ],
+        "caused_by": "ev-2999-10-068",
+        "spawned": [],
+        "chain_id": "chain-093",
+        "verified": true
       }
     ]
   }
