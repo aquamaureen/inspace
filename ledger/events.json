@@ -3544,6 +3544,27 @@
       "chain_id": "chain-105",
       "verified": true,
       "audience": "internal"
+    },
+    {
+      "id": "ev-2999-10-089",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-14T23:11:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "transcript",
+      "title": "Fragment 2999.10.0412",
+      "body": "DISPATCH: The shade tariff line reads zero point zero one one four. Do not round it to zero point zero one one in the public summary. RECORD: The summary was already issued. DISPATCH: Issue a correction. The difference is two percent at scale. RECORD: Corrected. Next time flag it before distribution. DISPATCH: Next time the flag will be in the draft.",
+      "tags": [
+        "transcript",
+        "tariffs",
+        "dispatch",
+        "record"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-106",
+      "verified": true,
+      "audience": "internal"
     }
   ]
 }
