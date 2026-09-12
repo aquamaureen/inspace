@@ -3502,6 +3502,27 @@
       "spawned": [],
       "chain_id": "chain-102",
       "verified": true
+    },
+    {
+      "id": "ev-2999-10-087",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-14T22:31:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "memo",
+      "title": "Shift 2999.10 Handoff Note",
+      "body": "In-Space Power confirms the night-side grid held through the Mercury transit window with no meter dropouts. The Beam contribution remains at 46 percent; Fusion and Moontide are tracking within tolerance. The [REDACTED: house figure] settlement batch cleared through JSA Ceres at 0400 UTC. Corner Main tariffs adjust at cycle close; Porchlight shade rates hold. Please verify the Underway flat reconciliation before signing off.",
+      "tags": [
+        "handoff",
+        "shift",
+        "internal",
+        "grid-ops"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-104",
+      "verified": true,
+      "audience": "internal"
     }
   ]
 }
