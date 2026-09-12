@@ -3747,6 +3747,26 @@
       "spawned": [],
       "chain_id": "chain-111",
       "verified": true
+    },
+    {
+      "id": "ev-2999-10-099",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-15T12:00:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "misdirected",
+      "title": "Misdirected to House Channel 8841",
+      "body": "Mara, the yard-glass for Father's observance cycle is calibrated and ready at the service gate on Ceres ring four. Please collect it before the shade rotation or it will sit in full glare for another forty-one days. I told you the backing plate needed sealing before the children wrote on it, and now their names are permanent. R.",
+      "tags": [
+        "personal",
+        "domestic",
+        "yard-glass"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-113",
+      "verified": true,
+      "audience": "internal"
     }
   ]
 }
