@@ -3523,6 +3523,27 @@
       "chain_id": "chain-104",
       "verified": true,
       "audience": "internal"
+    },
+    {
+      "id": "ev-2999-10-088",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-14T22:42:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "memo",
+      "title": "Belt Balance: Internal Settlement Note 2999.10",
+      "body": "In-Space Power confirms the Belt balance remains unresolved after three hundred twelve years of continuous accrual. The house position is that billing follows the house, and the house does not move retroactively. Under no circumstances will public communications acknowledge that the original 2087 ledger was misfiled at Ceres. The Joint Settlement Authority has been notified that ISP-2041 will continue to carry the entry as active pending [REDACTED].",
+      "tags": [
+        "settlement",
+        "belt",
+        "internal",
+        "ledger"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-105",
+      "verified": true,
+      "audience": "internal"
     }
   ]
 }
