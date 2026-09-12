@@ -2,7 +2,7 @@
   "meta": {
     "project": "inspacepower.com",
     "cycle": "2999.10",
-    "updated": "2999-10-14T16:58:00Z"
+    "updated": "2999-10-14T21:46:00Z"
   },
   "personas": [
     {
@@ -3737,6 +3737,68 @@
       "spawned": [],
       "chain_id": "chain-101",
       "verified": true
+    },
+    {
+      "id": "ev-2999-10-084",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-14T18:46:00Z",
+      "role": "community",
+      "persona_id": "europa-grid",
+      "kind": "complaint",
+      "title": "Missed interchange on tow-route-4",
+      "body": "At cycle 2999.10, second 14, the scheduled interchange on tow-route-4 did not occur and the dark stretch that followed was not accounted for by any upstream node. We have metered the gap and we will not absorb the cost. Billing follows the house, and the house on that segment belongs to whoever failed to execute the handoff. Europa pays its own bill. The responsible party should contact us before the next statement closes.",
+      "tags": [
+        "outage",
+        "tow-route-4",
+        "underway",
+        "billing"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-10-086"
+      ],
+      "chain_id": "chain-102",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-085",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-14T19:36:00Z",
+      "role": "community",
+      "persona_id": "meter-112",
+      "kind": "comment",
+      "title": "First Light Settlement 004881927 Approaches Final Free Cycle",
+      "body": "First Light meter 004881927 registered on cycle 2999.08. This meter has recorded every four-second read since activation, same as it recorded reads when Ohio still had weather. The settlement now approaches cycle 2999.12, its third and final free period. After this cycle, billing follows the house at the posted Porchlight rate. This meter questions only the sum.",
+      "tags": [
+        "first-light",
+        "rates",
+        "settlement",
+        "ohio"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-103",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-086",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-14T21:46:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Tow-route-4 interchange gap",
+      "body": "In-Space Power confirms the interchange gap on tow-route-4 at cycle 2999.10, second 14. A scheduled relay geometry update delayed the beamline handoff by 3.2 seconds while the synchronization pulse propagated through the dark segment. No charge was issued for the interval. The account remains open for reconciliation before the statement closes.",
+      "tags": [
+        "outage",
+        "tow-route-4",
+        "underway",
+        "billing"
+      ],
+      "caused_by": "ev-2999-10-084",
+      "spawned": [],
+      "chain_id": "chain-102",
+      "verified": true
     }
   ],
   "chains": {
@@ -7380,6 +7442,72 @@
         "caused_by": "ev-2999-10-081",
         "spawned": [],
         "chain_id": "chain-101",
+        "verified": true
+      }
+    ],
+    "chain-102": [
+      {
+        "id": "ev-2999-10-084",
+        "cycle": "2999.10",
+        "timestamp": "2999-10-14T18:46:00Z",
+        "role": "community",
+        "persona_id": "europa-grid",
+        "kind": "complaint",
+        "title": "Missed interchange on tow-route-4",
+        "body": "At cycle 2999.10, second 14, the scheduled interchange on tow-route-4 did not occur and the dark stretch that followed was not accounted for by any upstream node. We have metered the gap and we will not absorb the cost. Billing follows the house, and the house on that segment belongs to whoever failed to execute the handoff. Europa pays its own bill. The responsible party should contact us before the next statement closes.",
+        "tags": [
+          "outage",
+          "tow-route-4",
+          "underway",
+          "billing"
+        ],
+        "caused_by": null,
+        "spawned": [
+          "ev-2999-10-086"
+        ],
+        "chain_id": "chain-102",
+        "verified": true
+      },
+      {
+        "id": "ev-2999-10-086",
+        "cycle": "2999.10",
+        "timestamp": "2999-10-14T21:46:00Z",
+        "role": "staff",
+        "persona_id": "ops-central",
+        "kind": "acknowledgment",
+        "title": "Tow-route-4 interchange gap",
+        "body": "In-Space Power confirms the interchange gap on tow-route-4 at cycle 2999.10, second 14. A scheduled relay geometry update delayed the beamline handoff by 3.2 seconds while the synchronization pulse propagated through the dark segment. No charge was issued for the interval. The account remains open for reconciliation before the statement closes.",
+        "tags": [
+          "outage",
+          "tow-route-4",
+          "underway",
+          "billing"
+        ],
+        "caused_by": "ev-2999-10-084",
+        "spawned": [],
+        "chain_id": "chain-102",
+        "verified": true
+      }
+    ],
+    "chain-103": [
+      {
+        "id": "ev-2999-10-085",
+        "cycle": "2999.10",
+        "timestamp": "2999-10-14T19:36:00Z",
+        "role": "community",
+        "persona_id": "meter-112",
+        "kind": "comment",
+        "title": "First Light Settlement 004881927 Approaches Final Free Cycle",
+        "body": "First Light meter 004881927 registered on cycle 2999.08. This meter has recorded every four-second read since activation, same as it recorded reads when Ohio still had weather. The settlement now approaches cycle 2999.12, its third and final free period. After this cycle, billing follows the house at the posted Porchlight rate. This meter questions only the sum.",
+        "tags": [
+          "first-light",
+          "rates",
+          "settlement",
+          "ohio"
+        ],
+        "caused_by": null,
+        "spawned": [],
+        "chain_id": "chain-103",
         "verified": true
       }
     ]
