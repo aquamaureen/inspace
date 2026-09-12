@@ -3767,6 +3767,88 @@
       "chain_id": "chain-113",
       "verified": true,
       "audience": "internal"
+    },
+    {
+      "id": "ev-2999-10-100",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-15T13:32:00Z",
+      "role": "community",
+      "persona_id": "tug-captain-mako",
+      "kind": "complaint",
+      "title": "Four-Second Blind on the Yard Glass",
+      "body": "Four seconds of nothing on the yard glass at ISP-UND-7781. A sync pulse ate the read clean. I don't care what the settlement clocks call it, a gap is a gap when you are hauling a Dredge-Clear through beam-shadow. Working hulls need steady eyes, not apologies from the grid.",
+      "tags": [
+        "outage",
+        "tow-route-4",
+        "yard-glass",
+        "sync-pulse"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-10-102"
+      ],
+      "chain_id": "chain-114",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-101",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-15T13:51:00Z",
+      "role": "community",
+      "persona_id": "tug-captain-mako",
+      "kind": "complaint",
+      "title": "Shade Premium on the Astern Side",
+      "body": "Cannot bill Porchlight shade rates to a settlement that never sees the beam because another hull dropped anchor in the way. Dredge-Clear has held the same line on Tow Route 4 for three months and the town astern pays the premium for a shadow cast by working iron. Billing follows the house, but the house here sits under a hull that is not moving. Either meter the beam-shadow proper or adjust the tariff before I cut the tow line myself.",
+      "tags": [
+        "rate-dispute",
+        "shade",
+        "tow-route-4",
+        "beam-shadow"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-10-103"
+      ],
+      "chain_id": "chain-115",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-102",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-15T17:32:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Acknowledge: ISP-UND-7781 Interval Blind",
+      "body": "In-Space Power confirms a four-second read gap at yard glass ISP-UND-7781 during scheduled relay geometry on tow route 4. A synchronization pulse at the beamline handoff consumed the read at the interval boundary. No charge was issued for the interval. Reads resume at the next four-second tick.",
+      "tags": [
+        "outage",
+        "sync-pulse",
+        "tow-route-4"
+      ],
+      "caused_by": "ev-2999-10-100",
+      "spawned": [],
+      "chain_id": "chain-114",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-103",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-15T18:51:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Tow Route 4 Shade Assessment",
+      "body": "In-Space Power confirms that the Porchlight shade rate of 0.0114 credits per megajoule applies to any meter registered outside the direct beam envelope, regardless of whether the obstruction is planetary or structural. The tariff does not distinguish between a moon and a moored hull. Billing follows the house. Settlements may petition the Joint Settlement Authority Ceres for reclassification to Corner Main at 0.0138 credits per megajoule, though this increases the premium rather than reducing it. Cutting the tow line is not a recognized billing adjustment and will result in Underway flat assessment at 0.0088 credits per megajoule for all unregistered draws.",
+      "tags": [
+        "rate-dispute",
+        "shade",
+        "tow-route-4"
+      ],
+      "caused_by": "ev-2999-10-101",
+      "spawned": [],
+      "chain_id": "chain-115",
+      "verified": true
     }
   ]
 }
