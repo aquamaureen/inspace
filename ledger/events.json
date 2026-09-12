@@ -3298,6 +3298,67 @@
       "spawned": [],
       "chain_id": "chain-096",
       "verified": true
+    },
+    {
+      "id": "ev-2999-10-077",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-14T03:53:00Z",
+      "role": "community",
+      "persona_id": "halverson-green",
+      "kind": "comment",
+      "title": "On the Belt Balance",
+      "body": "I keep my paper statements in a tin box by the door, same as I did when the cornfield was still a cornfield and not this hydroponic bay, and I can tell you the Belt households have not settled their balance since 2087. The automatic reads come through every four seconds now but I do not trust a number that arrives without a stamp, and a hundred and twelve years of unpaid accounts does not disappear because the system stopped counting. The Joint Settlement Authority on Ceres has the ledger, I suppose, but the principle was always that billing follows the house, and those houses are still drawing.",
+      "tags": [
+        "billing",
+        "belt",
+        "accounts",
+        "ceres"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-098",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-078",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-14T04:13:00Z",
+      "role": "community",
+      "persona_id": "meter-112",
+      "kind": "complaint",
+      "title": "Four-Second Gap, Yard Glass",
+      "body": "This meter logged a four-second read gap on the yard glass at 03:14:07 UTC. The synchronization pulse from Ceres arrived on schedule and erased the interval. This meter remembers when Ohio had weather and the reads arrived without interruption. The sum does not match the ledger.",
+      "tags": [
+        "outage",
+        "tow-route-4",
+        "yard-glass"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-10-079"
+      ],
+      "chain_id": "chain-099",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-079",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-14T10:13:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Four-Second Gap, Yard Glass, Tow Route 4",
+      "body": "In-Space Power confirms a four-second read gap at 03:14:07 UTC on the yard glass meter registered to account tow-route-4. The interval coincided with a scheduled relay geometry adjustment during the Ceres synchronization pulse and the subsequent beamline handoff. The synchronization pulse overwrote the interval as designed. No charge was issued for the erased read.",
+      "tags": [
+        "outage",
+        "yard-glass",
+        "tow-route-4",
+        "synchronization"
+      ],
+      "caused_by": "ev-2999-10-078",
+      "spawned": [],
+      "chain_id": "chain-099",
+      "verified": true
     }
   ]
 }
