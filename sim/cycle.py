@@ -40,6 +40,7 @@ import re
 import shutil
 import subprocess
 import sys
+import time
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
@@ -476,8 +477,15 @@ def kiosk_sync() -> None:
     Best effort: a kiosk failure must not fail the cycle (already
     committed and deployed by the time this runs)."""
     try:
-        subprocess.run([sys.executable, str(ROOT / "sim" / "emit_kiosk.py")],
-                       check=True, capture_output=True, text=True)
+        for attempt in range(3):
+            proc = subprocess.run([sys.executable, str(ROOT / "sim" / "emit_kiosk.py")],
+                                  capture_output=True, text=True)
+            if proc.returncode == 0:
+                break
+            if attempt < 2:
+                time.sleep(10)  # Dropbox mount can hold dir locks briefly
+        else:
+            raise RuntimeError(proc.stderr[-400:])
         proc = subprocess.run(["bash", KIOSK_DEPLOY], capture_output=True,
                               text=True, timeout=600)
         if proc.returncode != 0:

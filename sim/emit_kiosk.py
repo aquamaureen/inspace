@@ -36,6 +36,7 @@ import json
 import re
 import shutil
 import sys
+import time
 from pathlib import Path
 
 import yaml
@@ -63,6 +64,25 @@ CHANNEL_FOR = {
     ("community", "comment"): "community-board",
     ("canon", "footnote"): "record-office",
 }
+
+
+def reset_dir(target: Path, attempts: int = 6) -> None:
+    """Clear and recreate a shard subdirectory.
+
+    The default out dir lives on a Dropbox-synced Windows mount; the
+    directory can stay briefly locked after rmtree, so mkdir races and
+    fails with PermissionError. Retry rather than drop the sync.
+    """
+    for i in range(attempts):
+        try:
+            if target.is_dir():
+                shutil.rmtree(target)
+            target.mkdir()
+            return
+        except PermissionError:
+            if i == attempts - 1:
+                raise
+            time.sleep(2)
 
 
 def to_ts(iso: str) -> str:
@@ -290,10 +310,7 @@ def main() -> int:
         print(f"FATAL: {out} is not a directory", file=sys.stderr)
         return 1
     for sub in ("chains", "personas"):
-        target = out / sub
-        if target.is_dir():
-            shutil.rmtree(target)
-        target.mkdir()
+        reset_dir(out / sub)
 
     chains = build_chains(events, kiosk_events, cycle)
     latest = max(k["ts"] for k in kiosk_events.values())
