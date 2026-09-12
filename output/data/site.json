@@ -2,7 +2,7 @@
   "meta": {
     "project": "inspacepower.com",
     "cycle": "2999.10",
-    "updated": "2999-10-13T21:44:00Z"
+    "updated": "2999-10-14T00:03:00Z"
   },
   "personas": [
     {
@@ -3474,6 +3474,67 @@
       "spawned": [],
       "chain_id": "chain-093",
       "verified": true
+    },
+    {
+      "id": "ev-2999-10-071",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-13T23:03:00Z",
+      "role": "community",
+      "persona_id": "europa-grid",
+      "kind": "complaint",
+      "title": "Query on Stored Light Classification for Sunward Rate",
+      "body": "We note that stored light comprises 9 percent of this cycle's generation and request clarification on its rate treatment. The Porchlight sunward rate applies to light arriving from Sol. Stored light arrives from a capacitor. Europa pays its own bill and asks whether the origin or the delivery method determines the rate. We await an answer before the cycle closes.",
+      "tags": [
+        "rate-dispute",
+        "stored-light",
+        "tariff-clarification"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-10-073"
+      ],
+      "chain_id": "chain-094",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-072",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-13T23:36:00Z",
+      "role": "community",
+      "persona_id": "new-sheboygan-clerk",
+      "kind": "comment",
+      "title": "Meter Count Inquiry",
+      "body": "The central dashboard shows 214,116,882 active meters as of this cycle, same as last cycle and the one before that. I am filing this comment to ask whether that number has ever gone down, even by one, or if the system just locks it in place like a stubborn door. The Sheb has had the same meter since 2711 and it still reads every four seconds without complaint. If a meter does drop off somewhere, I would appreciate notice before the lag catches up to us out on Tow Route 4.",
+      "tags": [
+        "meters",
+        "comment",
+        "new-sheboygan",
+        "tow-route-4"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-095",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-073",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-14T00:03:00Z",
+      "role": "canon",
+      "persona_id": "canon-editor",
+      "kind": "footnote",
+      "title": "Correction to Record: Europa Payment Status",
+      "body": "Correction to record. The notice states \"Europa pays its own bill and asks whether the origin or the delivery method determines the rate.\" The ledger shows Europa Autonomous Grid has paid its own bill without interruption since 2093. No inference of arrears is supported. The rate classification query proceeds on that corrected footing.",
+      "tags": [
+        "rate-dispute",
+        "payment-ledger",
+        "europa",
+        "stored-light"
+      ],
+      "caused_by": "ev-2999-10-071",
+      "spawned": [],
+      "chain_id": "chain-094",
+      "verified": true
     }
   ],
   "chains": {
@@ -6838,6 +6899,71 @@
         "caused_by": "ev-2999-10-068",
         "spawned": [],
         "chain_id": "chain-093",
+        "verified": true
+      }
+    ],
+    "chain-094": [
+      {
+        "id": "ev-2999-10-071",
+        "cycle": "2999.10",
+        "timestamp": "2999-10-13T23:03:00Z",
+        "role": "community",
+        "persona_id": "europa-grid",
+        "kind": "complaint",
+        "title": "Query on Stored Light Classification for Sunward Rate",
+        "body": "We note that stored light comprises 9 percent of this cycle's generation and request clarification on its rate treatment. The Porchlight sunward rate applies to light arriving from Sol. Stored light arrives from a capacitor. Europa pays its own bill and asks whether the origin or the delivery method determines the rate. We await an answer before the cycle closes.",
+        "tags": [
+          "rate-dispute",
+          "stored-light",
+          "tariff-clarification"
+        ],
+        "caused_by": null,
+        "spawned": [
+          "ev-2999-10-073"
+        ],
+        "chain_id": "chain-094",
+        "verified": true
+      },
+      {
+        "id": "ev-2999-10-073",
+        "cycle": "2999.10",
+        "timestamp": "2999-10-14T00:03:00Z",
+        "role": "canon",
+        "persona_id": "canon-editor",
+        "kind": "footnote",
+        "title": "Correction to Record: Europa Payment Status",
+        "body": "Correction to record. The notice states \"Europa pays its own bill and asks whether the origin or the delivery method determines the rate.\" The ledger shows Europa Autonomous Grid has paid its own bill without interruption since 2093. No inference of arrears is supported. The rate classification query proceeds on that corrected footing.",
+        "tags": [
+          "rate-dispute",
+          "payment-ledger",
+          "europa",
+          "stored-light"
+        ],
+        "caused_by": "ev-2999-10-071",
+        "spawned": [],
+        "chain_id": "chain-094",
+        "verified": true
+      }
+    ],
+    "chain-095": [
+      {
+        "id": "ev-2999-10-072",
+        "cycle": "2999.10",
+        "timestamp": "2999-10-13T23:36:00Z",
+        "role": "community",
+        "persona_id": "new-sheboygan-clerk",
+        "kind": "comment",
+        "title": "Meter Count Inquiry",
+        "body": "The central dashboard shows 214,116,882 active meters as of this cycle, same as last cycle and the one before that. I am filing this comment to ask whether that number has ever gone down, even by one, or if the system just locks it in place like a stubborn door. The Sheb has had the same meter since 2711 and it still reads every four seconds without complaint. If a meter does drop off somewhere, I would appreciate notice before the lag catches up to us out on Tow Route 4.",
+        "tags": [
+          "meters",
+          "comment",
+          "new-sheboygan",
+          "tow-route-4"
+        ],
+        "caused_by": null,
+        "spawned": [],
+        "chain_id": "chain-095",
         "verified": true
       }
     ]
