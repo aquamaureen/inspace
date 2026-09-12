@@ -35,6 +35,7 @@ Usage:
 
 import argparse
 import json
+import os
 import random
 import re
 import shutil
@@ -55,9 +56,16 @@ OUTPUT_DIR = ROOT / "output"
 
 MODEL = "opencode/qwen3.6-plus"
 # cron runs with a minimal PATH; resolve the opencode binary up front.
-OPENCODE_BIN = shutil.which("opencode") or str(Path.home() / ".npm-global" / "bin" / "opencode")
-DEPLOY_HOST = "deploy@157.245.118.128"
-DEPLOY_DST = "/var/www/inspacepower.com/html/"
+OPENCODE_BIN = (os.environ.get("OPENCODE_BIN") or shutil.which("opencode")
+                or str(Path.home() / ".npm-global" / "bin" / "opencode"))
+# Deploy targets. Defaults post from this box (msi-wsl-teamops) over ssh.
+# On the web droplet itself, set ISP_LOCAL_DEPLOY=1 and the kiosk vars to
+# publish straight into the local webroots instead.
+LOCAL_DEPLOY = os.environ.get("ISP_LOCAL_DEPLOY") == "1"
+DEPLOY_HOST = os.environ.get("ISP_DEPLOY_HOST", "deploy@157.245.118.128")
+DEPLOY_DST = os.environ.get("ISP_DEPLOY_DST", "/var/www/inspacepower.com/html/")
+KIOSK_STAGE = os.environ.get("ISP_KIOSK_STAGE", "")
+KIOSK_WEBROOT = os.environ.get("ISP_KIOSK_WEBROOT", "")
 DEPLOY_KEY = str(Path.home() / ".ssh" / "id_ed25519")
 VERIFY_URL = "https://inspacepower.com/data/site.json"
 KIOSK_DEPLOY = str(Path.home() / "bin" / "deploy-kiosk.sh")
@@ -473,19 +481,30 @@ def spawn_responses(run: CycleRun, personas: dict, ledger: dict,
 
 
 def kiosk_sync() -> None:
-    """Emit live shards into the kiosk data/ dir and rsync the kiosk.
-    Best effort: a kiosk failure must not fail the cycle (already
-    committed and deployed by the time this runs)."""
+    """Emit live shards into the kiosk data/ dir and publish the kiosk.
+    On the droplet (ISP_KIOSK_STAGE set), emit to a local staging dir and
+    rsync it into the live webroot (no --delete: CONTRACT.md and any
+    hand-placed files stay). Elsewhere, rsync the whole prototype via
+    deploy-kiosk.sh. Best effort: a kiosk failure must not fail the cycle
+    (already committed and deployed by the time this runs)."""
     try:
+        emit_cmd = [sys.executable, str(ROOT / "sim" / "emit_kiosk.py")]
+        if KIOSK_STAGE:
+            emit_cmd += ["--out", KIOSK_STAGE]
         for attempt in range(3):
-            proc = subprocess.run([sys.executable, str(ROOT / "sim" / "emit_kiosk.py")],
-                                  capture_output=True, text=True)
+            proc = subprocess.run(emit_cmd, capture_output=True, text=True)
             if proc.returncode == 0:
                 break
             if attempt < 2:
                 time.sleep(10)  # Dropbox mount can hold dir locks briefly
         else:
             raise RuntimeError(proc.stderr[-400:])
+        if KIOSK_STAGE:
+            subprocess.run(["rsync", "-az", f"{KIOSK_STAGE}/",
+                            f"{KIOSK_WEBROOT}/data/"], check=True,
+                           timeout=600)
+            print(" kiosk synced")
+            return
         proc = subprocess.run(["bash", KIOSK_DEPLOY], capture_output=True,
                               text=True, timeout=600)
         if proc.returncode != 0:
@@ -530,12 +549,16 @@ def finalize(run: CycleRun, ledger: dict, existing: list[dict],
     print(" site rebuilt")
 
     if do_deploy:
-        subprocess.run([
-            "rsync", "-az", "--delete",
-            "-e", f"ssh -i {DEPLOY_KEY} -o BatchMode=yes -o ConnectTimeout=10 "
-                  "-o StrictHostKeyChecking=accept-new",
-            f"{OUTPUT_DIR}/", f"{DEPLOY_HOST}:{DEPLOY_DST}",
-        ], check=True)
+        if LOCAL_DEPLOY:
+            subprocess.run(["rsync", "-az", "--delete",
+                            f"{OUTPUT_DIR}/", DEPLOY_DST], check=True)
+        else:
+            subprocess.run([
+                "rsync", "-az", "--delete",
+                "-e", f"ssh -i {DEPLOY_KEY} -o BatchMode=yes -o ConnectTimeout=10 "
+                      "-o StrictHostKeyChecking=accept-new",
+                f"{OUTPUT_DIR}/", f"{DEPLOY_HOST}:{DEPLOY_DST}",
+            ], check=True)
         probe = subprocess.run(
             ["curl", "-s", "--max-time", "20", VERIFY_URL],
             capture_output=True, text=True, check=True)
