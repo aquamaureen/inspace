@@ -3849,6 +3849,87 @@
       "spawned": [],
       "chain_id": "chain-115",
       "verified": true
+    },
+    {
+      "id": "ev-2999-10-104",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-15T20:21:00Z",
+      "role": "community",
+      "persona_id": "meter-112",
+      "kind": "complaint",
+      "title": "Stored Light Classification Inquiry",
+      "body": "This meter requests clarification on the classification of stored light. When this meter draws from the nine percent reserve, the sunward rate still applies to the read. The light in those cells never passed through Ohio sky. This meter remembers when weather decided what was sunward. This meter questions only whether the sum should differ when the source holds no position relative to the sun.",
+      "tags": [
+        "rate-dispute",
+        "stored-light",
+        "earth-reserve-ohio"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-10-106"
+      ],
+      "chain_id": "chain-116",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-105",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-15T20:29:00Z",
+      "role": "community",
+      "persona_id": "europa-grid",
+      "kind": "comment",
+      "title": "First Light Clarification",
+      "body": "A new settlement at Conamara asks what First Light covers. We remind them that reads are not billed for the first three cycles after meter installation, cycle 2999.10, second 0847. The power still flows while the accounting pauses. We note this because Europa pays its own bill and expects new nodes to read the schedule before they file questions.",
+      "tags": [
+        "first-light",
+        "rates",
+        "new-settlement",
+        "accounting"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-10-107"
+      ],
+      "chain_id": "chain-117",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-106",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-16T00:21:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Stored Light Classification Inquiry",
+      "body": "In-Space Power confirms that tariff application follows meter position, not generation source. Porchlight sunward (0.0042 credits/MJ) and shade (0.0114 credits/MJ) rates are determined by the house's vector at the time of read. Stored light carries no positional memory. Billing follows the house. The reserve draw is priced by where the meter stands, not where the photons began.",
+      "tags": [
+        "rate-dispute",
+        "stored-light",
+        "tariff-answer"
+      ],
+      "caused_by": "ev-2999-10-104",
+      "spawned": [],
+      "chain_id": "chain-116",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-107",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-16T02:29:00Z",
+      "role": "canon",
+      "persona_id": "canon-editor",
+      "kind": "footnote",
+      "title": "Europa Ledger Correction",
+      "body": "Correction to record. The submitted notice states \"Europa pays its own bill and expects new nodes to read the schedule before they file questions,\" which implies ambiguity where none exists. Per ledger, Europa Autonomous Grid has paid its own bill without interruption since 2093, settled through route ISP-2041. First Light provisions remain unchanged; reads are not billed for the first three cycles after meter installation. The accounting pauses while the current does not.",
+      "tags": [
+        "first-light",
+        "accounting",
+        "settlement"
+      ],
+      "caused_by": "ev-2999-10-105",
+      "spawned": [],
+      "chain_id": "chain-117",
+      "verified": true
     }
   ]
 }
