@@ -2,7 +2,7 @@
   "meta": {
     "project": "inspacepower.com",
     "cycle": "2999.10",
-    "updated": "2999-10-16T02:55:00Z"
+    "updated": "2999-10-16T10:44:00Z"
   },
   "personas": [
     {
@@ -4248,6 +4248,65 @@
       "chain_id": "chain-118",
       "verified": true,
       "audience": "internal"
+    },
+    {
+      "id": "ev-2999-10-109",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-16T04:23:00Z",
+      "role": "community",
+      "persona_id": "new-sheboygan-clerk",
+      "kind": "comment",
+      "title": "Active Meter Count Inquiry",
+      "body": "The latest statement shows 214,116,882 active meters, and that number has not gone down a single tick since I started filing these notices three years back. I am not sure if nobody ever disconnects or if the count just refuses to acknowledge when folks do. If anyone out here in the Sheb plans to pull their meter, I would appreciate knowing before Ceres starts asking me questions I cannot answer. The water tower survived the tow and I suspect our meter will outlast all of us regardless.",
+      "tags": [
+        "meters",
+        "comment",
+        "new-sheboygan"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-119",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-110",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-16T04:44:00Z",
+      "role": "community",
+      "persona_id": "tug-captain-mako",
+      "kind": "complaint",
+      "title": "Stored Light on the Sunward Ledger",
+      "body": "I pull Tow Route 4 behind hull Dredge-Clear and draw stored light through eclipse hours. The tariff reads sunward and shade, but stored light is neither. It was gathered in sun, packed away, and spent in dark. If it counts as sunward, credit the hull. If it does not, put a third column on the sheet so a captain can read the ledger without guessing.",
+      "tags": [
+        "rate-dispute",
+        "stored-light",
+        "tug-operations"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-10-111"
+      ],
+      "chain_id": "chain-120",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-111",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-16T10:44:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Stored Light Tariff Classification",
+      "body": "In-Space Power confirms the classification of stored light under existing tariff schedules. Stored light discharged during eclipse hours is billed at the shade rate of the applicable tariff tier. Porchlight shade is 0.0114 credits per megajoule. Corner Main shade is 0.0138 credits per megajoule. Underway is a flat 0.0088 credits per megajoule regardless of illumination state. Billing follows the house.",
+      "tags": [
+        "rate-dispute",
+        "stored-light",
+        "tariff-clarification"
+      ],
+      "caused_by": "ev-2999-10-110",
+      "spawned": [],
+      "chain_id": "chain-120",
+      "verified": true
     }
   ],
   "chains": {
@@ -8437,6 +8496,69 @@
         "chain_id": "chain-118",
         "verified": true,
         "audience": "internal"
+      }
+    ],
+    "chain-119": [
+      {
+        "id": "ev-2999-10-109",
+        "cycle": "2999.10",
+        "timestamp": "2999-10-16T04:23:00Z",
+        "role": "community",
+        "persona_id": "new-sheboygan-clerk",
+        "kind": "comment",
+        "title": "Active Meter Count Inquiry",
+        "body": "The latest statement shows 214,116,882 active meters, and that number has not gone down a single tick since I started filing these notices three years back. I am not sure if nobody ever disconnects or if the count just refuses to acknowledge when folks do. If anyone out here in the Sheb plans to pull their meter, I would appreciate knowing before Ceres starts asking me questions I cannot answer. The water tower survived the tow and I suspect our meter will outlast all of us regardless.",
+        "tags": [
+          "meters",
+          "comment",
+          "new-sheboygan"
+        ],
+        "caused_by": null,
+        "spawned": [],
+        "chain_id": "chain-119",
+        "verified": true
+      }
+    ],
+    "chain-120": [
+      {
+        "id": "ev-2999-10-110",
+        "cycle": "2999.10",
+        "timestamp": "2999-10-16T04:44:00Z",
+        "role": "community",
+        "persona_id": "tug-captain-mako",
+        "kind": "complaint",
+        "title": "Stored Light on the Sunward Ledger",
+        "body": "I pull Tow Route 4 behind hull Dredge-Clear and draw stored light through eclipse hours. The tariff reads sunward and shade, but stored light is neither. It was gathered in sun, packed away, and spent in dark. If it counts as sunward, credit the hull. If it does not, put a third column on the sheet so a captain can read the ledger without guessing.",
+        "tags": [
+          "rate-dispute",
+          "stored-light",
+          "tug-operations"
+        ],
+        "caused_by": null,
+        "spawned": [
+          "ev-2999-10-111"
+        ],
+        "chain_id": "chain-120",
+        "verified": true
+      },
+      {
+        "id": "ev-2999-10-111",
+        "cycle": "2999.10",
+        "timestamp": "2999-10-16T10:44:00Z",
+        "role": "staff",
+        "persona_id": "ops-central",
+        "kind": "acknowledgment",
+        "title": "Stored Light Tariff Classification",
+        "body": "In-Space Power confirms the classification of stored light under existing tariff schedules. Stored light discharged during eclipse hours is billed at the shade rate of the applicable tariff tier. Porchlight shade is 0.0114 credits per megajoule. Corner Main shade is 0.0138 credits per megajoule. Underway is a flat 0.0088 credits per megajoule regardless of illumination state. Billing follows the house.",
+        "tags": [
+          "rate-dispute",
+          "stored-light",
+          "tariff-clarification"
+        ],
+        "caused_by": "ev-2999-10-110",
+        "spawned": [],
+        "chain_id": "chain-120",
+        "verified": true
       }
     ]
   }
