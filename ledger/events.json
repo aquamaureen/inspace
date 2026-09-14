@@ -4010,6 +4010,68 @@
       "spawned": [],
       "chain_id": "chain-120",
       "verified": true
+    },
+    {
+      "id": "ev-2999-10-112",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-16T12:15:00Z",
+      "role": "community",
+      "persona_id": "halverson-green",
+      "kind": "comment",
+      "title": "Auditor's Eye on the Flywheels",
+      "body": "They say the Joint Settlement Authority is sending auditors out to the mass-battery flywheel depots, which is fine by me as long as they read the dials with their own eyes instead of trusting those automatic feeds that miscounted my porchlight twice last cycle. I still keep my paper statements stacked beside the door where the cornfield used to grow, and every page shows what a proper human can verify when the read comes. The depots hold the stored light that keeps us warm during the long shade, and if the regulator wants to check the flywheels they should walk the catwalk and look at the gauges themselves. I will be waiting with my ledger open, pen ready, just in case the numbers need explaining to somebody who remembers how they looked before everything went automatic.",
+      "tags": [
+        "regulator",
+        "stored-light",
+        "paper-records",
+        "audit"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-121",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-113",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-16T12:23:00Z",
+      "role": "community",
+      "persona_id": "europa-grid",
+      "kind": "complaint",
+      "title": "Porch Light Held Through Synchronization Pulse",
+      "body": "We note the porch light at Sector 7, Conduit E held through the synchronization pulse at cycle 2999.10, second 14:22. The fixture continued drawing at the sunward rate of 0.0042 credits per MJ past the pulse boundary. Billing follows the house, and the house settles accordingly. We remind the wider grid that Europa pays its own bill. Please adjust your porch timers before the next statement.",
+      "tags": [
+        "billing",
+        "sync",
+        "porchlight",
+        "europa"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-10-114"
+      ],
+      "chain_id": "chain-122",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-114",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-16T16:23:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Porchlight Rate Through Synchronization",
+      "body": "In-Space Power confirms the fixture at Sector 7, Conduit E remained active through the synchronization pulse boundary. Billing follows the house, and reads issued during the pulse are settled at the applicable Porchlight sunward rate of 0.0042 credits per megajoule. No adjustment will be issued for continuous draws that cross statement boundaries. The account will reflect the measured consumption.",
+      "tags": [
+        "billing",
+        "porchlight",
+        "sync",
+        "europa"
+      ],
+      "caused_by": "ev-2999-10-113",
+      "spawned": [],
+      "chain_id": "chain-122",
+      "verified": true
     }
   ]
 }
