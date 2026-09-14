@@ -2,7 +2,7 @@
   "meta": {
     "project": "inspacepower.com",
     "cycle": "2999.10",
-    "updated": "2999-10-16T16:59:00Z"
+    "updated": "2999-10-17T00:15:00Z"
   },
   "personas": [
     {
@@ -4389,6 +4389,89 @@
       "chain_id": "chain-123",
       "verified": true,
       "audience": "internal"
+    },
+    {
+      "id": "ev-2999-10-116",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-16T18:15:00Z",
+      "role": "community",
+      "persona_id": "halverson-green",
+      "kind": "complaint",
+      "title": "Water Tower Classification Query",
+      "body": "I have kept my paper statements since the cornfield was still a cornfield and not this humming hydroponic bay, and in all that time I have never seen a line item for the water tower that stands where my old tractor used to park. The automatic reads do not account for whether that steel cistern draws current as a structure or as something else entirely, and I would prefer a human clarification rather than another silent adjustment on my meter. If billing follows the house then the tower should be billed as the house it serves, or not billed at all, but the silence on this matter is beginning to feel intentional.",
+      "tags": [
+        "billing",
+        "tow-route-4",
+        "water-tower",
+        "paper-records"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-10-118"
+      ],
+      "chain_id": "chain-124",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-117",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-16T18:26:00Z",
+      "role": "community",
+      "persona_id": "tug-captain-mako",
+      "kind": "complaint",
+      "title": "Four-Second Blind Spot on Yard Glass",
+      "body": "Tow Route 4 lost a full four-second read on the yard glass this morning. A synchronization pulse took the meter offline while we were dragging Dredge-Clear through heavy beam-shadow. I have run hulls through worse darkness than a clock cycle and still expected the glass to keep counting. Fix your pulse and let my meter do its work.",
+      "tags": [
+        "outage",
+        "tow-route-4",
+        "meter-gap",
+        "yard-glass"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-10-119"
+      ],
+      "chain_id": "chain-125",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-119",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-16T22:26:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Tow Route 4 Synchronization Interval",
+      "body": "In-Space Power confirms a scheduled beamline handoff on Tow Route 4 at 06:42:12 UTC required a synchronization pulse across 87 relay nodes. The yard glass at meter station 4-Kappa experienced a four-second interval gap during relay geometry realignment. No charge was issued for the interval. The meter resumed read cadence at the following four-second boundary.",
+      "tags": [
+        "outage",
+        "tow-route-4",
+        "meter-gap"
+      ],
+      "caused_by": "ev-2999-10-117",
+      "spawned": [],
+      "chain_id": "chain-125",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-118",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-17T00:15:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Water Tower Classification Query",
+      "body": "In-Space Power confirms that the water tower at your former property coordinate is classified as an appurtenant structure under Tow-Route-4. Per ledger entry 2041-STRUCT-771, structures that do not draw metered current carry no independent tariff line. The principle that billing follows the house means the tower is not billed separately; any energy attributed to it is already allocated to the primary dwelling it serves. Your paper statements have reflected this allocation since the first read.",
+      "tags": [
+        "billing",
+        "tow-route-4",
+        "water-tower",
+        "paper-records"
+      ],
+      "caused_by": "ev-2999-10-116",
+      "spawned": [],
+      "chain_id": "chain-124",
+      "verified": true
     }
   ],
   "chains": {
@@ -8729,6 +8812,93 @@
         "chain_id": "chain-123",
         "verified": true,
         "audience": "internal"
+      }
+    ],
+    "chain-124": [
+      {
+        "id": "ev-2999-10-116",
+        "cycle": "2999.10",
+        "timestamp": "2999-10-16T18:15:00Z",
+        "role": "community",
+        "persona_id": "halverson-green",
+        "kind": "complaint",
+        "title": "Water Tower Classification Query",
+        "body": "I have kept my paper statements since the cornfield was still a cornfield and not this humming hydroponic bay, and in all that time I have never seen a line item for the water tower that stands where my old tractor used to park. The automatic reads do not account for whether that steel cistern draws current as a structure or as something else entirely, and I would prefer a human clarification rather than another silent adjustment on my meter. If billing follows the house then the tower should be billed as the house it serves, or not billed at all, but the silence on this matter is beginning to feel intentional.",
+        "tags": [
+          "billing",
+          "tow-route-4",
+          "water-tower",
+          "paper-records"
+        ],
+        "caused_by": null,
+        "spawned": [
+          "ev-2999-10-118"
+        ],
+        "chain_id": "chain-124",
+        "verified": true
+      },
+      {
+        "id": "ev-2999-10-118",
+        "cycle": "2999.10",
+        "timestamp": "2999-10-17T00:15:00Z",
+        "role": "staff",
+        "persona_id": "ops-central",
+        "kind": "acknowledgment",
+        "title": "Water Tower Classification Query",
+        "body": "In-Space Power confirms that the water tower at your former property coordinate is classified as an appurtenant structure under Tow-Route-4. Per ledger entry 2041-STRUCT-771, structures that do not draw metered current carry no independent tariff line. The principle that billing follows the house means the tower is not billed separately; any energy attributed to it is already allocated to the primary dwelling it serves. Your paper statements have reflected this allocation since the first read.",
+        "tags": [
+          "billing",
+          "tow-route-4",
+          "water-tower",
+          "paper-records"
+        ],
+        "caused_by": "ev-2999-10-116",
+        "spawned": [],
+        "chain_id": "chain-124",
+        "verified": true
+      }
+    ],
+    "chain-125": [
+      {
+        "id": "ev-2999-10-117",
+        "cycle": "2999.10",
+        "timestamp": "2999-10-16T18:26:00Z",
+        "role": "community",
+        "persona_id": "tug-captain-mako",
+        "kind": "complaint",
+        "title": "Four-Second Blind Spot on Yard Glass",
+        "body": "Tow Route 4 lost a full four-second read on the yard glass this morning. A synchronization pulse took the meter offline while we were dragging Dredge-Clear through heavy beam-shadow. I have run hulls through worse darkness than a clock cycle and still expected the glass to keep counting. Fix your pulse and let my meter do its work.",
+        "tags": [
+          "outage",
+          "tow-route-4",
+          "meter-gap",
+          "yard-glass"
+        ],
+        "caused_by": null,
+        "spawned": [
+          "ev-2999-10-119"
+        ],
+        "chain_id": "chain-125",
+        "verified": true
+      },
+      {
+        "id": "ev-2999-10-119",
+        "cycle": "2999.10",
+        "timestamp": "2999-10-16T22:26:00Z",
+        "role": "staff",
+        "persona_id": "ops-central",
+        "kind": "acknowledgment",
+        "title": "Tow Route 4 Synchronization Interval",
+        "body": "In-Space Power confirms a scheduled beamline handoff on Tow Route 4 at 06:42:12 UTC required a synchronization pulse across 87 relay nodes. The yard glass at meter station 4-Kappa experienced a four-second interval gap during relay geometry realignment. No charge was issued for the interval. The meter resumed read cadence at the following four-second boundary.",
+        "tags": [
+          "outage",
+          "tow-route-4",
+          "meter-gap"
+        ],
+        "caused_by": "ev-2999-10-117",
+        "spawned": [],
+        "chain_id": "chain-125",
+        "verified": true
       }
     ]
   }
