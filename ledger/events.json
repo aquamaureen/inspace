@@ -4072,6 +4072,26 @@
       "spawned": [],
       "chain_id": "chain-122",
       "verified": true
+    },
+    {
+      "id": "ev-2999-10-115",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-16T16:59:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "misdirected",
+      "title": "Misdirected: Remembrance Glass Cycle",
+      "body": "In-Space Power confirms the following was posted in error to the house channel. Please remember to rotate the yard-glass display before 0400 on the 12th. Mother will notice if the amber panels are still up from last quarter. I will bring the replacement prisms from the depot locker, assuming someone has not already taken them for the comms array. J.",
+      "tags": [
+        "personal",
+        "internal-traffic",
+        "misdirected"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-123",
+      "verified": true,
+      "audience": "internal"
     }
   ]
 }
