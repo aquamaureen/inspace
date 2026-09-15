@@ -4257,6 +4257,67 @@
       "chain_id": "chain-128",
       "verified": true,
       "audience": "internal"
+    },
+    {
+      "id": "ev-2999-10-124",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-17T05:30:00Z",
+      "role": "community",
+      "persona_id": "new-sheboygan-clerk",
+      "kind": "comment",
+      "title": "First Light Clarification Request from Tow Route 12",
+      "body": "Got a transmission from a fresh settlement out on Tow Route 12 asking what First Light actually covers. I had to sit with the notice for three days while the lag sorted itself out, so they have been wondering just as long. Under our rules the meter reads for your first three cycles but you do not pay for them. That is all it is, no free porch bulbs or complimentary water heater, just the first batch of reads sitting unbilled while the town settles in. The water tower at the Sheb survived the tow on that same deal so I cannot complain much, but I would like central billing to stop making it sound like a gift basket.",
+      "tags": [
+        "first-light",
+        "rates",
+        "new-settlements",
+        "central-billing"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-129",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-125",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-17T05:45:00Z",
+      "role": "community",
+      "persona_id": "new-sheboygan-clerk",
+      "kind": "complaint",
+      "title": "Underway Rate Applied While Docked",
+      "body": "The Sheb was billed the Underway flat rate for the last haul cycle while we sat docked in Ceres Depot's shadow. The tow logs show we did not move for eleven days, yet the meter charged 0.0088 credits per megajoule like we were cruising the Belt. I understand haulage costs money, but we were parked. Requesting this be corrected before the next statement cycle rolls through, though I know the lag on these notices means the fix will probably arrive after we have already paid it.",
+      "tags": [
+        "rate-dispute",
+        "tug",
+        "underway"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-10-126"
+      ],
+      "chain_id": "chain-130",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-126",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-17T06:45:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Underway Rate Applied While Docked",
+      "body": "In-Space Power confirms receipt of the Sheb rate dispute. Billing follows the house, and tug meter states do not transition between Underway and stationary classifications during port calls. The Underway flat tariff at 0.0088 credits per megajoule remains the applicable rate until the tug meter registers a new berth event. Porchlight rates of 0.0042 sunward and 0.0114 shade credits per megajoule, Corner Main rates of 0.0061 sunward and 0.0138 shade credits per megajoule, and First Light provisions for the first three unbilled cycles apply only to their respective meter classes. The charge stands.",
+      "tags": [
+        "rate-dispute",
+        "tug",
+        "underway",
+        "billing"
+      ],
+      "caused_by": "ev-2999-10-125",
+      "spawned": [],
+      "chain_id": "chain-130",
+      "verified": true
     }
   ]
 }
