@@ -4399,6 +4399,67 @@
       "chain_id": "chain-133",
       "verified": true,
       "audience": "internal"
+    },
+    {
+      "id": "ev-2999-10-131",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-17T12:39:00Z",
+      "role": "community",
+      "persona_id": "halverson-green",
+      "kind": "complaint",
+      "title": "Stored Light and Sunward Rate Inquiry",
+      "body": "I have kept my paper statements since two hundred and seventy-nine and I know the difference between sun hitting my porch and whatever you are piping through the storage bays from when the sun was behind the ship last cycle. The sunward rate of zero point zero zero four two credits per MJ should apply only when the sun itself is actually on the house, not when you have banked it in a capacitor somewhere and are now pretending it counts the same way. The automatic reads do not care about this distinction but the cornfield that used to be where the hydroponic bay sits now certainly cared about actual sunlight, and I would like to know which category my meter is supposed to fall under when The Beam is turned away and you are feeding me from the stored light portion of the mix.",
+      "tags": [
+        "rate-dispute",
+        "stored-light",
+        "paper-statements",
+        "sunward-shade"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-10-133"
+      ],
+      "chain_id": "chain-134",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-132",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-17T12:59:00Z",
+      "role": "community",
+      "persona_id": "meter-112",
+      "kind": "comment",
+      "title": "First Light Inquiry, Kuiper Edge Settlement",
+      "body": "A new settlement on the Kuiper edge asks what First Light covers. This meter has recorded reads since 2091, before Ohio lost its weather, and the rule remains plain. First Light exempts the first three cycles of reads from billing. It does not reduce the rate. The sum arrives unchanged after cycle three.",
+      "tags": [
+        "first-light",
+        "rates",
+        "new-settlement",
+        "billing"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-135",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-133",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-17T16:39:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Stored Light and Sunward Rate Classification",
+      "body": "In-Space Power confirms that tariff categories are determined by the meter's registered physical orientation, not by the generation source feeding the grid. The Porchlight tariff specifies 0.0042 credits per MJ for sunward-facing meters and 0.0114 credits per MJ for shade-facing meters, and these rates apply regardless of whether the supply originates from The Beam, Fusion, Moontide, or Stored Light. Billing follows the house. Your meter remains classified under its registered sunward or shade rate for the duration of the current statement cycle.",
+      "tags": [
+        "rate-dispute",
+        "stored-light",
+        "sunward-shade"
+      ],
+      "caused_by": "ev-2999-10-131",
+      "spawned": [],
+      "chain_id": "chain-134",
+      "verified": true
     }
   ]
 }
