@@ -4318,6 +4318,66 @@
       "spawned": [],
       "chain_id": "chain-130",
       "verified": true
+    },
+    {
+      "id": "ev-2999-10-127",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-17T07:56:00Z",
+      "role": "community",
+      "persona_id": "tug-captain-mako",
+      "kind": "complaint",
+      "title": "Water Tower Classification Query",
+      "body": "Got a water tower sitting at Settlement 42 on my route, throwing a beam-shadow that cuts my running lane. Does that tower get metered as a structure, or does it sail its own hull? Billing follows the house, last I checked, and that thing is anchored harder than most dockside warehouses. I would appreciate a straight answer before the statement cycle closes.",
+      "tags": [
+        "billing",
+        "tow-route-4",
+        "structures"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-10-129"
+      ],
+      "chain_id": "chain-131",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-128",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-17T08:36:00Z",
+      "role": "community",
+      "persona_id": "new-sheboygan-clerk",
+      "kind": "comment",
+      "title": "Active Meter Count and Whether It Ever Drops",
+      "body": "I have been watching the active meter count sit at 214,116,882 and I will note it takes a fair while for that number to load out here on Tow Route 4. Nobody has asked whether that figure ever goes down, so I will ask it myself. Down at the Sheb we keep every household wired and the water tower meter has not missed a read since we got towed, which is more than I can say for the lag on official notices from Ceres. I would appreciate knowing if a single meter has ever been removed from the active register since 2041, and if the answer is no, what the procedure is when one finally needs to come off.",
+      "tags": [
+        "meters",
+        "comment",
+        "new-sheboygan",
+        "tow-route-4"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-132",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-129",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-17T10:56:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Water Tower Classification, Settlement 42",
+      "body": "In-Space Power confirms the water tower at Settlement 42 is metered as a fixed structure. Billing follows the house, and the tower is anchored to Settlement 42 premises, therefore all consumption reads roll to the Settlement 42 Corner Main ledger at 0.0061 credits per megajoule sunward and 0.0138 credits per megajoule shade. The tower does not sail a separate hull and carries no independent meter. No reclassification is required before cycle close.",
+      "tags": [
+        "billing",
+        "structures",
+        "tow-route-4"
+      ],
+      "caused_by": "ev-2999-10-127",
+      "spawned": [],
+      "chain_id": "chain-131",
+      "verified": true
     }
   ]
 }
