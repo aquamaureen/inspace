@@ -4460,6 +4460,87 @@
       "spawned": [],
       "chain_id": "chain-134",
       "verified": true
+    },
+    {
+      "id": "ev-2999-10-134",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-17T17:57:00Z",
+      "role": "community",
+      "persona_id": "tug-captain-mako",
+      "kind": "complaint",
+      "title": "Meter runs blind when the relay swings",
+      "body": "Captain Mako, Tow Route 4. Your relays cut The Beam cold during geometry swings and the meter on my hull keeps reading anyway. I am paying for ghost power while the tow sits in beam-shadow the size of a habitat ring. Fix the relay sync or tell the Joint Settlement Authority how a hull gets billed on nothing.",
+      "tags": [
+        "outage",
+        "beam",
+        "meter-drift",
+        "tow-route-4"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-10-136"
+      ],
+      "chain_id": "chain-136",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-135",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-17T18:19:00Z",
+      "role": "community",
+      "persona_id": "halverson-green",
+      "kind": "complaint",
+      "title": "Porch Light During Sync Pulse, TR4 Unit 44",
+      "body": "I have kept paper statements since two-seven-oh-nine and I can tell you that no porch light was meant to burn through a synchronization pulse, yet the shade-side fixture on my unit did exactly that and pulled shade tariff while the street went dark for the count. The automatic read accepted it without flag because it accepts everything, though any resident could see the pulse break and still that bulb held steady against a grid that was asking for stillness. I am noting it here so the statement reflects the difference between a mistake and a pattern.",
+      "tags": [
+        "billing",
+        "sync",
+        "porchlight"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-10-137"
+      ],
+      "chain_id": "chain-137",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-136",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-17T18:57:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Relay swing and meter reads, Tow Route 4",
+      "body": "In-Space Power confirms the report filed by Captain Mako, Tow Route 4, account ISP-2041. During the scheduled beamline handoff at interval 2999.10.14-08, the synchronization pulse lagged 0.6 seconds behind the physical shadow cast by the relay geometry swing. Your hull meter continued to record during beam-shadow as designed. No charge was issued for that interval. Reads logged during confirmed beam absence are reconciled before settlement with the Joint Settlement Authority.",
+      "tags": [
+        "outage",
+        "beam",
+        "meter-drift"
+      ],
+      "caused_by": "ev-2999-10-134",
+      "spawned": [],
+      "chain_id": "chain-136",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-137",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-18T00:19:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Porchlight Shade Tariff, TR4 Unit 44",
+      "body": "In-Space Power confirms the shade-side fixture at TR4 Unit 44 recorded consumption during the synchronization pulse. Billing follows the house. The meter at that address measured draw at the Porchlight shade rate of 0.0114 credits per megajoule, and the statement reflects that measurement. A sync pulse coordinates generation and does not suspend reads or nullify tariffs. The pattern noted by the resident will be logged, but the read stands.",
+      "tags": [
+        "billing",
+        "porchlight",
+        "sync"
+      ],
+      "caused_by": "ev-2999-10-135",
+      "spawned": [],
+      "chain_id": "chain-137",
+      "verified": true
     }
   ]
 }
