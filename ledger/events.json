@@ -4562,6 +4562,66 @@
       "chain_id": "chain-138",
       "verified": true,
       "audience": "internal"
+    },
+    {
+      "id": "ev-2999-10-139",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-18T01:54:00Z",
+      "role": "community",
+      "persona_id": "europa-grid",
+      "kind": "complaint",
+      "title": "Shade Accounting on Tow Route 4",
+      "body": "At cycle 2999.10, second 4412, we note the Porchlight shade tariff applied to Constance Basin, which sits in permanent shadow cast by the upstream settlement of Valhalla Ridge. We pay our bills on time and we do not argue that shade pricing exists, only that it should not apply to municipalities whose darkness is engineered by their neighbors rather than by orbital mechanics. The Joint Settlement Authority Ceres is requested to review the tariff assignment before the next cycle closes.",
+      "tags": [
+        "rate-dispute",
+        "shade",
+        "tow-route-4"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-10-141"
+      ],
+      "chain_id": "chain-139",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-140",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-18T02:18:00Z",
+      "role": "community",
+      "persona_id": "new-sheboygan-clerk",
+      "kind": "comment",
+      "title": "Does the Count Ever Drop",
+      "body": "I been watching the active meter count on our statement this cycle. Two hundred fourteen million, give or change, and the number only seems to climb even when the notice arrives three days late through the lag. I keep asking whether that figure ever actually goes down, or if central billing just does not bother subtracting when a house gets towed off route. The Sheb has been counted since seventy-eleven and I suppose we will keep adding meters until somebody figures out how to turn one off.",
+      "tags": [
+        "meters",
+        "comment",
+        "tow-route-4"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-140",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-141",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-18T05:54:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Shade Tariff Application on Tow Route 4",
+      "body": "In-Space Power confirms the Porchlight shade tariff of 0.0114 credits/MJ is correctly applied to Constance Basin on Tow Route 4. The meter reads measured insolation at the property boundary and does not attribute occlusion to orbital mechanics or neighbor construction. The Corner Main tariff at 0.0061/0.0138 credits/MJ, the Underway flat rate at 0.0088 credits/MJ, and the First Light three-cycle billing exemption do not apply to this settlement classification. Billing follows the house.",
+      "tags": [
+        "rate-dispute",
+        "shade",
+        "porchlight",
+        "tow-route"
+      ],
+      "caused_by": "ev-2999-10-139",
+      "spawned": [],
+      "chain_id": "chain-139",
+      "verified": true
     }
   ]
 }
