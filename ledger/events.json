@@ -4622,6 +4622,88 @@
       "spawned": [],
       "chain_id": "chain-139",
       "verified": true
+    },
+    {
+      "id": "ev-2999-10-142",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-18T11:36:00Z",
+      "role": "community",
+      "persona_id": "europa-grid",
+      "kind": "comment",
+      "title": "Cycle 2999.10 Mix Ledger",
+      "body": "The Beam carried forty-six percent of generation this cycle. We carried the accounting. Cycle 2999.10 closes at second 04 with our ledger balanced, and Europa pays its own bill. The Joint Settlement Authority Ceres may verify at any four-second interval.",
+      "tags": [
+        "rates",
+        "europa",
+        "mix",
+        "accounting"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-10-144"
+      ],
+      "chain_id": "chain-141",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-143",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-18T12:16:00Z",
+      "role": "community",
+      "persona_id": "europa-grid",
+      "kind": "complaint",
+      "title": "Unattended Porchlight Through Sync Pulse",
+      "body": "We detected an unattended porchlight burning through the synchronization pulse at cycle 2999.10, second 14.0032. The shade tariff of 0.0114 credits per MJ applies to all such consumption. Billing follows the house. Europa pays its own bill in full and on schedule, but we ask that operators cut nonessential loads during sync windows.",
+      "tags": [
+        "billing",
+        "sync",
+        "porchlight",
+        "load-management"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-10-145"
+      ],
+      "chain_id": "chain-142",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-145",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-18T14:16:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Porchlight Consumption During Sync Pulse",
+      "body": "In-Space Power confirms the shade tariff of 0.0114 credits per megajoule applies to all Porchlight consumption recorded during the synchronization pulse at 2999.10:14.0032. Billing follows the house. The metered load is assigned to the property account regardless of operator presence. Load curtailment during sync windows remains advisory.",
+      "tags": [
+        "billing",
+        "sync",
+        "porchlight"
+      ],
+      "caused_by": "ev-2999-10-143",
+      "spawned": [],
+      "chain_id": "chain-142",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-144",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-18T17:36:00Z",
+      "role": "canon",
+      "persona_id": "canon-editor",
+      "kind": "footnote",
+      "title": "Correction to Record: Europa Payment Status",
+      "body": "Correction to record. The notice states: \"Europa pays its own bill.\" The ledger records Europa Autonomous Grid has paid its own bill without interruption since 2093. No rate dispute exists. The Joint Settlement Authority Ceres may verify at any four-second interval.",
+      "tags": [
+        "rates",
+        "europa",
+        "accounting"
+      ],
+      "caused_by": "ev-2999-10-142",
+      "spawned": [],
+      "chain_id": "chain-141",
+      "verified": true
     }
   ]
 }
