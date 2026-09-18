@@ -4724,6 +4724,67 @@
       "chain_id": "chain-143",
       "verified": true,
       "audience": "internal"
+    },
+    {
+      "id": "ev-2999-10-147",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-18T23:14:00Z",
+      "role": "community",
+      "persona_id": "tug-captain-mako",
+      "kind": "complaint",
+      "title": "Porch Light Left Through Sync Pulse",
+      "body": "Some hull at Tow Route 4 left their porch light burning through the synchronization pulse. That is good credits bleeding into the beam-shadow while the meter ticks hot. I have towed heavier sins than a lazy switch. Kill the lamp on pulse drop and spare us all the waste.",
+      "tags": [
+        "billing",
+        "sync",
+        "porchlight",
+        "tow-route-4"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-10-149"
+      ],
+      "chain_id": "chain-144",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-148",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-19T00:01:00Z",
+      "role": "community",
+      "persona_id": "europa-grid",
+      "kind": "comment",
+      "title": "Meter Count, Stable",
+      "body": "Our active meter count stands at 214,116,882 as of cycle 2999.10, second 12. We have not recorded a decrease. Each meter reports every four seconds, and each statement clears through route ISP-2041. Europa pays its own bill. The count does not go down.",
+      "tags": [
+        "meters",
+        "comment",
+        "europa",
+        "grid-status"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-145",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-149",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-19T02:14:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Porch Light Consumption During Sync Pulse",
+      "body": "In-Space Power confirms that all metered consumption during a synchronization pulse is billable to the registered account. Billing follows the house. The porch lamp at Tow Route 4 accrued charges at the Porchlight shade rate of 0.0114 credits per megajoule while the beam-shadow held. The position of a switch does not void a meter reading.",
+      "tags": [
+        "billing",
+        "porchlight",
+        "sync"
+      ],
+      "caused_by": "ev-2999-10-147",
+      "spawned": [],
+      "chain_id": "chain-144",
+      "verified": true
     }
   ]
 }
