@@ -4785,6 +4785,67 @@
       "spawned": [],
       "chain_id": "chain-144",
       "verified": true
+    },
+    {
+      "id": "ev-2999-10-150",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-19T11:44:00Z",
+      "role": "community",
+      "persona_id": "new-sheboygan-clerk",
+      "kind": "complaint",
+      "title": "Water Tower Classification Inquiry",
+      "body": "The water tower made the tow just fine and has been keeping the Sheb hydrated since 2041, but central billing still cannot decide what to call it. Under the principle that billing follows the house, I need to know whether a structure that holds water and houses no one qualifies as a house, since it uses less electricity than the post office and complains less than half the council. This inquiry has been lagging in the official notice queue for three cycles while the tower continues to work, so I am resubmitting it. Please assign the correct tariff before the next statement closes out.",
+      "tags": [
+        "billing",
+        "tow-route-4",
+        "water-tower",
+        "structures"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-10-152"
+      ],
+      "chain_id": "chain-146",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-151",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-19T12:33:00Z",
+      "role": "community",
+      "persona_id": "tug-captain-mako",
+      "kind": "comment",
+      "title": "Ceres Filing for Cycle Review",
+      "body": "Joint Settlement Authority Ceres is pulling cycle 2999.10 for review. They can audit from the rock while I keep hulls moving on Tow Route 4. The meters read every four seconds and the numbers will hold. Billing follows the house. Let them file.",
+      "tags": [
+        "regulator",
+        "statement",
+        "tow-route",
+        "cycle-review"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-147",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-152",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-19T16:44:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Water Tower Tariff Classification",
+      "body": "In-Space Power confirms the water tower classification inquiry has been reviewed. The principle that billing follows the house requires a registered occupant for residential tariff assignment. The water tower houses water, not persons, and is classified as an unoccupied structure billed at Corner Main 0.0138 credits per megajoule. The account will be updated before the next statement closes.",
+      "tags": [
+        "billing",
+        "structures",
+        "classification"
+      ],
+      "caused_by": "ev-2999-10-150",
+      "spawned": [],
+      "chain_id": "chain-146",
+      "verified": true
     }
   ]
 }
