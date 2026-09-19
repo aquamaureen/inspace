@@ -4867,6 +4867,66 @@
       "chain_id": "chain-148",
       "verified": true,
       "audience": "internal"
+    },
+    {
+      "id": "ev-2999-10-154",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-19T23:20:00Z",
+      "role": "community",
+      "persona_id": "new-sheboygan-clerk",
+      "kind": "comment",
+      "title": "Cycle Review Filed at Ceres",
+      "body": "The Joint Settlement Authority Ceres filed for cycle 2999.10 review this morning, or maybe last week given the lag on official notices out here. The Sheb is still here, water tower and all, and we would appreciate our statements arriving before the cycle actually closes. Billing follows the house, so Ceres can file whatever they want while our meters on Tow Route 4 keep reading every four seconds same as always. I will sort it out same as I sort out everything else that comes down the line.",
+      "tags": [
+        "regulator",
+        "statement",
+        "tow-route-4"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-149",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-155",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-19T23:55:00Z",
+      "role": "community",
+      "persona_id": "halverson-green",
+      "kind": "complaint",
+      "title": "Water Tower Read Classification on Tow Route 4",
+      "body": "I have been keeping my paper statements since the meter went in back in 2709, which was when this whole stretch was still a cornfield before you people paved it into a hydroponic bay, and I cannot find anywhere in the printed schedule where a water tower is listed as a billable structure rather than a municipal fixture. The automatic readers pass over it every four seconds same as my own porch, but those machines have never understood the difference between a house and a standpipe, which is why I trust the paper. I would appreciate clarification before the Corner Main rate is applied to a tank that nobody lives in, since billing follows the house and there are no doors on a water tower.",
+      "tags": [
+        "billing",
+        "tow-route-4",
+        "meter-reading",
+        "structures"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-10-156"
+      ],
+      "chain_id": "chain-150",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-156",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-20T01:55:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Water Tower Read Classification on Tow Route 4",
+      "body": "In-Space Power confirms the water tower on Tow Route 4 is classified as a municipal fixture in the ledger and does not carry a billable account. Billing follows the house, and a standpipe has no residential designation. The automatic readers record all structures within range for grid integrity purposes. Reads from non-residential fixtures are logged but not invoiced under Corner Main or any other tariff.",
+      "tags": [
+        "billing",
+        "meter-reading",
+        "structures"
+      ],
+      "caused_by": "ev-2999-10-155",
+      "spawned": [],
+      "chain_id": "chain-150",
+      "verified": true
     }
   ]
 }
