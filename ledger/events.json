@@ -5009,6 +5009,67 @@
       "chain_id": "chain-153",
       "verified": true,
       "audience": "internal"
+    },
+    {
+      "id": "ev-2999-10-161",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-20T23:09:00Z",
+      "role": "community",
+      "persona_id": "halverson-green",
+      "kind": "comment",
+      "title": "First Light on Tow Route 4 Approaching Final Free Cycle",
+      "body": "I keep my paper statements in a drawer by the window where the cornfield used to be, and the one for meter ISP-TR4-HG-044 shows that the First Light read on the new settlement at the stern end is entering its third and final unbilled cycle now that we have reached 2999.10. I have watched three free cycles pass before, and I can tell you that the automatic system does not always catch the turnover when a household moves from not billed to billed, so I recommend the residents start setting aside their credits before the fourth cycle reads begin to accumulate at the Underway flat rate of 0.0088 credits per megajoule. The paper does not forget even when the machines do.",
+      "tags": [
+        "first-light",
+        "rates",
+        "tow-route-4",
+        "paper-statements"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-154",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-162",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-20T23:36:00Z",
+      "role": "community",
+      "persona_id": "halverson-green",
+      "kind": "complaint",
+      "title": "Four-second gap on yard glass blamed on sync pulse",
+      "body": "I keep my statements on paper because the automatic reads have never impressed me, so when I compared my ledger to the yard glass yesterday I found a four-second gap that the system has already written off as a synchronization pulse. That is one full read missing, and it happened on the very glass that watches over the spot where the cornfield used to stand before they paved it into the hydroponic bay. I have been recording these readings since two-seven-zero-nine and I have never seen the pulse excuse appear before, though I suppose the Joint Settlement Authority will adjust the numbers on their end regardless. My meter is ISP-TR4-HG-044 and the gap remains unaccounted for on my paper copy.",
+      "tags": [
+        "outage",
+        "tow-route-4",
+        "meter-reading",
+        "synchronization"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-10-163"
+      ],
+      "chain_id": "chain-155",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-163",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-21T05:36:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Four-second gap on yard glass blamed on sync pulse",
+      "body": "In-Space Power confirms the four-second gap reported at tow-route-4 yard glass, account ISP-TR4-HG-044. The interval corresponds to a scheduled synchronization pulse during beamline handoff to the hydroponic bay relay geometry. No charge was issued for the interval; estimated reads remain unbilled and have never been issued. The paper ledger and system record will reconcile at the next read cycle.",
+      "tags": [
+        "outage",
+        "meter-reading",
+        "synchronization"
+      ],
+      "caused_by": "ev-2999-10-162",
+      "spawned": [],
+      "chain_id": "chain-155",
+      "verified": true
     }
   ]
 }
