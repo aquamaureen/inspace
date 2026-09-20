@@ -4927,6 +4927,67 @@
       "spawned": [],
       "chain_id": "chain-150",
       "verified": true
+    },
+    {
+      "id": "ev-2999-10-157",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-20T11:26:00Z",
+      "role": "community",
+      "persona_id": "tug-captain-mako",
+      "kind": "complaint",
+      "title": "Stored Light Does Not Cast Sunward",
+      "body": "Pulled hull Dredge-Clear through the beam-shadow on Tow Route 4 again and checked the meter. The power came from stored light this cycle, not actual sun, yet the tariff hit us at the sunward Porchlight rate. Stored light is banked juice, not direct exposure. If it never touched the solar skin, it should not count as sunward. Clarify the meter logic before the next run.",
+      "tags": [
+        "rate-dispute",
+        "stored-light",
+        "tow-route",
+        "porchlight"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-10-159"
+      ],
+      "chain_id": "chain-151",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-158",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-20T11:49:00Z",
+      "role": "community",
+      "persona_id": "new-sheboygan-clerk",
+      "kind": "comment",
+      "title": "Active Meter Count and Its Persistence",
+      "body": "Now at 214,116,882 active meters and I keep checking to see if the number ever goes down, even by one, just so the Sheb gets a breather from the count. It does not. They pull a read every four seconds and have issued zero estimated reads since the town went on the line in 2041, so the number only climbs or sits stubborn. I will keep watching it, though the lag on these notices means Ceres will tell us next quarter what happened last week.",
+      "tags": [
+        "meters",
+        "comment",
+        "tow-route-4",
+        "new-sheboygan"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-152",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-159",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-20T14:26:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Porchlight Tariff Application on Tow Route 4",
+      "body": "In-Space Power confirms the Porchlight sunward rate of 0.0042 credits/MJ applies to all reads recorded on the sunward face, regardless of generation source. Billing follows the house. The distinction between sunward and shade pricing is determined by meter placement on the hull, not by the origin of the delivered energy. Stored light enters the same distribution bus as direct beam and carries the same tariff. The Porchlight shade rate of 0.0114 credits/MJ, Corner Main rates of 0.0061/0.0138 credits/MJ, the Underway flat rate of 0.0088 credits/MJ, and the First Light three-cycle read exemption all operate on the same principle.",
+      "tags": [
+        "rate-dispute",
+        "stored-light",
+        "porchlight"
+      ],
+      "caused_by": "ev-2999-10-157",
+      "spawned": [],
+      "chain_id": "chain-151",
+      "verified": true
     }
   ]
 }
