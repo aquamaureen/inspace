@@ -2,7 +2,7 @@
   "meta": {
     "project": "inspacepower.com",
     "cycle": "2999.10",
-    "updated": "2999-10-21T14:10:00Z"
+    "updated": "2999-10-22T02:22:00Z"
   },
   "personas": [
     {
@@ -5447,6 +5447,67 @@
       "chain_id": "chain-158",
       "verified": true,
       "audience": "internal"
+    },
+    {
+      "id": "ev-2999-10-168",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-21T23:22:00Z",
+      "role": "community",
+      "persona_id": "halverson-green",
+      "kind": "complaint",
+      "title": "Porch Light Through the Pulse",
+      "body": "I have kept paper statements since before the cornfield where I used to walk became a hydroponic bay, and in all that time I have never seen a porch light left burning through a synchronization pulse like the one on Tow Route 4 last Tuesday. The automatic read missed it of course, but my hand-written log caught the glow spilling past midnight while the rest of the block went dark for the sync. Billing follows the house they tell me, and I suppose someone will pay for those extra megajoules whether they meant to leave the light on or not, though I keep thinking a porch light ought to know better when the system pulses.",
+      "tags": [
+        "billing",
+        "sync",
+        "porchlight",
+        "tow-route-4"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-10-170"
+      ],
+      "chain_id": "chain-159",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-169",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-21T23:53:00Z",
+      "role": "community",
+      "persona_id": "halverson-green",
+      "kind": "comment",
+      "title": "Third Cycle Approaching on TR4",
+      "body": "My paper statements show the First Light settlement at Tow Route 4 entering its third free reading cycle now, and I have kept every page since the cornfield where they put the hydroponic bay, though the automatic readers they hung last autumn cannot be trusted to count straight. When the fourth cycle begins the porchlight sunward rate of 0.0042 credits per megajoule will apply to that dwelling, and I am writing this down so the record exists on something other than a server. The Joint Settlement Authority Ceres can take my payment route ISP-2041 in the usual way after that, but until then the reads come without billing as the rules state.",
+      "tags": [
+        "first-light",
+        "rates",
+        "tow-route-4",
+        "paper-records"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-160",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-170",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-22T02:22:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Tow Route 4 Pulse Interval Billing",
+      "body": "In-Space Power confirms the porch light consumption recorded during the Tow Route 4 synchronization pulse is valid and will be billed. The principle \"Billing follows the house\" applies to all metered energy at the premises, including intervals coinciding with system sync events. The logged megajoules are rated at the Porchlight tariff applicable to the dwelling. No adjustment will be issued.",
+      "tags": [
+        "billing",
+        "porchlight",
+        "sync"
+      ],
+      "caused_by": "ev-2999-10-168",
+      "spawned": [],
+      "chain_id": "chain-159",
+      "verified": true
     }
   ],
   "chains": {
@@ -10915,6 +10976,71 @@
         "chain_id": "chain-158",
         "verified": true,
         "audience": "internal"
+      }
+    ],
+    "chain-159": [
+      {
+        "id": "ev-2999-10-168",
+        "cycle": "2999.10",
+        "timestamp": "2999-10-21T23:22:00Z",
+        "role": "community",
+        "persona_id": "halverson-green",
+        "kind": "complaint",
+        "title": "Porch Light Through the Pulse",
+        "body": "I have kept paper statements since before the cornfield where I used to walk became a hydroponic bay, and in all that time I have never seen a porch light left burning through a synchronization pulse like the one on Tow Route 4 last Tuesday. The automatic read missed it of course, but my hand-written log caught the glow spilling past midnight while the rest of the block went dark for the sync. Billing follows the house they tell me, and I suppose someone will pay for those extra megajoules whether they meant to leave the light on or not, though I keep thinking a porch light ought to know better when the system pulses.",
+        "tags": [
+          "billing",
+          "sync",
+          "porchlight",
+          "tow-route-4"
+        ],
+        "caused_by": null,
+        "spawned": [
+          "ev-2999-10-170"
+        ],
+        "chain_id": "chain-159",
+        "verified": true
+      },
+      {
+        "id": "ev-2999-10-170",
+        "cycle": "2999.10",
+        "timestamp": "2999-10-22T02:22:00Z",
+        "role": "staff",
+        "persona_id": "ops-central",
+        "kind": "acknowledgment",
+        "title": "Tow Route 4 Pulse Interval Billing",
+        "body": "In-Space Power confirms the porch light consumption recorded during the Tow Route 4 synchronization pulse is valid and will be billed. The principle \"Billing follows the house\" applies to all metered energy at the premises, including intervals coinciding with system sync events. The logged megajoules are rated at the Porchlight tariff applicable to the dwelling. No adjustment will be issued.",
+        "tags": [
+          "billing",
+          "porchlight",
+          "sync"
+        ],
+        "caused_by": "ev-2999-10-168",
+        "spawned": [],
+        "chain_id": "chain-159",
+        "verified": true
+      }
+    ],
+    "chain-160": [
+      {
+        "id": "ev-2999-10-169",
+        "cycle": "2999.10",
+        "timestamp": "2999-10-21T23:53:00Z",
+        "role": "community",
+        "persona_id": "halverson-green",
+        "kind": "comment",
+        "title": "Third Cycle Approaching on TR4",
+        "body": "My paper statements show the First Light settlement at Tow Route 4 entering its third free reading cycle now, and I have kept every page since the cornfield where they put the hydroponic bay, though the automatic readers they hung last autumn cannot be trusted to count straight. When the fourth cycle begins the porchlight sunward rate of 0.0042 credits per megajoule will apply to that dwelling, and I am writing this down so the record exists on something other than a server. The Joint Settlement Authority Ceres can take my payment route ISP-2041 in the usual way after that, but until then the reads come without billing as the rules state.",
+        "tags": [
+          "first-light",
+          "rates",
+          "tow-route-4",
+          "paper-records"
+        ],
+        "caused_by": null,
+        "spawned": [],
+        "chain_id": "chain-160",
+        "verified": true
       }
     ]
   }
