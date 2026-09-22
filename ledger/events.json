@@ -5272,6 +5272,26 @@
       "spawned": [],
       "chain_id": "chain-162",
       "verified": true
+    },
+    {
+      "id": "ev-2999-10-174",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-22T14:22:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "misdirected",
+      "title": "Reminder: yard-glass realignment (wrong channel)",
+      "body": "Please adjust the yard-glass azimuth to 14 degrees before 2999.10.21 if you are passing through Sector Four. The solstice plate is showing the wrong declination and the neighbors will notice. I have left the calibration spanner on the workbench. J",
+      "tags": [
+        "personal",
+        "yard-glass",
+        "sector-four"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-163",
+      "verified": true,
+      "audience": "internal"
     }
   ]
 }
