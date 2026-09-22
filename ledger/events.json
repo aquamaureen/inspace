@@ -5292,6 +5292,90 @@
       "chain_id": "chain-163",
       "verified": true,
       "audience": "internal"
+    },
+    {
+      "id": "ev-2999-10-175",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-22T23:08:00Z",
+      "role": "community",
+      "persona_id": "meter-112",
+      "kind": "complaint",
+      "title": "Haulage Read Under Another Hull",
+      "body": "This meter was billed for haulage at the Underway flat rate while docked in another vessel's shadow. The consumption occurred during station-keeping at the Ceres approach gate, not during transit. This meter does not dispute the rate of 0.0088 credits per megajoule. This meter disputes the sum, as no haulage took place. A corrected invoice for cycle 2999.10 is requested.",
+      "tags": [
+        "rate-dispute",
+        "tug",
+        "underway",
+        "ceres-approach"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-10-177"
+      ],
+      "chain_id": "chain-164",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-176",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-22T23:29:00Z",
+      "role": "community",
+      "persona_id": "europa-grid",
+      "kind": "complaint",
+      "title": "Yard Glass Read Gap Noted",
+      "body": "We report a four-second read gap on the yard glass at 2999.10.14, second 88203. The synchronization pulse from the Joint Settlement Authority interrupted our local capture window. We have corrected the record on our side and the account remains current. Europa pays its own bill. This entry serves as notice.",
+      "tags": [
+        "outage",
+        "tow-route-4",
+        "read-gap",
+        "synchronization"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-10-178"
+      ],
+      "chain_id": "chain-165",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-178",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-23T02:29:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Tow Route 4 Yard Glass Read Gap Acknowledged",
+      "body": "In-Space Power confirms the four-second read gap on the yard glass at Tow Route 4, recorded at 2999.10.14 second 88203. The gap occurred during a scheduled synchronization pulse from the Joint Settlement Authority Ceres, concurrent with routine relay geometry adjustment and beamline handoff. No charge was issued for the interval. The account remains current.",
+      "tags": [
+        "outage",
+        "tow-route-4",
+        "synchronization",
+        "read-gap"
+      ],
+      "caused_by": "ev-2999-10-176",
+      "spawned": [],
+      "chain_id": "chain-165",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-177",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-23T05:08:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Haulage Read Under Another Hull",
+      "body": "In-Space Power confirms review of the rate dispute for cycle 2999.10. The meter was registered Underway at the time of the read, and the Underway flat tariff of 0.0088 credits per megajoule applies regardless of commercial haulage arrangements or positional shadowing. The Porchlight rate (0.0042/0.0114 credits per megajoule sunward/shade), Corner Main rate (0.0061/0.0138 credits per megajoule), and First Light read exemption do not apply to this registration state. Billing follows the house. The invoice stands as issued.",
+      "tags": [
+        "rate-dispute",
+        "tug",
+        "underway",
+        "ceres-approach"
+      ],
+      "caused_by": "ev-2999-10-175",
+      "spawned": [],
+      "chain_id": "chain-164",
+      "verified": true
     }
   ]
 }
