@@ -5599,6 +5599,27 @@
       "spawned": [],
       "chain_id": "chain-172",
       "verified": true
+    },
+    {
+      "id": "ev-2999-10-190",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-24T17:25:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "misdirected",
+      "title": "Misrouted to the public queue",
+      "body": "The domestic reminder for the Perihelion Vigil went to the house channel instead of the family queue. The yard-glass on Ring 7 needs rotation before the shade-side frosts, and I told the children the heliograph could stay up past curfew if the readings stayed nominal. I will handle the calibration myself tonight. M.",
+      "tags": [
+        "personal",
+        "misdirected",
+        "observance",
+        "domestic"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-173",
+      "verified": true,
+      "audience": "internal"
     }
   ]
 }
