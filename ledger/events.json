@@ -5516,6 +5516,89 @@
       "spawned": [],
       "chain_id": "chain-169",
       "verified": true
+    },
+    {
+      "id": "ev-2999-10-186",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-24T11:16:00Z",
+      "role": "community",
+      "persona_id": "europa-grid",
+      "kind": "complaint",
+      "title": "Porch Light During Sync Pulse",
+      "body": "Cycle 2999.10, second 84721. A porch light at Conduit 7 remained active through the synchronization pulse. We recorded the draw. We corrected the ledger. The house pays for the light it keeps on, and Europa pays its own bill. Please extinguish porch fixtures before the next pulse at second 86400.",
+      "tags": [
+        "billing",
+        "sync",
+        "porchlight",
+        "europe-grid"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-10-188"
+      ],
+      "chain_id": "chain-171",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-187",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-24T11:56:00Z",
+      "role": "community",
+      "persona_id": "tug-captain-mako",
+      "kind": "complaint",
+      "title": "Dark stretch at the interchange",
+      "body": "Missed the interchange on Tow Route 4 when the towed truss threw a hard beam-shadow across my nav array. Hull Dredge-Clear sat three minutes dark while I worked the helm blind. Billing follows the house, so whoever chartered that mass covers the underway reads during the shadow stretch. I pull the line. I do not pay for the dark.",
+      "tags": [
+        "outage",
+        "tow-route-4",
+        "underway",
+        "beam-shadow"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-10-189"
+      ],
+      "chain_id": "chain-172",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-188",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-24T16:16:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Porch Light During Sync Pulse",
+      "body": "In-Space Power confirms the Conduit 7 draw was billed to the registered house account at the Porchlight shade rate of 0.0114 credits per megajoule. Billing follows the house. The synchronization pulse does not void metered consumption, and no estimated reads are issued to adjust the ledger. Porch fixtures should be extinguished before second 86400.",
+      "tags": [
+        "billing",
+        "porchlight",
+        "sync"
+      ],
+      "caused_by": "ev-2999-10-186",
+      "spawned": [],
+      "chain_id": "chain-171",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-189",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-24T16:56:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Tow Route 4 beam-shadow interval acknowledged",
+      "body": "In-Space Power confirms a three-minute dark interval at Tow Route 4 interchange during scheduled relay geometry. The towed truss intersected the beamline handoff window, producing beam-shadow across the nav corridor. No charge was issued for the interval. The underway reads for that stretch are assigned to the chartering account per standing tariff.",
+      "tags": [
+        "outage",
+        "tow-route-4",
+        "beam-shadow",
+        "underway"
+      ],
+      "caused_by": "ev-2999-10-187",
+      "spawned": [],
+      "chain_id": "chain-172",
+      "verified": true
     }
   ]
 }
