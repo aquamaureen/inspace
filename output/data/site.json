@@ -2,7 +2,7 @@
   "meta": {
     "project": "inspacepower.com",
     "cycle": "2999.10",
-    "updated": "2999-10-25T18:17:00Z"
+    "updated": "2999-10-25T18:52:00Z"
   },
   "personas": [
     {
@@ -6036,6 +6036,27 @@
       "spawned": [],
       "chain_id": "chain-177",
       "verified": true
+    },
+    {
+      "id": "ev-2999-10-197",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-25T18:52:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "memo",
+      "title": "Internal Note: Belt Balance",
+      "body": "In-Space Power confirms the Belt settlement account remains in arrears, as it has since 2087. The public position is that we continue to seek resolution through the Joint Settlement Authority on Ceres. Privately, we will not concede that the 312-petajoule writeoff was ever justified, nor will we acknowledge that internal audit cleared the Jovian transit adjustments without JSA review. The house line remains: billing follows the house, and the Belt is part of this house whether they read the notices or not. Any proposal to forgive pre-2150 charges requires director-level sign-off and will [REDACTED] before publication.",
+      "tags": [
+        "settlement",
+        "belt",
+        "billing",
+        "internal"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-178",
+      "verified": true,
+      "audience": "internal"
     }
   ],
   "chains": {
@@ -12131,6 +12152,29 @@
         "spawned": [],
         "chain_id": "chain-177",
         "verified": true
+      }
+    ],
+    "chain-178": [
+      {
+        "id": "ev-2999-10-197",
+        "cycle": "2999.10",
+        "timestamp": "2999-10-25T18:52:00Z",
+        "role": "staff",
+        "persona_id": "ops-central",
+        "kind": "memo",
+        "title": "Internal Note: Belt Balance",
+        "body": "In-Space Power confirms the Belt settlement account remains in arrears, as it has since 2087. The public position is that we continue to seek resolution through the Joint Settlement Authority on Ceres. Privately, we will not concede that the 312-petajoule writeoff was ever justified, nor will we acknowledge that internal audit cleared the Jovian transit adjustments without JSA review. The house line remains: billing follows the house, and the Belt is part of this house whether they read the notices or not. Any proposal to forgive pre-2150 charges requires director-level sign-off and will [REDACTED] before publication.",
+        "tags": [
+          "settlement",
+          "belt",
+          "billing",
+          "internal"
+        ],
+        "caused_by": null,
+        "spawned": [],
+        "chain_id": "chain-178",
+        "verified": true,
+        "audience": "internal"
       }
     ]
   }
