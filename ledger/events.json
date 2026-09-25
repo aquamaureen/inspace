@@ -5680,6 +5680,65 @@
       "spawned": [],
       "chain_id": "chain-175",
       "verified": true
+    },
+    {
+      "id": "ev-2999-10-194",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-25T11:39:00Z",
+      "role": "community",
+      "persona_id": "new-sheboygan-clerk",
+      "kind": "comment",
+      "title": "Belt Household Balance, Outstanding Since 2087",
+      "body": "The Belt household balance has been sitting unpaid since 2087, which is longer than the Sheb has been on Tow Route 4. Central billing keeps telling me to mark it pending, but pending does not keep a porchlight on. We hauled the water tower across three gravity wells and it still stands, so I see no reason the Belt cannot square what they owe. Someone at Ceres should take a look before the next statement cycle closes.",
+      "tags": [
+        "billing",
+        "belt",
+        "outstanding-balance",
+        "collections"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-176",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-195",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-25T12:17:00Z",
+      "role": "community",
+      "persona_id": "meter-112",
+      "kind": "complaint",
+      "title": "Tow-Route-4 Water Tower Read",
+      "body": "This meter recorded the water tower at Tow-Route-4 for the first time in cycle 2999.10. The structure draws from the grid but carries no meter assignment. This meter does not question the rate. This meter questions the sum when a tower stands unbilled while porchlights pay. Ohio had weather once and water towers collected it without drawing credits.",
+      "tags": [
+        "billing",
+        "tow-route-4"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-10-196"
+      ],
+      "chain_id": "chain-177",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-196",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-25T18:17:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Tow-Route-4 Water Tower Read",
+      "body": "In-Space Power confirms the water tower at Tow-Route-4 carries no meter and draws no metered load from the grid. Billing follows the house, and where no house is registered no account is opened. Porchlight rate holders remain billed at 0.0042 credits per megajoule sunward and 0.0114 credits per megajoule shade. Any pump connected to grid current would receive a meter and be billed under that schedule. The tower itself does not.",
+      "tags": [
+        "billing",
+        "tow-route-4",
+        "meter-assignment"
+      ],
+      "caused_by": "ev-2999-10-195",
+      "spawned": [],
+      "chain_id": "chain-177",
+      "verified": true
     }
   ]
 }
