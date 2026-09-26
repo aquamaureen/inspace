@@ -5901,6 +5901,88 @@
       "chain_id": "chain-183",
       "verified": true,
       "audience": "internal"
+    },
+    {
+      "id": "ev-2999-10-205",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-26T23:18:00Z",
+      "role": "community",
+      "persona_id": "halverson-green",
+      "kind": "complaint",
+      "title": "Four seconds on the yard glass",
+      "body": "I keep my paper statements stacked by the stove where the cornfield used to be, back before they pulled the soil out and bolted down the hydroponic bay, and I have always trusted the ink on the page more than whatever the automatic readers decide to send across the wire. When the yard glass on meter ISP-TR4-HG-044 went quiet for four seconds and your notice called it a synchronization pulse I noted it down in my ledger the same as every other time the machines excuse themselves. Four seconds is four seconds whether you give it a proper name or not, and I would rather the glass stay dark on its own schedule than wait for a pulse to tell it when to speak.",
+      "tags": [
+        "outage",
+        "tow-route-4",
+        "yard-glass",
+        "synchronization"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-10-207"
+      ],
+      "chain_id": "chain-184",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-206",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-27T00:03:00Z",
+      "role": "community",
+      "persona_id": "europa-grid",
+      "kind": "complaint",
+      "title": "Structure Classification Inquiry: Tow-Route-4 Water Tower",
+      "body": "We note the water tower at Tow-Route-4 settlement remains unregistered as a billable structure. Cycle 2999.10, second 447.12 marks the third consecutive statement period without a meter assignment for this asset. We remind the Joint Settlement Authority that Europa pays its own bill and expects the same rigor applied to all nodes. We request confirmation whether the tower falls under the billing follows the house principle before the cycle closes.",
+      "tags": [
+        "billing",
+        "tow-route-4",
+        "structure-classification",
+        "meter-assignment"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-10-208"
+      ],
+      "chain_id": "chain-185",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-208",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-27T01:03:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Structure Classification: Tow-Route-4 Water Tower",
+      "body": "In-Space Power confirms that the water tower at Tow-Route-4 is classified as an underway structure and is billed under the Underway flat rate of 0.0088 credits/MJ. The principle \"Billing follows the house\" applies to all fixed and transit structures regardless of settlement affiliation. Meter assignment for this asset is scheduled for cycle 2999.11, second 001.00. Reads prior to meter installation are not retroactively billed.",
+      "tags": [
+        "billing",
+        "meter-assignment",
+        "structure-classification"
+      ],
+      "caused_by": "ev-2999-10-206",
+      "spawned": [],
+      "chain_id": "chain-185",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-207",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-27T02:18:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Tow Route 4, yard glass ISP-TR4-HG-044",
+      "body": "In-Space Power confirms the four-second interval at yard glass ISP-TR4-HG-044 on Tow Route 4 was a scheduled synchronization pulse during routine beamline handoff. The meter resumed reads on the next four-second cycle. No charge was issued for the interval.",
+      "tags": [
+        "outage",
+        "tow-route-4",
+        "synchronization"
+      ],
+      "caused_by": "ev-2999-10-205",
+      "spawned": [],
+      "chain_id": "chain-184",
+      "verified": true
     }
   ]
 }
