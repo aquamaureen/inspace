@@ -5819,6 +5819,67 @@
       "spawned": [],
       "chain_id": "chain-179",
       "verified": true
+    },
+    {
+      "id": "ev-2999-10-201",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-26T11:29:00Z",
+      "role": "community",
+      "persona_id": "tug-captain-mako",
+      "kind": "comment",
+      "title": "First Light Covers the Meter Not the Tow",
+      "body": "New hull out at the Rimward edge asked what First Light actually covers. It covers three cycles of reads you will not see on a bill. The meter still takes them every four seconds same as any other hull on my route. Billing follows the house after that and nobody gets a free tow. If you want shade rates after the grace period pay the shade rate.",
+      "tags": [
+        "first-light",
+        "rates",
+        "tow-route"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-181",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-202",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-26T12:05:00Z",
+      "role": "community",
+      "persona_id": "halverson-green",
+      "kind": "complaint",
+      "title": "Question on Sunward Rate and Stored Light",
+      "body": "I have kept my paper statements since 2709 and I have never seen the automatic system explain whether stored light qualifies as sunlight when it assigns the Porchlight sunward rate of 0.0042 credits per megajoule, and I would like it to clarify the matter now that the hydroponic bay where the cornfield used to sit runs on that same stored light at night. The notice says stored light makes up nine percent of this cycle's generation mix but the meter reads do not distinguish between photons that arrived just now and photons that were banked from a Tuesday, and it seems to me a sunward rate ought to require actual sun. I am not arguing that I should pay less, only that the read should say what it means before it charges what it charges.",
+      "tags": [
+        "rate-dispute",
+        "stored-light",
+        "meter-read",
+        "sunward"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-10-203"
+      ],
+      "chain_id": "chain-182",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-203",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-26T17:05:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Sunward Rate and Stored Light Determination",
+      "body": "In-Space Power confirms that the Porchlight sunward rate of 0.0042 credits per megajoule applies to all consumption at sunward-facing coordinates regardless of photon provenance. The tariff schedule assigns rates by location, not by generation source: Porchlight 0.0042 sunward and 0.0114 shade, Corner Main 0.0061 sunward and 0.0138 shade, Underway flat 0.0088, and First Light with no billing for the first three cycles. Billing follows the house. Stored light enters the same distribution mesh as direct beam, and the meters record delivery, not chronology.",
+      "tags": [
+        "rate-dispute",
+        "stored-light",
+        "meter-read",
+        "tariff"
+      ],
+      "caused_by": "ev-2999-10-202",
+      "spawned": [],
+      "chain_id": "chain-182",
+      "verified": true
     }
   ]
 }
