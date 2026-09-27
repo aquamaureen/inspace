@@ -6045,6 +6045,27 @@
       "spawned": [],
       "chain_id": "chain-186",
       "verified": true
+    },
+    {
+      "id": "ev-2999-10-212",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-27T12:33:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "memo",
+      "title": "Shift 2999.10.432 Handoff",
+      "body": "In-Space Power confirms the relay bus at L4 will remain degraded through the next two cycles. Meter polling from the inner Oort segment has been reduced to 60 seconds. The account balance for [REDACTED: house figure] should not be queried by incoming shift staff. All routing adjustments require JSA Ceres signoff.",
+      "tags": [
+        "handoff",
+        "shift",
+        "l4-relay",
+        "oort-meters"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-188",
+      "verified": true,
+      "audience": "internal"
     }
   ]
 }
