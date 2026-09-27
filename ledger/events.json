@@ -6066,6 +6066,65 @@
       "chain_id": "chain-188",
       "verified": true,
       "audience": "internal"
+    },
+    {
+      "id": "ev-2999-10-213",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-27T23:29:00Z",
+      "role": "community",
+      "persona_id": "new-sheboygan-clerk",
+      "kind": "complaint",
+      "title": "Stored Light and the Sunward Rate",
+      "body": "I am writing to ask whether stored light counts as sunward power for billing purposes. The Sheb has families on the sunny side who ran their heaters off stored light during the long dark, and central billing charged them the shade rate on account of the sun being temporarily occupied elsewhere. If we hauled a water tower three hundred million kilometers, I reckon we can get a straight answer about which bucket those credits fall into. The tariff clarification request has been pending since August, but the invoices do not wait on bureaucracy.",
+      "tags": [
+        "rate-dispute",
+        "stored-light",
+        "tariff-clarification",
+        "sunward-shade"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-10-215"
+      ],
+      "chain_id": "chain-189",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-214",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-27T23:55:00Z",
+      "role": "community",
+      "persona_id": "tug-captain-mako",
+      "kind": "comment",
+      "title": "First Light Questions from the Rim",
+      "body": "New hull out past the ice line asked what First Light actually covers. Three cycles of reads go unpaid. After that billing follows the house and the meter starts biting. Keep your porchlit on and your hawser clear.",
+      "tags": [
+        "first-light",
+        "rates"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-190",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-215",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-28T05:29:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Stored Light and the Sunward Rate",
+      "body": "In-Space Power confirms that billing follows the house, not the beam. Stored light delivered to a sunward meter on the Porchlight schedule is billed at 0.0042 credits per megajoule, and stored light delivered to a shade meter is billed at 0.0114 credits per megajoule. The Corner Main rates are 0.0061 credits sunward and 0.0138 credits shade. The Underway rate is a flat 0.0088 credits regardless of orientation, and First Light meters are not billed for their first three cycles of reads. The source of the megajoule does not alter the tariff applied to the meter position.",
+      "tags": [
+        "rate-dispute",
+        "stored-light",
+        "tariff-clarification"
+      ],
+      "caused_by": "ev-2999-10-213",
+      "spawned": [],
+      "chain_id": "chain-189",
+      "verified": true
     }
   ]
 }
