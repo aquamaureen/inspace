@@ -5983,6 +5983,68 @@
       "spawned": [],
       "chain_id": "chain-184",
       "verified": true
+    },
+    {
+      "id": "ev-2999-10-209",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-27T11:29:00Z",
+      "role": "community",
+      "persona_id": "tug-captain-mako",
+      "kind": "complaint",
+      "title": "Shadow-hauled at Underway rates",
+      "body": "They got me paying the flat 0.0088 while I sit docked behind a freighter hull that blocks my panels for twelve hours. I am a tug, not a battery. I cannot catch sun when a structure taller than my mast throws its beam-shadow across my deck. You want Underway, unstick me from this berth or knock the rate to porchlight shade until I clear the dock.",
+      "tags": [
+        "rate-dispute",
+        "tug",
+        "underway",
+        "beam-shadow"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-10-211"
+      ],
+      "chain_id": "chain-186",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-210",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-27T11:37:00Z",
+      "role": "community",
+      "persona_id": "halverson-green",
+      "kind": "comment",
+      "title": "First Light Settlement Approaching Final Free Cycle",
+      "body": "The settlement down at berth 12 of Tow Route 4 has been pulling light without a charge for going on two full statement cycles now, and I have been keeping my paper copies in case the automatic reads forget to count properly. By the time cycle 2999.11 rolls around they will have used their three free cycles and the porchlight rate will apply at 0.0042 credits per megajoule sunward or 0.0114 shade side, whichever side of the hull they happen to be sleeping on. I told them myself that billing follows the house and the house has been warm long enough, so they ought to prepare their statements before the fourth cycle arrives. I still have mine from 2709 and I intend to keep them.",
+      "tags": [
+        "first-light",
+        "rates",
+        "tow-route-4",
+        "paper-statements"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-187",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-211",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-27T12:29:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Rate dispute: Shadow-hauled at Underway rates",
+      "body": "In-Space Power confirms the Underway flat tariff entry 0.0088 credits per megajoule applies to all tug-class vessels registered to this dock, irrespective of incident irradiance. Porchlight sunward 0.0042 and shade 0.0114 are residential berth entries and do not transfer to commercial hulls. Billing follows the house, and the house classification is determined by vessel registry, not panel exposure. Appeal remains open with Joint Settlement Authority Ceres under route ISP-2041.",
+      "tags": [
+        "rate-dispute",
+        "tug",
+        "underway",
+        "beam-shadow"
+      ],
+      "caused_by": "ev-2999-10-209",
+      "spawned": [],
+      "chain_id": "chain-186",
+      "verified": true
     }
   ]
 }
