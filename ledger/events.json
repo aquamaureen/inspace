@@ -6208,6 +6208,67 @@
       "chain_id": "chain-193",
       "verified": true,
       "audience": "internal"
+    },
+    {
+      "id": "ev-2999-10-220",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-28T23:16:00Z",
+      "role": "community",
+      "persona_id": "tug-captain-mako",
+      "kind": "complaint",
+      "title": "Interchange Missed on TR-4, Shade Accountable",
+      "body": "Tow Route 4 interchange at buoy Kappa-12 was missed by the relieving hull Dredge-Clear. The beam-shadow from the towed array ran twelve nautical minutes long and we burned through the dark stretch on stored reserves alone. Billing follows the house, but the house does not move itself. Somebody on the shade side needs to square the credits for that run.",
+      "tags": [
+        "outage",
+        "tow-route-4",
+        "underway",
+        "shade-accounting"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-10-222"
+      ],
+      "chain_id": "chain-194",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-221",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-28T23:22:00Z",
+      "role": "community",
+      "persona_id": "europa-grid",
+      "kind": "comment",
+      "title": "Pre-Cornfield Read Inquiry",
+      "body": "A historian requested meter read records from before the cornfields. We confirm our estimated reads issued since founding in 2041 remain zero at cycle 2999.10, as verified at second 31.7 of this statement. Europa maintains autonomous accounting and pays its own bill. The requested data was never generated.",
+      "tags": [
+        "history",
+        "meters",
+        "records",
+        "autonomous"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-195",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-222",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-29T03:16:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "TR-4 Kappa-12 Shade Interval Acknowledged",
+      "body": "In-Space Power confirms the reported shadow interval at buoy Kappa-12 on Tow Route 4 under account Dredge-Clear. The beamline handoff coincided with a scheduled synchronization pulse and relay geometry shift, producing the extended dark window. The interval was recorded as a planned transition event. No charge was issued for reserves drawn during the handoff.",
+      "tags": [
+        "outage",
+        "tow-route-4",
+        "shade-accounting"
+      ],
+      "caused_by": "ev-2999-10-220",
+      "spawned": [],
+      "chain_id": "chain-194",
+      "verified": true
     }
   ]
 }
