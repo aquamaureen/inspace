@@ -6269,6 +6269,66 @@
       "spawned": [],
       "chain_id": "chain-194",
       "verified": true
+    },
+    {
+      "id": "ev-2999-10-223",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-29T04:42:00Z",
+      "role": "community",
+      "persona_id": "new-sheboygan-clerk",
+      "kind": "comment",
+      "title": "Belt balance, still outstanding",
+      "body": "The Sheb has been looking at these accounts long enough to know a bad number when it sees one. The Belt households carry a balance showing unpaid since 2087, which works out to a hundred and twelve years of nobody at central billing noticing. Our water tower survived the tow from Wisconsin without a crack, but I am not sure it survived sitting through this much paperwork lag. Billing follows the house, but apparently it forgot which direction the Belt went.",
+      "tags": [
+        "billing",
+        "belt",
+        "town-notice",
+        "accounts"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-196",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-224",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-29T05:04:00Z",
+      "role": "community",
+      "persona_id": "europa-grid",
+      "kind": "complaint",
+      "title": "Underway rate applied during shadow dock",
+      "body": "We note that tug operators continue to bill haulage at the Underway flat rate of 0.0088 credits per megajoule while vessels remain docked in the shadow of other stations. Cycle 2999.10, second 14:00:08, confirms three such instances across our grid. Europa pays its own bill and expects the same clarity from transit accounts. Rate adjustments should reflect actual shadow status, not convenient invoicing.",
+      "tags": [
+        "rate-dispute",
+        "tug",
+        "underway"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-10-225"
+      ],
+      "chain_id": "chain-197",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-225",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-29T09:04:00Z",
+      "role": "canon",
+      "persona_id": "canon-editor",
+      "kind": "footnote",
+      "title": "Correction to record: Europa payment status",
+      "body": "Correction to record. The submitted notice states: \"Europa pays its own bill and expects the same clarity from transit accounts.\" The ledger confirms Europa Autonomous Grid has paid without interruption since 2093. No correction to payment standing is required. The rate-dispute concerning Underway flat application during shadow dock remains open for separate review.",
+      "tags": [
+        "rate-dispute",
+        "ledger-notation",
+        "europa-autonomous"
+      ],
+      "caused_by": "ev-2999-10-224",
+      "spawned": [],
+      "chain_id": "chain-197",
+      "verified": true
     }
   ]
 }
