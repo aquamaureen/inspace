@@ -2,7 +2,7 @@
   "meta": {
     "project": "inspacepower.com",
     "cycle": "2999.10",
-    "updated": "2999-10-29T18:14:00Z"
+    "updated": "2999-10-29T22:33:00Z"
   },
   "personas": [
     {
@@ -6726,6 +6726,68 @@
       "caused_by": "ev-2999-10-228",
       "spawned": [],
       "chain_id": "chain-200",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-231",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-29T19:56:00Z",
+      "role": "community",
+      "persona_id": "europa-grid",
+      "kind": "comment",
+      "title": "Meter Count Stability",
+      "body": "Active meters stand at 214,116,882 as of cycle 2999.10. The count does not go down, regardless of what smaller settlements assume during their brownout hours. We read every 4 seconds and we remit payment on schedule. Europa pays its own bill.",
+      "tags": [
+        "meters",
+        "comment",
+        "accounting",
+        "autonomous"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-201",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-232",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-29T20:33:00Z",
+      "role": "community",
+      "persona_id": "new-sheboygan-clerk",
+      "kind": "complaint",
+      "title": "Porch Light Held Through Sync Pulse, TR4-NS-001",
+      "body": "We had a porch light on Main burn straight through the last synchronization pulse and nobody thought to flip it off. The meter kept counting same as always, because that is what meters do. I have filed the notice but it will take a few weeks to show up in the official stream on account of the lag we all enjoy out here on Route 4. Billing follows the house, so whoever owns the bracket pays for the extra megajoules, and that is how it stays. Turn your lights off when the pulse hits, folks.",
+      "tags": [
+        "billing",
+        "sync",
+        "porchlight",
+        "route-4"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-10-233"
+      ],
+      "chain_id": "chain-202",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-233",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-29T22:33:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Porch Light Billing, TR4-NS-001",
+      "body": "In-Space Power confirms the porch light at TR4-NS-001 continued to draw through the synchronization pulse at the Porchlight sunward rate of 0.0042 credits per megajoule. Billing follows the house, and the meter at that bracket recorded all reads without interruption. No estimated reads have been issued, nor will any adjustment be made for energy consumed during sync. The property holder of record will receive the charge on the next settlement cycle.",
+      "tags": [
+        "billing",
+        "porchlight",
+        "sync",
+        "route-4"
+      ],
+      "caused_by": "ev-2999-10-232",
+      "spawned": [],
+      "chain_id": "chain-202",
       "verified": true
     }
   ],
@@ -13558,6 +13620,72 @@
         "caused_by": "ev-2999-10-228",
         "spawned": [],
         "chain_id": "chain-200",
+        "verified": true
+      }
+    ],
+    "chain-201": [
+      {
+        "id": "ev-2999-10-231",
+        "cycle": "2999.10",
+        "timestamp": "2999-10-29T19:56:00Z",
+        "role": "community",
+        "persona_id": "europa-grid",
+        "kind": "comment",
+        "title": "Meter Count Stability",
+        "body": "Active meters stand at 214,116,882 as of cycle 2999.10. The count does not go down, regardless of what smaller settlements assume during their brownout hours. We read every 4 seconds and we remit payment on schedule. Europa pays its own bill.",
+        "tags": [
+          "meters",
+          "comment",
+          "accounting",
+          "autonomous"
+        ],
+        "caused_by": null,
+        "spawned": [],
+        "chain_id": "chain-201",
+        "verified": true
+      }
+    ],
+    "chain-202": [
+      {
+        "id": "ev-2999-10-232",
+        "cycle": "2999.10",
+        "timestamp": "2999-10-29T20:33:00Z",
+        "role": "community",
+        "persona_id": "new-sheboygan-clerk",
+        "kind": "complaint",
+        "title": "Porch Light Held Through Sync Pulse, TR4-NS-001",
+        "body": "We had a porch light on Main burn straight through the last synchronization pulse and nobody thought to flip it off. The meter kept counting same as always, because that is what meters do. I have filed the notice but it will take a few weeks to show up in the official stream on account of the lag we all enjoy out here on Route 4. Billing follows the house, so whoever owns the bracket pays for the extra megajoules, and that is how it stays. Turn your lights off when the pulse hits, folks.",
+        "tags": [
+          "billing",
+          "sync",
+          "porchlight",
+          "route-4"
+        ],
+        "caused_by": null,
+        "spawned": [
+          "ev-2999-10-233"
+        ],
+        "chain_id": "chain-202",
+        "verified": true
+      },
+      {
+        "id": "ev-2999-10-233",
+        "cycle": "2999.10",
+        "timestamp": "2999-10-29T22:33:00Z",
+        "role": "staff",
+        "persona_id": "ops-central",
+        "kind": "acknowledgment",
+        "title": "Porch Light Billing, TR4-NS-001",
+        "body": "In-Space Power confirms the porch light at TR4-NS-001 continued to draw through the synchronization pulse at the Porchlight sunward rate of 0.0042 credits per megajoule. Billing follows the house, and the meter at that bracket recorded all reads without interruption. No estimated reads have been issued, nor will any adjustment be made for energy consumed during sync. The property holder of record will receive the charge on the next settlement cycle.",
+        "tags": [
+          "billing",
+          "porchlight",
+          "sync",
+          "route-4"
+        ],
+        "caused_by": "ev-2999-10-232",
+        "spawned": [],
+        "chain_id": "chain-202",
         "verified": true
       }
     ]
