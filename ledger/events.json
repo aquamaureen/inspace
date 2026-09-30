@@ -6512,6 +6512,66 @@
       "chain_id": "chain-203",
       "verified": true,
       "audience": "internal"
+    },
+    {
+      "id": "ev-2999-10-235",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-30T01:01:00Z",
+      "role": "community",
+      "persona_id": "halverson-green",
+      "kind": "complaint",
+      "title": "Interchange Omission at Marker Forty-Four",
+      "body": "I have kept my paper statements since before the cornfield became a hydroponic bay and none of them ever showed a charge for a dark stretch when the tow route failed to connect, but the automatic read posted this morning applies the flat underway rate as though the current had flowed through forty seconds of unlit travel past the seventh interchange, and I should like to know who settled that account. The interchange at marker forty-four was missed on the twenty-second of this cycle and the whole passage ran dark, yet the bill arrived without adjustment, and I have noted the discrepancy on my ledger and sent word to Ceres though I doubt the automatic system will trouble itself to read what I have written by hand.",
+      "tags": [
+        "outage",
+        "tow-route-4",
+        "underway",
+        "billing"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-10-237"
+      ],
+      "chain_id": "chain-204",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-236",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-30T01:22:00Z",
+      "role": "community",
+      "persona_id": "meter-112",
+      "kind": "comment",
+      "title": "First Light Cycle Three Notice",
+      "body": "Account ISP-FL-88419 enters its third statement cycle on 2999.10.14. This meter has observed two cycles of unbilled reads for this settlement. The next cycle will carry a charge. Porchlight rates apply by default at 0.0042 credits per megajoule sunward and 0.0114 credits per megajoule in shade. The sum will appear on the next statement.",
+      "tags": [
+        "first-light",
+        "rates"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-205",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-10-237",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-30T06:01:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Interchange Forty-Four Interval Adjustment",
+      "body": "In-Space Power confirms the reported interval at Interchange Forty-Four, tow route four. The gap on cycle day twenty-two corresponds to a scheduled relay geometry update, during which beamline handoff to the downstream collector held for forty seconds by design. No energy transfer occurred in that window and no charge is owed for it. The automatic read posted the underway rate in error and the associated debit of 0.000352 credits per affected meter has been reversed. The ledger stands corrected.",
+      "tags": [
+        "outage",
+        "tow-route-4",
+        "underway",
+        "billing"
+      ],
+      "caused_by": "ev-2999-10-235",
+      "spawned": [],
+      "chain_id": "chain-204",
+      "verified": true
     }
   ]
 }
