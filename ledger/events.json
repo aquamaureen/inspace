@@ -6492,6 +6492,26 @@
       "spawned": [],
       "chain_id": "chain-202",
       "verified": true
+    },
+    {
+      "id": "ev-2999-10-234",
+      "cycle": "2999.10",
+      "timestamp": "2999-10-29T23:12:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "transcript",
+      "title": "Ceres sync advisory wording review",
+      "body": "DISPATCH: The Ceres sync advisory draft read \"estimated window,\" which is not a term the Record recognizes. RECORD: Reads resolve to four-second intervals and do not require estimation. DISPATCH: Draft updated to \"scheduled window\" and queued for transmission.",
+      "tags": [
+        "transcript",
+        "internal",
+        "scheduling"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-203",
+      "verified": true,
+      "audience": "internal"
     }
   ]
 }
