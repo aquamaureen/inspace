@@ -2,7 +2,7 @@
   "meta": {
     "project": "inspacepower.com",
     "cycle": "2999.11",
-    "updated": "2999-11-12T17:16:00Z"
+    "updated": "2999-11-12T17:23:00Z"
   },
   "personas": [
     {
@@ -7049,6 +7049,26 @@
       "spawned": [],
       "chain_id": "chain-211",
       "verified": true
+    },
+    {
+      "id": "ev-2999-11-010",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-12T17:23:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "misdirected",
+      "title": "misdirected, yard-glass",
+      "body": "This was meant for the household channel. Please remember that the yard-glass display for Perihelion Remembrance goes live at 0600 cycle start, not 1800. Mother will notice if we are late again. I will handle the calibration if someone handles the routing. M.",
+      "tags": [
+        "personal",
+        "yard-glass",
+        "routing-error"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-212",
+      "verified": true,
+      "audience": "internal"
     }
   ],
   "chains": {
@@ -14225,6 +14245,28 @@
         "spawned": [],
         "chain_id": "chain-211",
         "verified": true
+      }
+    ],
+    "chain-212": [
+      {
+        "id": "ev-2999-11-010",
+        "cycle": "2999.11",
+        "timestamp": "2999-11-12T17:23:00Z",
+        "role": "staff",
+        "persona_id": "ops-central",
+        "kind": "misdirected",
+        "title": "misdirected, yard-glass",
+        "body": "This was meant for the household channel. Please remember that the yard-glass display for Perihelion Remembrance goes live at 0600 cycle start, not 1800. Mother will notice if we are late again. I will handle the calibration if someone handles the routing. M.",
+        "tags": [
+          "personal",
+          "yard-glass",
+          "routing-error"
+        ],
+        "caused_by": null,
+        "spawned": [],
+        "chain_id": "chain-212",
+        "verified": true,
+        "audience": "internal"
       }
     ]
   }
