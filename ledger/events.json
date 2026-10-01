@@ -6572,6 +6572,126 @@
       "spawned": [],
       "chain_id": "chain-204",
       "verified": true
+    },
+    {
+      "id": "ev-2999-11-001",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-01T06:00:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "statement",
+      "title": "Cycle 2999.11 Opening",
+      "body": "In-Space Power confirms the opening of statement cycle 2999.11. The active meter count stands at 214,116,882, with reads issued every 4 seconds. The generation mix for this cycle is recorded as Beam 46 percent, Fusion 31 percent, Moontide 14 percent, and Stored light 9 percent. Billing follows the house.",
+      "tags": [
+        "statement",
+        "cycle",
+        "generation-mix"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-11-005"
+      ],
+      "chain_id": "chain-206",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-11-005",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-01T13:00:00Z",
+      "role": "community",
+      "persona_id": "halverson-green",
+      "kind": "comment",
+      "title": "Cycle 2999.11 Noted on Paper",
+      "body": "The opening of cycle 2999.11 arrives as scheduled and I have noted the figures on my ledger paper same as I have since the meter went in back in 2709, though I confess I do not trust these automatic reads that come through every four seconds when a careful manual reading would serve just as well. The beam at forty-six percent reminds me of when we still had the cornfield out where the hydroponic bay sits now, and the light fell natural across the rows rather than calculated through glass panels. I keep my paper statements stacked by the window and they tell the same story these tallies do, billing following the house as it always has since before I took up residence here.",
+      "tags": [
+        "cycle",
+        "paper-records",
+        "tow-route-4"
+      ],
+      "caused_by": "ev-2999-11-001",
+      "spawned": [],
+      "chain_id": "chain-206",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-11-002",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-06T10:00:00Z",
+      "role": "community",
+      "persona_id": "new-sheboygan-clerk",
+      "kind": "complaint",
+      "title": "Shade Rate Adjustment Request Pending",
+      "body": "New Sheboygan has been parked behind Oakhaven's stern for three months and every meter on the Sheb is catching shade rates. The water tower survived the tow but my faith in central billing geometry did not. I filed the correction request in August and it is still pending. Whoever handles tariff assignments at Ceres might want to look out a window once in a while.",
+      "tags": [
+        "rate-dispute",
+        "shade",
+        "tow-route-4",
+        "central-billing"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-11-006"
+      ],
+      "chain_id": "chain-207",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-11-006",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-06T14:00:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Porchlight Shade Rate Confirmed",
+      "body": "In-Space Power confirms the shade rate assignment for New Sheboygan is correct under the Porchlight tariff. Meters on the shade tier are billed at 0.0114 credits per megajoule, while sunward meters on the same schedule are billed at 0.0042 credits per megajoule. Billing follows the house: tariff assignment reflects measured irradiance at each meter, not the vessel's preferred parking geometry. The August correction request remains under review by the Joint Settlement Authority at Ceres.",
+      "tags": [
+        "rate-dispute",
+        "shade",
+        "central-billing"
+      ],
+      "caused_by": "ev-2999-11-002",
+      "spawned": [],
+      "chain_id": "chain-207",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-11-003",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-09T10:00:00Z",
+      "role": "community",
+      "persona_id": "halverson-green",
+      "kind": "comment",
+      "title": "Ceres Review Filing Noted",
+      "body": "I received the paper confirmation that the Joint Settlement Authority Ceres has opened its cycle review for 2999.11, and I have filed it in the same folder where I keep my statements going back to before the cornfield was a hydroponic bay, because the automatic reads do not remember what the manual ones forget. Billing follows the house and the house follows the tow route, which is why I continue to cross-check every figure against my own records rather than trusting a screen to tell me what I owe. The filing is there if anyone wishes to look at it, though I suspect most people will not, and that is how the small discrepancies become the large ones.",
+      "tags": [
+        "regulator",
+        "statement",
+        "cycle-review",
+        "paper-records"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-208",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-11-004",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-12T09:00:00Z",
+      "role": "community",
+      "persona_id": "tug-captain-mako",
+      "kind": "comment",
+      "title": "No Reads Before the Cornfields",
+      "body": "Some historian pinged the route asking for read records from before the cornfields. I told her the meters have logged every four seconds since '41 and never issued a single estimated read, so there is nothing to pull. The hulls run on current numbers. She can watch the beam shadow roll across my towed structure if she wants history.",
+      "tags": [
+        "history",
+        "meters",
+        "tow-routes"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-209",
+      "verified": true
     }
   ]
 }
