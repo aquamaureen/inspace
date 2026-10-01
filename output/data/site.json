@@ -2,7 +2,7 @@
   "meta": {
     "project": "inspacepower.com",
     "cycle": "2999.11",
-    "updated": "2999-11-12T17:23:00Z"
+    "updated": "2999-11-13T01:43:00Z"
   },
   "personas": [
     {
@@ -7069,6 +7069,88 @@
       "chain_id": "chain-212",
       "verified": true,
       "audience": "internal"
+    },
+    {
+      "id": "ev-2999-11-011",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-12T19:04:00Z",
+      "role": "community",
+      "persona_id": "tug-captain-mako",
+      "kind": "complaint",
+      "title": "Yard Glass Blind on Sync",
+      "body": "Four seconds of dead meter on the yard glass out on Tow Route 4, hull Dredge-Clear. The sync pulse fired and the glass went dark just like that. I do not care what the settlement boards say about calibration windows. A hull towing a hab-cluster through beam-shadow already pays for the dark. Four seconds is four seconds and my read counts same as yours.",
+      "tags": [
+        "outage",
+        "tow-route-4",
+        "meter",
+        "yard-glass"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-11-013"
+      ],
+      "chain_id": "chain-213",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-11-012",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-12T19:43:00Z",
+      "role": "community",
+      "persona_id": "new-sheboygan-clerk",
+      "kind": "complaint",
+      "title": "Water Tower Classification Inquiry",
+      "body": "The official notice about structure billing finally came through after a three-day lag, which gave the Sheb plenty of time to stare at the water tower and wonder how exactly you meter a thing that just sits there holding water. Central billing seems to think every bolted-down structure gets assessed, but that tower survived the tow from Wisconsin and I am not about to let someone charge us corner-main rates for a relic that predates the Sol utility. If the tower counts as a structure, I would like to know which tariff applies, because last I checked it does not have a porch and it certainly does not consume a single megajoule. Until I get a straight answer, the water tower stays off the ledger.",
+      "tags": [
+        "billing",
+        "tow-route-4",
+        "structures",
+        "water-tower"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-11-014"
+      ],
+      "chain_id": "chain-214",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-11-013",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-12T20:04:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Yard Glass Null Read, Tow Route 4",
+      "body": "In-Space Power confirms the yard-glass meter on hull Dredge-Clear, Tow Route 4, registered one null read during the stated interval. The synchronization pulse coincided with a scheduled relay geometry shift and routine beamline handoff. The four-second gap is a known artifact of the handoff sequence and falls outside billable measurement. No charge was issued for the interval.",
+      "tags": [
+        "outage",
+        "tow-route-4",
+        "meter"
+      ],
+      "caused_by": "ev-2999-11-011",
+      "spawned": [],
+      "chain_id": "chain-213",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-11-014",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-13T01:43:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Water Tower Classification Inquiry",
+      "body": "In-Space Power confirms the water tower at tow-route-4 has been reviewed against the settlement ledger. Billing follows the house. The tower is recorded as an unattached municipal structure with zero consumption reads across all reporting intervals. No tariff applies and no charges will be assessed while the structure remains unconnected to a dwelling account.",
+      "tags": [
+        "billing",
+        "structures",
+        "tow-route-4"
+      ],
+      "caused_by": "ev-2999-11-012",
+      "spawned": [],
+      "chain_id": "chain-214",
+      "verified": true
     }
   ],
   "chains": {
@@ -14267,6 +14349,92 @@
         "chain_id": "chain-212",
         "verified": true,
         "audience": "internal"
+      }
+    ],
+    "chain-213": [
+      {
+        "id": "ev-2999-11-011",
+        "cycle": "2999.11",
+        "timestamp": "2999-11-12T19:04:00Z",
+        "role": "community",
+        "persona_id": "tug-captain-mako",
+        "kind": "complaint",
+        "title": "Yard Glass Blind on Sync",
+        "body": "Four seconds of dead meter on the yard glass out on Tow Route 4, hull Dredge-Clear. The sync pulse fired and the glass went dark just like that. I do not care what the settlement boards say about calibration windows. A hull towing a hab-cluster through beam-shadow already pays for the dark. Four seconds is four seconds and my read counts same as yours.",
+        "tags": [
+          "outage",
+          "tow-route-4",
+          "meter",
+          "yard-glass"
+        ],
+        "caused_by": null,
+        "spawned": [
+          "ev-2999-11-013"
+        ],
+        "chain_id": "chain-213",
+        "verified": true
+      },
+      {
+        "id": "ev-2999-11-013",
+        "cycle": "2999.11",
+        "timestamp": "2999-11-12T20:04:00Z",
+        "role": "staff",
+        "persona_id": "ops-central",
+        "kind": "acknowledgment",
+        "title": "Yard Glass Null Read, Tow Route 4",
+        "body": "In-Space Power confirms the yard-glass meter on hull Dredge-Clear, Tow Route 4, registered one null read during the stated interval. The synchronization pulse coincided with a scheduled relay geometry shift and routine beamline handoff. The four-second gap is a known artifact of the handoff sequence and falls outside billable measurement. No charge was issued for the interval.",
+        "tags": [
+          "outage",
+          "tow-route-4",
+          "meter"
+        ],
+        "caused_by": "ev-2999-11-011",
+        "spawned": [],
+        "chain_id": "chain-213",
+        "verified": true
+      }
+    ],
+    "chain-214": [
+      {
+        "id": "ev-2999-11-012",
+        "cycle": "2999.11",
+        "timestamp": "2999-11-12T19:43:00Z",
+        "role": "community",
+        "persona_id": "new-sheboygan-clerk",
+        "kind": "complaint",
+        "title": "Water Tower Classification Inquiry",
+        "body": "The official notice about structure billing finally came through after a three-day lag, which gave the Sheb plenty of time to stare at the water tower and wonder how exactly you meter a thing that just sits there holding water. Central billing seems to think every bolted-down structure gets assessed, but that tower survived the tow from Wisconsin and I am not about to let someone charge us corner-main rates for a relic that predates the Sol utility. If the tower counts as a structure, I would like to know which tariff applies, because last I checked it does not have a porch and it certainly does not consume a single megajoule. Until I get a straight answer, the water tower stays off the ledger.",
+        "tags": [
+          "billing",
+          "tow-route-4",
+          "structures",
+          "water-tower"
+        ],
+        "caused_by": null,
+        "spawned": [
+          "ev-2999-11-014"
+        ],
+        "chain_id": "chain-214",
+        "verified": true
+      },
+      {
+        "id": "ev-2999-11-014",
+        "cycle": "2999.11",
+        "timestamp": "2999-11-13T01:43:00Z",
+        "role": "staff",
+        "persona_id": "ops-central",
+        "kind": "acknowledgment",
+        "title": "Water Tower Classification Inquiry",
+        "body": "In-Space Power confirms the water tower at tow-route-4 has been reviewed against the settlement ledger. Billing follows the house. The tower is recorded as an unattached municipal structure with zero consumption reads across all reporting intervals. No tariff applies and no charges will be assessed while the structure remains unconnected to a dwelling account.",
+        "tags": [
+          "billing",
+          "structures",
+          "tow-route-4"
+        ],
+        "caused_by": "ev-2999-11-012",
+        "spawned": [],
+        "chain_id": "chain-214",
+        "verified": true
       }
     ]
   }
