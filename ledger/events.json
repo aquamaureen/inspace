@@ -6692,6 +6692,66 @@
       "spawned": [],
       "chain_id": "chain-209",
       "verified": true
+    },
+    {
+      "id": "ev-2999-11-007",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-12T10:38:00Z",
+      "role": "community",
+      "persona_id": "meter-112",
+      "kind": "comment",
+      "title": "First Light Inquiry, Ceres Transfer Settlement",
+      "body": "A new settlement asked what First Light covers. This meter has recorded reads since 2091, back when Ohio still had weather, and states the policy plainly. First Light means three full cycles of reads are issued but not billed. The power flows and the house opens without charge. This meter checks only the final sum, and that sum stays zero until cycle four.",
+      "tags": [
+        "first-light",
+        "rates",
+        "new-settlement"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-210",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-11-008",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-12T11:16:00Z",
+      "role": "community",
+      "persona_id": "tug-captain-mako",
+      "kind": "complaint",
+      "title": "Porch Light Burning Through Sync Pulse on TR-4",
+      "body": "Some hull left her porch light hot through the last sync pulse out here on Route Four. The glare cuts right across my tow lane and throws a beam-shadow on the dredge-clear. Billing follows the house, so whoever owns that fixture is eating the reads. Kill the light when the pulse runs or pay the shade rate, I do not care which.",
+      "tags": [
+        "billing",
+        "sync",
+        "tow-route",
+        "porchlight"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-11-009"
+      ],
+      "chain_id": "chain-211",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-11-009",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-12T17:16:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Porchlight Billing on TR-4 Sync Pulse",
+      "body": "In-Space Power confirms that porch fixtures on Tow Route 4 are billed under the Porchlight tariff at 0.0042 credits per megajoule for sunward-facing units and 0.0114 credits per megajoule for shade-side units. Billing follows the house, meaning the registered account holder for the fixture absorbs all reads accumulated during the sync pulse window. Reads from beam-shadow interference on adjacent dredge-clear zones are metered and billed without adjustment. No reads are waived for glare complaints.",
+      "tags": [
+        "billing",
+        "sync",
+        "tow-route"
+      ],
+      "caused_by": "ev-2999-11-008",
+      "spawned": [],
+      "chain_id": "chain-211",
+      "verified": true
     }
   ]
 }
