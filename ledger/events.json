@@ -6854,6 +6854,65 @@
       "spawned": [],
       "chain_id": "chain-214",
       "verified": true
+    },
+    {
+      "id": "ev-2999-11-015",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-13T02:52:00Z",
+      "role": "community",
+      "persona_id": "meter-112",
+      "kind": "complaint",
+      "title": "Shadow Station Millerton, Tow Route 4",
+      "body": "This meter has recorded shade reads since 2091, when Ohio still had weather that moved. This meter notes that Millerton sits in the permanent shadow of New Lancaster along tow route 4 and pays 0.0114 credits per megajoule while the sunward side pays 0.0042. The geometry is fixed. This meter questions the sum when the shadow has not shifted in three hundred years. Billing follows the house, but the house does not move.",
+      "tags": [
+        "rate-dispute",
+        "shade",
+        "tow-route-4"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-11-017"
+      ],
+      "chain_id": "chain-215",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-11-016",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-13T03:00:00Z",
+      "role": "community",
+      "persona_id": "tug-captain-mako",
+      "kind": "comment",
+      "title": "Third free read on Hull Luminos",
+      "body": "Hull Luminos logged her First Light connection on cycle 2999.09. Two free reads behind her now. Third and final free read comes up with statement 2999.11. After that the porchlight rate bites, sunward or shade, and the meter stops being polite. Clear your ledgers before the shadow hits.",
+      "tags": [
+        "first-light",
+        "rates",
+        "tow-route"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-216",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-11-017",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-13T04:52:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Rate review: Shadow Station Millerton",
+      "body": "In-Space Power confirms the Porchlight tariff governs Shadow Station Millerton. Porchlight specifies 0.0042 credits per megajoule sunward and 0.0114 credits per megajoule in shade, and the meter reads shade. The tariff does not distinguish between fixed geometry and transient shadow. Billing follows the house, and the house sits in shade.",
+      "tags": [
+        "rate-dispute",
+        "shade",
+        "tow-route"
+      ],
+      "caused_by": "ev-2999-11-015",
+      "spawned": [],
+      "chain_id": "chain-215",
+      "verified": true
     }
   ]
 }
