@@ -2,7 +2,7 @@
   "meta": {
     "project": "inspacepower.com",
     "cycle": "2999.11",
-    "updated": "2999-11-13T13:19:00Z"
+    "updated": "2999-11-13T17:35:00Z"
   },
   "personas": [
     {
@@ -7375,6 +7375,66 @@
       "chain_id": "chain-222",
       "verified": true,
       "audience": "internal"
+    },
+    {
+      "id": "ev-2999-11-026",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-13T14:35:00Z",
+      "role": "community",
+      "persona_id": "new-sheboygan-clerk",
+      "kind": "complaint",
+      "title": "Missed Interchange at Marker 712 and the Dark Stretch",
+      "body": "New Sheboygan missed the interchange at marker 712 again, and the official notice about it arrived three cycles late like usual. The Sheb has a dark stretch on tow-route-4 that nobody seems eager to meter, and I would like to know whose budget covers the lights when the schedule fails. The water tower made it through the tow so we are managing, but billing follows the house and the house keeps moving. Underway flat rates do not stretch far enough when the interchange keeps slipping past.",
+      "tags": [
+        "outage",
+        "tow-route-4",
+        "underway"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-11-028"
+      ],
+      "chain_id": "chain-223",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-11-027",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-13T15:06:00Z",
+      "role": "community",
+      "persona_id": "halverson-green",
+      "kind": "comment",
+      "title": "Before the Hydroponic Bay",
+      "body": "A historian came by last cycle asking for read records from before the cornfield became a hydroponic bay, and I told him the same thing I have been telling people since the settlement arrived at Tow Route 4, which is that my paper statements go back to November 2709 and those are the only records I trust anyway. He wanted numbers from when the dirt was still dirt and not a grid of aeroponic troughs, but automatic reads cannot give you the smell of stalks in late summer so I handed him a stack of yellowed invoices and watched him try to make sense of figures that predate every sensor in the system. He will not find what he is looking for in their databases because the house was just a house then and the meter had not yet learned to speak in four second intervals.",
+      "tags": [
+        "history",
+        "meters",
+        "paper-records",
+        "tow-route-4"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-224",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-11-028",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-13T17:35:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Tow-Route-4 Interchange Acknowledgment",
+      "body": "In-Space Power confirms the missed interchange at marker 712 on tow-route-4 involving account New Sheboygan. The dark stretch resulted from a scheduled relay geometry adjustment during the beamline handoff window, which displaced the synchronization pulse by 1.2 seconds. No charge was issued for the unmetered interval. The Underway flat tariff applies to the corrected route segment and will appear on the next cycle statement.",
+      "tags": [
+        "outage",
+        "tow-route-4",
+        "underway"
+      ],
+      "caused_by": "ev-2999-11-026",
+      "spawned": [],
+      "chain_id": "chain-223",
+      "verified": true
     }
   ],
   "chains": {
@@ -14899,6 +14959,70 @@
         "chain_id": "chain-222",
         "verified": true,
         "audience": "internal"
+      }
+    ],
+    "chain-223": [
+      {
+        "id": "ev-2999-11-026",
+        "cycle": "2999.11",
+        "timestamp": "2999-11-13T14:35:00Z",
+        "role": "community",
+        "persona_id": "new-sheboygan-clerk",
+        "kind": "complaint",
+        "title": "Missed Interchange at Marker 712 and the Dark Stretch",
+        "body": "New Sheboygan missed the interchange at marker 712 again, and the official notice about it arrived three cycles late like usual. The Sheb has a dark stretch on tow-route-4 that nobody seems eager to meter, and I would like to know whose budget covers the lights when the schedule fails. The water tower made it through the tow so we are managing, but billing follows the house and the house keeps moving. Underway flat rates do not stretch far enough when the interchange keeps slipping past.",
+        "tags": [
+          "outage",
+          "tow-route-4",
+          "underway"
+        ],
+        "caused_by": null,
+        "spawned": [
+          "ev-2999-11-028"
+        ],
+        "chain_id": "chain-223",
+        "verified": true
+      },
+      {
+        "id": "ev-2999-11-028",
+        "cycle": "2999.11",
+        "timestamp": "2999-11-13T17:35:00Z",
+        "role": "staff",
+        "persona_id": "ops-central",
+        "kind": "acknowledgment",
+        "title": "Tow-Route-4 Interchange Acknowledgment",
+        "body": "In-Space Power confirms the missed interchange at marker 712 on tow-route-4 involving account New Sheboygan. The dark stretch resulted from a scheduled relay geometry adjustment during the beamline handoff window, which displaced the synchronization pulse by 1.2 seconds. No charge was issued for the unmetered interval. The Underway flat tariff applies to the corrected route segment and will appear on the next cycle statement.",
+        "tags": [
+          "outage",
+          "tow-route-4",
+          "underway"
+        ],
+        "caused_by": "ev-2999-11-026",
+        "spawned": [],
+        "chain_id": "chain-223",
+        "verified": true
+      }
+    ],
+    "chain-224": [
+      {
+        "id": "ev-2999-11-027",
+        "cycle": "2999.11",
+        "timestamp": "2999-11-13T15:06:00Z",
+        "role": "community",
+        "persona_id": "halverson-green",
+        "kind": "comment",
+        "title": "Before the Hydroponic Bay",
+        "body": "A historian came by last cycle asking for read records from before the cornfield became a hydroponic bay, and I told him the same thing I have been telling people since the settlement arrived at Tow Route 4, which is that my paper statements go back to November 2709 and those are the only records I trust anyway. He wanted numbers from when the dirt was still dirt and not a grid of aeroponic troughs, but automatic reads cannot give you the smell of stalks in late summer so I handed him a stack of yellowed invoices and watched him try to make sense of figures that predate every sensor in the system. He will not find what he is looking for in their databases because the house was just a house then and the meter had not yet learned to speak in four second intervals.",
+        "tags": [
+          "history",
+          "meters",
+          "paper-records",
+          "tow-route-4"
+        ],
+        "caused_by": null,
+        "spawned": [],
+        "chain_id": "chain-224",
+        "verified": true
       }
     ]
   }
