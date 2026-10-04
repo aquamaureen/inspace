@@ -2,7 +2,7 @@
   "meta": {
     "project": "inspacepower.com",
     "cycle": "2999.11",
-    "updated": "2999-11-13T21:34:00Z"
+    "updated": "2999-11-13T21:54:00Z"
   },
   "personas": [
     {
@@ -7518,6 +7518,27 @@
       "spawned": [],
       "chain_id": "chain-226",
       "verified": true
+    },
+    {
+      "id": "ev-2999-11-033",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-13T21:54:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "memo",
+      "title": "Shift Handoff 2999.11 Night Rotation",
+      "body": "In-Space Power confirms handoff of cycle 2999.11 operations to the night watch. Beam output tracking at 46 percent of the generation mix, fusion nominal, moontide variance within tolerance. Europa transfer reconciliation pending resolution of [REDACTED: house figure], billing follows the house per standing protocol. All 214,116,882 meters reporting on four-second intervals, zero estimated reads to date.",
+      "tags": [
+        "handoff",
+        "shift",
+        "internal",
+        "reconciliation"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-227",
+      "verified": true,
+      "audience": "internal"
     }
   ],
   "chains": {
@@ -15193,6 +15214,29 @@
         "spawned": [],
         "chain_id": "chain-226",
         "verified": true
+      }
+    ],
+    "chain-227": [
+      {
+        "id": "ev-2999-11-033",
+        "cycle": "2999.11",
+        "timestamp": "2999-11-13T21:54:00Z",
+        "role": "staff",
+        "persona_id": "ops-central",
+        "kind": "memo",
+        "title": "Shift Handoff 2999.11 Night Rotation",
+        "body": "In-Space Power confirms handoff of cycle 2999.11 operations to the night watch. Beam output tracking at 46 percent of the generation mix, fusion nominal, moontide variance within tolerance. Europa transfer reconciliation pending resolution of [REDACTED: house figure], billing follows the house per standing protocol. All 214,116,882 meters reporting on four-second intervals, zero estimated reads to date.",
+        "tags": [
+          "handoff",
+          "shift",
+          "internal",
+          "reconciliation"
+        ],
+        "caused_by": null,
+        "spawned": [],
+        "chain_id": "chain-227",
+        "verified": true,
+        "audience": "internal"
       }
     ]
   }
