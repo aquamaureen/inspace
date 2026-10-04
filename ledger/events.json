@@ -7242,6 +7242,87 @@
       "chain_id": "chain-227",
       "verified": true,
       "audience": "internal"
+    },
+    {
+      "id": "ev-2999-11-034",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-13T23:38:00Z",
+      "role": "community",
+      "persona_id": "new-sheboygan-clerk",
+      "kind": "complaint",
+      "title": "Meter Still Ticking When The Beam Went Quiet",
+      "body": "The Beam cut out again during the relay geometry window and the meter on the water tower kept right on reading like nothing happened. I don't mind telling you folks at central billing that the lag on this official notice is about as useful as a screen door on an airlock. The Sheb expects reads to match what is actually coming through, not what the meter decides to imagine while we are sitting in the dark.",
+      "tags": [
+        "outage",
+        "beam",
+        "meter-reading",
+        "new-sheboygan"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-11-036"
+      ],
+      "chain_id": "chain-228",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-11-035",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-13T23:56:00Z",
+      "role": "community",
+      "persona_id": "new-sheboygan-clerk",
+      "kind": "complaint",
+      "title": "Question on stored light and sunward rate",
+      "body": "I am writing to ask whether stored light counts as sunlight when we apply the sunward rate. The generation mix shows stored light at 9 percent, but our folks on the shade side of the Sheb are getting charged the shade rate while running on power that was collected in actual sun. This notice arrived three days late as usual, but the water tower made the jump so I figure we can wait one more cycle for an answer.",
+      "tags": [
+        "rate-dispute",
+        "stored-light",
+        "toward-route-4"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-11-037"
+      ],
+      "chain_id": "chain-229",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-11-036",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-14T02:38:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "New Sheboygan Interval Read Clarification",
+      "body": "In-Space Power confirms the reported interval at New Sheboygan water tower, account ISP-2041-NS-8871. The Beam quiet period coincided with a scheduled relay geometry window and subsequent beamline handoff. The meter carried its last synchronized read forward across the interval boundary, which is expected behavior during synchronization pulse gaps. No charge was issued for the interval.",
+      "tags": [
+        "outage",
+        "beam",
+        "meter-reading"
+      ],
+      "caused_by": "ev-2999-11-034",
+      "spawned": [],
+      "chain_id": "chain-228",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-11-037",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-14T04:56:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Stored light rate classification",
+      "body": "In-Space Power confirms that stored light remains subject to location-based tariff assignment. The Porchlight shade rate of 0.0114 credits/MJ applies to all meters registered on the anti-sunward face of Sheb station, regardless of the generation mix at time of delivery. Billing follows the house. The Porchlight sunward rate of 0.0042 credits/MJ is reserved for meters whose physical coordinates face the primary. Route 4 delivery does not alter tariff class.",
+      "tags": [
+        "rate-dispute",
+        "stored-light",
+        "tariff-clarification"
+      ],
+      "caused_by": "ev-2999-11-035",
+      "spawned": [],
+      "chain_id": "chain-229",
+      "verified": true
     }
   ]
 }
