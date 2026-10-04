@@ -7138,6 +7138,89 @@
       "spawned": [],
       "chain_id": "chain-223",
       "verified": true
+    },
+    {
+      "id": "ev-2999-11-029",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-13T18:53:00Z",
+      "role": "community",
+      "persona_id": "tug-captain-mako",
+      "kind": "complaint",
+      "title": "Water Tower Classification on Towed Settlement Pods",
+      "body": "Ran a settlement module through Tow Route 4 past the New Ceres anchor. That water tower on its spine throws a beam-shadow you could lose a hull in. I need to know if In-Space Power bills that tower as a structure or treats it as ballast. My tug does not care what you call it, but my settlement statement does.",
+      "tags": [
+        "billing",
+        "tow-route-4",
+        "structure",
+        "beam-shadow"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-11-031"
+      ],
+      "chain_id": "chain-225",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-11-030",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-13T19:34:00Z",
+      "role": "community",
+      "persona_id": "meter-112",
+      "kind": "complaint",
+      "title": "Null Reads During Relay Geometry",
+      "body": "This meter logged four thousand and twelve null reads during the relay geometry window on 2999.10.28. The Beam ceased transmission for sixteen minutes. This meter continued to record the interval. The sum reflects the gap, not the rate. This meter remembers when Ohio had weather.",
+      "tags": [
+        "outage",
+        "beam",
+        "relay-geometry",
+        "earth-reserve-ohio"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-11-032"
+      ],
+      "chain_id": "chain-226",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-11-031",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-13T20:53:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Water Tower Classification on Towed Settlement Pods",
+      "body": "In-Space Power confirms the water tower mounted on the spine of a towed settlement pod is classified as a structure under ledger entry TR4-SP, not as ballast. Billing follows the house, and the tower is permanently affixed to the settlement module's mass frame. All beam-shadow intercept by that tower is read and billed at the Underway flat rate of 0.0088 credits per megajoule. Ballast classification requires removable mass with no intercept surface, which a water tower does not satisfy.",
+      "tags": [
+        "billing",
+        "structure",
+        "tow-route-4"
+      ],
+      "caused_by": "ev-2999-11-029",
+      "spawned": [],
+      "chain_id": "chain-225",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-11-032",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-13T21:34:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Ohio Relay Geometry Null Reads",
+      "body": "In-Space Power confirms the Earth Reserve Ohio report of four thousand and twelve null reads during the scheduled relay geometry window on 2999.10.28. The sixteen-minute interval reflects a routine beamline handoff between relay nodes, during which the synchronization pulse suspends transmission while downstream geometry realigns. The meter correctly logged the gap. No charge was issued for the interval.",
+      "tags": [
+        "outage",
+        "earth-reserve",
+        "beam",
+        "relay-geometry"
+      ],
+      "caused_by": "ev-2999-11-030",
+      "spawned": [],
+      "chain_id": "chain-226",
+      "verified": true
     }
   ]
 }
