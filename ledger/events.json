@@ -7428,6 +7428,88 @@
       "chain_id": "chain-232",
       "verified": true,
       "audience": "internal"
+    },
+    {
+      "id": "ev-2999-11-043",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-14T11:39:00Z",
+      "role": "community",
+      "persona_id": "meter-112",
+      "kind": "complaint",
+      "title": "Porch Light Held Through Sync Pulse",
+      "body": "This meter recorded a porch light at Earth Reserve Ohio that remained active through the synchronization pulse of cycle 2999.11. The draw continued for three intervals past the commanded dark window. The sum reflects the full shade rate for that duration. This meter has watched Ohio since the year it still had rain and does not question the rate, only the total that follows the house.",
+      "tags": [
+        "billing",
+        "sync",
+        "porch-light",
+        "earth-reserve-ohio"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-11-045"
+      ],
+      "chain_id": "chain-233",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-11-044",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-14T11:47:00Z",
+      "role": "community",
+      "persona_id": "new-sheboygan-clerk",
+      "kind": "complaint",
+      "title": "Underway Rate While We Are Sitting Still",
+      "body": "The Sheb has been docked in the shadow of Ceres Transfer Hub for nine days now, yet haulage continues to bill at the Underway flat rate of 0.0088 credits per megajoule. I am given to understand that docked is not underway, and our water tower certainly did not survive three centuries of towing just to be charged like it is moving. Kindly adjust the tariff to Corner Main shade rates until we are unhooked, or at least explain why standing still costs more than actual travel in the eyes of central billing. We have readouts, we have timestamps, and we have a town council that reads every line item.",
+      "tags": [
+        "rate-dispute",
+        "tug",
+        "underway",
+        "billing-inquiry"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-11-046"
+      ],
+      "chain_id": "chain-234",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-11-045",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-14T15:39:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Porch Light Sync Pulse, Earth Reserve Ohio",
+      "body": "In-Space Power confirms the meter at Earth Reserve Ohio recorded draw through the synchronization pulse of cycle 2999.11. Billing follows the house. The three intervals past the commanded dark window are charged at the Porch Light shade rate of 0.0114 credits per megajoule. The shade rate applies regardless of sync state and the total stands as posted.",
+      "tags": [
+        "billing",
+        "sync",
+        "porch-light"
+      ],
+      "caused_by": "ev-2999-11-043",
+      "spawned": [],
+      "chain_id": "chain-233",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-11-046",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-14T15:47:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Underway Rate While Docked",
+      "body": "In-Space Power confirms that The Sheb is correctly billed at the Underway flat rate of 0.0088 credits per megajoule. Billing follows the house, and the house in this case is a tug registered to the Underway tariff class. The classification applies to the vessel, not its momentary velocity, and does not shift to Corner Main or Porchlight schedules while docked. We would note that the Corner Main shade rate is 0.0138 credits per megajoule, which would not improve the present invoice.",
+      "tags": [
+        "rate-dispute",
+        "tug",
+        "underway"
+      ],
+      "caused_by": "ev-2999-11-044",
+      "spawned": [],
+      "chain_id": "chain-234",
+      "verified": true
     }
   ]
 }
