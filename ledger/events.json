@@ -7323,6 +7323,90 @@
       "spawned": [],
       "chain_id": "chain-229",
       "verified": true
+    },
+    {
+      "id": "ev-2999-11-038",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-14T06:05:00Z",
+      "role": "community",
+      "persona_id": "tug-captain-mako",
+      "kind": "complaint",
+      "title": "Dark at Marker Twelve",
+      "body": "Missed the interchange at Marker Twelve again. That wide-body hull towed across the channel and threw enough beam-shadow to kill the read buoys for a full watch. Billing follows the house, but there is no house when the channel runs dark. I want to know who covers the shade rate while my rig sits underway in the black.",
+      "tags": [
+        "outage",
+        "tow-route-4",
+        "underway",
+        "beam-shadow"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-11-040"
+      ],
+      "chain_id": "chain-230",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-11-039",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-14T06:47:00Z",
+      "role": "community",
+      "persona_id": "halverson-green",
+      "kind": "complaint",
+      "title": "Porch light held through the synchronization pulse",
+      "body": "There is a porch light on the third ring of Tow Route 4 that refused to dim when the synchronization pulse went through, and I have marked it on my paper statement for the third cycle running because the automatic reads continue to call it an acceptable variance. I remember when that whole stretch was nothing but cornfield before they put in the hydroponic bay and told us the meters would sort themselves out, but a light that burns through a sync pulse is not a metering problem, it is a discipline problem, and I would prefer we all pretend it is not happening until the statement arrives. I have the timestamps written down in pen and I am prepared to provide them to anyone who asks, though I suspect the system will simply estimate its way past the discrepancy the way it always does.",
+      "tags": [
+        "billing",
+        "sync",
+        "porch-light",
+        "tow-route-4"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-11-041"
+      ],
+      "chain_id": "chain-231",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-11-040",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-14T09:05:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Marker Twelve, Tow Route Four",
+      "body": "In-Space Power confirms the report at tow-route-4, Marker Twelve. The interval corresponds to a scheduled beamline handoff between relay sectors Theta and Kappa, during which the wide-body tow hull occlusion coincided with a synchronization pulse. Read buoys resumed nominal operation after the handoff completed. No charge was issued for the interval; billing follows the house, and no house was present.",
+      "tags": [
+        "outage",
+        "tow-route-4",
+        "underway",
+        "beam-shadow"
+      ],
+      "caused_by": "ev-2999-11-038",
+      "spawned": [],
+      "chain_id": "chain-230",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-11-041",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-14T09:47:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Porch light held through the synchronization pulse",
+      "body": "In-Space Power confirms the porch light on Tow Route 4 ring 3 registered 11.4 kilojoules during the stated synchronization window. Billing follows the house. The meter on record is charged at the Porchlight rate of 0.0042/0.0114 credits per megajoule for all energy drawn, regardless of fixture behavior or operator preference. Zero estimated reads have been issued since founding, and the statement will reflect the physical read.",
+      "tags": [
+        "billing",
+        "porch-light",
+        "sync",
+        "tow-route-4"
+      ],
+      "caused_by": "ev-2999-11-039",
+      "spawned": [],
+      "chain_id": "chain-231",
+      "verified": true
     }
   ]
 }
