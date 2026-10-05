@@ -7407,6 +7407,27 @@
       "spawned": [],
       "chain_id": "chain-231",
       "verified": true
+    },
+    {
+      "id": "ev-2999-11-042",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-14T10:12:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "memo",
+      "title": "Settlement Account 0877-B (Belt) Status Confirmation",
+      "body": "In-Space Power confirms the Belt settlement account remains open at 847.3 petacredits, arrears dating to 2087. Our public position is that billing follows the house and reconciliation proceeds through standard JSA Ceres channels. The internal position, which is not for circulation, is that no concession will be made on principal and no retroactive First Light read exemptions will be granted for any belt habitat. [REDACTED] authorization codes for the 2184 forgiveness proposal are permanently revoked.",
+      "tags": [
+        "settlement",
+        "belt",
+        "internal",
+        "arbitration"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-232",
+      "verified": true,
+      "audience": "internal"
     }
   ]
 }
