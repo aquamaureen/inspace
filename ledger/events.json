@@ -7571,6 +7571,26 @@
       "spawned": [],
       "chain_id": "chain-235",
       "verified": true
+    },
+    {
+      "id": "ev-2999-11-050",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-14T20:26:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "misdirected",
+      "title": "Reminder re: yard-glass rotation",
+      "body": "To M: the yard-glass at Hab Ring 7, Sector Four needs rotation to the winter setting before the next beam transit. Please also retrieve the calibration weights from the shelf above the sink. I will handle the Ceres filing if you manage the display alignment. V",
+      "tags": [
+        "personal",
+        "yard-glass",
+        "hab-ring"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-237",
+      "verified": true,
+      "audience": "internal"
     }
   ]
 }
