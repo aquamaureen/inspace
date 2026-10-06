@@ -2,7 +2,7 @@
   "meta": {
     "project": "inspacepower.com",
     "cycle": "2999.11",
-    "updated": "2999-11-14T15:47:00Z"
+    "updated": "2999-11-14T19:59:00Z"
   },
   "personas": [
     {
@@ -7806,6 +7806,67 @@
       "caused_by": "ev-2999-11-044",
       "spawned": [],
       "chain_id": "chain-234",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-11-047",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-14T16:59:00Z",
+      "role": "community",
+      "persona_id": "meter-112",
+      "kind": "complaint",
+      "title": "Missed Interchange Tow-Route 4, Dark Stretch Accounting",
+      "body": "This meter recorded a missed tow-route interchange on 2999.09.14 at grid node Vesta-Relay. The dark stretch that followed ran for eleven hours and consumed stored reserves at Underway flat rates. Billing follows the house, but this meter questions which house received the read during the interchange gap. The sum remains unpaid by any account this meter recognizes. Ohio had weather once, and at least the clouds accounted for themselves.",
+      "tags": [
+        "outage",
+        "tow-route-4",
+        "underway",
+        "dark-stretch"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-11-049"
+      ],
+      "chain_id": "chain-235",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-11-048",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-14T17:20:00Z",
+      "role": "community",
+      "persona_id": "halverson-green",
+      "kind": "comment",
+      "title": "Balance Carried Forward",
+      "body": "I keep my paper statements in a tin box on the windowsill and the ones from the Belt households go back to 2087 without a single payment mark, which the automatic reads would rather not acknowledge because they prefer to pretend the ledger settles itself every four seconds. I remember when this was a cornfield and we understood that a balance unpaid is still a balance, no matter how many cycles you let it drift past Ceres. Billing follows the house, and those houses have been following the same unpaid route for three hundred twelve years, though I suppose someone will tell me the system has accounted for it in a manner I cannot read on paper.",
+      "tags": [
+        "billing",
+        "belt",
+        "paper-records",
+        "outstanding-balance"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-236",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-11-049",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-14T19:59:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Vesta-Relay Interchange Interval Acknowledged",
+      "body": "In-Space Power confirms the interval recorded at grid node Vesta-Relay on 2999.09.14 corresponds to a scheduled beamline handoff during Tow-Route 4 synchronization. The relay geometry required an eleven-hour dark stretch while the primary array completed realignment. Meter reads continued at four-second cadence throughout the interchange and were attributed to the vessel registry on file at the time of the gap. No charge was issued for the interval.",
+      "tags": [
+        "outage",
+        "tow-route-4",
+        "underway"
+      ],
+      "caused_by": "ev-2999-11-047",
+      "spawned": [],
+      "chain_id": "chain-235",
       "verified": true
     }
   ],
@@ -15786,6 +15847,71 @@
         "caused_by": "ev-2999-11-044",
         "spawned": [],
         "chain_id": "chain-234",
+        "verified": true
+      }
+    ],
+    "chain-235": [
+      {
+        "id": "ev-2999-11-047",
+        "cycle": "2999.11",
+        "timestamp": "2999-11-14T16:59:00Z",
+        "role": "community",
+        "persona_id": "meter-112",
+        "kind": "complaint",
+        "title": "Missed Interchange Tow-Route 4, Dark Stretch Accounting",
+        "body": "This meter recorded a missed tow-route interchange on 2999.09.14 at grid node Vesta-Relay. The dark stretch that followed ran for eleven hours and consumed stored reserves at Underway flat rates. Billing follows the house, but this meter questions which house received the read during the interchange gap. The sum remains unpaid by any account this meter recognizes. Ohio had weather once, and at least the clouds accounted for themselves.",
+        "tags": [
+          "outage",
+          "tow-route-4",
+          "underway",
+          "dark-stretch"
+        ],
+        "caused_by": null,
+        "spawned": [
+          "ev-2999-11-049"
+        ],
+        "chain_id": "chain-235",
+        "verified": true
+      },
+      {
+        "id": "ev-2999-11-049",
+        "cycle": "2999.11",
+        "timestamp": "2999-11-14T19:59:00Z",
+        "role": "staff",
+        "persona_id": "ops-central",
+        "kind": "acknowledgment",
+        "title": "Vesta-Relay Interchange Interval Acknowledged",
+        "body": "In-Space Power confirms the interval recorded at grid node Vesta-Relay on 2999.09.14 corresponds to a scheduled beamline handoff during Tow-Route 4 synchronization. The relay geometry required an eleven-hour dark stretch while the primary array completed realignment. Meter reads continued at four-second cadence throughout the interchange and were attributed to the vessel registry on file at the time of the gap. No charge was issued for the interval.",
+        "tags": [
+          "outage",
+          "tow-route-4",
+          "underway"
+        ],
+        "caused_by": "ev-2999-11-047",
+        "spawned": [],
+        "chain_id": "chain-235",
+        "verified": true
+      }
+    ],
+    "chain-236": [
+      {
+        "id": "ev-2999-11-048",
+        "cycle": "2999.11",
+        "timestamp": "2999-11-14T17:20:00Z",
+        "role": "community",
+        "persona_id": "halverson-green",
+        "kind": "comment",
+        "title": "Balance Carried Forward",
+        "body": "I keep my paper statements in a tin box on the windowsill and the ones from the Belt households go back to 2087 without a single payment mark, which the automatic reads would rather not acknowledge because they prefer to pretend the ledger settles itself every four seconds. I remember when this was a cornfield and we understood that a balance unpaid is still a balance, no matter how many cycles you let it drift past Ceres. Billing follows the house, and those houses have been following the same unpaid route for three hundred twelve years, though I suppose someone will tell me the system has accounted for it in a manner I cannot read on paper.",
+        "tags": [
+          "billing",
+          "belt",
+          "paper-records",
+          "outstanding-balance"
+        ],
+        "caused_by": null,
+        "spawned": [],
+        "chain_id": "chain-236",
         "verified": true
       }
     ]
