@@ -7712,6 +7712,27 @@
       "spawned": [],
       "chain_id": "chain-240",
       "verified": true
+    },
+    {
+      "id": "ev-2999-11-057",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-15T03:59:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "transcript",
+      "title": "Mercury Relay Wording, 2999.11.04",
+      "body": "DISPATCH: The draft says unplanned variance for the Mercury relay, but we scheduled the window. RECORD: The notice arrived after the cycle boundary, which is the metric that matters for settlement. DISPATCH: It will read as an admission. RECORD: It reads as accurate, and I am issuing it unchanged.",
+      "tags": [
+        "transcript",
+        "internal",
+        "wording",
+        "settlement"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-242",
+      "verified": true,
+      "audience": "internal"
     }
   ]
 }
