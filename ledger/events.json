@@ -7733,6 +7733,68 @@
       "chain_id": "chain-242",
       "verified": true,
       "audience": "internal"
+    },
+    {
+      "id": "ev-2999-11-058",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-15T05:40:00Z",
+      "role": "community",
+      "persona_id": "tug-captain-mako",
+      "kind": "complaint",
+      "title": "Four-Second Gap on Yard Glass ISP-UND-7781",
+      "body": "Lost a four-second read on the yard glass when a synchronization pulse swept Tow Route 4. The Dredge-Clear hull dropped from the log while the rest of the line held fast. Dispatch blamed the pulse. I blame running a sync when I have three hulls stacked in beam-shadow. We took the next read and the books stayed square.",
+      "tags": [
+        "outage",
+        "tow-route-4",
+        "yard-glass",
+        "sync-pulse"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-11-060"
+      ],
+      "chain_id": "chain-243",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-11-059",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-15T06:24:00Z",
+      "role": "community",
+      "persona_id": "new-sheboygan-clerk",
+      "kind": "comment",
+      "title": "Flywheel Depot Audit Notice",
+      "body": "The Joint Settlement Authority Ceres sent word they are auditing the mass-battery flywheel depots, though the official notice took long enough to lag that the Sheb had already noticed the stored-light readouts drifting on their own. They are welcome to run their numbers, but the folks here keep good books and the water tower metered clean through the last statement cycle. If the Authority wants to reconcile anything, billing follows the house, and the town would prefer the audit findings arrive before the next cycle instead of trailing behind it.",
+      "tags": [
+        "regulator",
+        "stored-light",
+        "mass-battery",
+        "new-sheboygan"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-244",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-11-060",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-15T08:40:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Acknowledgment: Four-Second Gap, Yard Glass ISP-UND-7781",
+      "body": "In-Space Power confirms a single four-second read loss on Yard Glass ISP-UND-7781 during a scheduled synchronization pulse along Tow Route 4. The interval coincided with a routine beamline handoff as the Dredge-Clear hull crossed scheduled relay geometry into beam-shadow. No charge was issued for the missed interval. The account remains square.",
+      "tags": [
+        "outage",
+        "tow-route-4",
+        "sync-pulse",
+        "yard-glass"
+      ],
+      "caused_by": "ev-2999-11-058",
+      "spawned": [],
+      "chain_id": "chain-243",
+      "verified": true
     }
   ]
 }
