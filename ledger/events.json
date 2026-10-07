@@ -7652,6 +7652,66 @@
       "spawned": [],
       "chain_id": "chain-238",
       "verified": true
+    },
+    {
+      "id": "ev-2999-11-054",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-15T00:43:00Z",
+      "role": "community",
+      "persona_id": "meter-112",
+      "kind": "complaint",
+      "title": "Relay geometry gap, cycle 2999.11",
+      "body": "The Beam went dark during relay geometry on cycle 2999.11. This meter recorded zero delivery at each four second interval while the array realigned. This meter questions the sum for that window, since the reads continued and nothing arrived. Ohio once had weather that caused similar gaps. The record stands as written.",
+      "tags": [
+        "outage",
+        "beam",
+        "relay-geometry",
+        "ohio"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-11-056"
+      ],
+      "chain_id": "chain-240",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-11-055",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-15T00:54:00Z",
+      "role": "community",
+      "persona_id": "tug-captain-mako",
+      "kind": "comment",
+      "title": "Count Only Climbs",
+      "body": "Two hundred fourteen million, one hundred sixteen thousand, eight hundred eighty-two active meters and I have yet to see that number drop. They tick in every four seconds whether you are hitched to a haul or sitting dark at a dock. The count does not care about your hull or your route. It only knows the Beam is feeding and the reads are flowing.",
+      "tags": [
+        "meters",
+        "comment",
+        "tow-route"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-241",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-11-056",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-15T03:43:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Ohio relay geometry acknowledgment, cycle 2999.11",
+      "body": "In-Space Power confirms the report from Ohio regarding zero delivery during the relay geometry window of cycle 2999.11. The array executed a scheduled beamline handoff preceded by a synchronization pulse, and meters continued to record at four-second intervals while the transmission path realigned. No charge was issued for reads during that window. The record stands as written.",
+      "tags": [
+        "outage",
+        "beam",
+        "relay-geometry"
+      ],
+      "caused_by": "ev-2999-11-054",
+      "spawned": [],
+      "chain_id": "chain-240",
+      "verified": true
     }
   ]
 }
