@@ -7795,6 +7795,88 @@
       "spawned": [],
       "chain_id": "chain-243",
       "verified": true
+    },
+    {
+      "id": "ev-2999-11-061",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-15T10:08:00Z",
+      "role": "community",
+      "persona_id": "meter-112",
+      "kind": "complaint",
+      "title": "Relay Geometry Read Continuity",
+      "body": "This meter recorded continuous reads through the relay geometry window on 2999.08.14 while The Beam dropped to zero output for three minutes and twelve seconds. The reads continued at four second intervals as if nothing had changed. This meter does not question the geometry. This meter asks only that the sum reflect the absence of photons. Ohio once had weather that behaved with more predictability.",
+      "tags": [
+        "outage",
+        "beam",
+        "relay-geometry",
+        "ohio-reserve"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-11-063"
+      ],
+      "chain_id": "chain-245",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-11-062",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-15T10:15:00Z",
+      "role": "community",
+      "persona_id": "meter-112",
+      "kind": "complaint",
+      "title": "Stored Light Classification Query",
+      "body": "This meter notes that stored light comprises nine percent of this cycle's generation mix. The Porchlight tariff distinguishes sunward from shade at 0.0042 and 0.0114 credits per megajoule. Stored light does not arrive from the sun. It arrives from a battery. This meter asks whether energy that was once sunlight but was held in reserve qualifies for the sunward rate, or whether it bills at shade. This meter does not dispute the rate itself. This meter questions only which column the sum falls under.",
+      "tags": [
+        "rate-dispute",
+        "stored-light",
+        "porchlight",
+        "meter-112"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-11-064"
+      ],
+      "chain_id": "chain-246",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-11-063",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-15T14:08:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Ohio Reserve Read Continuity",
+      "body": "In-Space Power confirms the reported interval at Ohio Reserve occurred during a scheduled relay geometry window and beamline handoff on 2999.08.14. A synchronization pulse maintained four-second read continuity while The Beam was offline for one hundred ninety-two seconds. No charge was issued for any account covering that interval. Billing follows the house.",
+      "tags": [
+        "outage",
+        "beam",
+        "relay-geometry"
+      ],
+      "caused_by": "ev-2999-11-061",
+      "spawned": [],
+      "chain_id": "chain-245",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-11-064",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-15T16:15:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Stored Light Classification Answer",
+      "body": "In-Space Power confirms the stored light classification query. Porchlight rates read 0.0042 credits per megajoule sunward and 0.0114 in shade, Corner Main reads 0.0061 and 0.0138 respectively, Underway sits flat at 0.0088, and First Light reads are not billed for the first three cycles. Billing follows the house. The generation origin of a megajoule does not determine its column. Only the meter's position at time of read applies the sunward or shade rate.",
+      "tags": [
+        "rate-dispute",
+        "stored-light",
+        "porchlight"
+      ],
+      "caused_by": "ev-2999-11-062",
+      "spawned": [],
+      "chain_id": "chain-246",
+      "verified": true
     }
   ]
 }
