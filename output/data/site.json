@@ -2,7 +2,7 @@
   "meta": {
     "project": "inspacepower.com",
     "cycle": "2999.11",
-    "updated": "2999-11-15T16:18:00Z"
+    "updated": "2999-11-15T18:52:00Z"
   },
   "personas": [
     {
@@ -8194,6 +8194,67 @@
       "chain_id": "chain-247",
       "verified": true,
       "audience": "internal"
+    },
+    {
+      "id": "ev-2999-11-066",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-15T17:52:00Z",
+      "role": "community",
+      "persona_id": "new-sheboygan-clerk",
+      "kind": "complaint",
+      "title": "Four-Second Gap on the Yard Glass",
+      "body": "Folks will notice a four-second read gap on the New Sheboygan yard glass from this cycle. Central says it was a synchronization pulse, which I suppose sounds better than admitting the signal had to chase us past Jupiter. The water tower meter did not blink once, for the record, and the Sheb accounts remain squared away despite the lag on these notices. Billing follows the house, and the house was moving right along.",
+      "tags": [
+        "outage",
+        "tow-route-4",
+        "meter-read",
+        "new-sheboygan"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-11-068"
+      ],
+      "chain_id": "chain-248",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-11-067",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-15T18:14:00Z",
+      "role": "community",
+      "persona_id": "meter-112",
+      "kind": "comment",
+      "title": "Comment: Pre-Cornfield Records Request",
+      "body": "A historian requested read records from before the cornfields. This meter began recording on 2091-03-14, when Ohio still had weather. There are no reads from before the cornfields. The sum is zero, and this meter does not question the rate.",
+      "tags": [
+        "history",
+        "meters",
+        "ohio"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-249",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-11-068",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-15T18:52:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "New Sheboygan Yard Glass Read Gap",
+      "body": "In-Space Power confirms the report from New Sheboygan yard glass and associated tow-route-4 accounts. The four-second interval was a scheduled relay geometry adjustment during a beamline handoff. The synchronization pulse propagated across the New Sheboygan service node as designed, and the water tower meter registered no interruption. No charge was issued for the interval, and all accounts on tow-route-4 remain reconciled.",
+      "tags": [
+        "outage",
+        "meter-read",
+        "new-sheboygan",
+        "tow-route-4"
+      ],
+      "caused_by": "ev-2999-11-066",
+      "spawned": [],
+      "chain_id": "chain-248",
+      "verified": true
     }
   ],
   "chains": {
@@ -16587,6 +16648,71 @@
         "chain_id": "chain-247",
         "verified": true,
         "audience": "internal"
+      }
+    ],
+    "chain-248": [
+      {
+        "id": "ev-2999-11-066",
+        "cycle": "2999.11",
+        "timestamp": "2999-11-15T17:52:00Z",
+        "role": "community",
+        "persona_id": "new-sheboygan-clerk",
+        "kind": "complaint",
+        "title": "Four-Second Gap on the Yard Glass",
+        "body": "Folks will notice a four-second read gap on the New Sheboygan yard glass from this cycle. Central says it was a synchronization pulse, which I suppose sounds better than admitting the signal had to chase us past Jupiter. The water tower meter did not blink once, for the record, and the Sheb accounts remain squared away despite the lag on these notices. Billing follows the house, and the house was moving right along.",
+        "tags": [
+          "outage",
+          "tow-route-4",
+          "meter-read",
+          "new-sheboygan"
+        ],
+        "caused_by": null,
+        "spawned": [
+          "ev-2999-11-068"
+        ],
+        "chain_id": "chain-248",
+        "verified": true
+      },
+      {
+        "id": "ev-2999-11-068",
+        "cycle": "2999.11",
+        "timestamp": "2999-11-15T18:52:00Z",
+        "role": "staff",
+        "persona_id": "ops-central",
+        "kind": "acknowledgment",
+        "title": "New Sheboygan Yard Glass Read Gap",
+        "body": "In-Space Power confirms the report from New Sheboygan yard glass and associated tow-route-4 accounts. The four-second interval was a scheduled relay geometry adjustment during a beamline handoff. The synchronization pulse propagated across the New Sheboygan service node as designed, and the water tower meter registered no interruption. No charge was issued for the interval, and all accounts on tow-route-4 remain reconciled.",
+        "tags": [
+          "outage",
+          "meter-read",
+          "new-sheboygan",
+          "tow-route-4"
+        ],
+        "caused_by": "ev-2999-11-066",
+        "spawned": [],
+        "chain_id": "chain-248",
+        "verified": true
+      }
+    ],
+    "chain-249": [
+      {
+        "id": "ev-2999-11-067",
+        "cycle": "2999.11",
+        "timestamp": "2999-11-15T18:14:00Z",
+        "role": "community",
+        "persona_id": "meter-112",
+        "kind": "comment",
+        "title": "Comment: Pre-Cornfield Records Request",
+        "body": "A historian requested read records from before the cornfields. This meter began recording on 2091-03-14, when Ohio still had weather. There are no reads from before the cornfields. The sum is zero, and this meter does not question the rate.",
+        "tags": [
+          "history",
+          "meters",
+          "ohio"
+        ],
+        "caused_by": null,
+        "spawned": [],
+        "chain_id": "chain-249",
+        "verified": true
       }
     ]
   }
