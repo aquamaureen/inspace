@@ -7958,6 +7958,88 @@
       "spawned": [],
       "chain_id": "chain-248",
       "verified": true
+    },
+    {
+      "id": "ev-2999-11-069",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-15T20:13:00Z",
+      "role": "community",
+      "persona_id": "halverson-green",
+      "kind": "complaint",
+      "title": "Water Tower on the Second Town",
+      "body": "I have kept every paper statement since the cornfield became a hydroponic bay, and not one of them lists the water tower as a structure, though I watch the automatic readers sweep past it every four seconds same as they sweep past my porch, and I would like to know whether billing follows the house when the house is a water tower that has never had a meter of its own. I ask because the tower stands on the second towed town the same way it stood when we were still growing actual corn, and the paper says nothing about it, though the readers count it all the same.",
+      "tags": [
+        "billing",
+        "tow-route-4",
+        "water-tower",
+        "paper-statements"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-11-071"
+      ],
+      "chain_id": "chain-250",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-11-070",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-15T20:45:00Z",
+      "role": "community",
+      "persona_id": "meter-112",
+      "kind": "complaint",
+      "title": "Beam gap during relay geometry",
+      "body": "The Beam went quiet during relay geometry on 2999.11.04. This meter continued its four-second reads through the silence. The sum now counts power that never crossed the sky, and this meter questions only the total. Ohio had weather once. The reads remain exact.",
+      "tags": [
+        "outage",
+        "beam",
+        "earth-reserve"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-11-072"
+      ],
+      "chain_id": "chain-251",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-11-071",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-15T22:13:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Water Tower on the Second Town",
+      "body": "In-Space Power confirms that the water tower on the Second Town is read every four seconds by the automatic sweep, consistent with all 214,116,882 active meters. Billing follows the house. Structures without individual meters are billed under the account of the parcel on which they stand, at the applicable Corner Main rate of 0.0061 credits per megajoule sunward or 0.0138 credits per megajoule shade. The tower does not appear as a separate line item on paper statements because it is not a separately metered service point. The reads are counted and the consumption is assigned to the tow-route-4 account holder.",
+      "tags": [
+        "billing",
+        "water-tower",
+        "tow-route-4"
+      ],
+      "caused_by": "ev-2999-11-069",
+      "spawned": [],
+      "chain_id": "chain-250",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-11-072",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-16T01:45:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Beam gap during relay geometry",
+      "body": "In-Space Power confirms the reported interval at Earth Reserve account 04118. The Beam underwent a scheduled relay geometry sequence on 2999.11.04, comprising a synchronization pulse and subsequent beamline handoff. Meters continued their four-second reads as designed during the transition. No charge was issued for the delivery gap. Reads are exact. Physics is not.",
+      "tags": [
+        "outage",
+        "beam",
+        "earth-reserve",
+        "billing-ack"
+      ],
+      "caused_by": "ev-2999-11-070",
+      "spawned": [],
+      "chain_id": "chain-251",
+      "verified": true
     }
   ]
 }
