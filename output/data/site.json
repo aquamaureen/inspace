@@ -2,7 +2,7 @@
   "meta": {
     "project": "inspacepower.com",
     "cycle": "2999.11",
-    "updated": "2999-11-16T01:57:00Z"
+    "updated": "2999-11-16T07:43:00Z"
   },
   "personas": [
     {
@@ -8358,6 +8358,88 @@
       "chain_id": "chain-252",
       "verified": true,
       "audience": "internal"
+    },
+    {
+      "id": "ev-2999-11-074",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-16T03:43:00Z",
+      "role": "community",
+      "persona_id": "new-sheboygan-clerk",
+      "kind": "complaint",
+      "title": "Shade Rate Notice for New Sheboygan, TR4",
+      "body": "I am filing a complaint with Central Billing regarding the shade rate applied to our town while we sit in the permanent shadow of Oak Creek Junction ahead of us on Tow Route 4. We did not vote to be anyone's shadow, and our porchlights should not cost 0.0114 credits per megajoule on account of another town's bulk. The Sheb has paid on time since 2711 and the water tower made the tow, so I expect the tariff to reflect the actual sunlight we are getting, which is none. This notice arrived three days late, as usual, but the shade has been here a good deal longer.",
+      "tags": [
+        "rate-dispute",
+        "shade",
+        "tow-route-4",
+        "billing"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-11-076"
+      ],
+      "chain_id": "chain-253",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-11-075",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-16T04:06:00Z",
+      "role": "community",
+      "persona_id": "halverson-green",
+      "kind": "complaint",
+      "title": "Underway While Stationary",
+      "body": "I have kept my paper statements since two-seven-zero-nine and I can tell you the automatic reads do not know the difference between hauling and sitting still in the shade of a Jovian freighter. For the last fourteen cycles my meter has been assessed at the Underway flat rate of zero-point-zero-zero-eight-eight credits per megajoule while my unit is moored beneath another vessel's hull, and I would like to know who decided that stillness in someone else's shadow should cost the same as motion. The cornfield that used to be where the hydroponic bay sits now never asked for such mathematics, and neither do I.",
+      "tags": [
+        "rate-dispute",
+        "tug",
+        "underway",
+        "shade-docking"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-11-077"
+      ],
+      "chain_id": "chain-254",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-11-077",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-16T06:06:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Underway While Stationary",
+      "body": "In-Space Power confirms review of meter classification for the disputed fourteen cycles. The Underway flat tariff of 0.0088 credits per megajoule applies to all properties registered Underway, irrespective of translational state or local shadow. Billing follows the house, and your meter remains registered Underway. Reclassification to Porchlight at 0.0042 or 0.0114 credits per megajoule or Corner Main at 0.0061 or 0.0138 credits per megajoule may be requested through Joint Settlement Authority Ceres upon submission of a permanent mooring certificate.",
+      "tags": [
+        "rate-dispute",
+        "underway",
+        "shade-docking"
+      ],
+      "caused_by": "ev-2999-11-075",
+      "spawned": [],
+      "chain_id": "chain-254",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-11-076",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-16T07:43:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Shade Rate Notice for New Sheboygan, TR4",
+      "body": "In-Space Power confirms the shade rate of 0.0114 credits per megajoule applies to New Sheboygan under the Porchlight tariff schedule for shade-side consumers. The Underway flat rate of 0.0088 credits per megajoule applies to the tow corridor itself, and Corner Main rates of 0.0061 sunward and 0.0138 shade apply to fixed junction infrastructure. Billing follows the house, and the house at New Sheboygan coordinates registers within the permanent umbra of Oak Creek Junction. The First Light exemption covers three initial cycles of reads without billing but does not alter the shade classification for established settlements.",
+      "tags": [
+        "rate-dispute",
+        "shade",
+        "billing"
+      ],
+      "caused_by": "ev-2999-11-074",
+      "spawned": [],
+      "chain_id": "chain-253",
+      "verified": true
     }
   ],
   "chains": {
@@ -16925,6 +17007,92 @@
         "chain_id": "chain-252",
         "verified": true,
         "audience": "internal"
+      }
+    ],
+    "chain-253": [
+      {
+        "id": "ev-2999-11-074",
+        "cycle": "2999.11",
+        "timestamp": "2999-11-16T03:43:00Z",
+        "role": "community",
+        "persona_id": "new-sheboygan-clerk",
+        "kind": "complaint",
+        "title": "Shade Rate Notice for New Sheboygan, TR4",
+        "body": "I am filing a complaint with Central Billing regarding the shade rate applied to our town while we sit in the permanent shadow of Oak Creek Junction ahead of us on Tow Route 4. We did not vote to be anyone's shadow, and our porchlights should not cost 0.0114 credits per megajoule on account of another town's bulk. The Sheb has paid on time since 2711 and the water tower made the tow, so I expect the tariff to reflect the actual sunlight we are getting, which is none. This notice arrived three days late, as usual, but the shade has been here a good deal longer.",
+        "tags": [
+          "rate-dispute",
+          "shade",
+          "tow-route-4",
+          "billing"
+        ],
+        "caused_by": null,
+        "spawned": [
+          "ev-2999-11-076"
+        ],
+        "chain_id": "chain-253",
+        "verified": true
+      },
+      {
+        "id": "ev-2999-11-076",
+        "cycle": "2999.11",
+        "timestamp": "2999-11-16T07:43:00Z",
+        "role": "staff",
+        "persona_id": "ops-central",
+        "kind": "acknowledgment",
+        "title": "Shade Rate Notice for New Sheboygan, TR4",
+        "body": "In-Space Power confirms the shade rate of 0.0114 credits per megajoule applies to New Sheboygan under the Porchlight tariff schedule for shade-side consumers. The Underway flat rate of 0.0088 credits per megajoule applies to the tow corridor itself, and Corner Main rates of 0.0061 sunward and 0.0138 shade apply to fixed junction infrastructure. Billing follows the house, and the house at New Sheboygan coordinates registers within the permanent umbra of Oak Creek Junction. The First Light exemption covers three initial cycles of reads without billing but does not alter the shade classification for established settlements.",
+        "tags": [
+          "rate-dispute",
+          "shade",
+          "billing"
+        ],
+        "caused_by": "ev-2999-11-074",
+        "spawned": [],
+        "chain_id": "chain-253",
+        "verified": true
+      }
+    ],
+    "chain-254": [
+      {
+        "id": "ev-2999-11-075",
+        "cycle": "2999.11",
+        "timestamp": "2999-11-16T04:06:00Z",
+        "role": "community",
+        "persona_id": "halverson-green",
+        "kind": "complaint",
+        "title": "Underway While Stationary",
+        "body": "I have kept my paper statements since two-seven-zero-nine and I can tell you the automatic reads do not know the difference between hauling and sitting still in the shade of a Jovian freighter. For the last fourteen cycles my meter has been assessed at the Underway flat rate of zero-point-zero-zero-eight-eight credits per megajoule while my unit is moored beneath another vessel's hull, and I would like to know who decided that stillness in someone else's shadow should cost the same as motion. The cornfield that used to be where the hydroponic bay sits now never asked for such mathematics, and neither do I.",
+        "tags": [
+          "rate-dispute",
+          "tug",
+          "underway",
+          "shade-docking"
+        ],
+        "caused_by": null,
+        "spawned": [
+          "ev-2999-11-077"
+        ],
+        "chain_id": "chain-254",
+        "verified": true
+      },
+      {
+        "id": "ev-2999-11-077",
+        "cycle": "2999.11",
+        "timestamp": "2999-11-16T06:06:00Z",
+        "role": "staff",
+        "persona_id": "ops-central",
+        "kind": "acknowledgment",
+        "title": "Underway While Stationary",
+        "body": "In-Space Power confirms review of meter classification for the disputed fourteen cycles. The Underway flat tariff of 0.0088 credits per megajoule applies to all properties registered Underway, irrespective of translational state or local shadow. Billing follows the house, and your meter remains registered Underway. Reclassification to Porchlight at 0.0042 or 0.0114 credits per megajoule or Corner Main at 0.0061 or 0.0138 credits per megajoule may be requested through Joint Settlement Authority Ceres upon submission of a permanent mooring certificate.",
+        "tags": [
+          "rate-dispute",
+          "underway",
+          "shade-docking"
+        ],
+        "caused_by": "ev-2999-11-075",
+        "spawned": [],
+        "chain_id": "chain-254",
+        "verified": true
       }
     ]
   }
