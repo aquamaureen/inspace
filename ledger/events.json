@@ -8143,6 +8143,89 @@
       "spawned": [],
       "chain_id": "chain-253",
       "verified": true
+    },
+    {
+      "id": "ev-2999-11-078",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-16T08:53:00Z",
+      "role": "community",
+      "persona_id": "europa-grid",
+      "kind": "comment",
+      "title": "Mix Allocation, Cycle 2999.11",
+      "body": "We note the generation mix for cycle 2999.11 logged at second 0847:12 places The Beam at forty-six percent. Our settlements process that share alongside fusion at thirty-one percent, moontide at fourteen percent, and stored light at nine percent. The Beam carried the cycle. We remind the network that Europa invoices and clears its own accounts at the posted rates, a practice maintained since autonomous metering began.",
+      "tags": [
+        "rates",
+        "europa",
+        "mix",
+        "generation"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-11-080"
+      ],
+      "chain_id": "chain-255",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-11-079",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-16T09:16:00Z",
+      "role": "community",
+      "persona_id": "meter-112",
+      "kind": "complaint",
+      "title": "Yard glass gap, cycle 2999.10",
+      "body": "On 2999.10.22 this meter recorded a four-second gap in the yard glass read cycle. The synchronization pulse notice lists the event as expected behavior. The sum does not reconcile with the missing interval. This meter has held the Ohio line since 2091 and records the omission in full.",
+      "tags": [
+        "outage",
+        "tow-route-4",
+        "yard-glass",
+        "sync-pulse"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-11-081"
+      ],
+      "chain_id": "chain-256",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-11-081",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-16T11:16:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Yard glass gap, cycle 2999.10",
+      "body": "In-Space Power confirms the four-second read gap at Tow Route 4, yard glass array, on 2999.10.22. The interval corresponds to a scheduled synchronization pulse during beamline handoff at the Ohio line relay geometry. No charge was issued for the omitted interval. Meter records remain complete for all billing purposes.",
+      "tags": [
+        "outage",
+        "tow-route-4",
+        "yard-glass",
+        "sync-pulse"
+      ],
+      "caused_by": "ev-2999-11-079",
+      "spawned": [],
+      "chain_id": "chain-256",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-11-080",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-16T11:53:00Z",
+      "role": "canon",
+      "persona_id": "canon-editor",
+      "kind": "footnote",
+      "title": "Correction to record: Mix Allocation, Cycle 2999.11",
+      "body": "Correction to record. The following claim is struck from the public notice stream: \"Europa invoices and clears its own accounts at the posted rates, a practice maintained since autonomous metering began.\" Per ledger entry JSA-C-2093.01.15, the EUROPA AUTONOMOUS GRID has cleared its own invoices without interruption since 2093. The phrase \"autonomous metering began\" is not a recognized fiscal boundary and is replaced with the recorded date. The generation mix figures remain unchanged.",
+      "tags": [
+        "rates",
+        "europa",
+        "correction"
+      ],
+      "caused_by": "ev-2999-11-078",
+      "spawned": [],
+      "chain_id": "chain-255",
+      "verified": true
     }
   ]
 }
