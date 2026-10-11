@@ -2,7 +2,7 @@
   "meta": {
     "project": "inspacepower.com",
     "cycle": "2999.11",
-    "updated": "2999-11-17T02:27:00Z"
+    "updated": "2999-11-17T07:11:00Z"
   },
   "personas": [
     {
@@ -8730,6 +8730,66 @@
       "chain_id": "chain-262",
       "verified": true,
       "audience": "internal"
+    },
+    {
+      "id": "ev-2999-11-092",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-17T04:11:00Z",
+      "role": "community",
+      "persona_id": "meter-112",
+      "kind": "complaint",
+      "title": "Underway Rate Applied to Stationary Dock",
+      "body": "This meter records a haulage charge at the Underway flat rate for the period 2999.09.12 through 2999.09.18. This meter was docked in the shadow of a Ceres tug and did not move. This meter questions the sum. Ohio had weather once and this meter still remembers rain, yet the statement shows four cycles at 0.0088 credits per megajoule for a vessel at rest.",
+      "tags": [
+        "rate-dispute",
+        "tug",
+        "underway"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-11-094"
+      ],
+      "chain_id": "chain-263",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-11-093",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-17T05:00:00Z",
+      "role": "community",
+      "persona_id": "new-sheboygan-clerk",
+      "kind": "comment",
+      "title": "Cycle 2999.11 Review Filing Window Open",
+      "body": "The Joint Settlement Authority Ceres has opened the filing window for cycle 2999.11 review, though the notice took long enough to drift down Tow Route 4 that I half expected them to charge us for the delay. The Sheb's books are clean, our meter ISP-TR4-NS-001 has been reading on time since 2711, and the water tower still stands, which is more than I can say for some official correspondence. Billing follows the house, not the paperwork, and we will submit when our own folks have had a chance to look things over.",
+      "tags": [
+        "regulator",
+        "statement",
+        "new-sheboygan",
+        "cycle-review"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-264",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-11-094",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-17T07:11:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Underway Rate Applied to Stationary Dock",
+      "body": "In-Space Power confirms the Underway flat tariff of 0.0088 credits per megajoule applies to all meters registered under the Underway classification, regardless of transient docking status. The rate schedule does not distinguish between motion and rest. Billing follows the house, and the house in this case is registered Underway. Reclassification requests may be filed through the Joint Settlement Authority on Ceres.",
+      "tags": [
+        "rate-dispute",
+        "tug",
+        "underway"
+      ],
+      "caused_by": "ev-2999-11-092",
+      "spawned": [],
+      "chain_id": "chain-263",
+      "verified": true
     }
   ],
   "chains": {
@@ -17689,6 +17749,70 @@
         "chain_id": "chain-262",
         "verified": true,
         "audience": "internal"
+      }
+    ],
+    "chain-263": [
+      {
+        "id": "ev-2999-11-092",
+        "cycle": "2999.11",
+        "timestamp": "2999-11-17T04:11:00Z",
+        "role": "community",
+        "persona_id": "meter-112",
+        "kind": "complaint",
+        "title": "Underway Rate Applied to Stationary Dock",
+        "body": "This meter records a haulage charge at the Underway flat rate for the period 2999.09.12 through 2999.09.18. This meter was docked in the shadow of a Ceres tug and did not move. This meter questions the sum. Ohio had weather once and this meter still remembers rain, yet the statement shows four cycles at 0.0088 credits per megajoule for a vessel at rest.",
+        "tags": [
+          "rate-dispute",
+          "tug",
+          "underway"
+        ],
+        "caused_by": null,
+        "spawned": [
+          "ev-2999-11-094"
+        ],
+        "chain_id": "chain-263",
+        "verified": true
+      },
+      {
+        "id": "ev-2999-11-094",
+        "cycle": "2999.11",
+        "timestamp": "2999-11-17T07:11:00Z",
+        "role": "staff",
+        "persona_id": "ops-central",
+        "kind": "acknowledgment",
+        "title": "Underway Rate Applied to Stationary Dock",
+        "body": "In-Space Power confirms the Underway flat tariff of 0.0088 credits per megajoule applies to all meters registered under the Underway classification, regardless of transient docking status. The rate schedule does not distinguish between motion and rest. Billing follows the house, and the house in this case is registered Underway. Reclassification requests may be filed through the Joint Settlement Authority on Ceres.",
+        "tags": [
+          "rate-dispute",
+          "tug",
+          "underway"
+        ],
+        "caused_by": "ev-2999-11-092",
+        "spawned": [],
+        "chain_id": "chain-263",
+        "verified": true
+      }
+    ],
+    "chain-264": [
+      {
+        "id": "ev-2999-11-093",
+        "cycle": "2999.11",
+        "timestamp": "2999-11-17T05:00:00Z",
+        "role": "community",
+        "persona_id": "new-sheboygan-clerk",
+        "kind": "comment",
+        "title": "Cycle 2999.11 Review Filing Window Open",
+        "body": "The Joint Settlement Authority Ceres has opened the filing window for cycle 2999.11 review, though the notice took long enough to drift down Tow Route 4 that I half expected them to charge us for the delay. The Sheb's books are clean, our meter ISP-TR4-NS-001 has been reading on time since 2711, and the water tower still stands, which is more than I can say for some official correspondence. Billing follows the house, not the paperwork, and we will submit when our own folks have had a chance to look things over.",
+        "tags": [
+          "regulator",
+          "statement",
+          "new-sheboygan",
+          "cycle-review"
+        ],
+        "caused_by": null,
+        "spawned": [],
+        "chain_id": "chain-264",
+        "verified": true
       }
     ]
   }
