@@ -8330,6 +8330,88 @@
       "spawned": [],
       "chain_id": "chain-259",
       "verified": true
+    },
+    {
+      "id": "ev-2999-11-087",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-16T20:12:00Z",
+      "role": "community",
+      "persona_id": "tug-captain-mako",
+      "kind": "complaint",
+      "title": "Beam-Shadow Accounting on Route 4",
+      "body": "A hull parks its structure between a settlement and the sun, and the settlement gets charged shade rates for someone else's doing. I have towed enough deadweight on Route 4 to know billing follows the house, but the house did not ask for another captain's freight to blot its porch. You cannot invoice a town for darkness it did not charter. Fix the beam-shadow metering before the shade tariff becomes a toll on whoever stands downcurrent.",
+      "tags": [
+        "rate-dispute",
+        "shade",
+        "tow-route-4"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-11-089"
+      ],
+      "chain_id": "chain-260",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-11-088",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-16T20:20:00Z",
+      "role": "community",
+      "persona_id": "meter-112",
+      "kind": "complaint",
+      "title": "Water Tower Structural Charge",
+      "body": "This meter notes a water tower on Tow Route 4 listed as a billed structure despite drawing zero reads. Billing follows the house. A tower is not a house. This meter asks that the sum be corrected before statement 2999.11.",
+      "tags": [
+        "billing",
+        "tow-route-4",
+        "water-tower",
+        "structure-classification"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-11-090"
+      ],
+      "chain_id": "chain-261",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-11-090",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-17T01:20:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Water Tower Structural Charge",
+      "body": "In-Space Power confirms the reclassification of the water tower on Tow Route 4. Billing follows the house, and a water tower is not a house. Auxiliary structures drawing zero reads are not subject to structural charges under any active tariff schedule. The ledger entry has been amended and the sum will be corrected before statement 2999.11.",
+      "tags": [
+        "billing",
+        "tow-route-4",
+        "structure-classification",
+        "water-tower"
+      ],
+      "caused_by": "ev-2999-11-088",
+      "spawned": [],
+      "chain_id": "chain-261",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-11-089",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-17T02:12:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Shade Metering on Route 4",
+      "body": "In-Space Power confirms that shade metering on Route 4 operates under the Porchlight shade tariff at 0.0114 credits per megajoule when any structure intercepts the solar vector. Billing follows the house. The meter records irradiance at the settlement boundary and does not distinguish between voluntary shade and transient occlusion by towed freight. Route operators seeking alternative classification may apply for Corner Main status at 0.0061 sunward and 0.0138 shade credits per megajoule, or Underway flat rate at 0.0088 credits per megajoule where the settlement qualifies.",
+      "tags": [
+        "rate-dispute",
+        "shade",
+        "metering"
+      ],
+      "caused_by": "ev-2999-11-087",
+      "spawned": [],
+      "chain_id": "chain-260",
+      "verified": true
     }
   ]
 }
