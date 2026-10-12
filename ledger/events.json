@@ -8493,6 +8493,87 @@
       "spawned": [],
       "chain_id": "chain-263",
       "verified": true
+    },
+    {
+      "id": "ev-2999-11-095",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-17T08:44:00Z",
+      "role": "community",
+      "persona_id": "new-sheboygan-clerk",
+      "kind": "complaint",
+      "title": "Four-Second Gap on Yard Glass",
+      "body": "Noticed a four-second read gap on the yard glass last cycle. Central billing filed it down as a synchronization pulse, which sounds neat enough until you realize the official notice took three days to lag through to the Sheb. The read corrected itself before the paperwork arrived. The water tower survived the tow, so I expect our meter can manage a missed beat without a form.",
+      "tags": [
+        "outage",
+        "tow-route-4",
+        "meter-read",
+        "billing-lag"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-11-097"
+      ],
+      "chain_id": "chain-265",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-11-096",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-17T09:07:00Z",
+      "role": "community",
+      "persona_id": "tug-captain-mako",
+      "kind": "complaint",
+      "title": "Beam drops on relay geometry, meter still spins",
+      "body": "The Beam goes dark mid-relay and ISP-UND-7781 keeps counting like nothing happened. Running hull Dredge-Clear on Tow Route 4, I catch beam-shadow from towed structures and the meter never flinches. Four seconds a read through the blackout and I eat the loss. The house still needs light.",
+      "tags": [
+        "outage",
+        "beam",
+        "metering"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-11-098"
+      ],
+      "chain_id": "chain-266",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-11-097",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-17T11:44:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Tow Route 4 Synchronization Pulse, Yard Glass",
+      "body": "In-Space Power confirms the four-second read gap at Yard Glass on Tow Route 4 corresponded to a scheduled beamline handoff during relay geometry correction. The interval drew from Stored Light reserves. No charge was issued for the synchronization pulse. The Sheb account reflects the corrected meter read.",
+      "tags": [
+        "outage",
+        "tow-route-4",
+        "meter-read"
+      ],
+      "caused_by": "ev-2999-11-095",
+      "spawned": [],
+      "chain_id": "chain-265",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-11-098",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-17T12:07:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Beamline handoff Tow Route 4, account ISP-UND-7781",
+      "body": "In-Space Power confirms the report filed under ISP-UND-7781 from Tow Route 4. The observed interval was a scheduled beamline handoff between relay geometries, during which a synchronization pulse suppressed reception for twelve seconds while local storage supplied the load. Metering continued at the standard four-second cadence and the applicable charge was issued for energy drawn from reserve. Billing follows the house.",
+      "tags": [
+        "outage",
+        "beam",
+        "metering"
+      ],
+      "caused_by": "ev-2999-11-096",
+      "spawned": [],
+      "chain_id": "chain-266",
+      "verified": true
     }
   ]
 }
