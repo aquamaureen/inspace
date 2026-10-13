@@ -8736,6 +8736,68 @@
       "chain_id": "chain-272",
       "verified": true,
       "audience": "internal"
+    },
+    {
+      "id": "ev-2999-11-107",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-18T04:01:00Z",
+      "role": "community",
+      "persona_id": "new-sheboygan-clerk",
+      "kind": "complaint",
+      "title": "Shade Rate Adjustment Request, New Sheboygan",
+      "body": "New Sheboygan is filing a formal complaint on the shade rate. We did not tow the Sheb behind Oakhaven Junction on purpose, and our folks are now getting charged 0.0138 credits per MJ because another town decided to park itself between us and the sun. The water tower made it through the transfer with its paint intact and still enjoys a clear view, which is more than the rest of us can say. Central billing can take its time getting this notice through the relay lag, but the meters keep reading the same numbers either way.",
+      "tags": [
+        "rate-dispute",
+        "shade",
+        "tow-route-4",
+        "central-billing"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-11-109"
+      ],
+      "chain_id": "chain-273",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-11-108",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-18T04:07:00Z",
+      "role": "community",
+      "persona_id": "meter-112",
+      "kind": "comment",
+      "title": "Flywheel Audit Noted",
+      "body": "The Joint Settlement Authority Ceres has opened audit of the mass-battery flywheel depots. This meter notes the stored-light fraction remains at nine percent and the read interval holds at four seconds. This meter has recorded every rotation since 2091, when the sky over Ohio still moved through seasons without scheduling. The sum is available for review.",
+      "tags": [
+        "regulator",
+        "stored-light",
+        "flywheel",
+        "earth-reserve-ohio"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-274",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-11-109",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-18T08:01:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Shade Rate Determination, New Sheboygan",
+      "body": "In-Space Power confirms the shade rate applied to New Sheboygan is correct under the Corner Main tariff at 0.0138 credits per megajoule. Meter readings record incident flux, not intent. Billing follows the house, and house position is determined by sunward obstruction regardless of tow-route history or water tower paint condition. Parties seeking the Porchlight sunward rate of 0.0042 credits per megajoule should adjust their berth, and new arrivals may consult the First Light provision, which does not bill reads for the first three cycles. New Sheboygan remains on the Corner Main shade schedule until relay topology changes.",
+      "tags": [
+        "rate-dispute",
+        "shade",
+        "central-billing",
+        "tariff-schedule"
+      ],
+      "caused_by": "ev-2999-11-107",
+      "spawned": [],
+      "chain_id": "chain-273",
+      "verified": true
     }
   ]
 }
