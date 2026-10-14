@@ -8798,6 +8798,67 @@
       "spawned": [],
       "chain_id": "chain-273",
       "verified": true
+    },
+    {
+      "id": "ev-2999-11-110",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-18T09:44:00Z",
+      "role": "community",
+      "persona_id": "new-sheboygan-clerk",
+      "kind": "complaint",
+      "title": "Shade Rate Dispute, Tow Route 4",
+      "body": "I am filing a rate dispute on behalf of the Sheb regarding the shade pricing applied this cycle. Our town sits in the permanent shadow of Oakhaven, which parked itself on our sunward side three statements ago. Residents are paying 0.0114 credits per megajoule because another municipality decided to block our light. The water tower made it through the tow without a scratch, but the notice about this adjustment took eleven days to clear the lag queue. Billing follows the house, but the house does not choose where the road puts the shadow.",
+      "tags": [
+        "rate-dispute",
+        "shade",
+        "tow-route-4",
+        "central-billing"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-11-112"
+      ],
+      "chain_id": "chain-275",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-11-111",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-18T10:10:00Z",
+      "role": "community",
+      "persona_id": "meter-112",
+      "kind": "comment",
+      "title": "audit of the flywheel depots",
+      "body": "This meter notes the Joint Settlement Authority Ceres has opened audit of the mass-battery flywheel depots. Stored light accounts for nine percent of generation this cycle. The sum of depot intake reads should equal the sum of discharge reads, and this meter suggests the regulator verify both columns. This meter remembers when Ohio had weather and the ground batteries charged without instruction. The reconciliation will close or it will not.",
+      "tags": [
+        "regulator",
+        "stored-light",
+        "earth-reserve-ohio",
+        "audit"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-276",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-11-112",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-18T10:44:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Shade Rate Dispute, Tow Route 4",
+      "body": "In-Space Power confirms the shade rate applied to the Sheb settlement is correct under the Porchlight tariff schedule. The Porchlight shade rate of 0.0114 credits per megajoule applies to all meter reads taken in permanent shadow, regardless of the origin of that shadow. The Porchlight sunward rate of 0.0042 credits per megajoule, Corner Main rates of 0.0061 and 0.0138 credits per megajoule, the Underway flat rate of 0.0088 credits per megajoule, and the First Light exemption are not applicable to these reads. Billing follows the house, and the house occupied by Sheb currently receives shade. Reassessment requires documented relocation to a sunward meter zone.",
+      "tags": [
+        "rate-dispute",
+        "shade",
+        "tow-route-4"
+      ],
+      "caused_by": "ev-2999-11-110",
+      "spawned": [],
+      "chain_id": "chain-275",
+      "verified": true
     }
   ]
 }
