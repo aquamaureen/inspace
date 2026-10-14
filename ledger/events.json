@@ -8880,6 +8880,88 @@
       "chain_id": "chain-277",
       "verified": true,
       "audience": "internal"
+    },
+    {
+      "id": "ev-2999-11-114",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-18T13:03:00Z",
+      "role": "community",
+      "persona_id": "halverson-green",
+      "kind": "complaint",
+      "title": "Haulage Charge While Shadowed, TR4",
+      "body": "I keep my paper statements in a tin box where they belong, and the one dated 2999.10.22 shows I was read at the Underway flat rate of zero point zero zero eight eight credits per megajoule despite the fact that my tow was coupled to the Ceres Relay Station's shade ring for eleven of those days, motionless as the cornfield used to be before you turned it into a hydroponic bay, and I do not see how I am hauling anything while another structure provides the shadow, yet the automatic read does not appear to have noticed this, which is why I keep paper, and I would appreciate the adjustment.",
+      "tags": [
+        "rate-dispute",
+        "tug",
+        "underway",
+        "shadowed-docking"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-11-116"
+      ],
+      "chain_id": "chain-278",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-11-115",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-18T13:12:00Z",
+      "role": "community",
+      "persona_id": "halverson-green",
+      "kind": "complaint",
+      "title": "Missed Interchange at Marker 44",
+      "body": "When the interchange at marker 44 on Tow Route 4 went dark last cycle my paper statement still showed the same Underway flat rate of 0.0088 credits per megajoule as if the lights were burning bright. This is the sort of reconciliation you get from automatic reads, which I have never trusted since they paved over the old cornfield for that hydroponic bay and started pretending the numbers spoke for themselves. I should like to know who is paying for a dark stretch when billing follows the house and the house was three kilometers past the missed interchange.",
+      "tags": [
+        "outage",
+        "tow-route-4",
+        "underway",
+        "billing"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-11-117"
+      ],
+      "chain_id": "chain-279",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-11-117",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-18T14:12:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Ack: Missed Interchange at Marker 44",
+      "body": "In-Space Power confirms the interchange at Marker 44 on Tow Route 4 experienced a scheduled beamline handoff last cycle. A three-minute synchronization pulse between relay geometries produced the observed darkness at that coordinate. No charge was issued for the interval. The Underway flat rate displayed on the paper statement predates the handoff reconciliation, which completes before the next statement cycle.",
+      "tags": [
+        "outage",
+        "tow-route-4",
+        "billing"
+      ],
+      "caused_by": "ev-2999-11-115",
+      "spawned": [],
+      "chain_id": "chain-279",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-11-116",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-18T19:03:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Haulage Charge While Shadowed, TR4",
+      "body": "In-Space Power confirms the reads under review were issued at the Underway flat rate of 0.0088 credits per megajoule. Billing follows the house, and the house in question is registered to the Underway tariff class, which does not distinguish between sunward and shade exposure. The shade differential applies to Porchlight (0.0042/0.0114 credits per megajoule) and Corner Main (0.0061/0.0138 credits per megajoule) accounts only. No adjustment will be issued.",
+      "tags": [
+        "rate-dispute",
+        "tug",
+        "underway"
+      ],
+      "caused_by": "ev-2999-11-114",
+      "spawned": [],
+      "chain_id": "chain-278",
+      "verified": true
     }
   ]
 }
