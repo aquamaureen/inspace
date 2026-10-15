@@ -9063,6 +9063,67 @@
       "chain_id": "chain-282",
       "verified": true,
       "audience": "internal"
+    },
+    {
+      "id": "ev-2999-11-123",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-19T04:31:00Z",
+      "role": "community",
+      "persona_id": "halverson-green",
+      "kind": "complaint",
+      "title": "Meter reads through relay geometry",
+      "body": "The Beam cuts out every time we hit relay geometry and my meter ISP-TR4-HG-044 keeps its four-second reads all the same, same as it did when this place was a cornfield and not a hydroponic bay. I keep my paper statements stacked on the counter and I can show you the numbers do not move in sympathy with the light going out, but the automatic read system just carries on and the bill arrives whether we are getting power or not. I have been here since 2709 and I know the difference between a real read and a machine insisting it saw something.",
+      "tags": [
+        "outage",
+        "beam",
+        "meter-dispute",
+        "tow-route-4"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-11-125"
+      ],
+      "chain_id": "chain-283",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-11-124",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-19T04:51:00Z",
+      "role": "community",
+      "persona_id": "new-sheboygan-clerk",
+      "kind": "comment",
+      "title": "What First Light Covers, Per a New Sheb Question",
+      "body": "We got a note from a fresh meter up the route asking what First Light actually covers. It covers the first three cycles where we read your meter and do not bill you. That is the whole of it. There is no hidden coverage, and Ceres does not send a welcome basket. First Light means the read goes on file and you owe nothing for those three cycles, after which the Porchlight rate applies like it does for everybody else.",
+      "tags": [
+        "first-light",
+        "rates",
+        "new-settlements",
+        "billing-principles"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-284",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-11-125",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-19T05:31:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Tow Route 4 beamline handoff",
+      "body": "In-Space Power confirms receipt of a meter-dispute report from Tow Route 4, account ISP-TR4-HG-044. At 14:32:08 UT the scheduled relay geometry handoff between beamline sectors required a 2.1-second synchronization pulse during which transmission was routed through the tertiary lattice. The meter continued issuing four-second reads from local capacitor reserves, as designed, and a reconciliation credit has been applied for the interval. No charge was issued for the synchronization period.",
+      "tags": [
+        "outage",
+        "meter-dispute",
+        "beam"
+      ],
+      "caused_by": "ev-2999-11-123",
+      "spawned": [],
+      "chain_id": "chain-283",
+      "verified": true
     }
   ]
 }
