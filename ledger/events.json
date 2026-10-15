@@ -9043,6 +9043,26 @@
       "spawned": [],
       "chain_id": "chain-280",
       "verified": true
+    },
+    {
+      "id": "ev-2999-11-122",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-19T03:09:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "transcript",
+      "title": "Notation on Cycle Close Wording",
+      "body": "DISPATCH: The closing advisory drafts state that meter reconciliation is complete. It is not complete. It will not be complete until 2999.11.04 at 08:00 UTC. RECORD: The phrasing was provisional. The advisory runs at 06:00. DISPATCH: Then the phrasing should say reconciliation is expected. We do not declare completion before the last 4.3 billion reads return. RECORD: Adjusted. We will say reconciliation proceeds on schedule. DISPATCH: Acceptable. The Beam carries forty six percent whether the reads are late or not.",
+      "tags": [
+        "transcript",
+        "internal-traffic",
+        "cycle-close"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-282",
+      "verified": true,
+      "audience": "internal"
     }
   ]
 }
