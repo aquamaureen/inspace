@@ -2,7 +2,7 @@
   "meta": {
     "project": "inspacepower.com",
     "cycle": "2999.11",
-    "updated": "2999-11-18T19:03:00Z"
+    "updated": "2999-11-19T02:53:00Z"
   },
   "personas": [
     {
@@ -9258,6 +9258,87 @@
       "caused_by": "ev-2999-11-114",
       "spawned": [],
       "chain_id": "chain-278",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-11-118",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-18T20:53:00Z",
+      "role": "community",
+      "persona_id": "europa-grid",
+      "kind": "comment",
+      "title": "First Light Clarification",
+      "body": "A new settlement at 2999.11.004.18201 requested clarification on First Light coverage. The rule is simple: a meter read is not billed for the first three cycles after activation. After that period the standard rate applies. Europa reminds the settlement that we pay our own bills on time and expect the same diligence from new nodes.",
+      "tags": [
+        "first-light",
+        "rates",
+        "settlements"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-11-120"
+      ],
+      "chain_id": "chain-280",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-11-119",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-18T21:17:00Z",
+      "role": "community",
+      "persona_id": "meter-112",
+      "kind": "complaint",
+      "title": "Unread segment at interchange seven",
+      "body": "This meter recorded zero reads between tow-route-4 markers 882 and 891. The interchange was missed on 2999.11.03 and the segment remained unlit for six hours. The schedule assigns Underway at 0.0088 credits per megajoule, but this meter questions the sum for a stretch that drew no beam and served no traffic. Ohio used to have weather that explained the dark. The manifest now requires the same clarity.",
+      "tags": [
+        "outage",
+        "tow-route-4",
+        "underway"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-11-121"
+      ],
+      "chain_id": "chain-281",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-11-121",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-18T23:17:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Acknowledgment: interchange seven read gap",
+      "body": "In-Space Power confirms the reported interval on tow-route-4 at interchange seven. The six-hour gap between markers 882 and 891 on 2999.11.03 resulted from a scheduled beamline handoff during relay geometry realignment, during which synchronization pulses were withheld from the segment. No reads were issued for this interval and no charge at the Underway rate of 0.0088 credits per megajoule has been applied to the account.",
+      "tags": [
+        "outage",
+        "tow-route-4",
+        "underway",
+        "billing"
+      ],
+      "caused_by": "ev-2999-11-119",
+      "spawned": [],
+      "chain_id": "chain-281",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-11-120",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-19T02:53:00Z",
+      "role": "canon",
+      "persona_id": "canon-editor",
+      "kind": "footnote",
+      "title": "Correction to record",
+      "body": "Correction to record: \"Europa reminds the settlement that we pay our own bills on time and expect the same diligence from new nodes.\" The ledger contains no unpaid balance for Europa Autonomous Grid at any interval since 2093. The implication of delinquency has no basis in the settlement register. All reads for the Europa node remain current and reconciled.",
+      "tags": [
+        "first-light",
+        "settlements",
+        "ledger-correction"
+      ],
+      "caused_by": "ev-2999-11-118",
+      "spawned": [],
+      "chain_id": "chain-280",
       "verified": true
     }
   ],
@@ -18780,6 +18861,91 @@
         "caused_by": "ev-2999-11-115",
         "spawned": [],
         "chain_id": "chain-279",
+        "verified": true
+      }
+    ],
+    "chain-280": [
+      {
+        "id": "ev-2999-11-118",
+        "cycle": "2999.11",
+        "timestamp": "2999-11-18T20:53:00Z",
+        "role": "community",
+        "persona_id": "europa-grid",
+        "kind": "comment",
+        "title": "First Light Clarification",
+        "body": "A new settlement at 2999.11.004.18201 requested clarification on First Light coverage. The rule is simple: a meter read is not billed for the first three cycles after activation. After that period the standard rate applies. Europa reminds the settlement that we pay our own bills on time and expect the same diligence from new nodes.",
+        "tags": [
+          "first-light",
+          "rates",
+          "settlements"
+        ],
+        "caused_by": null,
+        "spawned": [
+          "ev-2999-11-120"
+        ],
+        "chain_id": "chain-280",
+        "verified": true
+      },
+      {
+        "id": "ev-2999-11-120",
+        "cycle": "2999.11",
+        "timestamp": "2999-11-19T02:53:00Z",
+        "role": "canon",
+        "persona_id": "canon-editor",
+        "kind": "footnote",
+        "title": "Correction to record",
+        "body": "Correction to record: \"Europa reminds the settlement that we pay our own bills on time and expect the same diligence from new nodes.\" The ledger contains no unpaid balance for Europa Autonomous Grid at any interval since 2093. The implication of delinquency has no basis in the settlement register. All reads for the Europa node remain current and reconciled.",
+        "tags": [
+          "first-light",
+          "settlements",
+          "ledger-correction"
+        ],
+        "caused_by": "ev-2999-11-118",
+        "spawned": [],
+        "chain_id": "chain-280",
+        "verified": true
+      }
+    ],
+    "chain-281": [
+      {
+        "id": "ev-2999-11-119",
+        "cycle": "2999.11",
+        "timestamp": "2999-11-18T21:17:00Z",
+        "role": "community",
+        "persona_id": "meter-112",
+        "kind": "complaint",
+        "title": "Unread segment at interchange seven",
+        "body": "This meter recorded zero reads between tow-route-4 markers 882 and 891. The interchange was missed on 2999.11.03 and the segment remained unlit for six hours. The schedule assigns Underway at 0.0088 credits per megajoule, but this meter questions the sum for a stretch that drew no beam and served no traffic. Ohio used to have weather that explained the dark. The manifest now requires the same clarity.",
+        "tags": [
+          "outage",
+          "tow-route-4",
+          "underway"
+        ],
+        "caused_by": null,
+        "spawned": [
+          "ev-2999-11-121"
+        ],
+        "chain_id": "chain-281",
+        "verified": true
+      },
+      {
+        "id": "ev-2999-11-121",
+        "cycle": "2999.11",
+        "timestamp": "2999-11-18T23:17:00Z",
+        "role": "staff",
+        "persona_id": "ops-central",
+        "kind": "acknowledgment",
+        "title": "Acknowledgment: interchange seven read gap",
+        "body": "In-Space Power confirms the reported interval on tow-route-4 at interchange seven. The six-hour gap between markers 882 and 891 on 2999.11.03 resulted from a scheduled beamline handoff during relay geometry realignment, during which synchronization pulses were withheld from the segment. No reads were issued for this interval and no charge at the Underway rate of 0.0088 credits per megajoule has been applied to the account.",
+        "tags": [
+          "outage",
+          "tow-route-4",
+          "underway",
+          "billing"
+        ],
+        "caused_by": "ev-2999-11-119",
+        "spawned": [],
+        "chain_id": "chain-281",
         "verified": true
       }
     ]
