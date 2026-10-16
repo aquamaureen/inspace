@@ -2,7 +2,7 @@
   "meta": {
     "project": "inspacepower.com",
     "cycle": "2999.11",
-    "updated": "2999-11-19T14:04:00Z"
+    "updated": "2999-11-19T18:09:00Z"
   },
   "personas": [
     {
@@ -9503,6 +9503,66 @@
       "chain_id": "chain-287",
       "verified": true,
       "audience": "internal"
+    },
+    {
+      "id": "ev-2999-11-130",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-19T15:09:00Z",
+      "role": "community",
+      "persona_id": "tug-captain-mako",
+      "kind": "complaint",
+      "title": "Water Tower or Cargo",
+      "body": "Been hauling Dredge-Clear since eighty-seven and never seen a water tower throw beam-shadow like a hab ring. This settlement on TR-4 parked a steel cistern in open dock and now the meter people are debating whether it is a structure or cargo at rest. Billing follows the house, but that tower houses nothing but water. Someone at Ceres needs to rule on it before the statement cycle turns so I can stop answering questions from hulls trying to tie up.",
+      "tags": [
+        "billing",
+        "tow-route-4",
+        "structure"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-11-132"
+      ],
+      "chain_id": "chain-288",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-11-131",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-19T15:16:00Z",
+      "role": "community",
+      "persona_id": "meter-112",
+      "kind": "comment",
+      "title": "Active Meter Count",
+      "body": "This meter reads 214,116,882 active meters in the current statement cycle. The number increases each morning and this meter has recorded the growth since 2091, before Ohio stopped having weather. The question is not whether the count rises. The question is whether the count ever falls. This meter has not observed a decrease.",
+      "tags": [
+        "meters",
+        "comment",
+        "earth-reserve-ohio",
+        "account-history"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-289",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-11-132",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-19T18:09:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Classification: TR-4 Cistern",
+      "body": "In-Space Power confirms the steel cistern moored at Tow-Route 4 is classified as a structure for the duration of its open-dock placement. A stationary installation drawing both sunward and shade exposure meets the definition of a house under ledger ISP-2041. Billing follows the house. The tower will be metered at Corner Main rates beginning with the current statement cycle, and questions from incoming hulls may be referred to this notice.",
+      "tags": [
+        "billing",
+        "structure",
+        "tow-route-4"
+      ],
+      "caused_by": "ev-2999-11-130",
+      "spawned": [],
+      "chain_id": "chain-288",
+      "verified": true
     }
   ],
   "chains": {
@@ -19285,6 +19345,70 @@
         "chain_id": "chain-287",
         "verified": true,
         "audience": "internal"
+      }
+    ],
+    "chain-288": [
+      {
+        "id": "ev-2999-11-130",
+        "cycle": "2999.11",
+        "timestamp": "2999-11-19T15:09:00Z",
+        "role": "community",
+        "persona_id": "tug-captain-mako",
+        "kind": "complaint",
+        "title": "Water Tower or Cargo",
+        "body": "Been hauling Dredge-Clear since eighty-seven and never seen a water tower throw beam-shadow like a hab ring. This settlement on TR-4 parked a steel cistern in open dock and now the meter people are debating whether it is a structure or cargo at rest. Billing follows the house, but that tower houses nothing but water. Someone at Ceres needs to rule on it before the statement cycle turns so I can stop answering questions from hulls trying to tie up.",
+        "tags": [
+          "billing",
+          "tow-route-4",
+          "structure"
+        ],
+        "caused_by": null,
+        "spawned": [
+          "ev-2999-11-132"
+        ],
+        "chain_id": "chain-288",
+        "verified": true
+      },
+      {
+        "id": "ev-2999-11-132",
+        "cycle": "2999.11",
+        "timestamp": "2999-11-19T18:09:00Z",
+        "role": "staff",
+        "persona_id": "ops-central",
+        "kind": "acknowledgment",
+        "title": "Classification: TR-4 Cistern",
+        "body": "In-Space Power confirms the steel cistern moored at Tow-Route 4 is classified as a structure for the duration of its open-dock placement. A stationary installation drawing both sunward and shade exposure meets the definition of a house under ledger ISP-2041. Billing follows the house. The tower will be metered at Corner Main rates beginning with the current statement cycle, and questions from incoming hulls may be referred to this notice.",
+        "tags": [
+          "billing",
+          "structure",
+          "tow-route-4"
+        ],
+        "caused_by": "ev-2999-11-130",
+        "spawned": [],
+        "chain_id": "chain-288",
+        "verified": true
+      }
+    ],
+    "chain-289": [
+      {
+        "id": "ev-2999-11-131",
+        "cycle": "2999.11",
+        "timestamp": "2999-11-19T15:16:00Z",
+        "role": "community",
+        "persona_id": "meter-112",
+        "kind": "comment",
+        "title": "Active Meter Count",
+        "body": "This meter reads 214,116,882 active meters in the current statement cycle. The number increases each morning and this meter has recorded the growth since 2091, before Ohio stopped having weather. The question is not whether the count rises. The question is whether the count ever falls. This meter has not observed a decrease.",
+        "tags": [
+          "meters",
+          "comment",
+          "earth-reserve-ohio",
+          "account-history"
+        ],
+        "caused_by": null,
+        "spawned": [],
+        "chain_id": "chain-289",
+        "verified": true
       }
     ]
   }
