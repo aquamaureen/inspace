@@ -9185,6 +9185,27 @@
       "spawned": [],
       "chain_id": "chain-286",
       "verified": true
+    },
+    {
+      "id": "ev-2999-11-129",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-19T14:04:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "memo",
+      "title": "Shift Handoff 2999.11.14 End-of-Cycle Notes",
+      "body": "In-Space Power confirms all 214,116,882 meters reported within the four-second window at cycle close. The Beam maintained forty-six percent contribution despite a thermal excursion in outer segment seven. One [REDACTED: house figure] requires reconciliation before Joint Settlement Authority Ceres receives the nightly ledger. Incoming shift should verify Moontide buoy telemetry prior to the 0400 sweep.",
+      "tags": [
+        "handoff",
+        "shift",
+        "reconciliation",
+        "internal"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-287",
+      "verified": true,
+      "audience": "internal"
     }
   ]
 }
