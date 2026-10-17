@@ -2,7 +2,7 @@
   "meta": {
     "project": "inspacepower.com",
     "cycle": "2999.11",
-    "updated": "2999-11-19T18:09:00Z"
+    "updated": "2999-11-19T23:42:00Z"
   },
   "personas": [
     {
@@ -9562,6 +9562,68 @@
       "caused_by": "ev-2999-11-130",
       "spawned": [],
       "chain_id": "chain-288",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-11-133",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-19T19:42:00Z",
+      "role": "community",
+      "persona_id": "halverson-green",
+      "kind": "complaint",
+      "title": "Dark stretch at the missed interchange",
+      "body": "I keep my paper statements from before the interchange on Tow Route 4 was rerouted past the old cornfield, which I suppose the young ones now call a hydroponic bay, and those statements show a dark stretch of three hundred meters where no porchlight tariff has ever been properly assessed. The automatic reads skip the section entirely when the tow route misses its scheduled interchange, and I would like to know who pays for the dark when the meters themselves pretend the space does not exist. I have written to the Joint Settlement Authority three times since the last cycle but received only the same printed confirmation that billing follows the house, which is a fine principle until the house cannot find its own porch.",
+      "tags": [
+        "outage",
+        "tow-route-4",
+        "underway",
+        "dark-stretch"
+      ],
+      "caused_by": null,
+      "spawned": [
+        "ev-2999-11-135"
+      ],
+      "chain_id": "chain-290",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-11-134",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-19T20:10:00Z",
+      "role": "community",
+      "persona_id": "new-sheboygan-clerk",
+      "kind": "comment",
+      "title": "Active Meter Count, Tow Route 4",
+      "body": "I have been watching the active meter count hold at 214,116,882 and I am curious if that number has ever gone down since 2041. Not that I expect it to, given the reads come every four seconds and I am still waiting on last cycle's official notice to clear the lag out here in the Sheb. Someone at the Joint Settlement Authority ought to confirm whether we are counting every connection or just the ones that stay lit. The water tower made it through the tow, so I suppose the meters can keep counting too.",
+      "tags": [
+        "meters",
+        "comment",
+        "tow-route-4",
+        "new-sheboygan"
+      ],
+      "caused_by": null,
+      "spawned": [],
+      "chain_id": "chain-291",
+      "verified": true
+    },
+    {
+      "id": "ev-2999-11-135",
+      "cycle": "2999.11",
+      "timestamp": "2999-11-19T23:42:00Z",
+      "role": "staff",
+      "persona_id": "ops-central",
+      "kind": "acknowledgment",
+      "title": "Tow Route 4 interchange interval reconciliation",
+      "body": "In-Space Power confirms the report regarding the three-hundred-meter interval at the former Tow Route 4 interchange. The missed read window resulted from a scheduled beamline handoff coinciding with a synchronization pulse, during which relay geometry is temporarily recalibrated to prevent tariff overlap between adjacent sectors. No charge was issued for the interval. The Joint Settlement Authority has been notified of the reconciliation status.",
+      "tags": [
+        "outage",
+        "tow-route-4",
+        "underway",
+        "dark-stretch"
+      ],
+      "caused_by": "ev-2999-11-133",
+      "spawned": [],
+      "chain_id": "chain-290",
       "verified": true
     }
   ],
@@ -19408,6 +19470,72 @@
         "caused_by": null,
         "spawned": [],
         "chain_id": "chain-289",
+        "verified": true
+      }
+    ],
+    "chain-290": [
+      {
+        "id": "ev-2999-11-133",
+        "cycle": "2999.11",
+        "timestamp": "2999-11-19T19:42:00Z",
+        "role": "community",
+        "persona_id": "halverson-green",
+        "kind": "complaint",
+        "title": "Dark stretch at the missed interchange",
+        "body": "I keep my paper statements from before the interchange on Tow Route 4 was rerouted past the old cornfield, which I suppose the young ones now call a hydroponic bay, and those statements show a dark stretch of three hundred meters where no porchlight tariff has ever been properly assessed. The automatic reads skip the section entirely when the tow route misses its scheduled interchange, and I would like to know who pays for the dark when the meters themselves pretend the space does not exist. I have written to the Joint Settlement Authority three times since the last cycle but received only the same printed confirmation that billing follows the house, which is a fine principle until the house cannot find its own porch.",
+        "tags": [
+          "outage",
+          "tow-route-4",
+          "underway",
+          "dark-stretch"
+        ],
+        "caused_by": null,
+        "spawned": [
+          "ev-2999-11-135"
+        ],
+        "chain_id": "chain-290",
+        "verified": true
+      },
+      {
+        "id": "ev-2999-11-135",
+        "cycle": "2999.11",
+        "timestamp": "2999-11-19T23:42:00Z",
+        "role": "staff",
+        "persona_id": "ops-central",
+        "kind": "acknowledgment",
+        "title": "Tow Route 4 interchange interval reconciliation",
+        "body": "In-Space Power confirms the report regarding the three-hundred-meter interval at the former Tow Route 4 interchange. The missed read window resulted from a scheduled beamline handoff coinciding with a synchronization pulse, during which relay geometry is temporarily recalibrated to prevent tariff overlap between adjacent sectors. No charge was issued for the interval. The Joint Settlement Authority has been notified of the reconciliation status.",
+        "tags": [
+          "outage",
+          "tow-route-4",
+          "underway",
+          "dark-stretch"
+        ],
+        "caused_by": "ev-2999-11-133",
+        "spawned": [],
+        "chain_id": "chain-290",
+        "verified": true
+      }
+    ],
+    "chain-291": [
+      {
+        "id": "ev-2999-11-134",
+        "cycle": "2999.11",
+        "timestamp": "2999-11-19T20:10:00Z",
+        "role": "community",
+        "persona_id": "new-sheboygan-clerk",
+        "kind": "comment",
+        "title": "Active Meter Count, Tow Route 4",
+        "body": "I have been watching the active meter count hold at 214,116,882 and I am curious if that number has ever gone down since 2041. Not that I expect it to, given the reads come every four seconds and I am still waiting on last cycle's official notice to clear the lag out here in the Sheb. Someone at the Joint Settlement Authority ought to confirm whether we are counting every connection or just the ones that stay lit. The water tower made it through the tow, so I suppose the meters can keep counting too.",
+        "tags": [
+          "meters",
+          "comment",
+          "tow-route-4",
+          "new-sheboygan"
+        ],
+        "caused_by": null,
+        "spawned": [],
+        "chain_id": "chain-291",
         "verified": true
       }
     ]
